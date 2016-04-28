@@ -1,0 +1,2148 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+JyothiERPSystem
+</name>
+</assembly>
+<members>
+<member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterNamesDataSet.CostCenterNamesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterNamesDataSet.CostCenterNamesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterNamesDataSet.CostCenterNamesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterNamesDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterNamesDataSetTableAdapters.CostCenterNamesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.CostCenterNamesDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiInventoryManagenetSystem_3._0.CostCenterNamesDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.CostCenterNamesDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiInventoryManagenetSystem_3._0.CostCenterNamesDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.CostCenterNamesDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiInventoryManagenetSystem_3._0.CostCenterNamesDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.CostCenterNamesDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.CostCenterNamesDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiInventoryManagenetSystem_3._0.CostCenterNamesDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterNamesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterNamesDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterNamesDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpDepartmentDbfDataset.DepartmentGroupsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpDepartmentDbfDataset.DepartmentGroupsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpDepartmentDbfDataset.DepartmentGroupsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpDepartmentDbfDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpDepartmentDbfDatasetTableAdapters.DepartmentGroupsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.EmpDepartmentDbfDatasetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiInventoryManagenetSystem_3._0.EmpDepartmentDbfDataset,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.EmpDepartmentDbfDatasetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiInventoryManagenetSystem_3._0.EmpDepartmentDbfDataset,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.EmpDepartmentDbfDatasetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiInventoryManagenetSystem_3._0.EmpDepartmentDbfDataset,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.EmpDepartmentDbfDatasetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.EmpDepartmentDbfDatasetTableAdapters.TableAdapterManager.UpdateAll(JyothiInventoryManagenetSystem_3._0.EmpDepartmentDbfDataset)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpDepartmentDbfDatasetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpDepartmentDbfDatasetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpDepartmentDbfDatasetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpLeaveMngDataSet.EMPLEAVESDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpLeaveMngDataSet.EMPLEAVESRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpLeaveMngDataSet.EMPLEAVESRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpLeaveMngDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.LedgerTransactionDataSet1.LedgerBookDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.LedgerTransactionDataSet1.LedgerBookRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.LedgerTransactionDataSet1.LedgerBookRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.LedgerTransactionDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PAYSLIPDATASET.PayrollDataDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PAYSLIPDATASET.PayrollDataRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PAYSLIPDATASET.PayrollDataRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PAYSLIPDATASET">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PAYSLIPDATASETTableAdapters.PayrollDataTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.PAYSLIPDATASETTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiInventoryManagenetSystem_3._0.PAYSLIPDATASET,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.PAYSLIPDATASETTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiInventoryManagenetSystem_3._0.PAYSLIPDATASET,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.PAYSLIPDATASETTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiInventoryManagenetSystem_3._0.PAYSLIPDATASET,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.PAYSLIPDATASETTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.PAYSLIPDATASETTableAdapters.TableAdapterManager.UpdateAll(JyothiInventoryManagenetSystem_3._0.PAYSLIPDATASET)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PAYSLIPDATASETTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PAYSLIPDATASETTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PAYSLIPDATASETTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesmanReportDetDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesmanReportDetDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesmanReportDetDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesmanReportDetDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StcokItemsDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StcokItemsDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StcokItemsDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StcokItemsDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockJournalSingleRowDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockJournalSingleRowDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockJournalSingleRowDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockJournalSingleRowDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VouchersDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VouchersDataSet.DataTable2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VouchersDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VouchersDataSet.DataTable2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VouchersDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VouchersDataSet.DataTable2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VouchersDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.DataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockJournalPrintDataSet.StockInvoiceRowItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockJournalPrintDataSet.StockInvoiceRowItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockJournalPrintDataSet.StockInvoiceRowItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockJournalPrintDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockJournalPrintDataSetTableAdapters.StockInvoiceRowItemsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.StockJournalPrintDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiInventoryManagenetSystem_3._0.StockJournalPrintDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.StockJournalPrintDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiInventoryManagenetSystem_3._0.StockJournalPrintDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.StockJournalPrintDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiInventoryManagenetSystem_3._0.StockJournalPrintDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.StockJournalPrintDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.StockJournalPrintDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiInventoryManagenetSystem_3._0.StockJournalPrintDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockJournalPrintDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockJournalPrintDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockJournalPrintDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.UserLogFileDataSet.UserLogFileDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.UserLogFileDataSet.UserLogFileRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.UserLogFileDataSet.UserLogFileRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.UserLogFileDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpAttendenceRepDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpAttendenceRepDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpAttendenceRepDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpAttendenceRepDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.employeeDataSet.EmployeesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.employeeDataSet.ImagesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.employeeDataSet.EmployeesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.employeeDataSet.ImagesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.employeeDataSet.EmployeesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.employeeDataSet.ImagesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.employeeDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.employeeDataSetTableAdapters.EmployeesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.employeeDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiInventoryManagenetSystem_3._0.employeeDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.employeeDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiInventoryManagenetSystem_3._0.employeeDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.employeeDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiInventoryManagenetSystem_3._0.employeeDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.employeeDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.employeeDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiInventoryManagenetSystem_3._0.employeeDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.employeeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.employeeDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.employeeDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.monthlyledgerdataset.ledgerbookDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.monthlyledgerdataset.ledgerbookRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.monthlyledgerdataset.ledgerbookRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.monthlyledgerdataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesCOllectionDataSet1.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesCOllectionDataSet1.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesCOllectionDataSet1.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesCOllectionDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockGroupMasterDataSet.StockGroupsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockGroupMasterDataSet.StockGroupsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockGroupMasterDataSet.StockGroupsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockGroupMasterDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockGroupMasterDataSetTableAdapters.StockGroupsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.StockGroupMasterDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiInventoryManagenetSystem_3._0.StockGroupMasterDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.StockGroupMasterDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiInventoryManagenetSystem_3._0.StockGroupMasterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.StockGroupMasterDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiInventoryManagenetSystem_3._0.StockGroupMasterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.StockGroupMasterDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.StockGroupMasterDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiInventoryManagenetSystem_3._0.StockGroupMasterDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockGroupMasterDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockGroupMasterDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockGroupMasterDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.UsersDataSet.UsersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.UsersDataSet.UsersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.UsersDataSet.UsersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.UsersDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.BalancesDataSet.LedgerBookDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.BalancesDataSet.LedgerBookRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.BalancesDataSet.LedgerBookRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.BalancesDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources._1361186619_document_new">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources._1361186631_chronometer">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources._1361186639_preferences_desktop_cryptography">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources._1361187183_Open">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources._1361188212_Binoculars">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources._1361188505_file_edit">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources._stop">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.add1_32">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.back16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.back24">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.Blue_External_Drive_Backup_icon">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.close32">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.copy24">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.delete__2_">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.delete16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.Deleteuser">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.document_inspector">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.DownE">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.edit_delete">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.EditUser">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.excel">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.forward24">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.gift">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.info_16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.key">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.keys128">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.Logout">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.Logout2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.move">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.my_main_logo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.NewUser">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.print__1_">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.refresh__1_">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.refresh2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.report_icon">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.restore_database">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.RightD">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.RightD2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.Salary">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.Salary2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.Save__1_">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.search48">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.stop2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.success32">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.UserSettings">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.warning">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources.Webcam">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockItemWiseDataSet.StockInvoiceRowItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockItemWiseDataSet.StockInvoiceRowItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockItemWiseDataSet.StockInvoiceRowItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockItemWiseDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.BalanceSheetDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.BalanceSheetDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.BalanceSheetDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.BalanceSheetDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.ReorderStatusDataset.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.ReorderStatusDataset.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.ReorderStatusDataset.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.ReorderStatusDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VoucherPrintingCashDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VoucherPrintingCashDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VoucherPrintingCashDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VoucherPrintingCashDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VoucherRowsDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VoucherRowsDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VoucherRowsDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VoucherRowsDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterDbf.CostCentersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterDbf.CostCentersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterDbf.CostCentersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterDbf">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterDbfTableAdapters.CostCentersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.CostCenterDbfTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiInventoryManagenetSystem_3._0.CostCenterDbf,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.CostCenterDbfTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiInventoryManagenetSystem_3._0.CostCenterDbf,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.CostCenterDbfTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiInventoryManagenetSystem_3._0.CostCenterDbf,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.CostCenterDbfTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.CostCenterDbfTableAdapters.TableAdapterManager.UpdateAll(JyothiInventoryManagenetSystem_3._0.CostCenterDbf)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterDbfTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterDbfTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterDbfTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpPayslipDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpPayslipDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpPayslipDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpPayslipDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.JVSKINVDB100DataSet1.StockGroupsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.JVSKINVDB100DataSet1.StockGroupsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.JVSKINVDB100DataSet1.StockGroupsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.JVSKINVDB100DataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.JVSKINVDB100DataSet1TableAdapters.StockGroupsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.MovementByStockCodeDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.MovementByStockCodeDataSet.DataTable2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.MovementByStockCodeDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.MovementByStockCodeDataSet.DataTable2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.MovementByStockCodeDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.MovementByStockCodeDataSet.DataTable2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.MovementByStockCodeDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.OutgoingStockDataset.StockInvoiceRowItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.OutgoingStockDataset.StockInvoiceRowItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.OutgoingStockDataset.StockInvoiceRowItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.OutgoingStockDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PayrollDataDataSet.PayrollDataDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PayrollDataDataSet.PayrollDataRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PayrollDataDataSet.PayrollDataRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PayrollDataDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PayrollDataDataSetTableAdapters.PayrollDataTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.PayrollDataDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiInventoryManagenetSystem_3._0.PayrollDataDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.PayrollDataDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiInventoryManagenetSystem_3._0.PayrollDataDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.PayrollDataDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiInventoryManagenetSystem_3._0.PayrollDataDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.PayrollDataDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.PayrollDataDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiInventoryManagenetSystem_3._0.PayrollDataDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PayrollDataDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PayrollDataDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PayrollDataDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.DutiesMEDataSet.DutiesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.DutiesMEDataSet.DutiesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.DutiesMEDataSet.DutiesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.DutiesMEDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.DutiesMEDataSetTableAdapters.DutiesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.DutiesMEDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiInventoryManagenetSystem_3._0.DutiesMEDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.DutiesMEDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiInventoryManagenetSystem_3._0.DutiesMEDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.DutiesMEDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiInventoryManagenetSystem_3._0.DutiesMEDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.DutiesMEDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.DutiesMEDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiInventoryManagenetSystem_3._0.DutiesMEDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.DutiesMEDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.DutiesMEDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.DutiesMEDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.OrdersummeryDataSet.StockInvoiceRowItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.OrdersummeryDataSet.StockInvoiceRowItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.OrdersummeryDataSet.StockInvoiceRowItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.OrdersummeryDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PaySlipDatasetforEmployee.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PaySlipDatasetforEmployee.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PaySlipDatasetforEmployee.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PaySlipDatasetforEmployee">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockAgingDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockAgingDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockAgingDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockAgingDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.Ledgerbook.LedgerBookDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.Ledgerbook.LedgerBookRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.Ledgerbook.LedgerBookRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.Ledgerbook">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.LedgerbookTableAdapters.LedgerBookTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.dutiesDataSet.DutiesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.dutiesDataSet.DutiesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.dutiesDataSet.DutiesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.dutiesDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.dutiesDataSetTableAdapters.DutiesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.dutiesDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiInventoryManagenetSystem_3._0.dutiesDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.dutiesDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiInventoryManagenetSystem_3._0.dutiesDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.dutiesDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiInventoryManagenetSystem_3._0.dutiesDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.dutiesDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.dutiesDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiInventoryManagenetSystem_3._0.dutiesDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.dutiesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.dutiesDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.dutiesDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesPersonMasterDataSet.salespersonsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesPersonMasterDataSet.salespersonsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesPersonMasterDataSet.salespersonsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesPersonMasterDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesPersonMasterDataSetTableAdapters.salespersonsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.SalesPersonMasterDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiInventoryManagenetSystem_3._0.SalesPersonMasterDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.SalesPersonMasterDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiInventoryManagenetSystem_3._0.SalesPersonMasterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.SalesPersonMasterDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiInventoryManagenetSystem_3._0.SalesPersonMasterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.SalesPersonMasterDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.SalesPersonMasterDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiInventoryManagenetSystem_3._0.SalesPersonMasterDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesPersonMasterDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesPersonMasterDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesPersonMasterDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.LedgerBookDataSetForVouchers.LedgerBookDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.LedgerBookDataSetForVouchers.LedgerBookRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.LedgerBookDataSetForVouchers.LedgerBookRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.LedgerBookDataSetForVouchers">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.LedgerBookDataSetForVouchersTableAdapters.LedgerBookTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CustomInvoiceDataSet.StockInvoiceDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CustomInvoiceDataSet.StockInvoiceRowItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CustomInvoiceDataSet.StockInvoiceDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CustomInvoiceDataSet.StockInvoiceRowItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CustomInvoiceDataSet.StockInvoiceDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CustomInvoiceDataSet.StockInvoiceRowItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CustomInvoiceDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CustomInvoiceDataSetTableAdapters.StockInvoiceDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CustomInvoiceDataSetTableAdapters.StockInvoiceRowItemsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.CustomInvoiceDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiInventoryManagenetSystem_3._0.CustomInvoiceDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.CustomInvoiceDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiInventoryManagenetSystem_3._0.CustomInvoiceDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.CustomInvoiceDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiInventoryManagenetSystem_3._0.CustomInvoiceDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.CustomInvoiceDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.CustomInvoiceDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiInventoryManagenetSystem_3._0.CustomInvoiceDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CustomInvoiceDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CustomInvoiceDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CustomInvoiceDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.DocDataset.DocumentsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.DocDataset.DocumentsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.DocDataset.DocumentsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.DocDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.DocDatasetTableAdapters.DocumentsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.DocDatasetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiInventoryManagenetSystem_3._0.DocDataset,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.DocDatasetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiInventoryManagenetSystem_3._0.DocDataset,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.DocDatasetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiInventoryManagenetSystem_3._0.DocDataset,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.DocDatasetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.DocDatasetTableAdapters.TableAdapterManager.UpdateAll(JyothiInventoryManagenetSystem_3._0.DocDataset)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.DocDatasetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.DocDatasetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.DocDatasetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.LeaveTblDataset.LeavesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.LeaveTblDataset.LeavesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.LeaveTblDataset.LeavesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.LeaveTblDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.MovementByGroupDataset.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.MovementByGroupDataset.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.MovementByGroupDataset.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.MovementByGroupDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PayrollListReportDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PayrollListReportDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PayrollListReportDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.PayrollListReportDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesStatusDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesStatusDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesStatusDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesStatusDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VehicleDataSet.VehicleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VehicleDataSet.VehicleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VehicleDataSet.VehicleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VehicleDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VehicleDataSetTableAdapters.VehicleTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.VehicleDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiInventoryManagenetSystem_3._0.VehicleDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.VehicleDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiInventoryManagenetSystem_3._0.VehicleDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.VehicleDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiInventoryManagenetSystem_3._0.VehicleDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.VehicleDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.VehicleDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiInventoryManagenetSystem_3._0.VehicleDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VehicleDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VehicleDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VehicleDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AddDeductionDbfDataSet.PayTypesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AddDeductionDbfDataSet.PayTypesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AddDeductionDbfDataSet.PayTypesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AddDeductionDbfDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AddDeductionDbfDataSetTableAdapters.PayTypesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.AddDeductionDbfDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiInventoryManagenetSystem_3._0.AddDeductionDbfDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.AddDeductionDbfDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiInventoryManagenetSystem_3._0.AddDeductionDbfDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.AddDeductionDbfDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiInventoryManagenetSystem_3._0.AddDeductionDbfDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.AddDeductionDbfDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.AddDeductionDbfDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiInventoryManagenetSystem_3._0.AddDeductionDbfDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AddDeductionDbfDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AddDeductionDbfDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AddDeductionDbfDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.stockCatogoriesMasterDataSet.CategoriesgroupsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.stockCatogoriesMasterDataSet.CategoriesgroupsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.stockCatogoriesMasterDataSet.CategoriesgroupsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.stockCatogoriesMasterDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.stockCatogoriesMasterDataSetTableAdapters.CategoriesgroupsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.stockCatogoriesMasterDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiInventoryManagenetSystem_3._0.stockCatogoriesMasterDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.stockCatogoriesMasterDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiInventoryManagenetSystem_3._0.stockCatogoriesMasterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.stockCatogoriesMasterDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiInventoryManagenetSystem_3._0.stockCatogoriesMasterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.stockCatogoriesMasterDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.stockCatogoriesMasterDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiInventoryManagenetSystem_3._0.stockCatogoriesMasterDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.stockCatogoriesMasterDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.stockCatogoriesMasterDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.stockCatogoriesMasterDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockSummeryDataSet.StockDbfDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockSummeryDataSet.StockDbfRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockSummeryDataSet.StockDbfRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockSummeryDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.JVSKINVDB100DataSet3.salespersonsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.JVSKINVDB100DataSet3.salespersonsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.JVSKINVDB100DataSet3.salespersonsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.JVSKINVDB100DataSet3">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.JVSKINVDB100DataSet3TableAdapters.salespersonsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CompanyLeavesDataSet.companyleavesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CompanyLeavesDataSet.companyleavesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CompanyLeavesDataSet.companyleavesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CompanyLeavesDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterSummeryDataSet.costcenterbookDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterSummeryDataSet.costcenterbookRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterSummeryDataSet.costcenterbookRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterSummeryDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.DocDDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.DocDDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.DocDDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.DocDDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockUnitsMasterDataSet.StockunitsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockUnitsMasterDataSet.StockunitsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockUnitsMasterDataSet.StockunitsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockUnitsMasterDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockUnitsMasterDataSetTableAdapters.StockunitsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.StockUnitsMasterDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiInventoryManagenetSystem_3._0.StockUnitsMasterDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.StockUnitsMasterDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiInventoryManagenetSystem_3._0.StockUnitsMasterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.StockUnitsMasterDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiInventoryManagenetSystem_3._0.StockUnitsMasterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.StockUnitsMasterDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.StockUnitsMasterDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiInventoryManagenetSystem_3._0.StockUnitsMasterDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockUnitsMasterDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockUnitsMasterDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.StockUnitsMasterDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.TrailBalanceSheetDataset.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.TrailBalanceSheetDataset.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.TrailBalanceSheetDataset.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.TrailBalanceSheetDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.LedgersDbfDataset.ledgersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.LedgersDbfDataset.ledgersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.LedgersDbfDataset.ledgersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.LedgersDbfDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.LedgersDbfDatasetTableAdapters.ledgersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.DataSet2">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.UserActivityDataSet.LogFileDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.UserActivityDataSet.LogFileRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.UserActivityDataSet.LogFileRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.UserActivityDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VehicleReportDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VehicleReportDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VehicleReportDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.VehicleReportDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.ProfitandLossDataset.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.ProfitandLossDataset.DataTable2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.ProfitandLossDataset.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.ProfitandLossDataset.DataTable2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.ProfitandLossDataset.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.ProfitandLossDataset.DataTable2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.ProfitandLossDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.Bill2billdataset.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.Bill2billdataset.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.Bill2billdataset.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.Bill2billdataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AccountGroupsDataSet.AccountGroupsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AccountGroupsDataSet.AccountGroupsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AccountGroupsDataSet.AccountGroupsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AccountGroupsDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AccountGroupsDataSetTableAdapters.AccountGroupsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.JVSKINVDB100DataSet.AccountGroupsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.JVSKINVDB100DataSet.AccountGroupsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.JVSKINVDB100DataSet.AccountGroupsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.JVSKINVDB100DataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.JVSKINVDB100DataSetTableAdapters.AccountGroupsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AttendEntryDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AttendEntryDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AttendEntryDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AttendEntryDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.InventoryTransactoionDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.InventoryTransactoionDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.InventoryTransactoionDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.InventoryTransactoionDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.MonthlyRegisterDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.MonthlyRegisterDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.MonthlyRegisterDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.MonthlyRegisterDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesCollectionDataSet2.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesCollectionDataSet2.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesCollectionDataSet2.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesCollectionDataSet2">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AccountLedgerDataSet.LedgerBookDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AccountLedgerDataSet.ImagesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AccountLedgerDataSet.LedgerBookRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AccountLedgerDataSet.ImagesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AccountLedgerDataSet.LedgerBookRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AccountLedgerDataSet.ImagesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AccountLedgerDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AccountLedgerDataSetTableAdapters.LedgerBookTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.AccountLedgerDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiInventoryManagenetSystem_3._0.AccountLedgerDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.AccountLedgerDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiInventoryManagenetSystem_3._0.AccountLedgerDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.AccountLedgerDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiInventoryManagenetSystem_3._0.AccountLedgerDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.AccountLedgerDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiInventoryManagenetSystem_3._0.AccountLedgerDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiInventoryManagenetSystem_3._0.AccountLedgerDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AccountLedgerDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AccountLedgerDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.AccountLedgerDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterDetDataSet.costcenterbookDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterDetDataSet.costcenterbookRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterDetDataSet.costcenterbookRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CostCenterDetDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CurrentStockDataSet.StockDbfDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CurrentStockDataSet.StockDbfRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CurrentStockDataSet.StockDbfRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.CurrentStockDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesmanSummeryDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesmanSummeryDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesmanSummeryDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.SalesmanSummeryDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpBarcodeDataset.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpBarcodeDataset.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpBarcodeDataset.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.EmpBarcodeDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.OverDueDataset.Bill2BillDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.OverDueDataset.Bill2BillRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.OverDueDataset.Bill2BillRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.OverDueDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.RegisterDataSet.StockInvoiceDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.RegisterDataSet.StockInvoiceDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.RegisterDataSet.StockInvoiceDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.RegisterDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.RegisterDataSetTableAdapters.StockInvoiceDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.RegisterSumDataSet.StockInvoiceRowItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.RegisterSumDataSet.StockInvoiceRowItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.RegisterSumDataSet.StockInvoiceRowItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.RegisterSumDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.JVSKINVDB100DataSet2.StockunitsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.JVSKINVDB100DataSet2.StockunitsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.JVSKINVDB100DataSet2.StockunitsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.JVSKINVDB100DataSet2">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiInventoryManagenetSystem_3._0.JVSKINVDB100DataSet2TableAdapters.StockunitsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+</members>
+</doc>

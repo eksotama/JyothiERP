@@ -1,0 +1,5 @@
+D:\ABARIS BUSINESS MANAGER\TrialMaker\FilterTextBox\FilterTextBox\FilterTextBox\bin\Debug\FilterControls.dll
+D:\ABARIS BUSINESS MANAGER\TrialMaker\FilterTextBox\FilterTextBox\FilterTextBox\bin\Debug\FilterControls.pdb
+D:\ABARIS BUSINESS MANAGER\TrialMaker\FilterTextBox\FilterTextBox\FilterTextBox\obj\Debug\ResolveAssemblyReference.cache
+D:\ABARIS BUSINESS MANAGER\TrialMaker\FilterTextBox\FilterTextBox\FilterTextBox\obj\Debug\FilterControls.dll
+D:\ABARIS BUSINESS MANAGER\TrialMaker\FilterTextBox\FilterTextBox\FilterTextBox\obj\Debug\FilterControls.pdb

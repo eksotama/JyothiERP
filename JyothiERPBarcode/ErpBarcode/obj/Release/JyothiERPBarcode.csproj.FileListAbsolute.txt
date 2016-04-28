@@ -1,0 +1,9 @@
+E:\ErpBarcode\ErpBarcode\bin\Release\JyothiERPBarcode.dll
+E:\ErpBarcode\ErpBarcode\bin\Release\JyothiERPBarcode.pdb
+E:\ErpBarcode\ErpBarcode\obj\Release\JyothiERPBarcode.dll
+E:\ErpBarcode\ErpBarcode\obj\Release\JyothiERPBarcode.pdb
+E:\JyothiERP System 02-2014-Modified\JyothiERPBarcode\ErpBarcode\obj\Release\JyothiERPBarcode.pdb
+E:\JyothiERP System 02-2014-Modified\JyothiERPBarcode\ErpBarcode\obj\Release\ResolveAssemblyReference.cache
+E:\JyothiERP System 02-2014-Modified\JyothiERPBarcode\ErpBarcode\bin\Release\JyothiERPBarcode.dll
+E:\JyothiERP System 02-2014-Modified\JyothiERPBarcode\ErpBarcode\bin\Release\JyothiERPBarcode.pdb
+E:\JyothiERP System 02-2014-Modified\JyothiERPBarcode\ErpBarcode\obj\Release\JyothiERPBarcode.dll

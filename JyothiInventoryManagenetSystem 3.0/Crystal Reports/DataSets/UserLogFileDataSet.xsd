@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="UserLogFileDataSet" targetNamespace="http://tempuri.org/UserLogFileDataSet.xsd" xmlns:mstns="http://tempuri.org/UserLogFileDataSet.xsd" xmlns="http://tempuri.org/UserLogFileDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="UserLogFileDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="UserLogFileDataSet" msprop:Generator_UserDSName="UserLogFileDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="UserLogFile" msprop:Generator_TableClassName="UserLogFileDataTable" msprop:Generator_TableVarName="tableUserLogFile" msprop:Generator_TablePropName="UserLogFile" msprop:Generator_RowDeletingName="UserLogFileRowDeleting" msprop:Generator_RowChangingName="UserLogFileRowChanging" msprop:Generator_RowEvHandlerName="UserLogFileRowChangeEventHandler" msprop:Generator_RowDeletedName="UserLogFileRowDeleted" msprop:Generator_UserTableName="UserLogFile" msprop:Generator_RowChangedName="UserLogFileRowChanged" msprop:Generator_RowEvArgName="UserLogFileRowChangeEvent" msprop:Generator_RowClassName="UserLogFileRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_UserColumnName="UserName" type="xs:string" minOccurs="0" />
+              <xs:element name="LoginTime" msprop:Generator_ColumnVarNameInTable="columnLoginTime" msprop:Generator_ColumnPropNameInRow="LoginTime" msprop:Generator_ColumnPropNameInTable="LoginTimeColumn" msprop:Generator_UserColumnName="LoginTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LogoutTime" msprop:Generator_ColumnVarNameInTable="columnLogoutTime" msprop:Generator_ColumnPropNameInRow="LogoutTime" msprop:Generator_ColumnPropNameInTable="LogoutTimeColumn" msprop:Generator_UserColumnName="LogoutTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Time_x0020_in_x0020_Sec" msprop:Generator_ColumnVarNameInTable="columnTime_in_Sec" msprop:Generator_ColumnPropNameInRow="Time_in_Sec" msprop:Generator_ColumnPropNameInTable="Time_in_SecColumn" msprop:Generator_UserColumnName="Time in Sec" type="xs:double" minOccurs="0" />
+              <xs:element name="SystemName" msprop:Generator_ColumnVarNameInTable="columnSystemName" msprop:Generator_ColumnPropNameInRow="SystemName" msprop:Generator_ColumnPropNameInTable="SystemNameColumn" msprop:Generator_UserColumnName="SystemName" type="xs:string" minOccurs="0" />
+              <xs:element name="Transcode" msprop:Generator_ColumnVarNameInTable="columnTranscode" msprop:Generator_ColumnPropNameInRow="Transcode" msprop:Generator_ColumnPropNameInTable="TranscodeColumn" msprop:Generator_UserColumnName="Transcode" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

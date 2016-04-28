@@ -1,0 +1,186 @@
+E:\TrialMaker\TrialMaker\bin\Debug\SoftwareLocker.dll
+E:\TrialMaker\TrialMaker\bin\Debug\SoftwareLocker.pdb
+E:\TrialMaker\TrialMaker\obj\Debug\ResolveAssemblyReference.cache
+E:\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+E:\TrialMaker\TrialMaker\obj\Debug\ResGen.read.1.tlog
+E:\TrialMaker\TrialMaker\obj\Debug\ResGen.write.1.tlog
+E:\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.dll
+E:\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.pdb
+D:\ABARIS BUSINESS MANAGER\TrialMaker\TrialMaker\obj\Debug\ResolveAssemblyReference.cache
+D:\ABARIS BUSINESS MANAGER\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+D:\ABARIS BUSINESS MANAGER\TrialMaker\TrialMaker\obj\Debug\GenerateResource.read.1.tlog
+D:\ABARIS BUSINESS MANAGER\TrialMaker\TrialMaker\obj\Debug\GenerateResource.write.1.tlog
+D:\ABARIS BUSINESS MANAGER\TrialMaker\TrialMaker\bin\Debug\erpLocker.dll
+D:\ABARIS BUSINESS MANAGER\TrialMaker\TrialMaker\bin\Debug\erpLocker.pdb
+D:\ABARIS BUSINESS MANAGER\TrialMaker\TrialMaker\obj\Debug\erpLocker.dll
+D:\ABARIS BUSINESS MANAGER\TrialMaker\TrialMaker\obj\Debug\erpLocker.pdb
+D:\ABARIS BUSINESS MANAGER\TrialMaker\TrialMaker\obj\Debug\SerialBox.SerialBox.resources
+D:\JyothiERP System PDL\TrialMaker\TrialMaker\bin\Debug\erpLocker.dll
+D:\JyothiERP System PDL\TrialMaker\TrialMaker\bin\Debug\erpLocker.pdb
+D:\JyothiERP System PDL\TrialMaker\TrialMaker\obj\Debug\ResolveAssemblyReference.cache
+D:\JyothiERP System PDL\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+D:\JyothiERP System PDL\TrialMaker\TrialMaker\obj\Debug\SerialBox.SerialBox.resources
+D:\JyothiERP System PDL\TrialMaker\TrialMaker\obj\Debug\GenerateResource.read.1.tlog
+D:\JyothiERP System PDL\TrialMaker\TrialMaker\obj\Debug\ResGen.read.1.tlog
+D:\JyothiERP System PDL\TrialMaker\TrialMaker\obj\Debug\GenerateResource.write.1.tlog
+D:\JyothiERP System PDL\TrialMaker\TrialMaker\obj\Debug\ResGen.write.1.tlog
+D:\JyothiERP System PDL\TrialMaker\TrialMaker\obj\Debug\erpLocker.dll
+D:\JyothiERP System PDL\TrialMaker\TrialMaker\obj\Debug\erpLocker.pdb
+E:\JyothiERP System PDL\TrialMaker\TrialMaker\bin\Debug\erpLocker.dll
+E:\JyothiERP System PDL\TrialMaker\TrialMaker\bin\Debug\erpLocker.pdb
+E:\JyothiERP System PDL\TrialMaker\TrialMaker\obj\Debug\ResolveAssemblyReference.cache
+E:\JyothiERP System PDL\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+E:\JyothiERP System PDL\TrialMaker\TrialMaker\obj\Debug\SerialBox.SerialBox.resources
+E:\JyothiERP System PDL\TrialMaker\TrialMaker\obj\Debug\GenerateResource.read.1.tlog
+E:\JyothiERP System PDL\TrialMaker\TrialMaker\obj\Debug\ResGen.read.1.tlog
+E:\JyothiERP System PDL\TrialMaker\TrialMaker\obj\Debug\GenerateResource.write.1.tlog
+E:\JyothiERP System PDL\TrialMaker\TrialMaker\obj\Debug\ResGen.write.1.tlog
+E:\JyothiERP System PDL\TrialMaker\TrialMaker\obj\Debug\erpLocker.dll
+E:\JyothiERP System PDL\TrialMaker\TrialMaker\obj\Debug\erpLocker.pdb
+E:\JyothiERP System PDL-19-11-2014\TrialMaker\TrialMaker\bin\Debug\erpLocker.dll
+E:\JyothiERP System PDL-19-11-2014\TrialMaker\TrialMaker\bin\Debug\erpLocker.pdb
+E:\JyothiERP System PDL-19-11-2014\TrialMaker\TrialMaker\obj\Debug\ResolveAssemblyReference.cache
+E:\JyothiERP System PDL-19-11-2014\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+E:\JyothiERP System PDL-19-11-2014\TrialMaker\TrialMaker\obj\Debug\SerialBox.SerialBox.resources
+E:\JyothiERP System PDL-19-11-2014\TrialMaker\TrialMaker\obj\Debug\GenerateResource.read.1.tlog
+E:\JyothiERP System PDL-19-11-2014\TrialMaker\TrialMaker\obj\Debug\ResGen.read.1.tlog
+E:\JyothiERP System PDL-19-11-2014\TrialMaker\TrialMaker\obj\Debug\GenerateResource.write.1.tlog
+E:\JyothiERP System PDL-19-11-2014\TrialMaker\TrialMaker\obj\Debug\ResGen.write.1.tlog
+E:\JyothiERP System PDL-19-11-2014\TrialMaker\TrialMaker\obj\Debug\erpLocker.dll
+E:\JyothiERP System PDL-19-11-2014\TrialMaker\TrialMaker\obj\Debug\erpLocker.pdb
+D:\JyothiERP System PDL-19-11-2014\TrialMaker\TrialMaker\bin\Debug\erpLocker.dll
+D:\JyothiERP System PDL-19-11-2014\TrialMaker\TrialMaker\bin\Debug\erpLocker.pdb
+D:\JyothiERP System PDL-19-11-2014\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+D:\JyothiERP System PDL-19-11-2014\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+D:\JyothiERP System PDL-19-11-2014\TrialMaker\TrialMaker\obj\Debug\SerialBox.SerialBox.resources
+D:\JyothiERP System PDL-19-11-2014\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+D:\JyothiERP System PDL-19-11-2014\TrialMaker\TrialMaker\obj\Debug\erpLocker.dll
+D:\JyothiERP System PDL-19-11-2014\TrialMaker\TrialMaker\obj\Debug\erpLocker.pdb
+D:\JyothiERP System PDL-19-12-14 DORA\TrialMaker\TrialMaker\bin\Debug\erpLocker.dll
+D:\JyothiERP System PDL-19-12-14 DORA\TrialMaker\TrialMaker\bin\Debug\erpLocker.pdb
+D:\JyothiERP System PDL-19-12-14 DORA\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+D:\JyothiERP System PDL-19-12-14 DORA\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+D:\JyothiERP System PDL-19-12-14 DORA\TrialMaker\TrialMaker\obj\Debug\SerialBox.SerialBox.resources
+D:\JyothiERP System PDL-19-12-14 DORA\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+D:\JyothiERP System PDL-19-12-14 DORA\TrialMaker\TrialMaker\obj\Debug\erpLocker.dll
+D:\JyothiERP System PDL-19-12-14 DORA\TrialMaker\TrialMaker\obj\Debug\erpLocker.pdb
+D:\JyothiERP System PDL-19-12-14 DORA - MTW\TrialMaker\TrialMaker\bin\Debug\erpLocker.dll
+D:\JyothiERP System PDL-19-12-14 DORA - MTW\TrialMaker\TrialMaker\bin\Debug\erpLocker.pdb
+D:\JyothiERP System PDL-19-12-14 DORA - MTW\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+D:\JyothiERP System PDL-19-12-14 DORA - MTW\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+D:\JyothiERP System PDL-19-12-14 DORA - MTW\TrialMaker\TrialMaker\obj\Debug\SerialBox.SerialBox.resources
+D:\JyothiERP System PDL-19-12-14 DORA - MTW\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+D:\JyothiERP System PDL-19-12-14 DORA - MTW\TrialMaker\TrialMaker\obj\Debug\erpLocker.dll
+D:\JyothiERP System PDL-19-12-14 DORA - MTW\TrialMaker\TrialMaker\obj\Debug\erpLocker.pdb
+D:\JyothiERP System PDL-19-12-14MTW\TrialMaker\TrialMaker\bin\Debug\erpLocker.dll
+D:\JyothiERP System PDL-19-12-14MTW\TrialMaker\TrialMaker\bin\Debug\erpLocker.pdb
+D:\JyothiERP System PDL-19-12-14MTW\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+D:\JyothiERP System PDL-19-12-14MTW\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+D:\JyothiERP System PDL-19-12-14MTW\TrialMaker\TrialMaker\obj\Debug\SerialBox.SerialBox.resources
+D:\JyothiERP System PDL-19-12-14MTW\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+D:\JyothiERP System PDL-19-12-14MTW\TrialMaker\TrialMaker\obj\Debug\erpLocker.dll
+D:\JyothiERP System PDL-19-12-14MTW\TrialMaker\TrialMaker\obj\Debug\erpLocker.pdb
+D:\JyothiERP System Source Code 24-6-15\TrialMaker\TrialMaker\bin\Debug\erpLocker.dll
+D:\JyothiERP System Source Code 24-6-15\TrialMaker\TrialMaker\bin\Debug\erpLocker.pdb
+D:\JyothiERP System Source Code 24-6-15\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+D:\JyothiERP System Source Code 24-6-15\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+D:\JyothiERP System Source Code 24-6-15\TrialMaker\TrialMaker\obj\Debug\SerialBox.SerialBox.resources
+D:\JyothiERP System Source Code 24-6-15\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+D:\JyothiERP System Source Code 24-6-15\TrialMaker\TrialMaker\obj\Debug\erpLocker.dll
+D:\JyothiERP System Source Code 24-6-15\TrialMaker\TrialMaker\obj\Debug\erpLocker.pdb
+D:\JyothiERP System Source Code 24-6-15 -DearDora\TrialMaker\TrialMaker\bin\Debug\erpLocker.dll
+D:\JyothiERP System Source Code 24-6-15 -DearDora\TrialMaker\TrialMaker\bin\Debug\erpLocker.pdb
+D:\JyothiERP System Source Code 24-6-15 -DearDora\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+D:\JyothiERP System Source Code 24-6-15 -DearDora\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+D:\JyothiERP System Source Code 24-6-15 -DearDora\TrialMaker\TrialMaker\obj\Debug\SerialBox.SerialBox.resources
+D:\JyothiERP System Source Code 24-6-15 -DearDora\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+D:\JyothiERP System Source Code 24-6-15 -DearDora\TrialMaker\TrialMaker\obj\Debug\erpLocker.dll
+D:\JyothiERP System Source Code 24-6-15 -DearDora\TrialMaker\TrialMaker\obj\Debug\erpLocker.pdb
+D:\JyothiERP System Source Code 9-7-15\TrialMaker\TrialMaker\bin\Debug\erpLocker.dll
+D:\JyothiERP System Source Code 9-7-15\TrialMaker\TrialMaker\bin\Debug\erpLocker.pdb
+D:\JyothiERP System Source Code 9-7-15\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+D:\JyothiERP System Source Code 9-7-15\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+D:\JyothiERP System Source Code 9-7-15\TrialMaker\TrialMaker\obj\Debug\SerialBox.SerialBox.resources
+D:\JyothiERP System Source Code 9-7-15\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+D:\JyothiERP System Source Code 9-7-15\TrialMaker\TrialMaker\obj\Debug\erpLocker.dll
+D:\JyothiERP System Source Code 9-7-15\TrialMaker\TrialMaker\obj\Debug\erpLocker.pdb
+G:\JyothiERP System Source Code 9-7-15\TrialMaker\TrialMaker\bin\Debug\erpLocker.dll
+G:\JyothiERP System Source Code 9-7-15\TrialMaker\TrialMaker\bin\Debug\erpLocker.pdb
+G:\JyothiERP System Source Code 9-7-15\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+G:\JyothiERP System Source Code 9-7-15\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+G:\JyothiERP System Source Code 9-7-15\TrialMaker\TrialMaker\obj\Debug\SerialBox.SerialBox.resources
+G:\JyothiERP System Source Code 9-7-15\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+G:\JyothiERP System Source Code 9-7-15\TrialMaker\TrialMaker\obj\Debug\erpLocker.dll
+G:\JyothiERP System Source Code 9-7-15\TrialMaker\TrialMaker\obj\Debug\erpLocker.pdb
+D:\JyothiERP System Source Code 12-9-15\TrialMaker\TrialMaker\bin\Debug\erpLocker.dll
+D:\JyothiERP System Source Code 12-9-15\TrialMaker\TrialMaker\bin\Debug\erpLocker.pdb
+D:\JyothiERP System Source Code 12-9-15\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+D:\JyothiERP System Source Code 12-9-15\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+D:\JyothiERP System Source Code 12-9-15\TrialMaker\TrialMaker\obj\Debug\SerialBox.SerialBox.resources
+D:\JyothiERP System Source Code 12-9-15\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+D:\JyothiERP System Source Code 12-9-15\TrialMaker\TrialMaker\obj\Debug\erpLocker.dll
+D:\JyothiERP System Source Code 12-9-15\TrialMaker\TrialMaker\obj\Debug\erpLocker.pdb
+D:\JyothiERP System Source Code 15-9-15\TrialMaker\TrialMaker\bin\Debug\erpLocker.dll
+D:\JyothiERP System Source Code 15-9-15\TrialMaker\TrialMaker\bin\Debug\erpLocker.pdb
+D:\JyothiERP System Source Code 15-9-15\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+D:\JyothiERP System Source Code 15-9-15\TrialMaker\TrialMaker\obj\Debug\SerialBox.SerialBox.resources
+D:\JyothiERP System Source Code 15-9-15\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+D:\JyothiERP System Source Code 15-9-15\TrialMaker\TrialMaker\obj\Debug\erpLocker.dll
+D:\JyothiERP System Source Code 15-9-15\TrialMaker\TrialMaker\obj\Debug\erpLocker.pdb
+D:\JyothiERP System Source Code 15-9-15\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+D:\JyothiERP System Source Code 18-9-15\TrialMaker\TrialMaker\bin\Debug\erpLocker.dll
+D:\JyothiERP System Source Code 18-9-15\TrialMaker\TrialMaker\bin\Debug\erpLocker.pdb
+D:\JyothiERP System Source Code 18-9-15\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+D:\JyothiERP System Source Code 18-9-15\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+D:\JyothiERP System Source Code 18-9-15\TrialMaker\TrialMaker\obj\Debug\SerialBox.SerialBox.resources
+D:\JyothiERP System Source Code 18-9-15\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+D:\JyothiERP System Source Code 18-9-15\TrialMaker\TrialMaker\obj\Debug\erpLocker.dll
+D:\JyothiERP System Source Code 18-9-15\TrialMaker\TrialMaker\obj\Debug\erpLocker.pdb
+D:\JyothiERP System code- 14-10-2015\TrialMaker\TrialMaker\bin\Debug\erpLocker.dll
+D:\JyothiERP System code- 14-10-2015\TrialMaker\TrialMaker\bin\Debug\erpLocker.pdb
+D:\JyothiERP System code- 14-10-2015\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+D:\JyothiERP System code- 14-10-2015\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+D:\JyothiERP System code- 14-10-2015\TrialMaker\TrialMaker\obj\Debug\SerialBox.SerialBox.resources
+D:\JyothiERP System code- 14-10-2015\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+D:\JyothiERP System code- 14-10-2015\TrialMaker\TrialMaker\obj\Debug\erpLocker.dll
+D:\JyothiERP System code- 14-10-2015\TrialMaker\TrialMaker\obj\Debug\erpLocker.pdb
+D:\JyothiERP System code- 22-10-2015\TrialMaker\TrialMaker\bin\Debug\erpLocker.dll
+D:\JyothiERP System code- 22-10-2015\TrialMaker\TrialMaker\bin\Debug\erpLocker.pdb
+D:\JyothiERP System code- 22-10-2015\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+D:\JyothiERP System code- 22-10-2015\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+D:\JyothiERP System code- 22-10-2015\TrialMaker\TrialMaker\obj\Debug\SerialBox.SerialBox.resources
+D:\JyothiERP System code- 22-10-2015\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+D:\JyothiERP System code- 22-10-2015\TrialMaker\TrialMaker\obj\Debug\erpLocker.dll
+D:\JyothiERP System code- 22-10-2015\TrialMaker\TrialMaker\obj\Debug\erpLocker.pdb
+D:\JyothiERP System code- 30-10-2015\TrialMaker\TrialMaker\bin\Debug\erpLocker.dll
+D:\JyothiERP System code- 30-10-2015\TrialMaker\TrialMaker\bin\Debug\erpLocker.pdb
+D:\JyothiERP System code- 30-10-2015\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+D:\JyothiERP System code- 30-10-2015\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+D:\JyothiERP System code- 30-10-2015\TrialMaker\TrialMaker\obj\Debug\SerialBox.SerialBox.resources
+D:\JyothiERP System code- 30-10-2015\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+D:\JyothiERP System code- 30-10-2015\TrialMaker\TrialMaker\obj\Debug\erpLocker.dll
+D:\JyothiERP System code- 30-10-2015\TrialMaker\TrialMaker\obj\Debug\erpLocker.pdb
+D:\JyothiERP System code- 6-11-2015\TrialMaker\TrialMaker\bin\Debug\erpLocker.dll
+D:\JyothiERP System code- 6-11-2015\TrialMaker\TrialMaker\bin\Debug\erpLocker.pdb
+D:\JyothiERP System code- 6-11-2015\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+D:\JyothiERP System code- 6-11-2015\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+D:\JyothiERP System code- 6-11-2015\TrialMaker\TrialMaker\obj\Debug\SerialBox.SerialBox.resources
+D:\JyothiERP System code- 6-11-2015\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+D:\JyothiERP System code- 6-11-2015\TrialMaker\TrialMaker\obj\Debug\erpLocker.dll
+D:\JyothiERP System code- 6-11-2015\TrialMaker\TrialMaker\obj\Debug\erpLocker.pdb
+D:\prerna\April16\JyothiERP\JyothiERP System code-13-1-2016\TrialMaker\TrialMaker\bin\Debug\erpLocker.dll
+D:\prerna\April16\JyothiERP\JyothiERP System code-13-1-2016\TrialMaker\TrialMaker\bin\Debug\erpLocker.pdb
+D:\prerna\April16\JyothiERP\JyothiERP System code-13-1-2016\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+D:\prerna\April16\JyothiERP\JyothiERP System code-13-1-2016\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+D:\prerna\April16\JyothiERP\JyothiERP System code-13-1-2016\TrialMaker\TrialMaker\obj\Debug\SerialBox.SerialBox.resources
+D:\prerna\April16\JyothiERP\JyothiERP System code-13-1-2016\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+D:\prerna\April16\JyothiERP\JyothiERP System code-13-1-2016\TrialMaker\TrialMaker\obj\Debug\erpLocker.dll
+D:\prerna\April16\JyothiERP\JyothiERP System code-13-1-2016\TrialMaker\TrialMaker\obj\Debug\erpLocker.pdb
+D:\Projects\JyothiERP System code-13-1-2016\TrialMaker\TrialMaker\bin\Debug\erpLocker.dll
+D:\Projects\JyothiERP System code-13-1-2016\TrialMaker\TrialMaker\bin\Debug\erpLocker.pdb
+D:\Projects\JyothiERP System code-13-1-2016\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csprojResolveAssemblyReference.cache
+D:\Projects\JyothiERP System code-13-1-2016\TrialMaker\TrialMaker\obj\Debug\SoftwareLocker.frmDialog.resources
+D:\Projects\JyothiERP System code-13-1-2016\TrialMaker\TrialMaker\obj\Debug\SerialBox.SerialBox.resources
+D:\Projects\JyothiERP System code-13-1-2016\TrialMaker\TrialMaker\obj\Debug\TrialMaker.csproj.GenerateResource.Cache
+D:\Projects\JyothiERP System code-13-1-2016\TrialMaker\TrialMaker\obj\Debug\erpLocker.dll
+D:\Projects\JyothiERP System code-13-1-2016\TrialMaker\TrialMaker\obj\Debug\erpLocker.pdb

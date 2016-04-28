@@ -1,0 +1,10 @@
+E:\JyothiInventoryManagenetSystem 3.0\IMSRequestServer\IMSRequestServer\obj\x86\Debug\IMSRequestServer.IMSServerForm.resources
+E:\JyothiInventoryManagenetSystem 3.0\IMSRequestServer\IMSRequestServer\obj\x86\Debug\IMSRequestServer.Resources.resources
+E:\JyothiInventoryManagenetSystem 3.0\IMSRequestServer\IMSRequestServer\obj\x86\Debug\IMSRequestServer.vbproj.GenerateResource.Cache
+E:\JyothiInventoryManagenetSystem 3.0\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.exe.config
+E:\JyothiInventoryManagenetSystem 3.0\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.exe
+E:\JyothiInventoryManagenetSystem 3.0\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.pdb
+E:\JyothiInventoryManagenetSystem 3.0\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.xml
+E:\JyothiInventoryManagenetSystem 3.0\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.exe
+E:\JyothiInventoryManagenetSystem 3.0\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.xml
+E:\JyothiInventoryManagenetSystem 3.0\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.pdb

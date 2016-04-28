@@ -1,0 +1,75 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Stockunits>
+    <UnitName>pcs</UnitName>
+    <MainUnitName>pcs</MainUnitName>
+    <SubUnitName />
+    <UnitConversion>1.000</UnitConversion>
+    <UnitType>0</UnitType>
+    <formalname>pices</formalname>
+    <Decimals>0</Decimals>
+  </Stockunits>
+  <Stockunits>
+    <UnitName>kgs</UnitName>
+    <MainUnitName>kgs</MainUnitName>
+    <SubUnitName />
+    <UnitConversion>1.000</UnitConversion>
+    <UnitType>0</UnitType>
+    <formalname>kilo grams</formalname>
+    <Decimals>3</Decimals>
+  </Stockunits>
+  <Stockunits>
+    <UnitName>mts</UnitName>
+    <MainUnitName>mts</MainUnitName>
+    <SubUnitName />
+    <UnitConversion>1.000</UnitConversion>
+    <UnitType>0</UnitType>
+    <formalname>meters</formalname>
+    <Decimals>2</Decimals>
+  </Stockunits>
+  <Stockunits>
+    <UnitName>lts</UnitName>
+    <MainUnitName>lts</MainUnitName>
+    <SubUnitName />
+    <UnitConversion>1.000</UnitConversion>
+    <UnitType>0</UnitType>
+    <formalname>liters</formalname>
+    <Decimals>3</Decimals>
+  </Stockunits>
+  <Stockunits>
+    <UnitName>bags</UnitName>
+    <MainUnitName>bags</MainUnitName>
+    <SubUnitName />
+    <UnitConversion>1.000</UnitConversion>
+    <UnitType>0</UnitType>
+    <formalname />
+    <Decimals>0</Decimals>
+  </Stockunits>
+  <Stockunits>
+    <UnitName>bags Of 50 kgs</UnitName>
+    <MainUnitName>bags</MainUnitName>
+    <SubUnitName>kgs</SubUnitName>
+    <UnitConversion>50.000</UnitConversion>
+    <UnitType>1</UnitType>
+    <formalname />
+    <Decimals>2</Decimals>
+  </Stockunits>
+  <Stockunits>
+    <UnitName>bags Of 25 kgs</UnitName>
+    <MainUnitName>bags</MainUnitName>
+    <SubUnitName>kgs</SubUnitName>
+    <UnitConversion>25.000</UnitConversion>
+    <UnitType>1</UnitType>
+    <formalname />
+    <Decimals>2</Decimals>
+  </Stockunits>
+  <Stockunits>
+    <UnitName>bags Of 100 kgs</UnitName>
+    <MainUnitName>bags</MainUnitName>
+    <SubUnitName>kgs</SubUnitName>
+    <UnitConversion>100.000</UnitConversion>
+    <UnitType>1</UnitType>
+    <formalname />
+    <Decimals>2</Decimals>
+  </Stockunits>
+</NewDataSet>

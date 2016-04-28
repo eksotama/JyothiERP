@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EmpAttendeceMonthlyDaywiseDataSet" targetNamespace="http://tempuri.org/EmpAttendeceMonthlyDaywiseDataSet.xsd" xmlns:mstns="http://tempuri.org/EmpAttendeceMonthlyDaywiseDataSet.xsd" xmlns="http://tempuri.org/EmpAttendeceMonthlyDaywiseDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EmpAttendeceMonthlyDaywiseDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="EmpAttendeceMonthlyDaywiseDataSet" msprop:Generator_UserDSName="EmpAttendeceMonthlyDaywiseDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Employee_x0020_Name" msprop:Generator_ColumnVarNameInTable="columnEmployee_Name" msprop:Generator_ColumnPropNameInRow="Employee_Name" msprop:Generator_ColumnPropNameInTable="Employee_NameColumn" msprop:Generator_UserColumnName="Employee Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="_Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="StartTime" msprop:Generator_ColumnVarNameInTable="columnStartTime" msprop:Generator_ColumnPropNameInRow="StartTime" msprop:Generator_ColumnPropNameInTable="StartTimeColumn" msprop:Generator_UserColumnName="StartTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EndTime" msprop:Generator_ColumnVarNameInTable="columnEndTime" msprop:Generator_ColumnPropNameInRow="EndTime" msprop:Generator_ColumnPropNameInTable="EndTimeColumn" msprop:Generator_UserColumnName="EndTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EStartTime" msprop:Generator_ColumnVarNameInTable="columnEStartTime" msprop:Generator_ColumnPropNameInRow="EStartTime" msprop:Generator_ColumnPropNameInTable="EStartTimeColumn" msprop:Generator_UserColumnName="EStartTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EEndTime" msprop:Generator_ColumnVarNameInTable="columnEEndTime" msprop:Generator_ColumnPropNameInRow="EEndTime" msprop:Generator_ColumnPropNameInTable="EEndTimeColumn" msprop:Generator_UserColumnName="EEndTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Over_x0020_Time" msprop:Generator_ColumnVarNameInTable="columnOver_Time" msprop:Generator_ColumnPropNameInRow="Over_Time" msprop:Generator_ColumnPropNameInTable="Over_TimeColumn" msprop:Generator_UserColumnName="Over Time" type="xs:double" minOccurs="0" />
+              <xs:element name="Late_x0020_Min" msprop:Generator_ColumnVarNameInTable="columnLate_Min" msprop:Generator_ColumnPropNameInRow="Late_Min" msprop:Generator_ColumnPropNameInTable="Late_MinColumn" msprop:Generator_UserColumnName="Late Min" type="xs:double" minOccurs="0" />
+              <xs:element name="Working_x0020_Min" msprop:Generator_ColumnVarNameInTable="columnWorking_Min" msprop:Generator_ColumnPropNameInRow="Working_Min" msprop:Generator_ColumnPropNameInTable="Working_MinColumn" msprop:Generator_UserColumnName="Working Min" type="xs:double" minOccurs="0" />
+              <xs:element name="TickCount" msprop:Generator_ColumnVarNameInTable="columnTickCount" msprop:Generator_ColumnPropNameInRow="TickCount" msprop:Generator_ColumnPropNameInTable="TickCountColumn" msprop:Generator_UserColumnName="TickCount" type="xs:double" minOccurs="0" />
+              <xs:element name="Narration" msprop:Generator_ColumnVarNameInTable="columnNarration" msprop:Generator_ColumnPropNameInRow="Narration" msprop:Generator_ColumnPropNameInTable="NarrationColumn" msprop:Generator_UserColumnName="Narration" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

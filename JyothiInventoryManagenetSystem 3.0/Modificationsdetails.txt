@@ -1,0 +1,12 @@
+﻿SQLFcmd.CommandText = "	CREATE TABLE  [couponmaster]( [Cname] [nvarchar](50) NULL,[cper] [float] NULL,[datefrom] [datetime] NULL,[dateto] [datetime] NULL,[MaxValues] [float] NULL,[UsedValue] [float] NULL,[MaxNoofUses] [float] NULL,[isActive] [bit] NULL,[Datefromvalue] [bigint] NULL,[DatetoValue] [bigint] NULL,[IsAllowOneTime] [bit] NULL) ON [PRIMARY] "
+SQLFcmd.CommandType = CommandType.Text
+SQLFcmd.ExecuteNonQuery()
+
+
+field changes  for table StockInvoiceDetails
+ALTER TABLE StockInvoiceDetails ADD [CDiscount] [float] NULL,[CouponName] [nvarchar](50) NULL,	[CDisCountPer] [float] NULL
+
+
+
+
+

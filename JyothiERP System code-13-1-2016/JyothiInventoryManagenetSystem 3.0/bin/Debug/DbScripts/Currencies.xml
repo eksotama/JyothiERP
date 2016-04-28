@@ -1,0 +1,681 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Currencies>
+    <CurrencyName>Afghanistan Afghani</CurrencyName>
+    <CurrencyCode>AFN</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Albania Lek</CurrencyName>
+    <CurrencyCode>ALL</CurrencyCode>
+    <CurrencySymbol>Lek</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Netherlands Antilles Guilder</CurrencyName>
+    <CurrencyCode>ANG</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Argentina Peso</CurrencyName>
+    <CurrencyCode>ARS</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Australia Dollar</CurrencyName>
+    <CurrencyCode>AUD</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Aruba Guilder</CurrencyName>
+    <CurrencyCode>AWG</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Azerbaijan New Manat</CurrencyName>
+    <CurrencyCode>AZN</CurrencyCode>
+    <CurrencySymbol>???</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Bosnia and Herzegovina Convertible Marka</CurrencyName>
+    <CurrencyCode>BAM</CurrencyCode>
+    <CurrencySymbol>KM</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Barbados Dollar</CurrencyName>
+    <CurrencyCode>BBD</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Bulgaria Lev</CurrencyName>
+    <CurrencyCode>BGN</CurrencyCode>
+    <CurrencySymbol>??</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Bermuda Dollar</CurrencyName>
+    <CurrencyCode>BMD</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Brunei Darussalam Dollar</CurrencyName>
+    <CurrencyCode>BND</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Bolivia Boliviano</CurrencyName>
+    <CurrencyCode>BOB</CurrencyCode>
+    <CurrencySymbol>$b</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Brazil Real</CurrencyName>
+    <CurrencyCode>BRL</CurrencyCode>
+    <CurrencySymbol>R$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Bahamas Dollar</CurrencyName>
+    <CurrencyCode>BSD</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Botswana Pula</CurrencyName>
+    <CurrencyCode>BWP</CurrencyCode>
+    <CurrencySymbol>P</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Belarus Ruble</CurrencyName>
+    <CurrencyCode>BYR</CurrencyCode>
+    <CurrencySymbol>p.</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Belize Dollar</CurrencyName>
+    <CurrencyCode>BZD</CurrencyCode>
+    <CurrencySymbol>BZ$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Canada Dollar</CurrencyName>
+    <CurrencyCode>CAD</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Switzerland Franc</CurrencyName>
+    <CurrencyCode>CHF</CurrencyCode>
+    <CurrencySymbol>CHF</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Chile Peso</CurrencyName>
+    <CurrencyCode>CLP</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>China Yuan Renminbi</CurrencyName>
+    <CurrencyCode>CNY</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Colombia Peso</CurrencyName>
+    <CurrencyCode>COP</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Costa Rica Colon</CurrencyName>
+    <CurrencyCode>CRC</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Cuba Peso</CurrencyName>
+    <CurrencyCode>CUP</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Czech Republic Koruna</CurrencyName>
+    <CurrencyCode>CZK</CurrencyCode>
+    <CurrencySymbol>K?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Denmark Krone</CurrencyName>
+    <CurrencyCode>DKK</CurrencyCode>
+    <CurrencySymbol>kr</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Dominican Republic Peso</CurrencyName>
+    <CurrencyCode>DOP</CurrencyCode>
+    <CurrencySymbol>RD$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Estonia Kroon</CurrencyName>
+    <CurrencyCode>EEK</CurrencyCode>
+    <CurrencySymbol>kr</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Egypt Pound</CurrencyName>
+    <CurrencyCode>EGP</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Euro Member Countries</CurrencyName>
+    <CurrencyCode>EUR</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Fiji Dollar</CurrencyName>
+    <CurrencyCode>FJD</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Falkland Islands (Malvinas) Pound</CurrencyName>
+    <CurrencyCode>FKP</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>United Kingdom Pound</CurrencyName>
+    <CurrencyCode>GBP</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Guernsey Pound</CurrencyName>
+    <CurrencyCode>GGP</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Ghana Cedis</CurrencyName>
+    <CurrencyCode>GHC</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Gibraltar Pound</CurrencyName>
+    <CurrencyCode>GIP</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Guatemala Quetzal</CurrencyName>
+    <CurrencyCode>GTQ</CurrencyCode>
+    <CurrencySymbol>Q</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Guyana Dollar</CurrencyName>
+    <CurrencyCode>GYD</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Hong Kong Dollar</CurrencyName>
+    <CurrencyCode>HKD</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Honduras Lempira</CurrencyName>
+    <CurrencyCode>HNL</CurrencyCode>
+    <CurrencySymbol>L</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Croatia Kuna</CurrencyName>
+    <CurrencyCode>HRK</CurrencyCode>
+    <CurrencySymbol>kn</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Hungary Forint</CurrencyName>
+    <CurrencyCode>HUF</CurrencyCode>
+    <CurrencySymbol>Ft</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Indonesia Rupiah</CurrencyName>
+    <CurrencyCode>IDR</CurrencyCode>
+    <CurrencySymbol>Rp</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Israel Shekel</CurrencyName>
+    <CurrencyCode>ILS</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Isle of Man Pound</CurrencyName>
+    <CurrencyCode>IMP</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>India Rupee</CurrencyName>
+    <CurrencyCode>INR</CurrencyCode>
+    <CurrencySymbol />
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Iran Rial</CurrencyName>
+    <CurrencyCode>IRR</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Iceland Krona</CurrencyName>
+    <CurrencyCode>ISK</CurrencyCode>
+    <CurrencySymbol>kr</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Jersey Pound</CurrencyName>
+    <CurrencyCode>JEP</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Jamaica Dollar</CurrencyName>
+    <CurrencyCode>JMD</CurrencyCode>
+    <CurrencySymbol>J$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Japan Yen</CurrencyName>
+    <CurrencyCode>JPY</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Kyrgyzstan Som</CurrencyName>
+    <CurrencyCode>KGS</CurrencyCode>
+    <CurrencySymbol>??</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Cambodia Riel</CurrencyName>
+    <CurrencyCode>KHR</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Korea (North) Won</CurrencyName>
+    <CurrencyCode>KPW</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Korea (South) Won</CurrencyName>
+    <CurrencyCode>KRW</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Cayman Islands Dollar</CurrencyName>
+    <CurrencyCode>KYD</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Kazakhstan Tenge</CurrencyName>
+    <CurrencyCode>KZT</CurrencyCode>
+    <CurrencySymbol>??</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Laos Kip</CurrencyName>
+    <CurrencyCode>LAK</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Lebanon Pound</CurrencyName>
+    <CurrencyCode>LBP</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Sri Lanka Rupee</CurrencyName>
+    <CurrencyCode>LKR</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Liberia Dollar</CurrencyName>
+    <CurrencyCode>LRD</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Lithuania Litas</CurrencyName>
+    <CurrencyCode>LTL</CurrencyCode>
+    <CurrencySymbol>Lt</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Latvia Lat</CurrencyName>
+    <CurrencyCode>LVL</CurrencyCode>
+    <CurrencySymbol>Ls</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Macedonia Denar</CurrencyName>
+    <CurrencyCode>MKD</CurrencyCode>
+    <CurrencySymbol>???</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Mongolia Tughrik</CurrencyName>
+    <CurrencyCode>MNT</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Mauritius Rupee</CurrencyName>
+    <CurrencyCode>MUR</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Mexico Peso</CurrencyName>
+    <CurrencyCode>MXN</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Malaysia Ringgit</CurrencyName>
+    <CurrencyCode>MYR</CurrencyCode>
+    <CurrencySymbol>RM</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Mozambique Metical</CurrencyName>
+    <CurrencyCode>MZN</CurrencyCode>
+    <CurrencySymbol>MT</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Namibia Dollar</CurrencyName>
+    <CurrencyCode>NAD</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Nigeria Naira</CurrencyName>
+    <CurrencyCode>NGN</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Nicaragua Cordoba</CurrencyName>
+    <CurrencyCode>NIO</CurrencyCode>
+    <CurrencySymbol>C$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Norway Krone</CurrencyName>
+    <CurrencyCode>NOK</CurrencyCode>
+    <CurrencySymbol>kr</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Nepal Rupee</CurrencyName>
+    <CurrencyCode>NPR</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>New Zealand Dollar</CurrencyName>
+    <CurrencyCode>NZD</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Oman Rial</CurrencyName>
+    <CurrencyCode>OMR</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Panama Balboa</CurrencyName>
+    <CurrencyCode>PAB</CurrencyCode>
+    <CurrencySymbol>B/.</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Peru Nuevo Sol</CurrencyName>
+    <CurrencyCode>PEN</CurrencyCode>
+    <CurrencySymbol>S/.</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Philippines Peso</CurrencyName>
+    <CurrencyCode>PHP</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Pakistan Rupee</CurrencyName>
+    <CurrencyCode>PKR</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Poland Zloty</CurrencyName>
+    <CurrencyCode>PLN</CurrencyCode>
+    <CurrencySymbol>z?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Paraguay Guarani</CurrencyName>
+    <CurrencyCode>PYG</CurrencyCode>
+    <CurrencySymbol>Gs</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Qatar Riyal</CurrencyName>
+    <CurrencyCode>QAR</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Romania New Leu</CurrencyName>
+    <CurrencyCode>RON</CurrencyCode>
+    <CurrencySymbol>lei</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Serbia Dinar</CurrencyName>
+    <CurrencyCode>RSD</CurrencyCode>
+    <CurrencySymbol>???.</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Russia Ruble</CurrencyName>
+    <CurrencyCode>RUB</CurrencyCode>
+    <CurrencySymbol>???</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Saudi Arabia Riyal</CurrencyName>
+    <CurrencyCode>SAR</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Solomon Islands Dollar</CurrencyName>
+    <CurrencyCode>SBD</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Seychelles Rupee</CurrencyName>
+    <CurrencyCode>SCR</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Sweden Krona</CurrencyName>
+    <CurrencyCode>SEK</CurrencyCode>
+    <CurrencySymbol>kr</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Singapore Dollar</CurrencyName>
+    <CurrencyCode>SGD</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Saint Helena Pound</CurrencyName>
+    <CurrencyCode>SHP</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Somalia Shilling</CurrencyName>
+    <CurrencyCode>SOS</CurrencyCode>
+    <CurrencySymbol>S</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Suriname Dollar</CurrencyName>
+    <CurrencyCode>SRD</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>El Salvador Colon</CurrencyName>
+    <CurrencyCode>SVC</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Syria Pound</CurrencyName>
+    <CurrencyCode>SYP</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Thailand Baht</CurrencyName>
+    <CurrencyCode>THB</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Turkey Lira</CurrencyName>
+    <CurrencyCode>TRL</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Turkey Lira</CurrencyName>
+    <CurrencyCode>TRY</CurrencyCode>
+    <CurrencySymbol />
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Trinidad and Tobago Dollar</CurrencyName>
+    <CurrencyCode>TTD</CurrencyCode>
+    <CurrencySymbol>TT$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Tuvalu Dollar</CurrencyName>
+    <CurrencyCode>TVD</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Taiwan New Dollar</CurrencyName>
+    <CurrencyCode>TWD</CurrencyCode>
+    <CurrencySymbol>NT$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Ukraine Hryvna</CurrencyName>
+    <CurrencyCode>UAH</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>United States Dollar</CurrencyName>
+    <CurrencyCode>USD</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Uruguay Peso</CurrencyName>
+    <CurrencyCode>UYU</CurrencyCode>
+    <CurrencySymbol>$U</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Uzbekistan Som</CurrencyName>
+    <CurrencyCode>UZS</CurrencyCode>
+    <CurrencySymbol>??</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Venezuela Bolivar</CurrencyName>
+    <CurrencyCode>VEF</CurrencyCode>
+    <CurrencySymbol>Bs</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Viet Nam Dong</CurrencyName>
+    <CurrencyCode>VND</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>East Caribbean Dollar</CurrencyName>
+    <CurrencyCode>XCD</CurrencyCode>
+    <CurrencySymbol>$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Yemen Rial</CurrencyName>
+    <CurrencyCode>YER</CurrencyCode>
+    <CurrencySymbol>?</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>South Africa Rand</CurrencyName>
+    <CurrencyCode>ZAR</CurrencyCode>
+    <CurrencySymbol>R</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+  <Currencies>
+    <CurrencyName>Zimbabwe Dollar</CurrencyName>
+    <CurrencyCode>ZWD</CurrencyCode>
+    <CurrencySymbol>Z$</CurrencySymbol>
+    <IsActive>1</IsActive>
+  </Currencies>
+</NewDataSet>

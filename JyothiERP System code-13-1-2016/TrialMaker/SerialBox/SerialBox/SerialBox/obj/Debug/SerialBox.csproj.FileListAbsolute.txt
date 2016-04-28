@@ -1,0 +1,9 @@
+D:\ABARIS BUSINESS MANAGER\TrialMaker\SerialBox\SerialBox\SerialBox\bin\Debug\SerialBoxes.dll
+D:\ABARIS BUSINESS MANAGER\TrialMaker\SerialBox\SerialBox\SerialBox\bin\Debug\SerialBoxes.pdb
+D:\ABARIS BUSINESS MANAGER\TrialMaker\SerialBox\SerialBox\SerialBox\bin\Debug\FilterControls.pdb
+D:\ABARIS BUSINESS MANAGER\TrialMaker\SerialBox\SerialBox\SerialBox\obj\Debug\ResolveAssemblyReference.cache
+D:\ABARIS BUSINESS MANAGER\TrialMaker\SerialBox\SerialBox\SerialBox\obj\Debug\SerialBox.SerialBox.resources
+D:\ABARIS BUSINESS MANAGER\TrialMaker\SerialBox\SerialBox\SerialBox\obj\Debug\GenerateResource.read.1.tlog
+D:\ABARIS BUSINESS MANAGER\TrialMaker\SerialBox\SerialBox\SerialBox\obj\Debug\GenerateResource.write.1.tlog
+D:\ABARIS BUSINESS MANAGER\TrialMaker\SerialBox\SerialBox\SerialBox\obj\Debug\SerialBoxes.dll
+D:\ABARIS BUSINESS MANAGER\TrialMaker\SerialBox\SerialBox\SerialBox\obj\Debug\SerialBoxes.pdb

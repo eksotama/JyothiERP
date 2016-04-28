@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <assetgroups>
+    <AssetGroupName>*Primary</AssetGroupName>
+    <AssetGroupNameTemp>*Primary</AssetGroupNameTemp>
+    <groupRoot>*Primary</groupRoot>
+    <grouplevel>1</grouplevel>
+  </assetgroups>
+</NewDataSet>

@@ -1,0 +1,254 @@
+﻿Module InventoryCostingModule
+    '*************************
+    Public Function GetPresetCostofStockItem(ByVal barcode As String) As Double
+        If barcode.Length = 0 Then
+            Return 0
+        Else
+            Return (SQLGetNumericFieldValue("select stockrate from stockdbf where barcode='" & barcode & "'", "stockrate"))
+        End If
+
+    End Function
+    '**************************
+
+    'COSTING METHODS
+
+    Sub UpdateAVGCOST(ByVal stockcode As String, ByVal stocksize As String, ByVal stockbatch As String, ByVal LOCATION As String)
+        Dim AVGTotalQty As Double = 0
+        Dim AvgTotalvalue As Double = 0
+        Dim netrate As Double = 0
+        AVGTotalQty = SQLGetNumericFieldValue("select sum(totalqty/unitcon) as tot from StockInvoiceRowItems where vouchername='PG' and isdelete=0 and stockcode='" & stockcode & "' and stocksize='" & stocksize & "' and batchno='" & stockbatch & "'  AND LOCATION='" & location & "'", "tot")
+        AVGTotalQty = AVGTotalQty - SQLGetNumericFieldValue("select sum(totalqty/unitcon) as tot from StockInvoiceRowItems where vouchername='PR' and isdelete=0 and stockcode='" & stockcode & "' and stocksize='" & stocksize & "' and batchno='" & stockbatch & "' AND LOCATION='" & LOCATION & "'", "tot")
+
+        AVGTotalQty = AVGTotalQty + SQLGetNumericFieldValue("select sum(optotalqty/unitcon) as tot from stockdbf where stockcode='" & stockcode & "' and stocksize='" & stocksize & "' and batchno='" & stockbatch & "' AND LOCATION='" & LOCATION & "'", "tot")
+
+        AvgTotalvalue = SQLGetNumericFieldValue("select sum(stockrate*totalqty/unitcon) as tot from StockInvoiceRowItems where vouchername='PG' and isdelete=0 and stockcode='" & stockcode & "' and stocksize='" & stocksize & "' and batchno='" & stockbatch & "' AND LOCATION='" & LOCATION & "'", "tot")
+        AvgTotalvalue = AvgTotalvalue - SQLGetNumericFieldValue("select sum(stockrate*totalqty/unitcon) as tot from StockInvoiceRowItems where vouchername='PR' and isdelete=0 and stockcode='" & stockcode & "' and stocksize='" & stocksize & "' and batchno='" & stockbatch & "' AND LOCATION='" & LOCATION & "'", "tot")
+
+        AvgTotalvalue = AvgTotalvalue + SQLGetNumericFieldValue("select sum(opstockrate*optotalqty/unitcon) as tot from stockdbf where stockcode='" & stockcode & "' and stocksize='" & stocksize & "' and batchno='" & stockbatch & "' AND LOCATION='" & LOCATION & "'", "tot")
+        netrate = AvgTotalvalue / AVGTotalQty
+
+        ExecuteSQLQuery("UPDATE stockdbf set stockrate=" & FormatNumber(netrate,ErpDecimalPlaces, , , TriState.False) & " where stockcode='" & stockcode & "' and stocksize='" & stocksize & "' and batchno='" & stockbatch & "' AND LOCATION='" & LOCATION & "'")
+
+    End Sub
+    Public Sub UpdateStockItemPriceMethod(ByVal stockcode As String, ByVal stocksize As String, ByVal stockbatch As String, ByVal location As String)
+        Dim StockCostMethodName As String = "FIFO"
+        StockCostMethodName = SQLGetStringFieldValue("select costmethod from stockdbf where stockcode='" & stockcode & "' and stocksize='" & stocksize & "' and batchno='" & stockbatch & "'", "costmethod")
+        If StockCostMethodName.Length = 0 Then
+            StockCostMethodName = "FIFO"
+        End If
+        If UCase(StockCostMethodName) = UCase("AVERAGE") Then
+            UpdateAVGCOST(stockcode, stocksize, stockbatch, location)
+        ElseIf UCase(StockCostMethodName) = UCase("FIFO") Then
+            UpdateFIFOCost(stockcode, stocksize, stockbatch, location)
+        ElseIf UCase(StockCostMethodName) = UCase("LAST PURCHASED") Then
+            Dim sQLSTR As String = ""
+            sQLSTR = "SELECT MAX(STOCKRATE) AS NETRATE FROM STOCKINVOICEROWITEMS WHERE (TRANSDATEVALUE=(SELECT MAX(TRANSDATEVALUE) FROM STOCKINVOICEROWITEMS AS TB " _
+            & " WHERE (TB.VOUCHERNAME='PG') AND TB.STOCKCODE='" & stockcode & "' AND TB.STOCKSIZE='" & stocksize & "' AND TB.BATCHNO='" & stockbatch & "' AND TB.LOCATION='" & location & "')) "
+
+            ExecuteSQLQuery("UPDATE stockdbf set stockrate=" & FormatNumber(SQLGetNumericFieldValue(sQLSTR, "NETRATE"),ErpDecimalPlaces, , , TriState.False) & " where stockcode='" & stockcode & "' and stocksize='" & stocksize & "' and batchno='" & stockbatch & "' AND LOCATION='" & location & "'")
+        ElseIf UCase(StockCostMethodName) = UCase("Zero Cost") Then
+            ExecuteSQLQuery("UPDATE stockdbf set stockrate=0 where stockcode='" & stockcode & "' and stocksize='" & stocksize & "' and batchno='" & stockbatch & "'  AND LOCATION='" & location & "'")
+        Else
+
+        End If
+    End Sub
+
+    Sub UpdateFIFOCost(ByVal stockcode As String, ByVal stocksize As String, ByVal stockbatch As String, ByVal LOCATION As String)
+        Dim viewQstr As String = ""
+        Dim SoldstockQty As Double = 0
+
+        SoldstockQty = SQLGetNumericFieldValue("SELECT (CASE WHEN SUM(TotalQty) IS NULL THEN 0 ELSE SUM(TOTALQTY) END) AS TOT FROM  StockInvoiceRowItems AS T2 WHERE (VoucherName IN ('SD', 'POS')) AND (Isdelete = 0) AND (StockCode ='" & stockcode & "') AND (StockSize ='" & stocksize & "') AND (BatchNo = '" & stockbatch & "') AND (LOCATION='" & LOCATION & "')", "TOT")
+        SoldstockQty = SoldstockQty - SQLGetNumericFieldValue("SELECT (CASE WHEN SUM(TotalQty) IS NULL THEN 0 ELSE SUM(TOTALQTY) END) AS TOT FROM  StockInvoiceRowItems AS T2 WHERE (VoucherName='SR') AND (Isdelete = 0) AND (StockCode ='" & stockcode & "') AND (StockSize ='" & stocksize & "') AND (BatchNo = '" & stockbatch & "') AND (LOCATION='" & LOCATION & "')", "TOT")
+        Dim currenttotalqty As Double = 0
+        currenttotalqty = SQLGetNumericFieldValue("select totalqty from stockdbf where STOCKCODE='" & stockcode & "' AND STOCKSIZE='" & stocksize & "' AND BATCHNO='" & stockbatch & "' AND LOCATION='" & LOCATION & "'", "totalqty")
+
+        If SQLGetNumericFieldValue("SELECT OPTOTALQTY FROM STOCKDBF where STOCKCODE='" & stockcode & "' AND STOCKSIZE='" & stocksize & "' AND BATCHNO='" & stockbatch & "' AND LOCATION='" & LOCATION & "'", "OPTOTALQTY") > 0 Then
+            viewQstr = "SELECT  0 AS SNo, StockCode, 0 AS TransDateValue, UNITCON, OpTotalQty AS PQTY, OpstockRate AS RATE, " & SoldstockQty & " AS TSOLD FROM STOCKDBF where STOCKCODE='" & stockcode & "' AND STOCKSIZE='" & stocksize & "' AND BATCHNO='" & stockbatch & "' AND  LOCATION='" & LOCATION & "' UNION ALL "
+        Else
+            viewQstr = ""
+        End If
+
+        viewQstr = viewQstr & "SELECT  ROW_NUMBER() OVER (ORDER BY TransDateValue,transcode) AS [SNo], StockCode, TransDateValue,UNITCON , (CASE WHEN VOUCHERNAME = 'PG' THEN TotalQty ELSE 0 - TotalQty END) AS PQTY, " _
+        & "StockRate AS RATE," & SoldstockQty & "  AS TSOLD " _
+        & " FROM StockInvoiceRowItems AS T1  WHERE  (Isdelete = 0) AND (VoucherName IN ('PG', 'PR')) AND  " _
+        & " STOCKCODE='" & stockcode & "' AND STOCKSIZE='" & stocksize & "' AND BATCHNO='" & stockbatch & "' AND LOCATION='" & LOCATION & "'"
+
+        PriceSQLQuery("DROP VIEW FIFOVIEW")
+        PriceSQLQuery("CREATE VIEW FIFOVIEW AS " & viewQstr)
+
+        Dim PriceQstr As String = ""
+        'SUM(CASE WHEN PQTY > 0 THEN RATE * TDIFF ELSE RATE * PQTY END) AS NETRATE
+
+        PriceQstr = "SELECT SUM(NETPRICE)/" & currenttotalqty & " AS NETRATE FROM (SELECT   CASE WHEN  ROW_NUMBER () OVER (ORDER BY SNO)=1 THEN RATE * SALESQTY/ UNITCON ELSE RATE * PQTY/ UNITCON  END AS netprice " _
+        & " FROM (SELECT  *,(SELECT SUM(PQTY) AS Expr1 FROM FIFOVIEW  WHERE (SNo <= TB1.SNo)) - TSOLD AS SALESQTY FROM  FIFOVIEW AS TB1) AS derivedtbl_1 " _
+        & " WHERE  (SALESQTY > 0) ) AS FINALTBL "
+
+
+
+        '   PriceQstr = "SELECT SUM(CASE WHEN PQTY>0 THEN RATE * LOSTA/ UNITCON ELSE RATE * PQTY/ UNITCON END)/ " & currenttotalqty & " AS netprice FROM (SELECT sno, StockCode, TransDateValue, PQTY, RATE, TSOLD, UnitCon,(SELECT SUM(PQTY) AS Expr1  FROM  FIFOview " _
+        '& " WHERE (SNo <= TB1.SNo)) - TSOLD AS LOSTA   FROM  fIFOview AS TB1) AS derivedtbl_1 " _
+        '& "WHERE     (LOSTA > 0)"
+        ExecuteSQLQuery("UPDATE stockdbf set stockrate=" & FormatNumber(SQLGetNumericFieldValue(PriceQstr, "NETRATE"),ErpDecimalPlaces, , , TriState.False) & " where stockcode='" & stockcode & "' and stocksize='" & stocksize & "' and batchno='" & stockbatch & "' AND LOCATION='" & LOCATION & "'")
+
+    End Sub
+   
+
+    Function PriceSQLQuery(ByVal SQLInsertString As String) As Boolean
+        Dim err As Boolean = True
+        Dim SqlConn As New SqlClient.SqlConnection
+        Dim Sqlcmmd As New SqlClient.SqlCommand
+        Try
+            SqlConn.ConnectionString = ConnectionStrinG
+            SqlConn.Open()
+            Sqlcmmd.Connection = SqlConn
+            Sqlcmmd.CommandText = SQLInsertString
+            Sqlcmmd.CommandType = CommandType.Text
+            Sqlcmmd.ExecuteNonQuery()
+        Catch ex As Exception
+            err = False
+            MsgBox(ex.Message)
+        Finally
+            SqlConn.Close()
+            SqlConn = Nothing
+            Sqlcmmd.Connection = Nothing
+        End Try
+        Return err
+    End Function
+End Module
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Public Function GetPresetCostofStockItem(ByVal barcode As String) As Double
+        If barcode.Length = 0 Then
+            Return 0
+        Else
+            Return (SQLGetNumericFieldValue("select stockrate from stockdbf where barcode='" & barcode & "'", "stockrate"))
+        End If
+
+    End Function
+    '**************************
+
+    'COSTING METHODS
+
+    Sub UpdateAVGCOST(ByVal stockcode As String, ByVal stocksize As String, ByVal stockbatch As String, ByVal LOCATION As String)
+        Dim AVGTotalQty As Double = 0
+        Dim AvgTotalvalue As Double = 0
+        Dim netrate As Double = 0
+        AVGTotalQty = SQLGetNumericFieldValue("select sum(totalqty/unitcon) as tot from StockInvoiceRowItems where (vouchername in ('PG','SJin','DP')) and isdelete=0 and stockcode='" & stockcode & "' and stocksize='" & stocksize & "' and batchno='" & stockbatch & "'  AND LOCATION='" & LOCATION & "'", "tot")
+        AVGTotalQty = AVGTotalQty - SQLGetNumericFieldValue("select sum(totalqty/unitcon) as tot from StockInvoiceRowItems where vouchername='PR' and isdelete=0 and stockcode='" & stockcode & "' and stocksize='" & stocksize & "' and batchno='" & stockbatch & "' AND LOCATION='" & LOCATION & "'", "tot")
+
+        AVGTotalQty = AVGTotalQty + SQLGetNumericFieldValue("select sum(optotalqty/unitcon) as tot from stockdbf where stockcode='" & stockcode & "' and stocksize='" & stocksize & "' and batchno='" & stockbatch & "' AND LOCATION='" & LOCATION & "'", "tot")
+
+        AvgTotalvalue = SQLGetNumericFieldValue("select sum(stockrate*totalqty/unitcon) as tot from StockInvoiceRowItems where  (vouchername in ('PG','SJin','DP')) and isdelete=0 and stockcode='" & stockcode & "' and stocksize='" & stocksize & "' and batchno='" & stockbatch & "' AND LOCATION='" & LOCATION & "'", "tot")
+        AvgTotalvalue = AvgTotalvalue - SQLGetNumericFieldValue("select sum(stockrate*totalqty/unitcon) as tot from StockInvoiceRowItems where vouchername='PR' and isdelete=0 and stockcode='" & stockcode & "' and stocksize='" & stocksize & "' and batchno='" & stockbatch & "' AND LOCATION='" & LOCATION & "'", "tot")
+
+        AvgTotalvalue = AvgTotalvalue + SQLGetNumericFieldValue("select sum(opstockrate*optotalqty/unitcon) as tot from stockdbf where stockcode='" & stockcode & "' and stocksize='" & stocksize & "' and batchno='" & stockbatch & "' AND LOCATION='" & LOCATION & "'", "tot")
+        If AVGTotalQty > 0 Then
+            netrate = AvgTotalvalue / AVGTotalQty
+        Else
+            netrate = 0
+        End If
+        ExecuteSQLQuery("UPDATE stockdbf set stockrate=" & FormatNumber(netrate,ErpDecimalPlaces, , , TriState.False) & " where stockcode='" & stockcode & "' and stocksize='" & stocksize & "' and batchno='" & stockbatch & "' AND LOCATION='" & LOCATION & "'")
+
+    End Sub
+    Public Sub UpdateStockItemPriceMethod(ByVal stockcode As String, ByVal stocksize As String, ByVal stockbatch As String, ByVal location As String)
+        Dim StockCostMethodName As String = "AVERAGE"
+        stockbatch = ""
+        StockCostMethodName = SQLGetStringFieldValue("select costmethod from stockdbf where stockcode='" & stockcode & "' and stocksize='" & stocksize & "' and batchno='" & stockbatch & "'", "costmethod")
+        If StockCostMethodName.Length = 0 Then
+            StockCostMethodName = "AVERAGE"
+        End If
+        If UCase(StockCostMethodName) = UCase("AVERAGE") Then
+            UpdateAVGCOST(stockcode, stocksize, stockbatch, location)
+        ElseIf UCase(StockCostMethodName) = UCase("FIFO") Then
+            UpdateFIFOCost(stockcode, stocksize, stockbatch, location)
+        ElseIf UCase(StockCostMethodName) = UCase("LAST PURCHASED") Then
+            Dim sQLSTR As String = ""
+            sQLSTR = "SELECT MAX(STOCKRATE) AS NETRATE FROM STOCKINVOICEROWITEMS WHERE (TRANSDATEVALUE=(SELECT MAX(TRANSDATEVALUE) FROM STOCKINVOICEROWITEMS AS TB " _
+            & " WHERE (TB.VOUCHERNAME='PG' OR TB.VOUCHERNAME='DP') AND TB.STOCKCODE='" & stockcode & "' AND TB.STOCKSIZE='" & stocksize & "' AND TB.BATCHNO='" & stockbatch & "' AND TB.LOCATION='" & location & "')) "
+            Dim LPnetrate As Double = 0
+            LPnetrate = SQLGetNumericFieldValue(sQLSTR, "NETRATE")
+            If LPnetrate > 0 Then
+                ExecuteSQLQuery("UPDATE stockdbf set stockrate=" & FormatNumber(LPnetrate,ErpDecimalPlaces, , , TriState.False) & " where stockcode='" & stockcode & "' and stocksize='" & stocksize & "' and batchno='" & stockbatch & "' AND LOCATION='" & location & "'")
+            End If
+        ElseIf UCase(StockCostMethodName) = UCase("Zero Cost") Then
+            ExecuteSQLQuery("UPDATE stockdbf set stockrate=0 where stockcode='" & stockcode & "' and stocksize='" & stocksize & "' and batchno='" & stockbatch & "'  AND LOCATION='" & location & "'")
+        Else
+
+        End If
+    End Sub
+
+    Sub UpdateFIFOCost(ByVal stockcode As String, ByVal stocksize As String, ByVal stockbatch As String, ByVal LOCATION As String)
+        Dim viewQstr As String = ""
+        Dim SoldstockQty As Double = 0
+        Dim Unitconverion As Double = 0
+        
+        Unitconverion = SQLGetNumericFieldValue("select unitcon from stockdbf  where STOCKCODE='" & stockcode & "' AND STOCKSIZE='" & stocksize & "' AND BATCHNO='" & stockbatch & "' AND LOCATION='" & LOCATION & "'", "unitcon")
+        SoldstockQty = SQLGetNumericFieldValue("SELECT (CASE WHEN SUM(TotalQty) IS NULL THEN 0 ELSE SUM(TOTALQTY) END) AS TOT FROM  StockInvoiceRowItems AS T2 WHERE (VoucherName IN ('SD', 'POS','SJout')) AND (Isdelete = 0) AND (StockCode ='" & stockcode & "') AND (StockSize ='" & stocksize & "') AND (BatchNo = '" & stockbatch & "') AND (LOCATION='" & LOCATION & "')", "TOT")
+        SoldstockQty = SoldstockQty - SQLGetNumericFieldValue("SELECT (CASE WHEN SUM(TotalQty) IS NULL THEN 0 ELSE SUM(TOTALQTY) END) AS TOT FROM  StockInvoiceRowItems AS T2 WHERE (VoucherName='SR') AND (Isdelete = 0) AND (StockCode ='" & stockcode & "') AND (StockSize ='" & stocksize & "') AND (BatchNo = '" & stockbatch & "') AND (LOCATION='" & LOCATION & "')", "TOT")
+        Dim currenttotalqty As Double = 0
+        currenttotalqty = SQLGetNumericFieldValue("select totalqty from stockdbf where STOCKCODE='" & stockcode & "' AND STOCKSIZE='" & stocksize & "' AND BATCHNO='" & stockbatch & "' AND LOCATION='" & LOCATION & "'", "totalqty")
+        If currenttotalqty = 0 Then
+            currenttotalqty = 1
+        Else
+            currenttotalqty = currenttotalqty / Unitconverion
+        End If
+
+        If SQLGetNumericFieldValue("SELECT OPTOTALQTY FROM STOCKDBF where STOCKCODE='" & stockcode & "' AND STOCKSIZE='" & stocksize & "' AND BATCHNO='" & stockbatch & "' AND LOCATION='" & LOCATION & "'", "OPTOTALQTY") > 0 Then
+            viewQstr = "SELECT  0 AS SNo, OpTotalQty AS PQTY, OpstockRate AS RATE, " & SoldstockQty & " AS TSOLD FROM STOCKDBF where STOCKCODE='" & stockcode & "' AND STOCKSIZE='" & stocksize & "' AND BATCHNO='" & stockbatch & "' AND  LOCATION='" & LOCATION & "' UNION ALL "
+        Else
+            viewQstr = ""
+        End If
+
+        viewQstr = viewQstr & "SELECT  ROW_NUMBER() OVER (ORDER BY TransDateValue,transcode) AS [SNo],  (CASE WHEN VOUCHERNAME IN ('PG','SJIn','DP') THEN TotalQty ELSE 0 - TotalQty END) AS PQTY, " _
+        & "StockRate AS RATE," & SoldstockQty & "  AS TSOLD " _
+        & " FROM StockInvoiceRowItems AS T1  WHERE  (Isdelete = 0) AND (VoucherName IN ('PG', 'PR','SJin','DP')) AND  " _
+        & " STOCKCODE='" & stockcode & "' AND STOCKSIZE='" & stocksize & "' AND BATCHNO='" & stockbatch & "' AND LOCATION='" & LOCATION & "'"
+
+        PriceSQLQuery("DROP VIEW FIFOVIEW")
+        PriceSQLQuery("CREATE VIEW FIFOVIEW AS " & viewQstr)
+
+        Dim PriceQstr As String = ""
+        'SUM(CASE WHEN PQTY > 0 THEN RATE * TDIFF ELSE RATE * PQTY END) AS NETRATE
+
+        PriceQstr = "SELECT SUM(NETPRICE)/" & currenttotalqty & " AS NETRATE FROM (SELECT   CASE WHEN  ROW_NUMBER () OVER (ORDER BY SNO)=1 THEN RATE * SALESQTY/ " & Unitconverion & " ELSE RATE * PQTY/ " & Unitconverion & "  END AS netprice " _
+        & " FROM (SELECT  *,(SELECT SUM(PQTY) AS Expr1 FROM " _
+        & "  FIFOVIEW " _
+        & " WHERE (SNo <= TB1.SNo)) - TSOLD AS SALESQTY FROM  FIFOVIEW AS TB1) AS derivedtbl_1 " _
+        & " WHERE  (SALESQTY > 0) ) AS FINALTBL "
+
+
+
+
+     
+        ExecuteSQLQuery("UPDATE stockdbf set stockrate=" & FormatNumber(SQLGetNumericFieldValue(PriceQstr, "NETRATE"),ErpDecimalPlaces, , , TriState.False) & " where stockcode='" & stockcode & "' and stocksize='" & stocksize & "' and batchno='" & stockbatch & "' AND LOCATION='" & LOCATION & "'")
+
+        '   PriceQstr = "SELECT SUM(NETPRICE)/" & currenttotalqty & " AS NETRATE FROM (SELECT   CASE WHEN  ROW_NUMBER () OVER (ORDER BY SNO)=1 THEN RATE * SALESQTY/ " & Unitconverion & " ELSE RATE * PQTY/ " & Unitconverion & "  END AS netprice " _
+        '& " FROM (SELECT  *,(SELECT SUM(PQTY) AS Expr1 FROM " _
+        '& " (" & viewQstr & ") AS FIFOVIEW " _
+        '& " WHERE (SNo <= TB1.SNo)) - TSOLD AS SALESQTY FROM  FIFOVIEW AS TB1) AS derivedtbl_1 " _
+        '& " WHERE  (SALESQTY > 0) ) AS FINALTBL "
+
+    End Sub
+   
+
+    Function PriceSQLQuery(ByVal SQLInsertString As String) As Boolean
+        Dim err As Boolean = True
+        Dim SqlConn As New SqlClient.SqlConnection
+        Dim Sqlcmmd As New SqlClient.SqlCommand
+        Try
+            SqlConn.ConnectionString = ConnectionStrinG
+            SqlConn.Open()
+            Sqlcmmd.Connection = SqlConn
+            Sqlcmmd.CommandText = SQLInsertString
+            Sqlcmmd.CommandType = CommandType.Text
+            Sqlcmmd.ExecuteNonQuery()
+        Catch ex As Exception
+            err = False
+
+        Finally
+            SqlConn.Close()
+            SqlConn = Nothing
+            Sqlcmmd.Connection = Nothing
+        End Try
+        Return err
+    End Function
+	=++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

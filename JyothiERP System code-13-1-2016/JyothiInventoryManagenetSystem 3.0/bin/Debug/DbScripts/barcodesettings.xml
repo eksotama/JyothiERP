@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <barcodesettings>
+    <barcodelength>30</barcodelength>
+    <Isreplacezeros>false</Isreplacezeros>
+    <Isautofill>true</Isautofill>
+    <FixedLength>false</FixedLength>
+    <BarcodeType>CODE128</BarcodeType>
+  </barcodesettings>
+</NewDataSet>

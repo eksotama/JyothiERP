@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EmployeIDMonitorDataSet" targetNamespace="http://tempuri.org/EmployeIDMonitorDataSet.xsd" xmlns:mstns="http://tempuri.org/EmployeIDMonitorDataSet.xsd" xmlns="http://tempuri.org/EmployeIDMonitorDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EmployeIDMonitorDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="EmployeIDMonitorDataSet" msprop:Generator_UserDSName="EmployeIDMonitorDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Sno" msprop:Generator_ColumnVarNameInTable="columnSno" msprop:Generator_ColumnPropNameInRow="Sno" msprop:Generator_ColumnPropNameInTable="SnoColumn" msprop:Generator_UserColumnName="Sno" type="xs:double" minOccurs="0" />
+              <xs:element name="Employee_x0020_ID" msprop:Generator_ColumnVarNameInTable="columnEmployee_ID" msprop:Generator_ColumnPropNameInRow="Employee_ID" msprop:Generator_ColumnPropNameInTable="Employee_IDColumn" msprop:Generator_UserColumnName="Employee ID" type="xs:string" minOccurs="0" />
+              <xs:element name="Employee_x0020_Name" msprop:Generator_ColumnVarNameInTable="columnEmployee_Name" msprop:Generator_ColumnPropNameInRow="Employee_Name" msprop:Generator_ColumnPropNameInTable="Employee_NameColumn" msprop:Generator_UserColumnName="Employee Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Contract_x0020_Expiry" msprop:Generator_ColumnVarNameInTable="columnContract_Expiry" msprop:Generator_ColumnPropNameInRow="Contract_Expiry" msprop:Generator_ColumnPropNameInTable="Contract_ExpiryColumn" msprop:Generator_UserColumnName="Contract Expiry" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Passport_x0020_Expiry" msprop:Generator_ColumnVarNameInTable="columnPassport_Expiry" msprop:Generator_ColumnPropNameInRow="Passport_Expiry" msprop:Generator_ColumnPropNameInTable="Passport_ExpiryColumn" msprop:Generator_UserColumnName="Passport Expiry" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="VISA_x0020_Expiry" msprop:Generator_ColumnVarNameInTable="columnVISA_Expiry" msprop:Generator_ColumnPropNameInRow="VISA_Expiry" msprop:Generator_ColumnPropNameInTable="VISA_ExpiryColumn" msprop:Generator_UserColumnName="VISA Expiry" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Emirate_x0020_Expiry" msprop:Generator_ColumnVarNameInTable="columnEmirate_Expiry" msprop:Generator_ColumnPropNameInRow="Emirate_Expiry" msprop:Generator_ColumnPropNameInTable="Emirate_ExpiryColumn" msprop:Generator_UserColumnName="Emirate Expiry" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Labour_x0020_Card_x0020_Expiry" msprop:Generator_ColumnVarNameInTable="columnLabour_Card_Expiry" msprop:Generator_ColumnPropNameInRow="Labour_Card_Expiry" msprop:Generator_ColumnPropNameInTable="Labour_Card_ExpiryColumn" msprop:Generator_UserColumnName="Labour Card Expiry" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Medical_x0020_Expiry" msprop:Generator_ColumnVarNameInTable="columnMedical_Expiry" msprop:Generator_ColumnPropNameInRow="Medical_Expiry" msprop:Generator_ColumnPropNameInTable="Medical_ExpiryColumn" msprop:Generator_UserColumnName="Medical Expiry" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Leave_x0020_Salary_x0020_Due" msprop:Generator_ColumnVarNameInTable="columnLeave_Salary_Due" msprop:Generator_ColumnPropNameInRow="Leave_Salary_Due" msprop:Generator_ColumnPropNameInTable="Leave_Salary_DueColumn" msprop:Generator_UserColumnName="Leave Salary Due" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Air_x0020_Ticket_x0020_Due" msprop:Generator_ColumnVarNameInTable="columnAir_Ticket_Due" msprop:Generator_ColumnPropNameInRow="Air_Ticket_Due" msprop:Generator_ColumnPropNameInTable="Air_Ticket_DueColumn" msprop:Generator_UserColumnName="Air Ticket Due" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

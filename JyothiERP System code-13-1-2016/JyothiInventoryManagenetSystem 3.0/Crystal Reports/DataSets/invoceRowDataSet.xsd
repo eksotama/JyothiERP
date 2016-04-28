@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="invoceRowDataSet" targetNamespace="http://tempuri.org/invoceRowDataSet.xsd" xmlns:mstns="http://tempuri.org/invoceRowDataSet.xsd" xmlns="http://tempuri.org/invoceRowDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="MESWERPDBDD109ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MESWERPDBDD109ConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.JyothiPharmaERPSystem3.My.MySettings.GlobalReference.Default.MESWERPDBDD109ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="invoceRowDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="invoceRowDataSet" msprop:Generator_UserDSName="invoceRowDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Transcode" msprop:Generator_ColumnVarNameInTable="columnTranscode" msprop:Generator_ColumnPropNameInRow="Transcode" msprop:Generator_ColumnPropNameInTable="TranscodeColumn" msprop:Generator_UserColumnName="Transcode" type="xs:string" minOccurs="0" />
+              <xs:element name="Transdate" msprop:Generator_ColumnVarNameInTable="columnTransdate" msprop:Generator_ColumnPropNameInRow="Transdate" msprop:Generator_ColumnPropNameInTable="TransdateColumn" msprop:Generator_UserColumnName="Transdate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="qutono" msprop:Generator_ColumnVarNameInTable="columnqutono" msprop:Generator_ColumnPropNameInRow="qutono" msprop:Generator_ColumnPropNameInTable="qutonoColumn" msprop:Generator_UserColumnName="qutono" type="xs:string" minOccurs="0" />
+              <xs:element name="stocksize" msprop:Generator_ColumnVarNameInTable="columnstocksize" msprop:Generator_ColumnPropNameInRow="stocksize" msprop:Generator_ColumnPropNameInTable="stocksizeColumn" msprop:Generator_UserColumnName="stocksize" type="xs:string" minOccurs="0" />
+              <xs:element name="stockcode" msprop:Generator_ColumnVarNameInTable="columnstockcode" msprop:Generator_ColumnPropNameInRow="stockcode" msprop:Generator_ColumnPropNameInTable="stockcodeColumn" msprop:Generator_UserColumnName="stockcode" type="xs:string" minOccurs="0" />
+              <xs:element name="qtytext" msprop:Generator_ColumnVarNameInTable="columnqtytext" msprop:Generator_ColumnPropNameInRow="qtytext" msprop:Generator_ColumnPropNameInTable="qtytextColumn" msprop:Generator_UserColumnName="qtytext" type="xs:string" minOccurs="0" />
+              <xs:element name="stockrate" msprop:Generator_ColumnVarNameInTable="columnstockrate" msprop:Generator_ColumnPropNameInRow="stockrate" msprop:Generator_ColumnPropNameInTable="stockrateColumn" msprop:Generator_UserColumnName="stockrate" type="xs:double" minOccurs="0" />
+              <xs:element name="stockamount" msprop:Generator_ColumnVarNameInTable="columnstockamount" msprop:Generator_ColumnPropNameInRow="stockamount" msprop:Generator_ColumnPropNameInTable="stockamountColumn" msprop:Generator_UserColumnName="stockamount" type="xs:double" minOccurs="0" />
+              <xs:element name="tax" msprop:Generator_ColumnVarNameInTable="columntax" msprop:Generator_ColumnPropNameInRow="tax" msprop:Generator_ColumnPropNameInTable="taxColumn" msprop:Generator_UserColumnName="tax" type="xs:double" minOccurs="0" />
+              <xs:element name="netrate" msprop:Generator_ColumnVarNameInTable="columnnetrate" msprop:Generator_ColumnPropNameInRow="netrate" msprop:Generator_ColumnPropNameInTable="netrateColumn" msprop:Generator_UserColumnName="netrate" type="xs:double" minOccurs="0" />
+              <xs:element name="netstockamount" msprop:Generator_ColumnVarNameInTable="columnnetstockamount" msprop:Generator_ColumnPropNameInRow="netstockamount" msprop:Generator_ColumnPropNameInTable="netstockamountColumn" msprop:Generator_UserColumnName="netstockamount" type="xs:double" minOccurs="0" />
+              <xs:element name="ledgername" msprop:Generator_ColumnVarNameInTable="columnledgername" msprop:Generator_ColumnPropNameInRow="ledgername" msprop:Generator_ColumnPropNameInTable="ledgernameColumn" msprop:Generator_UserColumnName="ledgername" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

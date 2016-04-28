@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EmpAttendenceRepDataSet" targetNamespace="http://tempuri.org/EmpAttendenceRepDataSet.xsd" xmlns:mstns="http://tempuri.org/EmpAttendenceRepDataSet.xsd" xmlns="http://tempuri.org/EmpAttendenceRepDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EmpAttendenceRepDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="EmpAttendenceRepDataSet" msprop:Generator_UserDSName="EmpAttendenceRepDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tMonth" msprop:Generator_ColumnVarNameInTable="columntMonth" msprop:Generator_ColumnPropNameInRow="tMonth" msprop:Generator_ColumnPropNameInTable="tMonthColumn" msprop:Generator_UserColumnName="tMonth" type="xs:string" minOccurs="0" />
+              <xs:element name="ttworkingdays" msprop:Generator_ColumnVarNameInTable="columnttworkingdays" msprop:Generator_ColumnPropNameInRow="ttworkingdays" msprop:Generator_ColumnPropNameInTable="ttworkingdaysColumn" msprop:Generator_UserColumnName="ttworkingdays" type="xs:double" minOccurs="0" />
+              <xs:element name="tpresent" msprop:Generator_ColumnVarNameInTable="columntpresent" msprop:Generator_ColumnPropNameInRow="tpresent" msprop:Generator_ColumnPropNameInTable="tpresentColumn" msprop:Generator_UserColumnName="tpresent" type="xs:double" minOccurs="0" />
+              <xs:element name="tabsents" msprop:Generator_ColumnVarNameInTable="columntabsents" msprop:Generator_ColumnPropNameInRow="tabsents" msprop:Generator_ColumnPropNameInTable="tabsentsColumn" msprop:Generator_UserColumnName="tabsents" type="xs:double" minOccurs="0" />
+              <xs:element name="tleaves" msprop:Generator_ColumnVarNameInTable="columntleaves" msprop:Generator_ColumnPropNameInRow="tleaves" msprop:Generator_ColumnPropNameInTable="tleavesColumn" msprop:Generator_UserColumnName="tleaves" type="xs:double" minOccurs="0" />
+              <xs:element name="tcmpleaves" msprop:Generator_ColumnVarNameInTable="columntcmpleaves" msprop:Generator_ColumnPropNameInRow="tcmpleaves" msprop:Generator_ColumnPropNameInTable="tcmpleavesColumn" msprop:Generator_UserColumnName="tcmpleaves" type="xs:double" minOccurs="0" />
+              <xs:element name="tot" msprop:Generator_ColumnVarNameInTable="columntot" msprop:Generator_ColumnPropNameInRow="tot" msprop:Generator_ColumnPropNameInTable="totColumn" msprop:Generator_UserColumnName="tot" type="xs:double" minOccurs="0" />
+              <xs:element name="tnetdays" msprop:Generator_ColumnVarNameInTable="columntnetdays" msprop:Generator_ColumnPropNameInRow="tnetdays" msprop:Generator_ColumnPropNameInTable="tnetdaysColumn" msprop:Generator_UserColumnName="tnetdays" type="xs:double" minOccurs="0" />
+              <xs:element name="DataColumn9" msprop:Generator_ColumnVarNameInTable="columnDataColumn9" msprop:Generator_ColumnPropNameInRow="DataColumn9" msprop:Generator_ColumnPropNameInTable="DataColumn9Column" msprop:Generator_UserColumnName="DataColumn9" type="xs:string" minOccurs="0" />
+              <xs:element name="DataColumn10" msprop:Generator_ColumnVarNameInTable="columnDataColumn10" msprop:Generator_ColumnPropNameInRow="DataColumn10" msprop:Generator_ColumnPropNameInTable="DataColumn10Column" msprop:Generator_UserColumnName="DataColumn10" type="xs:string" minOccurs="0" />
+              <xs:element name="DataColumn11" msprop:Generator_ColumnVarNameInTable="columnDataColumn11" msprop:Generator_ColumnPropNameInRow="DataColumn11" msprop:Generator_ColumnPropNameInTable="DataColumn11Column" msprop:Generator_UserColumnName="DataColumn11" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

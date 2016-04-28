@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StockItemWiseDataSet" targetNamespace="http://tempuri.org/StockItemWiseDataSet.xsd" xmlns:mstns="http://tempuri.org/StockItemWiseDataSet.xsd" xmlns="http://tempuri.org/StockItemWiseDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StockItemWiseDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="StockItemWiseDataSet" msprop:Generator_UserDSName="StockItemWiseDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="StockInvoiceRowItems" msprop:Generator_TableClassName="StockInvoiceRowItemsDataTable" msprop:Generator_TableVarName="tableStockInvoiceRowItems" msprop:Generator_RowChangedName="StockInvoiceRowItemsRowChanged" msprop:Generator_TablePropName="StockInvoiceRowItems" msprop:Generator_RowDeletingName="StockInvoiceRowItemsRowDeleting" msprop:Generator_RowChangingName="StockInvoiceRowItemsRowChanging" msprop:Generator_RowEvHandlerName="StockInvoiceRowItemsRowChangeEventHandler" msprop:Generator_RowDeletedName="StockInvoiceRowItemsRowDeleted" msprop:Generator_RowClassName="StockInvoiceRowItemsRow" msprop:Generator_UserTableName="StockInvoiceRowItems" msprop:Generator_RowEvArgName="StockInvoiceRowItemsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Stock_x0020_Code" msprop:Generator_ColumnVarNameInTable="columnStock_Code" msprop:Generator_ColumnPropNameInRow="Stock_Code" msprop:Generator_ColumnPropNameInTable="Stock_CodeColumn" msprop:Generator_UserColumnName="Stock Code" type="xs:string" minOccurs="0" />
+              <xs:element name="Stock_x0020_More_x0020_Info" msprop:Generator_ColumnVarNameInTable="columnStock_More_Info" msprop:Generator_ColumnPropNameInRow="Stock_More_Info" msprop:Generator_ColumnPropNameInTable="Stock_More_InfoColumn" msprop:Generator_UserColumnName="Stock More Info" type="xs:string" minOccurs="0" />
+              <xs:element name="Account_x0020_Name" msprop:Generator_ColumnVarNameInTable="columnAccount_Name" msprop:Generator_ColumnPropNameInRow="Account_Name" msprop:Generator_ColumnPropNameInTable="Account_NameColumn" msprop:Generator_UserColumnName="Account Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Inwards_x0020_Qty" msprop:Generator_ColumnVarNameInTable="columnInwards_Qty" msprop:Generator_ColumnPropNameInRow="Inwards_Qty" msprop:Generator_ColumnPropNameInTable="Inwards_QtyColumn" msprop:Generator_UserColumnName="Inwards Qty" type="xs:string" minOccurs="0" />
+              <xs:element name="Inwards_x0020_Value" msprop:Generator_ColumnVarNameInTable="columnInwards_Value" msprop:Generator_ColumnPropNameInRow="Inwards_Value" msprop:Generator_ColumnPropNameInTable="Inwards_ValueColumn" msprop:Generator_UserColumnName="Inwards Value" type="xs:double" minOccurs="0" />
+              <xs:element name="Outwards_x0020_Qty" msprop:Generator_ColumnVarNameInTable="columnOutwards_Qty" msprop:Generator_ColumnPropNameInRow="Outwards_Qty" msprop:Generator_ColumnPropNameInTable="Outwards_QtyColumn" msprop:Generator_UserColumnName="Outwards Qty" type="xs:string" minOccurs="0" />
+              <xs:element name="Outwards_x0020_Value" msprop:Generator_ColumnVarNameInTable="columnOutwards_Value" msprop:Generator_ColumnPropNameInRow="Outwards_Value" msprop:Generator_ColumnPropNameInTable="Outwards_ValueColumn" msprop:Generator_UserColumnName="Outwards Value" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

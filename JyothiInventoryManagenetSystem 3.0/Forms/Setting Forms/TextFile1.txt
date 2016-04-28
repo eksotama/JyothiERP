@@ -1,0 +1,2772 @@
+﻿    Dim NewFontStyle As New FontStyle
+    Dim LeftSidelogoselected As Boolean = False
+    Dim Rightsidelogoselected As Boolean = False
+    Dim IsNewLine As Boolean = False
+    Public SQLFcmdPrnt1 As New SqlClient.SqlCommand
+    Public SQLFcmdPrnt2 As New SqlClient.SqlCommand
+    Dim PrtDbfConnection As New SqlClient.SqlConnection
+    Dim PrtDbf As SqlClient.SqlDataReader
+    Dim DbfReader As SqlClient.SqlDataReader
+    Dim tOTrECS As Integer
+    Dim DbfTemp As String = ""
+    Dim TBD As New DataSet
+       
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+        If txtFont.ShowDialog() Then
+            TxtFLSample.Font = txtFont.Font
+            TxtFLSample.ForeColor = txtFont.Color
+            TxtFLFont.Text = txtFont.Font.Name
+            If txtFont.Font.Underline = True Then
+                TxtFLStyleU.Checked = True
+            Else
+                TxtFLStyleU.Checked = False
+            End If
+            If txtFont.Font.Bold = True Then
+                TxtFLStyleB.Checked = True
+            Else
+                TxtFLStyleB.Checked = False
+            End If
+            If txtFont.Font.Italic = True Then
+                TxtFLSytleI.Checked = True
+            Else
+                TxtFLSytleI.Checked = False
+            End If
+            TxtFLFontSize.Value = txtFont.Font.Size
+            TxtFLFontColor.Text = txtFont.Color.Name.ToString
+
+        End If
+
+    End Sub
+
+    Private Sub ObjAlign_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TxtFLAlign.SelectedIndexChanged, TxtFLFAlign.SelectedIndexChanged
+        If TxtFLAlign.Text = "Left" Then
+            TxtFLSample.TextAlign = ContentAlignment.TopLeft
+        ElseIf TxtFLAlign.Text = "Right" Then
+            TxtFLSample.TextAlign = ContentAlignment.TopRight
+        Else
+            TxtFLSample.TextAlign = ContentAlignment.TopCenter
+        End If
+    End Sub
+
+
+    Private Sub Button19_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button19.Click
+        'e.Graphics.DrawLine(Pens.Black, LeftMr + 10, txttop, 800, txttop)
+        Dim inputval As String
+        inputval = InputBox("Enter The Line Name ?", "Line Name", "")
+        If inputval.Length > 0 Then
+            If txtLineNames.Items.Contains(inputval) = False Then
+                IsNewLine = True
+                txtLineNames.Items.Add(inputval)
+            Else
+                MsgBox("The Name is already exists, Please Try Again")
+            End If
+        End If
+    End Sub
+
+    Private Sub SalesInvoicePrintingOptions_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        If My.Computer.Screen.WorkingArea.Width <= 1024 Then
+            Me.Font = New Font(Me.Font.Name, 8, FontStyle.Regular)
+        End If
+
+        TxtPrinterName.Items.Clear()
+        For Each s In Printing.PrinterSettings.InstalledPrinters
+            TxtPrinterName.Items.Add(s)
+        Next
+        txtSchemName.Items.Clear()
+        SList.Items.Clear()
+        SRList.Items.Clear()
+        PList.Items.Clear()
+        PRList.Items.Clear()
+
+        PrtDbfConnection.ConnectionString = ConnectionStrinG
+        PrtDbfConnection.Open()
+
+        Dim SqlConn1 As New SqlClient.SqlConnection
+        Try
+            SqlConn1.ConnectionString = ConnectionStrinG
+            SqlConn1.Open()
+            SqlFcmd.Connection = SqlConn1
+            SqlFcmd.CommandText = "select distinct schemename from printingsettings"
+            SqlFcmd.CommandType = CommandType.Text
+            Dim Sreader As SqlClient.SqlDataReader
+            Sreader = SqlFcmd.ExecuteReader
+            While Sreader.Read()
+                txtSchemName.Items.Add(Sreader("schemename").ToString.Trim)
+                SList.Items.Add(Sreader("schemename").ToString.Trim)
+                SRList.Items.Add(Sreader("schemename").ToString.Trim)
+                PList.Items.Add(Sreader("schemename").ToString.Trim)
+                PRList.Items.Add(Sreader("schemename").ToString.Trim)
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            SqlConn1.Close()
+            SqlFcmd.Connection = Nothing
+        End Try
+
+
+
+
+        LoadDefauls()
+        txtSchemName.SelectedIndex = 0
+        PrintPreviewControl1.Zoom = 1
+        PrintPreviewControl1.Refresh()
+        TxtZoom.Text = "Auto"
+
+    End Sub
+
+    Sub LoadDefauls()
+        LeftSidelogoselected = False
+        Rightsidelogoselected = False
+        Dim Dbf As New ADODB.Recordset
+        PurchaseSList.Rows.Clear()
+        PurchaseRSList.Rows.Clear()
+        SalesRSList.Rows.Clear()
+        salesSlist.Rows.Clear()
+        ' MsgBox("jjj")
+        '   LoadSchemeList()
+
+
+        Dim SqlConn1 As New SqlClient.SqlConnection
+
+        Try
+            SqlConn1.ConnectionString = ConnectionStrinG
+            SqlConn1.Open()
+            SqlFcmd.Connection = SqlConn1
+            SqlFcmd.CommandText = "select * from printingsettings where schemename='" & txtSchemName.Text & "'"
+            SqlFcmd.CommandType = CommandType.Text
+            Dim Sreader As SqlClient.SqlDataReader
+            Sreader = SqlFcmd.ExecuteReader
+            While Sreader.Read()
+                TxtPrinterName.Text = Sreader("schemename").ToString.Trim
+                TxtPaperWidth.Text = Sreader("width")
+                TxtPaperHeight.Text = Sreader("height")
+                If Sreader("islandscape") = True Then
+                    prtOrientationLand.Checked = True
+                Else
+                    prtOrientationPort.Checked = True
+                End If
+                pageleftmargin.Value = Sreader("fleft")
+                pagerighttmargin.Value = Sreader("fright")
+                pagetopmargin.Value = Sreader("ftop")
+                pagebuttommargin.Value = Sreader("fbuttom")
+                If Sreader("LeftLogoIsOn") = True Then
+                    TxtIsLeftLogoOn.Checked = True
+                Else
+                    TxtIsLeftLogoOn.Checked = False
+                End If
+
+                txtleftEdge.Text = Sreader("Leftlogoleft")
+                txtlefttop.Text = Sreader("leftlogotop")
+                txtleftwidth.Text = Sreader("Leftlogowidth")
+                txtleftheight.Text = Sreader("Leftlogoheight")
+                Try
+                    txtleftlogobox.ImageLocation = Sreader("leftlogopath")
+                Catch ex As Exception
+
+                End Try
+
+                If Sreader("rightLogoIsOn") = True Then
+                    TxtIsRightLogoOn.Checked = True
+                Else
+                    TxtIsRightLogoOn.Checked = False
+                End If
+                txtrightedge.Text = Sreader("rightlogoleft")
+                txtrighttop.Text = Sreader("rightlogotop")
+                txtrightwidth.Text = Sreader("rightlogowidth")
+                txtrightheight.Text = Sreader("rightlogoheight")
+                Try
+                    txtRightLogobox.ImageLocation = Sreader("rightlogopath")
+                Catch ex As Exception
+
+                End Try
+                If Sreader("showpageno") = True Then
+                    IsShownPageNos.Checked = True
+                Else
+                    IsShownPageNos.Checked = False
+                End If
+                TxtPageNoLeft.Value = Sreader("pagenoleft")
+                TxtPageNoTop.Value = Sreader("pagenotop")
+                TxtPageNoFormat.SelectedIndex = Sreader("pageformat")
+
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            SqlConn1.Close()
+            SqlFcmd.Connection = Nothing
+        End Try
+
+
+
+
+        Try
+            SqlConn1.ConnectionString = ConnectionStrinG
+            SqlConn1.Open()
+            SqlFcmd.Connection = SqlConn1
+            SqlFcmd.CommandText = "select * from printFieldLabels where schemename='" & txtSchemName.Text & "'"
+            SqlFcmd.CommandType = CommandType.Text
+            Dim Sreader As SqlClient.SqlDataReader
+            Sreader = SqlFcmd.ExecuteReader
+            While Sreader.Read()
+                TxtFieldLables.Items.Add(Sreader("fieldname"))
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            SqlConn1.Close()
+            SqlFcmd.Connection = Nothing
+        End Try
+
+
+        TxtrecordItems.Items.Clear()
+        Try
+            SqlConn1.ConnectionString = ConnectionStrinG
+            SqlConn1.Open()
+            SqlFcmd.Connection = SqlConn1
+            SqlFcmd.CommandText = "select * from printrecords where schemename='" & txtSchemName.Text & "'"
+            SqlFcmd.CommandType = CommandType.Text
+            Dim Sreader As SqlClient.SqlDataReader
+            Sreader = SqlFcmd.ExecuteReader
+            While Sreader.Read()
+                TxtrecordItems.Items.Add(Sreader("fieldname"))
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            SqlConn1.Close()
+            SqlFcmd.Connection = Nothing
+        End Try
+
+
+        txtheadingitems.Items.Clear()
+        Try
+            SqlConn1.ConnectionString = ConnectionStrinG
+            SqlConn1.Open()
+            SqlFcmd.Connection = SqlConn1
+            SqlFcmd.CommandText = "select * from printheadings where schemename='" & txtSchemName.Text & "'"
+            SqlFcmd.CommandType = CommandType.Text
+            Dim Sreader As SqlClient.SqlDataReader
+            Sreader = SqlFcmd.ExecuteReader
+            While Sreader.Read()
+                txtheadingitems.Items.Add(Sreader("fieldname"))
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            SqlConn1.Close()
+            SqlFcmd.Connection = Nothing
+        End Try
+
+
+
+
+        'txtLineNames
+
+
+        txtLineNames.Items.Clear()
+
+        Try
+            SqlConn1.ConnectionString = ConnectionStrinG
+            SqlConn1.Open()
+            SqlFcmd.Connection = SqlConn1
+            SqlFcmd.CommandText = "select * from printlines where schemename='" & txtSchemName.Text & "'"
+            SqlFcmd.CommandType = CommandType.Text
+            Dim Sreader As SqlClient.SqlDataReader
+            Sreader = SqlFcmd.ExecuteReader
+            While Sreader.Read()
+                txtLineNames.Items.Add(Sreader("fieldname"))
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            SqlConn1.Close()
+            SqlFcmd.Connection = Nothing
+        End Try
+
+
+
+        TxtLabelLists.Items.Clear()
+
+        Try
+            SqlConn1.ConnectionString = ConnectionStrinG
+            SqlConn1.Open()
+            SqlFcmd.Connection = SqlConn1
+            SqlFcmd.CommandText = "select * from printlables where schemename='" & txtSchemName.Text & "'"
+            SqlFcmd.CommandType = CommandType.Text
+            Dim Sreader As SqlClient.SqlDataReader
+            Sreader = SqlFcmd.ExecuteReader
+            While Sreader.Read()
+                TxtLabelLists.Items.Add(Sreader("fieldname"))
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            SqlConn1.Close()
+            SqlFcmd.Connection = Nothing
+        End Try
+
+        Try
+            SqlConn1.ConnectionString = ConnectionStrinG
+            SqlConn1.Open()
+            SqlFcmd.Connection = SqlConn1
+            SqlFcmd.CommandText = "select * from printrecords where schemename='" & txtSchemName.Text & "'"
+            SqlFcmd.CommandType = CommandType.Text
+            Dim Sreader As SqlClient.SqlDataReader
+            Sreader = SqlFcmd.ExecuteReader
+            While Sreader.Read()
+                TxtRtop.Value = Sreader("ftop")
+                TxtRlTop.Value = Sreader("ltop")
+                TxtLineSpecing.Value = Sreader("space")
+                TxtRFHeight.Value = Sreader("height")
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            SqlConn1.Close()
+            SqlFcmd.Connection = Nothing
+        End Try
+
+
+
+
+
+
+    End Sub
+    Sub LoadSchemeList()
+        Dim r As Integer
+        PurchaseSList.Rows.Clear()
+        PurchaseRSList.Rows.Clear()
+        salesSlist.Rows.Clear()
+        SalesRSList.Rows.Clear()
+        Dim SqlConn1 As New SqlClient.SqlConnection
+        Try
+            SqlConn1.ConnectionString = ConnectionStrinG
+            SqlConn1.Open()
+            SqlFcmd.Connection = SqlConn1
+            SqlFcmd.CommandText = "select * from PrintingSchemes"
+            SqlFcmd.CommandType = CommandType.Text
+            Dim Sreader As SqlClient.SqlDataReader
+            Sreader = SqlFcmd.ExecuteReader
+            While Sreader.Read()
+                If Sreader("VoucherName").ToString.Trim = "Purchase" Then
+                    r = PurchaseSList.Rows.Add()
+                    If Sreader("isactive") = 1 Then
+                        PurchaseSList.Item(0, r).Value = Sreader("id")
+                        PurchaseSList.Item(1, r).Value = Sreader("schemename").ToString.Trim
+                        PurchaseSList.Item(2, r).Value = "YES"
+                    Else
+                        PurchaseSList.Item(0, r).Value = Sreader("id")
+                        PurchaseSList.Item(1, r).Value = Sreader("schemename").ToString.Trim
+                        PurchaseSList.Item(2, r).Value = "NO"
+                    End If
+                End If
+               
+
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            SqlConn1.Close()
+            SqlFcmd.Connection = Nothing
+        End Try
+
+
+
+
+    End Sub
+
+    Private Sub TxtIsLeftLogoOn_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TxtIsLeftLogoOn.CheckedChanged
+        If TxtIsLeftLogoOn.Checked = True Then
+            Panel3.Enabled = True
+        Else
+            Panel3.Enabled = False
+        End If
+    End Sub
+
+    Private Sub TxtIsRightLogoOn_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TxtIsRightLogoOn.CheckedChanged
+        If TxtIsRightLogoOn.Checked = True Then
+            Panel4.Enabled = True
+        Else
+            Panel4.Enabled = False
+        End If
+    End Sub
+
+
+    Private Sub txtrightedge_Validating(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles txtrightedge.Validating, txtrightwidth.Validating, txtrighttop.Validating, txtrightheight.Validating, TxtPaperWidth.Validating, TxtPaperHeight.Validating, txtleftwidth.Validating, txtlefttop.Validating, txtleftheight.Validating, txtleftEdge.Validating
+        If IsNumeric(sender.text) = False Then
+            e.Cancel = True
+        Else
+            e.Cancel = False
+        End If
+    End Sub
+
+
+    Private Sub btnselectleftlogo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnselectleftlogo.Click
+        OpenPicture.Title = "Select The Image for Left Side Logo"
+        If OpenPicture.ShowDialog() = Windows.Forms.DialogResult.OK Then
+            txtleftlogobox.ImageLocation = OpenPicture.FileName
+            LeftSidelogoselected = True
+        End If
+    End Sub
+
+    Private Sub btnselectrightlogo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnselectrightlogo.Click
+        OpenPicture.Title = "Select The Image for Left Side Logo"
+        If OpenPicture.ShowDialog() = Windows.Forms.DialogResult.OK Then
+            txtRightLogobox.ImageLocation = OpenPicture.FileName
+            Rightsidelogoselected = True
+        End If
+    End Sub
+
+    Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
+        If txtFont.ShowDialog() Then
+
+
+            TxtHeadFontName.Text = txtFont.Font.Name
+            If txtFont.Font.Underline = True Then
+                TxtHeadStyleU.Checked = True
+            Else
+                TxtHeadStyleU.Checked = False
+            End If
+            If txtFont.Font.Bold = True Then
+                TxtHeadStyleB.Checked = True
+            Else
+                TxtHeadStyleB.Checked = False
+            End If
+            If txtFont.Font.Italic = True Then
+                TxtHeadStyleI.Checked = True
+            Else
+                TxtHeadStyleI.Checked = False
+            End If
+            TxtHeadFontSize.Value = txtFont.Font.Size
+            TxtHeadFontColor.Text = txtFont.Color.Name.ToString
+
+        End If
+    End Sub
+
+    Private Sub PrtDoc_BeginPrint(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintEventArgs) Handles PrtDoc.BeginPrint
+        PrtDoc.DefaultPageSettings.PaperSize = New PaperSize("Custom", TxtPaperWidth.Text, TxtPaperHeight.Text)
+        If prtOrientationLand.Checked = True Then
+            PrtDoc.DefaultPageSettings.Landscape = True
+        Else
+            PrtDoc.DefaultPageSettings.Landscape = False
+        End If
+        PrtDoc.DefaultPageSettings.Margins.Left = pageleftmargin.Value
+        PrtDoc.DefaultPageSettings.Margins.Right = pagerighttmargin.Value
+        PrtDoc.DefaultPageSettings.Margins.Top = pagetopmargin.Value
+        PrtDoc.DefaultPageSettings.Margins.Bottom = pagebuttommargin.Value
+        tOTrECS = GetNoofRowsEffected("select transcode from PrintingDataRowsItems")
+        MsgBox(tOTrECS)
+    End Sub
+
+    Private Sub PrtDoc_PrintPage(ByVal sender As System.Object, ByVal e As System.Drawing.Printing.PrintPageEventArgs) Handles PrtDoc.PrintPage
+        Static IsFirstOpen As Boolean = True
+        Static pagerecords As Integer = 0
+        Static PresentRecords As Integer = 0
+        Static PageTop As Double = 0
+        Static PageSpace As Double = 0
+        Static RowHeight As Double = 0
+        Static PageNos As Integer = 1
+        Static PageNo As Integer = 1
+        Static Pagenoformat As Byte = 0
+        Static isPageNoyesno As Boolean = True
+        Static PageTopConst As Double = 0
+        Static FooterTop As Integer = 0
+
+        Dim PageTotal As Double = 0
+
+
+
+
+
+
+        If IsFirstOpen = True Then
+            IsFirstOpen = False
+            PrtDoc.DefaultPageSettings.PaperSize = New PaperSize("Custom", TxtPaperWidth.Text, TxtPaperHeight.Text)
+            If prtOrientationLand.Checked = True Then
+                PrtDoc.DefaultPageSettings.Landscape = True
+            Else
+                PrtDoc.DefaultPageSettings.Landscape = False
+            End If
+            PrtDoc.DefaultPageSettings.Margins.Left = pageleftmargin.Value
+            PrtDoc.DefaultPageSettings.Margins.Right = pagerighttmargin.Value
+            PrtDoc.DefaultPageSettings.Margins.Top = pagetopmargin.Value
+            PrtDoc.DefaultPageSettings.Margins.Bottom = pagebuttommargin.Value
+            pagerecords = SQLGetNumericFieldValue("select maxrowsperpage from PrintingSettings where schemename='" & txtSchemName.Text & "'", "maxrowsperpage")
+            RowHeight = SQLGetNumericFieldValue("select rowheight from PrintingSettings where schemename='" & txtSchemName.Text & "'", "rowheight")
+            '  FooterTop = SQLGetNumericFieldValue("select (ftop+height) AS FOTTOP from PrintingSettings where schemename='" & txtSchemName.Text & "'", "FOTTOP")
+            PresentRecords = 1
+
+            PageTop = SQLGetNumericFieldValue("select ftop from printrecords where schemename='" & txtSchemName.Text & "'", "ftop")
+            PageSpace = SQLGetNumericFieldValue("select space from printrecords where schemename='" & txtSchemName.Text & "'", "space")
+            FooterTop = SQLGetNumericFieldValue("select (ftop+height) AS FOTTOP from printrecords where schemename='" & txtSchemName.Text & "'", "FOTTOP")
+
+            PageTopConst = PageTop
+
+            
+
+
+            Dim Adapter As New SqlClient.SqlDataAdapter
+            Adapter.SelectCommand = New SqlClient.SqlCommand("select * from PrintingDataRowsItems", PrtDbfConnection)
+            Adapter.Fill(TBD)
+
+            If tOTrECS < pagerecords Then
+                pagerecords = tOTrECS
+            End If
+            MsgBox(tOTrECS)
+            PageNos = Math.Ceiling(tOTrECS / pagerecords)
+            PageNo = 1
+        End If
+
+
+
+        Dim ImageValue As System.Drawing.Image
+        If prtOrientationLand.Checked = True Then
+            e.Graphics.DrawRectangle(Pens.DarkCyan, CSng(pageleftmargin.Value), CSng(pagetopmargin.Value), CSng(TxtPaperHeight.Text) - CSng(pagetopmargin.Value) - CSng(pagebuttommargin.Value), CSng(TxtPaperWidth.Text) - CSng(pageleftmargin.Value) - CSng(pagerighttmargin.Value))
+            e.Graphics.DrawRectangle(Pens.Red, CSng(pageleftmargin.Value), CSng(TxtRtop.Value), CSng(TxtPaperHeight.Text) - CSng(pagetopmargin.Value) - CSng(pagebuttommargin.Value), CSng(TxtRFHeight.Text) - CSng(pageleftmargin.Value) - CSng(pagerighttmargin.Value))
+        Else
+            e.Graphics.DrawRectangle(Pens.DarkCyan, CSng(pageleftmargin.Value), CSng(pagetopmargin.Value), CSng(TxtPaperWidth.Text) - CSng(pageleftmargin.Value) - CSng(pagerighttmargin.Value), CSng(TxtPaperHeight.Text) - CSng(pagetopmargin.Value) - CSng(pagebuttommargin.Value))
+            e.Graphics.DrawRectangle(Pens.Red, CSng(pageleftmargin.Value), CSng(TxtRtop.Value), CSng(TxtPaperWidth.Text) - CSng(pagetopmargin.Value) - CSng(pagerighttmargin.Value), CSng(TxtRFHeight.Text))
+        End If
+
+
+        Try
+            If TxtIsLeftLogoOn.Checked = True Then
+                ImageValue = Image.FromFile(txtleftlogobox.ImageLocation)
+                e.Graphics.DrawImage(ImageValue, CSng(txtleftEdge.Text), CSng(txtlefttop.Text), CSng(txtleftwidth.Text), CSng(txtleftheight.Text))
+            End If
+        Catch ex As Exception
+        End Try
+
+        Try
+            If TxtIsRightLogoOn.Checked = True Then
+                ImageValue = Image.FromFile(txtRightLogobox.ImageLocation)
+                e.Graphics.DrawImage(ImageValue, CSng(txtrightedge.Text), CSng(txtrighttop.Text), CSng(txtrightwidth.Text), CSng(txtrightheight.Text))
+            End If
+        Catch ex As Exception
+
+        End Try
+
+        If PageNo = PageNos Then
+            DbfTemp = "select * from PrintFieldLabels where schemename='" & txtSchemName.Text & "'"
+        Else
+            DbfTemp = "select * from PrintFieldLabels where schemename='" & txtSchemName.Text & "' and ltop<" & FooterTop
+        End If
+        PrtDbfConnection.Close()
+        PrtDbfConnection.Open()
+        Dim SQLFcmdT1 As New SqlClient.SqlCommand
+        SQLFcmdT1.Connection = PrtDbfConnection
+        SQLFcmdT1.CommandText = DbfTemp
+        SQLFcmdT1.CommandType = CommandType.Text
+        Dim DbfReader1 As SqlClient.SqlDataReader
+        DbfReader1 = SQLFcmdT1.ExecuteReader
+
+        While DbfReader1.Read
+            If DbfReader1("IsVisible") = True Then
+                Dim drawFormat As New StringFormat
+                Dim drawFont As Font = New Font("arial", 10)
+                Dim drawBrush As New SolidBrush(Color.FromName(DbfReader1("fontcolor").ToString.Trim))
+
+                Select Case DbfReader1("fontstyle")
+                    Case 1
+                        drawFont = New Font(DbfReader1("Fontname").ToString.Trim, CSng(DbfReader1("fontsize")), FontStyle.Bold)
+                    Case 2
+                        drawFont = New Font(DbfReader1("Fontname").ToString.Trim, CSng(DbfReader1("fontsize")), FontStyle.Italic)
+                    Case 3
+                        drawFont = New Font(DbfReader1("Fontname").ToString.Trim, CSng(DbfReader1("fontsize")), FontStyle.Underline)
+                    Case 4
+                        drawFont = New Font(DbfReader1("Fontname").ToString.Trim, CSng(DbfReader1("fontsize")), FontStyle.Bold Or FontStyle.Italic)
+                    Case 5
+                        drawFont = New Font(DbfReader1("Fontname").ToString.Trim, CSng(DbfReader1("fontsize")), FontStyle.Bold Or FontStyle.Underline)
+                    Case 6
+                        drawFont = New Font(DbfReader1("Fontname").ToString.Trim, CSng(DbfReader1("fontsize")), FontStyle.Italic Or FontStyle.Underline)
+                    Case 7
+                        drawFont = New Font(DbfReader1("Fontname").ToString.Trim, CSng(DbfReader1("fontsize")), FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline)
+                    Case 8
+                        drawFont = New Font(DbfReader1("Fontname").ToString.Trim, CSng(DbfReader1("fontsize")), FontStyle.Regular)
+
+                End Select
+
+
+
+                If DbfReader1("align").ToString.Trim = "Left" Then
+                    drawFormat.Alignment = StringAlignment.Near
+                ElseIf DbfReader1("align").ToString.Trim = "Right" Then
+                    drawFormat.Alignment = StringAlignment.Far
+                Else
+                    drawFormat.Alignment = StringAlignment.Center
+                End If
+
+
+
+                '   e.Graphics.DrawString("Sl", font1, Brushes.Black, rect1, StringFormat)
+
+                If CSng(DbfReader1("width")) > 50 Then
+                    Dim rect1 As New Rectangle(CSng(DbfReader1("fleft")), CSng(DbfReader1("ftop")), CSng(DbfReader1("width")), CSng(DbfReader1("height")))
+                    If DbfReader1("formattype") = 0 Then
+                        e.Graphics.DrawString(DbfReader1("sample").ToString.Trim, drawFont, drawBrush, rect1, drawFormat)
+                    Else
+                        e.Graphics.DrawString(FormatNumber(DbfReader1("sample").ToString.Trim, 2).ToString.Trim, drawFont, drawBrush, rect1, drawFormat)
+                    End If
+
+
+                Else
+                    If DbfReader1("formattype") = 0 Then
+                        e.Graphics.DrawString(DbfReader1("sample").ToString.Trim, drawFont, drawBrush, CSng(DbfReader1("fleft")), CSng(DbfReader1("ftop")), drawFormat)
+                    Else
+                        e.Graphics.DrawString(FormatNumber(DbfReader1("sample").ToString.Trim, 2).ToString.Trim, drawFont, drawBrush, CSng(DbfReader1("fleft")), CSng(DbfReader1("ftop")), drawFormat)
+                    End If
+                End If
+
+
+
+                Select Case DbfReader1("lfontstyle")
+                    Case 1
+                        drawFont = New Font(DbfReader1("lFontname").ToString.Trim, CSng(DbfReader1("lfontsize")), FontStyle.Bold)
+                    Case 2
+                        drawFont = New Font(DbfReader1("lFontname").ToString.Trim, CSng(DbfReader1("lfontsize")), FontStyle.Italic)
+                    Case 3
+                        drawFont = New Font(DbfReader1("lFontname").ToString.Trim, CSng(DbfReader1("lfontsize")), FontStyle.Underline)
+                    Case 4
+                        drawFont = New Font(DbfReader1("lFontname").ToString.Trim, CSng(DbfReader1("lfontsize")), FontStyle.Bold Or FontStyle.Italic)
+                    Case 5
+                        drawFont = New Font(DbfReader1("lFontname").ToString.Trim, CSng(DbfReader1("lfontsize")), FontStyle.Bold Or FontStyle.Underline)
+                    Case 6
+                        drawFont = New Font(DbfReader1("lFontname").ToString.Trim, CSng(DbfReader1("lfontsize")), FontStyle.Italic Or FontStyle.Underline)
+                    Case 7
+                        drawFont = New Font(DbfReader1("lFontname").ToString.Trim, CSng(DbfReader1("lfontsize")), FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline)
+                    Case 8
+                        drawFont = New Font(DbfReader1("lFontname").ToString.Trim, CSng(DbfReader1("lfontsize")), FontStyle.Regular)
+
+                End Select
+
+
+
+                drawBrush.Color = Color.FromName(DbfReader1("lfontcolor").ToString.Trim)
+                If DbfReader1("lalign").ToString.Trim = "Left" Then
+                    drawFormat.Alignment = StringAlignment.Near
+                ElseIf DbfReader1("lalign").ToString.Trim = "Right" Then
+                    drawFormat.Alignment = StringAlignment.Far
+                Else
+                    drawFormat.Alignment = StringAlignment.Center
+                End If
+                e.Graphics.DrawString(DbfReader1("labletext").ToString.Trim, drawFont, drawBrush, CSng(DbfReader1("lleft")), CSng(DbfReader1("ltop")), drawFormat)
+
+            End If
+
+        End While
+        DbfReader1.Close()
+        SQLFcmdT1.Connection = Nothing
+
+
+        Dim SQLFcmdT2 As New SqlClient.SqlCommand
+        Dim DbfReader2 As SqlClient.SqlDataReader
+        SQLFcmdT2.Connection = PrtDbfConnection
+        SQLFcmdT2.CommandText = "select * from PrintLables where schemename='" & txtSchemName.Text & "'"
+        SQLFcmdT2.CommandType = CommandType.Text
+        DbfReader2 = SQLFcmdT2.ExecuteReader
+
+        While DbfReader2.Read
+            If DbfReader2("IsVisible") = True Then
+                Dim drawFormat As New StringFormat
+                Dim drawFont As Font = New Font("arial", 10)
+                Dim drawBrush As New SolidBrush(Color.FromName(DbfReader2("fontcolor").ToString.Trim))
+                Select Case DbfReader2("fontstyle")
+                    Case 1
+                        drawFont = New Font(DbfReader2("Fontname").ToString.Trim, CSng(DbfReader2("fontsize")), FontStyle.Bold)
+                    Case 2
+                        drawFont = New Font(DbfReader2("Fontname").ToString.Trim, CSng(DbfReader2("fontsize")), FontStyle.Italic)
+                    Case 3
+                        drawFont = New Font(DbfReader2("Fontname").ToString.Trim, CSng(DbfReader2("fontsize")), FontStyle.Underline)
+                    Case 4
+                        drawFont = New Font(DbfReader2("Fontname").ToString.Trim, CSng(DbfReader2("fontsize")), FontStyle.Bold Or FontStyle.Italic)
+                    Case 5
+                        drawFont = New Font(DbfReader2("Fontname").ToString.Trim, CSng(DbfReader2("fontsize")), FontStyle.Bold Or FontStyle.Underline)
+                    Case 6
+                        drawFont = New Font(DbfReader2("Fontname").ToString.Trim, CSng(DbfReader2("fontsize")), FontStyle.Italic Or FontStyle.Underline)
+                    Case 7
+                        drawFont = New Font(DbfReader2("Fontname").ToString.Trim, CSng(DbfReader2("fontsize")), FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline)
+                    Case 8
+                        drawFont = New Font(DbfReader2("Fontname").ToString.Trim, CSng(DbfReader2("fontsize")), FontStyle.Regular)
+
+                End Select
+
+
+
+                If DbfReader2("align").ToString.Trim = "Left" Then
+                    drawFormat.Alignment = StringAlignment.Near
+                ElseIf DbfReader2("align").ToString.Trim = "Right" Then
+                    drawFormat.Alignment = StringAlignment.Far
+                Else
+                    drawFormat.Alignment = StringAlignment.Center
+                End If
+                'Modified Start
+                If CSng(DbfReader2("width")) > 50 Then
+                    Dim rect1 As New Rectangle(CSng(DbfReader2("fleft")), CSng(DbfReader2("ftop")), CSng(DbfReader2("width")), CSng(DbfReader2("height")))
+                    e.Graphics.DrawString(DbfReader2("labletext").ToString.Trim, drawFont, drawBrush, rect1, drawFormat)
+                Else
+                    e.Graphics.DrawString(DbfReader2("labletext").ToString.Trim, drawFont, drawBrush, CSng(DbfReader2("fleft")), CSng(DbfReader2("ftop")), drawFormat)
+                End If
+
+            End If
+
+        End While
+        DbfReader2.Close()
+
+        Dim SQLFcmdT3 As New SqlClient.SqlCommand
+        Dim DbfReader3 As SqlClient.SqlDataReader
+        SQLFcmdT3.Connection = PrtDbfConnection
+        SQLFcmdT3.CommandText = "select * from printheadings where schemename='" & txtSchemName.Text & "'"
+        SQLFcmdT3.CommandType = CommandType.Text
+        DbfReader3 = SQLFcmdT3.ExecuteReader
+
+        While DbfReader3.Read
+            If DbfReader3("IsVisible") = True Then
+                Dim drawFormat As New StringFormat
+                Dim drawFont As Font = New Font("arial", 10)
+                Dim drawBrush As New SolidBrush(Color.FromName(DbfReader3("fontcolor").ToString.Trim))
+
+                Select Case DbfReader3("fontstyle")
+                    Case 1
+                        drawFont = New Font(DbfReader3("Fontname").ToString.Trim, CSng(DbfReader3("fontsize")), FontStyle.Bold)
+                    Case 2
+                        drawFont = New Font(DbfReader3("Fontname").ToString.Trim, CSng(DbfReader3("fontsize")), FontStyle.Italic)
+                    Case 3
+                        drawFont = New Font(DbfReader3("Fontname").ToString.Trim, CSng(DbfReader3("fontsize")), FontStyle.Underline)
+                    Case 4
+                        drawFont = New Font(DbfReader3("Fontname").ToString.Trim, CSng(DbfReader3("fontsize")), FontStyle.Bold Or FontStyle.Italic)
+                    Case 5
+                        drawFont = New Font(DbfReader3("Fontname").ToString.Trim, CSng(DbfReader3("fontsize")), FontStyle.Bold Or FontStyle.Underline)
+                    Case 6
+                        drawFont = New Font(DbfReader3("Fontname").ToString.Trim, CSng(DbfReader3("fontsize")), FontStyle.Italic Or FontStyle.Underline)
+                    Case 7
+                        drawFont = New Font(DbfReader3("Fontname").ToString.Trim, CSng(DbfReader3("fontsize")), FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline)
+                    Case 8
+                        drawFont = New Font(DbfReader3("Fontname").ToString.Trim, CSng(DbfReader3("fontsize")), FontStyle.Regular)
+
+                End Select
+
+
+                If DbfReader3("align").ToString.Trim = "Left" Then
+                    drawFormat.Alignment = StringAlignment.Near
+                ElseIf DbfReader3("align").ToString.Trim = "Right" Then
+                    drawFormat.Alignment = StringAlignment.Far
+                Else
+                    drawFormat.Alignment = StringAlignment.Center
+                End If
+                e.Graphics.DrawString(DbfReader3("HeadText").ToString.Trim, drawFont, drawBrush, CSng(DbfReader3("fleft")), CSng(DbfReader3("ftop")), drawFormat)
+            End If
+        End While
+        DbfReader3.Close()
+       
+
+        Dim SQLFcmdT4 As New SqlClient.SqlCommand
+        Dim DbfReader4 As SqlClient.SqlDataReader
+
+        SQLFcmdT4.Connection = PrtDbfConnection
+        SQLFcmdT4.CommandText = "select * from Printrecords where schemename='" & txtSchemName.Text & "'"
+        SQLFcmdT4.CommandType = CommandType.Text
+        DbfReader4 = SQLFcmdT4.ExecuteReader
+
+        While DbfReader4.Read
+            If DbfReader4("IsVisible") = True Then
+                Dim drawFormat As New StringFormat
+                Dim drawFont As Font = New Font("arial", 10)
+                Dim drawBrush As New SolidBrush(Color.FromName(DbfReader4("lfontcolor").ToString.Trim))
+
+                Select Case DbfReader4("lfontstyle")
+                    Case 1
+                        drawFont = New Font(DbfReader4("lFontname").ToString.Trim, CSng(DbfReader4("lfontsize")), FontStyle.Bold)
+                    Case 2
+                        drawFont = New Font(DbfReader4("lFontname").ToString.Trim, CSng(DbfReader4("lfontsize")), FontStyle.Italic)
+                    Case 3
+                        drawFont = New Font(DbfReader4("lFontname").ToString.Trim, CSng(DbfReader4("lfontsize")), FontStyle.Underline)
+                    Case 4
+                        drawFont = New Font(DbfReader4("lFontname").ToString.Trim, CSng(DbfReader4("lfontsize")), FontStyle.Bold Or FontStyle.Italic)
+                    Case 5
+                        drawFont = New Font(DbfReader4("lFontname").ToString.Trim, CSng(DbfReader4("lfontsize")), FontStyle.Bold Or FontStyle.Underline)
+                    Case 6
+                        drawFont = New Font(DbfReader4("lFontname").ToString.Trim, CSng(DbfReader4("lfontsize")), FontStyle.Italic Or FontStyle.Underline)
+                    Case 7
+                        drawFont = New Font(DbfReader4("lFontname").ToString.Trim, CSng(DbfReader4("lfontsize")), FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline)
+                    Case 8
+                        drawFont = New Font(DbfReader4("lFontname").ToString.Trim, CSng(DbfReader4("lfontsize")), FontStyle.Regular)
+
+                End Select
+
+
+                If DbfReader4("lalign").ToString.Trim = "Left" Then
+                    drawFormat.Alignment = StringAlignment.Near
+                ElseIf DbfReader4("lalign").ToString.Trim = "Right" Then
+                    drawFormat.Alignment = StringAlignment.Far
+                Else
+                    drawFormat.Alignment = StringAlignment.Center
+                End If
+                e.Graphics.DrawString(DbfReader4("labletext").ToString.Trim, drawFont, drawBrush, CSng(DbfReader4("lleft")), CSng(DbfReader4("ltop")), drawFormat)
+            End If
+        End While
+        DbfReader4.Close()
+
+
+        Dim SQLFcmdT5 As New SqlClient.SqlCommand
+        Dim DbfReader5 As SqlClient.SqlDataReader
+        SQLFcmdT5.Connection = PrtDbfConnection
+        SQLFcmdT5.CommandText = "select * from Printrecords where schemename='" & txtSchemName.Text & "'"
+        SQLFcmdT5.CommandType = CommandType.Text
+        DbfReader5 = SQLFcmdT5.ExecuteReader
+
+        While DbfReader5.Read
+            If DbfReader5("IsVisible") = True Then
+                Dim penstyle As New Pen(Color.FromName(DbfReader5("LineColor").ToString.Trim), CSng(DbfReader5("BoarderWidth")))
+
+                If DbfReader5("BoarderStyle").ToString.Trim = "Solid" Then
+                    penstyle.DashStyle = Drawing2D.DashStyle.Solid
+                ElseIf DbfReader5("BoarderStyle").ToString.Trim = "Dash" Then
+                    penstyle.DashStyle = Drawing2D.DashStyle.Dash
+                ElseIf DbfReader5("BoarderStyle").ToString.Trim = "Dot" Then
+                    penstyle.DashStyle = Drawing2D.DashStyle.Dot
+                ElseIf DbfReader5("BoarderStyle").ToString.Trim = "DashDot" Then
+                    penstyle.DashStyle = Drawing2D.DashStyle.DashDot
+                Else
+                    penstyle.DashStyle = Drawing2D.DashStyle.DashDotDot
+                End If
+                If DbfReader5("FieldType") = 0 Then
+                    e.Graphics.DrawLine(penstyle, CSng(DbfReader5("fleft")), CSng(DbfReader5("ftop")), CSng(DbfReader5("width")), CSng(DbfReader5("height")))
+                Else
+                    e.Graphics.DrawRectangle(penstyle, CSng(DbfReader5("fleft")), CSng(DbfReader5("ftop")), CSng(DbfReader5("width")), CSng(DbfReader5("height")))
+                End If
+            End If
+        End While
+        DbfReader5.Close()
+
+
+
+        For ri As Integer = 1 To pagerecords
+            MsgBox("for loog")
+
+            Try
+                Dim k As String = PrtDbf("stockname").ToString.Trim
+            Catch ex As Exception
+                MsgBox(ex.Message)
+                GoTo SSS
+            End Try
+            SQLFcmd.Connection = PrtDbfConnection
+            SQLFcmd.CommandText = "select * from Printrecords where schemename='" & txtSchemName.Text & "'"
+            SQLFcmd.CommandType = CommandType.Text
+            DbfReader = SQLFcmd.ExecuteReader
+
+            While DbfReader.Read
+                If DbfReader("IsVisible") = True Then
+                    Dim drawFormat As New StringFormat
+                    Dim drawFont As Font = New Font("arial", 10)
+                    Dim drawBrush As New SolidBrush(Color.FromName(DbfReader("fontcolor").ToString.Trim))
+
+                    Select Case DbfReader("fontstyle")
+                        Case 1
+                            drawFont = New Font(DbfReader("Fontname").ToString.Trim, CSng(DbfReader("fontsize")), FontStyle.Bold)
+                        Case 2
+                            drawFont = New Font(DbfReader("Fontname").ToString.Trim, CSng(DbfReader("fontsize")), FontStyle.Italic)
+                        Case 3
+                            drawFont = New Font(DbfReader("Fontname").ToString.Trim, CSng(DbfReader("fontsize")), FontStyle.Underline)
+                        Case 4
+                            drawFont = New Font(DbfReader("Fontname").ToString.Trim, CSng(DbfReader("fontsize")), FontStyle.Bold Or FontStyle.Italic)
+                        Case 5
+                            drawFont = New Font(DbfReader("Fontname").ToString.Trim, CSng(DbfReader("fontsize")), FontStyle.Bold Or FontStyle.Underline)
+                        Case 6
+                            drawFont = New Font(DbfReader("Fontname").ToString.Trim, CSng(DbfReader("fontsize")), FontStyle.Italic Or FontStyle.Underline)
+                        Case 7
+                            drawFont = New Font(DbfReader("Fontname").ToString.Trim, CSng(DbfReader("fontsize")), FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline)
+                        Case 8
+                            drawFont = New Font(DbfReader("Fontname").ToString.Trim, CSng(DbfReader("fontsize")), FontStyle.Regular)
+
+                    End Select
+
+
+                    If DbfReader("align").ToString.Trim = "Left" Then
+                        drawFormat.Alignment = StringAlignment.Near
+                    ElseIf DbfReader("align").ToString.Trim = "Right" Then
+                        drawFormat.Alignment = StringAlignment.Far
+                    Else
+                        drawFormat.Alignment = StringAlignment.Center
+                    End If
+                    If UCase(DbfReader("DBField").ToString.Trim) <> "SNO" Then
+                        If DbfReader("formattype") = 0 Then
+                            e.Graphics.DrawString(PrtDbf(DbfReader("DBField").ToString.Trim).Value.ToString, drawFont, drawBrush, CSng(DbfReader("left")), PageTop, drawFormat)
+                        Else
+                            e.Graphics.DrawString(FormatNumber(PrtDbf(DbfReader("DBField").ToString.Trim).Value, 2).ToString, drawFont, drawBrush, CSng(DbfReader("left")), PageTop, drawFormat)
+                        End If
+                    Else
+                        e.Graphics.DrawString(PresentRecords, drawFont, drawBrush, CSng(DbfReader("left")), PageTop, drawFormat)
+                    End If
+
+
+
+                End If
+            End While
+            DbfReader.Close()
+
+            PageTotal = PageTotal + PrtDbf("StockAmount")
+            Try
+                PageTop = PageTop + RowHeight
+                PresentRecords = PresentRecords + 1
+                PrtDbf.NextResult()
+
+            Catch ex As Exception
+                PresentRecords = tOTrECS
+                GoTo sss
+            End Try
+
+        Next
+
+
+
+
+
+SSS:
+        SqlFcmd.Connection = PrtDbfConnection
+        SqlFcmd.CommandText = "select * from PrintingSettings where schemename='" & txtSchemName.Text & "'"
+        SqlFcmd.CommandType = CommandType.Text
+        DbfReader = SqlFcmd.ExecuteReader
+
+        While DbfReader.Read
+            If DbfReader("showpageno") = True Then
+                If DbfReader("pageformat") = 0 Then
+                    e.Graphics.DrawString("Page " & PageNo.ToString.Trim, New Font("Arial", 10, FontStyle.Bold), Brushes.Black, CSng(DbfReader("pagenoleft")), CSng(DbfReader("pagenotop")))
+                Else
+                    e.Graphics.DrawString("Page " & PageNo.ToString.Trim & " of " & PageNos.ToString.Trim, New Font("Arial", 10, FontStyle.Bold), Brushes.Black, CSng(DbfReader("pagenoleft")), CSng(DbfReader("pagenotop")))
+                End If
+            End If
+            If PageNo < PageNos Then
+                e.Graphics.DrawString("Page Total=   " & FormatNumber(PageTotal, 2).ToString.Trim, New Font("Arial", 10, FontStyle.Bold), Brushes.Black, CSng(DbfReader("pagenoleft")), CSng(DbfReader("pagenotop")) - 80)
+                e.Graphics.DrawString("Continue........", New Font("Arial", 10, FontStyle.Bold), Brushes.Black, CSng(DbfReader("pagenoleft")), CSng(DbfReader("pagenotop")) - 50)
+            End If
+        End While
+        DbfReader.Close()
+       
+        If PresentRecords > tOTrECS Then
+            PrtDbf.Close()
+            IsFirstOpen = True
+            PresentRecords = 1
+            pagerecords = 1
+            e.HasMorePages = False
+        Else
+            e.HasMorePages = False
+            e.HasMorePages = True
+            PageNo = PageNo + 1
+            PageTop = PageTopConst
+        End If
+
+
+
+
+    End Sub
+
+    Private Sub BtnPagesetupSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnPagesetupSave.Click
+
+        If MsgBox("Do You want to save?           ", MsgBoxStyle.YesNo + MsgBoxStyle.Information) = MsgBoxResult.Yes Then
+            Dim SQlStr As String = ""
+            Try
+                Dim MaxRowsPerPage As Double
+                Dim RowHeight As Double
+                MaxRowsPerPage = SQLGetNumericFieldValue("select MaxRowsPerPage from PrintingSettings where schemename='" & txtSchemName.Text & "'", "MaxRowsPerPage")
+                RowHeight = SQLGetNumericFieldValue("select RowHeight from PrintingSettings where schemename='" & txtSchemName.Text & "'", "RowHeight")
+
+                SQlStr = "INSERT INTO [PrintingSettings] ([PrinterName],[schemename],[Width],[Height],[IsLandScape],[fleft],[fright],[ftop],[fbuttom]," _
+                    & "[multi],[showsubtotals],[IsActive],[PaperName],[LeftLogoIsOn],[RightLogoIson],[Leftlogoleft],[Leftlogotop],[Leftlogowidth],[Leftlogoheight]," _
+                    & "[Rightlogoleft],[Rightlogotop],[Rightlogowidth],[Rightlogoheight],[leftlogopath],[rightlogopath],[MaxRowsPerPage],[RowHeight],[showpageno]," _
+                    & "[pagenotop],[pagenoleft],[pageformat]) " _
+                    & " VALUES (@PrinterName,@schemename,@Width,@Height,@IsLandScape,@fleft,@fright,@ftop,@fbuttom,@multi,@showsubtotals,@IsActive,@PaperName,@LeftLogoIsOn," _
+                    & " @RightLogoIson,@Leftlogoleft,@Leftlogotop,@Leftlogowidth,@Leftlogoheight,@Rightlogoleft,@Rightlogotop,@Rightlogowidth,@Rightlogoheight," _
+                    & "@leftlogopath,@rightlogopath,@MaxRowsPerPage,@RowHeight,@showpageno,@pagenotop,@pagenoleft,@pageformat) "
+
+                MAINCON.ConnectionString = ConnectionStrinG
+                MAINCON.Open()
+                Dim DBF As New SqlClient.SqlCommand(SQlStr, MAINCON)
+                With DBF.Parameters
+                    .AddWithValue("printername", TxtPrinterName.Text)
+                    .AddWithValue("schemename", txtSchemName.Text)
+                    .AddWithValue("width", TxtPaperWidth.Text)
+                    .AddWithValue("height", TxtPaperHeight.Text)
+                    If prtOrientationLand.Checked = True Then
+                        .AddWithValue("islandscape", True)
+                    Else
+                        .AddWithValue("islandscape", False)
+                    End If
+
+                    .AddWithValue("MaxRowsPerPage", MaxRowsPerPage)
+                    .AddWithValue("RowHeight", RowHeight)
+
+                    .AddWithValue("fleft", pageleftmargin.Value)
+                    .AddWithValue("fright", pagerighttmargin.Value)
+                    .AddWithValue("ftop", pagetopmargin.Value)
+                    .AddWithValue("fbuttom", pagebuttommargin.Value)
+                    .AddWithValue("multi", True)
+                    .AddWithValue("showsubtotals", True)
+                    .AddWithValue("IsActive", True)
+                    .AddWithValue("PaperName", "A4")
+                    If TxtIsLeftLogoOn.Checked = True Then
+                        .AddWithValue("LeftLogoIsOn", True)
+                    Else
+                        .AddWithValue("LeftLogoIsOn", False)
+                    End If
+
+                    .AddWithValue("Leftlogoleft", txtleftEdge.Text)
+                    .AddWithValue("leftlogotop", txtlefttop.Text)
+                    .AddWithValue("Leftlogowidth", txtleftwidth.Text)
+                    .AddWithValue("Leftlogoheight", txtleftheight.Text)
+                    Try
+                        .AddWithValue("leftlogopath", txtleftlogobox.ImageLocation)
+                    Catch ex As Exception
+
+                    End Try
+
+                    If TxtIsRightLogoOn.Checked = True Then
+                        .AddWithValue("rightLogoIsOn", True)
+                    Else
+                        .AddWithValue("rightLogoIsOn", False)
+                    End If
+                    .AddWithValue("rightlogoleft", txtrightedge.Text)
+                    .AddWithValue("rightlogotop", txtrighttop.Text)
+                    .AddWithValue("rightlogowidth", txtrightwidth.Text)
+                    .AddWithValue("rightlogoheight", txtrightheight.Text)
+                    Try
+                        .AddWithValue("rightlogopath", txtRightLogobox.ImageLocation)
+                    Catch ex As Exception
+
+                    End Try
+                    If IsShownPageNos.Checked = True Then
+                        .AddWithValue("showpageno", True)
+
+                    Else
+                        .AddWithValue("showpageno", False)
+
+                    End If
+                    .AddWithValue("pagenoleft", TxtPageNoLeft.Value)
+                    .AddWithValue("pagenotop", TxtPageNoTop.Value)
+                    .AddWithValue("pageformat", TxtPageNoFormat.SelectedIndex)
+                End With
+                DBF.ExecuteNonQuery()
+                DBF = Nothing
+                MAINCON.Close()
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+
+        End If
+        LoadReport()
+
+    End Sub
+    Sub LoadReport()
+
+        Try
+            Me.PrintGroup.Controls.RemoveAt(0)
+
+        Catch ex As Exception
+
+        End Try
+        Me.PrintPreviewControl1 = New System.Windows.Forms.PrintPreviewControl
+
+        If UCase(TxtZoom.Text) = "AUTO" Then
+            Me.PrintPreviewControl1.AutoZoom = True
+        Else
+            Me.PrintPreviewControl1.AutoZoom = False
+            If TxtZoom.Text = "25%" Then
+                Me.PrintPreviewControl1.Zoom = 0.25
+            ElseIf TxtZoom.Text = "50%" Then
+                Me.PrintPreviewControl1.Zoom = 0.5
+            ElseIf TxtZoom.Text = "75%" Then
+                Me.PrintPreviewControl1.Zoom = 0.75
+            ElseIf TxtZoom.Text = "100%" Then
+                Me.PrintPreviewControl1.Zoom = 1
+
+            Else
+                Me.PrintPreviewControl1.Zoom = 2
+
+            End If
+        End If
+
+        Me.PrintPreviewControl1.Hide()
+        Me.PrintPreviewControl1.SuspendLayout()
+        Me.PrintPreviewControl1.Dock = DockStyle.Fill
+        PrintPreviewControl1.Refresh()
+        PrintPreviewControl1.Document = PrtDoc
+        Me.PrintPreviewControl1.ResumeLayout()
+        Me.PrintGroup.Controls.Add(Me.PrintPreviewControl1)
+        Me.PrintPreviewControl1.Show()
+        Me.Cursor = Cursors.Default
+    End Sub
+
+    Private Sub GroupBox13_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PrintGroup.Enter
+
+    End Sub
+
+    Private Sub TxtZoom_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TxtZoom.SelectedIndexChanged
+        On Error Resume Next
+        If UCase(TxtZoom.Text) = "AUTO" Then
+            Me.PrintPreviewControl1.AutoZoom = True
+        Else
+            Me.PrintPreviewControl1.AutoZoom = False
+            If TxtZoom.Text = "25%" Then
+                Me.PrintPreviewControl1.Zoom = 0.25
+            ElseIf TxtZoom.Text = "50%" Then
+                Me.PrintPreviewControl1.Zoom = 0.5
+            ElseIf TxtZoom.Text = "75%" Then
+                Me.PrintPreviewControl1.Zoom = 0.75
+            ElseIf TxtZoom.Text = "100%" Then
+                Me.PrintPreviewControl1.Zoom = 1
+
+            Else
+                Me.PrintPreviewControl1.Zoom = 2
+
+            End If
+        End If
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        If txtFont.ShowDialog() Then
+            TxtFLFSample.Font = txtFont.Font
+            TxtFLFSample.ForeColor = txtFont.Color
+            TxtFLFFont.Text = txtFont.Font.Name
+            If txtFont.Font.Underline = True Then
+                TxtFLFStyleU.Checked = True
+            Else
+                TxtFLFStyleU.Checked = False
+            End If
+            If txtFont.Font.Bold = True Then
+                TxtFLFStyleB.Checked = True
+            Else
+                TxtFLFStyleB.Checked = False
+            End If
+            If txtFont.Font.Italic = True Then
+                TxtFLFStyleI.Checked = True
+            Else
+                TxtFLFStyleI.Checked = False
+
+            End If
+            TxtFLFFontSize.Value = txtFont.Font.Size
+            TxtFLFColor.Text = txtFont.Color.Name.ToString
+
+        End If
+    End Sub
+
+    Private Sub BtnFieldSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnFieldSave.Click
+        If TxtFieldLables.Text.Length = 0 Then
+            MsgBox("Please Select the Field Labels from the list")
+            TxtFieldLables.Focus()
+            Exit Sub
+        End If
+        If MsgBox("Do you want to save ?", MsgBoxStyle.YesNo) = MsgBoxResult.No Then
+            Exit Sub
+        End If
+        Dim Sqlstr As String
+        Sqlstr = "UPDATE [PrintFieldLabels] SET [SchemeName] = @SchemeName,[Fieldname] = @Fieldname,[labletext] = @labletext,[IsVisible] = @IsVisible," _
+            & "[ftop] = @ftop,[fleft] = @fleft,[width] = @width,[height] = @height,[Fontname] = @Fontname,[fontsize] = @fontsize,[fontstyle] = @fontstyle," _
+            & "[fontcolor] = @fontcolor,[Align] = @Align,[lTop] = @lTop,[lleft] = @lleft,[lwidth] = @lwidth,[lheight] = @lheight,[lFontname] = @lFontname," _
+            & "[lfontsize] = @lfontsize,[lfontstyle] = @lfontstyle,[lfontcolor] = @lfontcolor,[lalign] = @lalign" _
+            & " WHERE [SchemeName]='" & txtSchemName.Text & "' and fieldname='" & TxtFieldLables.Text & "'"
+
+
+        MAINCON.ConnectionString = ConnectionStrinG
+        MAINCON.Open()
+        Try
+            Dim DBF As New SqlClient.SqlCommand(Sqlstr, MAINCON)
+            With DBF.Parameters
+                .AddWithValue("schemename", txtSchemName.Text)
+                .AddWithValue("fieldname", TxtFieldLables.Text)
+                .AddWithValue("labletext", txtFLtext.Text)
+                If TxtFLShow.Checked = True Then
+                    .AddWithValue("isvisible", True)
+                Else
+                    .AddWithValue("isvisible", False)
+                End If
+                .AddWithValue("ltop", TxtFLtop.Value)
+                .AddWithValue("lleft", TxtFLLeft.Value)
+                .AddWithValue("lwidth", TxtFLWidth.Value)
+                .AddWithValue("lheight", TxtFLHeight.Value)
+                .AddWithValue("lfontname", TxtFLFont.Text)
+                .AddWithValue("lfontsize", TxtFLFontSize.Value)
+                If TxtFLStyleU.Checked = True Then
+                    If TxtFLStyleB.Checked = True And TxtFLSytleI.Checked = True Then
+                        .AddWithValue("lfontstyle", 7)
+                    ElseIf TxtFLStyleB.Checked = True Then
+                        .AddWithValue("lfontstyle", 5)
+                    ElseIf TxtFLSytleI.Checked = True Then
+                        .AddWithValue("lfontstyle", 1)
+                    Else
+                        .AddWithValue("lfontstyle", 3)
+                    End If
+                Else
+                    If TxtFLStyleB.Checked = True And TxtFLSytleI.Checked = True Then
+                        .AddWithValue("lfontstyle", 4)
+                    ElseIf TxtFLStyleB.Checked = True Then
+                        .AddWithValue("lfontstyle", 1)
+                    ElseIf TxtFLSytleI.Checked = True Then
+                        .AddWithValue("lfontstyle", 2)
+                    Else
+                        .AddWithValue("lfontstyle", 8)
+                    End If
+                End If
+                .AddWithValue("lalign", TxtFLAlign.Text)
+                .AddWithValue("fontcolor", TxtFLFColor.Text)
+                .AddWithValue("lfontcolor", TxtFLFontColor.Text)
+                .AddWithValue("ftop", TxtFLFTop.Value)
+                .AddWithValue("fleft", TxtFLFLeft.Value)
+                .AddWithValue("width", TxtFLFwidth.Value)
+                .AddWithValue("height", TxtFLFHeight.Value)
+                .AddWithValue("fontname", TxtFLFFont.Text)
+                .AddWithValue("fontsize", TxtFLFFontSize.Value)
+                If TxtFLFStyleU.Checked = True Then
+                    If TxtFLFStyleB.Checked = True And TxtFLFStyleI.Checked = True Then
+                        .AddWithValue("fontstyle", 7)
+                    ElseIf TxtFLFStyleB.Checked = True Then
+                        .AddWithValue("fontstyle", 5)
+                    ElseIf TxtFLFStyleI.Checked = True Then
+                        .AddWithValue("fontstyle", 1)
+                    Else
+                        .AddWithValue("fontstyle", 3)
+                    End If
+                Else
+                    If TxtFLFStyleB.Checked = True And TxtFLFStyleI.Checked = True Then
+                        .AddWithValue("fontstyle", 4)
+                    ElseIf TxtFLFStyleB.Checked = True Then
+                        .AddWithValue("fontstyle", 1)
+                    ElseIf TxtFLFStyleI.Checked = True Then
+                        .AddWithValue("fontstyle", 2)
+                    Else
+                        .AddWithValue("fontstyle", 8)
+                    End If
+                End If
+                .AddWithValue("align", TxtFLFAlign.Text)
+            End With
+            DBF.ExecuteNonQuery()
+            DBF = Nothing
+            MAINCON.Close()
+        Catch ex As Exception
+
+        End Try
+
+
+
+
+        If TxtFLApplyToAll.Checked = True Then
+            TxtFLApplyToAll.Checked = False
+            Sqlstr = "UPDATE [PrintFieldLabels] SET [lFontname] = @lFontname,[lfontsize] = @lfontsize,[lfontstyle] = @lfontstyle,[lfontcolor] = @lfontcolor  WHERE [SchemeName]='" & txtSchemName.Text & "'"
+            MAINCON.ConnectionString = ConnectionStrinG
+            MAINCON.Open()
+            Try
+                Dim DBF2 As New SqlClient.SqlCommand(Sqlstr, MAINCON)
+                With DBF2.Parameters
+                    .AddWithValue("lfontname", TxtFLFont.Text)
+                    .AddWithValue("lfontsize", TxtFLFontSize.Value)
+                    .AddWithValue("lfontcolor", TxtFLFontColor.Text)
+                    If TxtFLFStyleU.Checked = True Then
+                        If TxtFLFStyleB.Checked = True And TxtFLFStyleI.Checked = True Then
+                            .AddWithValue("lfontstyle", 7)
+                        ElseIf TxtFLFStyleB.Checked = True Then
+                            .AddWithValue("lfontstyle", 5)
+                        ElseIf TxtFLFStyleI.Checked = True Then
+                            .AddWithValue("lfontstyle", 1)
+                        Else
+                            .AddWithValue("lfontstyle", 3)
+                        End If
+                    Else
+                        If TxtFLFStyleB.Checked = True And TxtFLFStyleI.Checked = True Then
+                            .AddWithValue("lfontstyle", 4)
+                        ElseIf TxtFLFStyleB.Checked = True Then
+                            .AddWithValue("lfontstyle", 1)
+                        ElseIf TxtFLFStyleI.Checked = True Then
+                            .AddWithValue("lfontstyle", 2)
+                        Else
+                            .AddWithValue("lfontstyle", 8)
+                        End If
+                    End If
+                End With
+                DBF2.ExecuteNonQuery()
+                DBF2 = Nothing
+                MAINCON.Close()
+            Catch ex As Exception
+
+            End Try
+
+        End If
+
+        If TxtFLFapplytoall.Checked = True Then
+            TxtFLFapplytoall.Checked = False
+            Sqlstr = "UPDATE [PrintFieldLabels] SET [Fontname] = @Fontname,[fontsize] = @fontsize,[fontstyle] = @fontstyle,[fontcolor] = @fontcolor  WHERE [SchemeName]='" & txtSchemName.Text & "'"
+            MAINCON.ConnectionString = ConnectionStrinG
+            MAINCON.Open()
+            Try
+                Dim DBF2 As New SqlClient.SqlCommand(Sqlstr, MAINCON)
+                With DBF2.Parameters
+                    .AddWithValue("Fontname", TxtFLFont.Text)
+                    .AddWithValue("fontsize", TxtFLFontSize.Value)
+                    .AddWithValue("fontcolor", TxtFLFontColor.Text)
+                    If TxtFLFStyleU.Checked = True Then
+                        If TxtFLFStyleB.Checked = True And TxtFLFStyleI.Checked = True Then
+                            .AddWithValue("fontstyle", 7)
+                        ElseIf TxtFLFStyleB.Checked = True Then
+                            .AddWithValue("fontstyle", 5)
+                        ElseIf TxtFLFStyleI.Checked = True Then
+                            .AddWithValue("fontstyle", 1)
+                        Else
+                            .AddWithValue("fontstyle", 3)
+                        End If
+                    Else
+                        If TxtFLFStyleB.Checked = True And TxtFLFStyleI.Checked = True Then
+                            .AddWithValue("fontstyle", 4)
+                        ElseIf TxtFLFStyleB.Checked = True Then
+                            .AddWithValue("fontstyle", 1)
+                        ElseIf TxtFLFStyleI.Checked = True Then
+                            .AddWithValue("fontstyle", 2)
+                        Else
+                            .AddWithValue("fontstyle", 8)
+                        End If
+                    End If
+                End With
+                DBF2.ExecuteNonQuery()
+                DBF2 = Nothing
+                MAINCON.Close()
+            Catch ex As Exception
+
+            End Try
+        End If
+        LoadReport()
+    End Sub
+
+    Private Sub TxtFieldLables_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TxtFieldLables.SelectedIndexChanged
+
+
+        Dim SqlConn1 As New SqlClient.SqlConnection
+        Try
+            SqlConn1.ConnectionString = ConnectionStrinG
+            SqlConn1.Open()
+            SqlFcmd.Connection = SqlConn1
+            SqlFcmd.CommandText = "select * from PrintFieldLabels where schemename='" & txtSchemName.Text & "' and Fieldname='" & TxtFieldLables.Text & "'"
+            SqlFcmd.CommandType = CommandType.Text
+            Dim Sreader As SqlClient.SqlDataReader
+            Sreader = SqlFcmd.ExecuteReader
+            While Sreader.Read()
+                txtFLtext.Text = Sreader("labletext").ToString.Trim
+                If Sreader("isvisible") = True Then
+                    TxtFLShow.Checked = True
+                Else
+                    TxtFLShow.Checked = False
+                End If
+                TxtFLtop.Value = Sreader("ltop")
+                TxtFLLeft.Value = Sreader("lleft")
+                TxtFLWidth.Value = Sreader("lwidth")
+                TxtFLHeight.Value = Sreader("lheight")
+                TxtFLFont.Text = Sreader("lfontname").ToString.Trim
+                TxtFLFontSize.Value = Sreader("lfontsize")
+
+                If Sreader("lfontstyle") = 1 Then
+                    TxtFLStyleB.Checked = True
+                    TxtFLStyleU.Checked = False
+                    TxtFLSytleI.Checked = False
+                ElseIf Sreader("lfontstyle") = 2 Then
+                    TxtFLStyleB.Checked = False
+                    TxtFLSytleI.Checked = True
+                    TxtFLStyleU.Checked = False
+                ElseIf Sreader("lfontstyle") = 3 Then
+                    TxtFLStyleB.Checked = False
+                    TxtFLSytleI.Checked = False
+                    TxtFLStyleU.Checked = True
+                ElseIf Sreader("lfontstyle") = 4 Then
+                    TxtFLStyleB.Checked = True
+                    TxtFLSytleI.Checked = True
+                    TxtFLStyleU.Checked = False
+                ElseIf Sreader("lfontstyle") = 5 Then
+                    TxtFLStyleB.Checked = True
+                    TxtFLSytleI.Checked = False
+                    TxtFLStyleU.Checked = True
+                ElseIf Sreader("lfontstyle") = 6 Then
+                    TxtFLStyleB.Checked = False
+                    TxtFLSytleI.Checked = True
+                    TxtFLStyleU.Checked = True
+                ElseIf Sreader("lfontstyle") = 7 Then
+                    TxtFLStyleB.Checked = True
+                    TxtFLSytleI.Checked = True
+                    TxtFLStyleU.Checked = True
+                Else
+                    TxtFLStyleB.Checked = False
+                    TxtFLSytleI.Checked = False
+                    TxtFLStyleU.Checked = False
+                End If
+
+
+                TxtFLAlign.Text = Sreader("lalign").ToString.Trim
+                TxtFLFontColor.Text = Sreader("fontcolor").ToString.Trim
+                TxtFLFColor.Text = Sreader("lfontcolor").ToString.Trim
+                TxtFLFTop.Value = Sreader("ftop")
+                TxtFLFLeft.Value = Sreader("fleft")
+                TxtFLFwidth.Value = Sreader("width")
+                TxtFLFHeight.Value = Sreader("height")
+                TxtFLFFont.Text = Sreader("fontname").ToString.Trim
+                TxtFLFFontSize.Value = Sreader("fontsize")
+
+                If Sreader("fontstyle") = 1 Then
+                    TxtFLFStyleB.Checked = True
+                    TxtFLFStyleI.Checked = False
+                    TxtFLFStyleU.Checked = False
+                ElseIf Sreader("fontstyle") = 2 Then
+                    TxtFLFStyleB.Checked = False
+                    TxtFLFStyleI.Checked = False
+                    TxtFLFStyleU.Checked = True
+                ElseIf Sreader("fontstyle") = 3 Then
+                    TxtFLFStyleB.Checked = False
+                    TxtFLFStyleI.Checked = False
+                    TxtFLFStyleU.Checked = True
+                ElseIf Sreader("fontstyle") = 4 Then
+                    TxtFLFStyleB.Checked = True
+                    TxtFLFStyleI.Checked = True
+                    TxtFLFStyleU.Checked = False
+                ElseIf Sreader("fontstyle") = 5 Then
+                    TxtFLFStyleB.Checked = True
+                    TxtFLFStyleI.Checked = False
+                    TxtFLFStyleU.Checked = True
+                ElseIf Sreader("fontstyle") = 6 Then
+                    TxtFLFStyleB.Checked = False
+                    TxtFLFStyleU.Checked = True
+                    TxtFLFStyleI.Checked = True
+                ElseIf Sreader("fontstyle") = 7 Then
+                    TxtFLFStyleB.Checked = True
+                    TxtFLFStyleI.Checked = True
+                    TxtFLFStyleU.Checked = True
+                Else
+                    TxtFLFStyleB.Checked = False
+                    TxtFLFStyleI.Checked = False
+                    TxtFLFStyleU.Checked = False
+                End If
+
+                TxtFLFAlign.Text = Sreader("align").ToString.Trim
+            End While
+        Catch ex As Exception
+
+        End Try
+
+
+    End Sub
+
+
+    Private Sub btnNewLabelSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNewLabelSave.Click
+        If TxtLabelLists.Text.Length = 0 Then
+            MsgBox("Please Select the  Labels from the list")
+            TxtLabelLists.Focus()
+            Exit Sub
+        End If
+        Dim SqlStr As String = ""
+        If MsgBox("Do you want to Save?      ", MsgBoxStyle.YesNo + MsgBoxStyle.Information) = MsgBoxResult.Yes Then
+
+            If SQLIsFieldExists("SELECT TOP 1 1 from   PrintLables where schemename='" & txtSchemName.Text & "' and fieldname='" & TxtLabelLists.Text & "'") = True Then
+                SqlStr = "UPDATE [PrintLables]  SET [schemename] = @schemename,[ftop] = @ftop,[fleft] = @fleft,[width] = @width," _
+                & "[height] = @height,[Fontname] = @Fontname,[fontsize] = @fontsize,[fontstyle] = @fontstyle,[fontcolor] = @fontcolor," _
+                & "[fieldname] = @fieldname,[labletext] = @labletext,[isvisible] = @isvisible,[align] = @align WHERE schemename='" & txtSchemName.Text & "' and fieldname='" & TxtLabelLists.Text & "'"
+
+            Else
+                SqlStr = "INSERT INTO [PrintLables] ([schemename],[ftop],[fleft],[width],[height],[Fontname],[fontsize],[fontstyle]," _
+                    & "[fontcolor],[fieldname],[labletext],[isvisible],[align]) " _
+                    & " VALUES (@schemename,@ftop,@fleft,@width,@height,@Fontname,@fontsize,@fontstyle,@fontcolor,@fieldname,@labletext,@isvisible,@align)"
+
+            End If
+
+            MAINCON.ConnectionString = ConnectionStrinG
+            MAINCON.Open()
+            Try
+                Dim DBF2 As New SqlClient.SqlCommand(SqlStr, MAINCON)
+                With DBF2.Parameters
+                    '.AddWithValue("Fontname", TxtFLFont.Text)
+                    .AddWithValue("schemename", txtSchemName.Text)
+                    .AddWithValue("fieldname", TxtLabelLists.Text)
+                    .AddWithValue("labletext", txtLtext.Text)
+                    If TxtLShow.Checked = True Then
+                        .AddWithValue("isvisible", True)
+                    Else
+                        .AddWithValue("isvisible", False)
+                    End If
+
+                    .AddWithValue("fontcolor", TxtLFontColor.Text)
+
+                    .AddWithValue("ftop", TxtLtop.Value)
+                    .AddWithValue("fleft", TxtLleft.Value)
+                    .AddWithValue("width", TxtLwidth.Value)
+                    .AddWithValue("height", TxtLHeight.Value)
+                    .AddWithValue("fontname", TxtLFontName.Text)
+                    .AddWithValue("fontsize", TxtLFontSize.Value)
+
+                    If TxtLStyleU.Checked = True Then
+                        If TxtLStyleB.Checked = True And TxtLStyleI.Checked = True Then
+                            .AddWithValue("fontstyle", 7)
+                        ElseIf TxtLStyleB.Checked = True Then
+                            .AddWithValue("fontstyle", 5)
+                        ElseIf TxtLStyleI.Checked = True Then
+                            .AddWithValue("fontstyle", 1)
+                        Else
+
+                            .AddWithValue("fontstyle", 3)
+                        End If
+                    Else
+                        If TxtLStyleB.Checked = True And TxtLStyleI.Checked = True Then
+                            .AddWithValue("fontstyle", 4)
+                        ElseIf TxtLStyleB.Checked = True Then
+                            .AddWithValue("fontstyle", 1)
+                        ElseIf TxtLStyleI.Checked = True Then
+                            .AddWithValue("fontstyle", 2)
+                        Else
+                            .AddWithValue("fontstyle", 8)
+                        End If
+                    End If
+
+                    .AddWithValue("align", TxtLFontAlign.Text)
+                End With
+                DBF2.ExecuteNonQuery()
+                DBF2 = Nothing
+                MAINCON.Close()
+            Catch ex As Exception
+
+            End Try
+
+
+
+
+        End If
+        If TxtLableApplytoall.Checked = True Then
+            SqlStr = "UPDATE [PrintLables]  SET [Fontname] = @Fontname,[fontsize] = @fontsize,[fontstyle] = @fontstyle,[fontcolor] = @fontcolor WHERE  schemename='" & txtSchemName.Text & "'"
+            MAINCON.ConnectionString = ConnectionStrinG
+            MAINCON.Open()
+            Try
+                Dim DBF2 As New SqlClient.SqlCommand(SqlStr, MAINCON)
+                With DBF2.Parameters
+                    .AddWithValue("fontcolor", TxtLFontColor.Text)
+                    .AddWithValue("fontname", TxtLFontName.Text)
+                    .AddWithValue("fontsize", TxtLFontSize.Value)
+                    If TxtLStyleU.Checked = True Then
+                        If TxtLStyleB.Checked = True And TxtLStyleI.Checked = True Then
+                            .AddWithValue("lfontstyle", 7)
+                        ElseIf TxtLStyleB.Checked = True Then
+                            .AddWithValue("lfontstyle", 5)
+                        ElseIf TxtLStyleI.Checked = True Then
+                            .AddWithValue("lfontstyle", 1)
+                        Else
+                            .AddWithValue("lfontstyle", 3)
+                        End If
+                    Else
+                        If TxtLStyleB.Checked = True And TxtLStyleI.Checked = True Then
+                            .AddWithValue("lfontstyle", 4)
+                        ElseIf TxtLStyleB.Checked = True Then
+                            .AddWithValue("lfontstyle", 1)
+                        ElseIf TxtLStyleI.Checked = True Then
+                            .AddWithValue("lfontstyle", 2)
+                        Else
+                            .AddWithValue("lfontstyle", 8)
+                        End If
+                    End If
+                End With
+                DBF2.ExecuteNonQuery()
+                DBF2 = Nothing
+                MAINCON.Close()
+            Catch ex As Exception
+
+            End Try
+
+            TxtLableApplytoall.Checked = False
+        End If
+        LoadReport()
+    End Sub
+
+    Private Sub TxtLabelLists_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TxtLabelLists.SelectedIndexChanged
+        Dim SqlConn1 As New SqlClient.SqlConnection
+        Try
+            SqlConn1.ConnectionString = ConnectionStrinG
+            SqlConn1.Open()
+            SqlFcmd.Connection = SqlConn1
+            SqlFcmd.CommandText = "select * from PrintLables where schemename='" & txtSchemName.Text & "' and fieldname='" & TxtLabelLists.Text & "'"
+            SqlFcmd.CommandType = CommandType.Text
+            Dim Sreader As SqlClient.SqlDataReader
+            Sreader = SqlFcmd.ExecuteReader
+            While Sreader.Read()
+                ' txtFLtext.Text = Sreader("labletext").ToString.Trim
+                TxtLabelLists.Text = Sreader("fieldname").ToString.Trim
+                txtLtext.Text = Sreader("labletext").ToString.Trim
+                If Sreader("isvisible").Value = True Then
+                    TxtLShow.Checked = True
+                Else
+                    TxtLShow.Checked = False
+                End If
+
+                TxtLFontColor.Text = Sreader("fontcolor").ToString.Trim
+
+                TxtLtop.Value = Sreader("ftop")
+                TxtLleft.Value = Sreader("fleft")
+                TxtLwidth.Value = Sreader("width")
+                TxtLHeight.Value = Sreader("height")
+                TxtLFontName.Text = Sreader("fontname").ToString.Trim
+                TxtLFontSize.Value = Sreader("fontsize")
+
+
+                If Sreader("fontstyle") = 1 Then
+                    TxtLStyleB.Checked = True
+                    TxtLStyleI.Checked = False
+                    TxtLStyleU.Checked = False
+                ElseIf Sreader("fontstyle") = 2 Then
+                    TxtLStyleB.Checked = False
+                    TxtLStyleI.Checked = False
+                    TxtLStyleU.Checked = True
+                ElseIf Sreader("fontstyle") = 3 Then
+                    TxtLStyleB.Checked = False
+                    TxtLStyleI.Checked = False
+                    TxtLStyleU.Checked = True
+                ElseIf Sreader("fontstyle") = 4 Then
+                    TxtLStyleB.Checked = True
+                    TxtLStyleI.Checked = True
+                    TxtLStyleU.Checked = False
+                ElseIf Sreader("fontstyle") = 5 Then
+                    TxtLStyleB.Checked = True
+                    TxtLStyleI.Checked = False
+                    TxtLStyleU.Checked = True
+                ElseIf Sreader("fontstyle") = 6 Then
+                    TxtLStyleB.Checked = False
+                    TxtLStyleU.Checked = True
+                    TxtLStyleI.Checked = True
+                ElseIf Sreader("fontstyle") = 7 Then
+                    TxtLStyleB.Checked = True
+                    TxtLStyleI.Checked = True
+                    TxtLStyleU.Checked = True
+                Else
+                    TxtLStyleB.Checked = False
+                    TxtLStyleI.Checked = False
+                    TxtLStyleU.Checked = False
+                End If
+
+                TxtLFontAlign.Text = Sreader("align").ToString.Trim
+            End While
+        Catch ex As Exception
+
+        End Try
+
+
+    End Sub
+
+    Private Sub btnnewlable_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnnewlable.Click
+        Dim txtnlbl As String = ""
+        txtnlbl = InputBox("Enter The Lable Name ", "Create New Label", "")
+        If txtnlbl.Length > 0 Then
+            If TxtLabelLists.Items.Contains(txtnlbl) = True Then
+                MsgBox("The lable name is already exists, Please Try Again")
+            Else
+                TxtLabelLists.Items.Add(txtnlbl)
+                TxtLabelLists.Text = txtnlbl
+            End If
+        End If
+    End Sub
+
+    Private Sub TxtLSelFont_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TxtLSelFont.Click
+        If txtFont.ShowDialog() Then
+            TxtLsample.Font = txtFont.Font
+            TxtLsample.ForeColor = txtFont.Color
+            TxtLFontName.Text = txtFont.Font.Name
+            If txtFont.Font.Underline = True Then
+                TxtLStyleU.Checked = True
+            Else
+                TxtLStyleU.Checked = False
+            End If
+            If txtFont.Font.Bold = True Then
+                TxtLStyleB.Checked = True
+            Else
+                TxtLStyleB.Checked = False
+            End If
+            If txtFont.Font.Italic = True Then
+                TxtLStyleI.Checked = True
+            Else
+                TxtLStyleI.Checked = False
+            End If
+            TxtLFontSize.Value = txtFont.Font.Size
+            TxtLFontColor.Text = txtFont.Color.Name.ToString
+
+        End If
+    End Sub
+
+    Private Sub btnRecordSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRecordSave.Click
+        If TxtrecordItems.Text.Length = 0 Then
+            MsgBox("Please Select Record Field Item from the list")
+            TxtrecordItems.Focus()
+            Exit Sub
+        End If
+        If MsgBox("Do You want to save  ?       ", MsgBoxStyle.YesNo + MsgBoxStyle.Information) = MsgBoxResult.No Then
+            Exit Sub
+        End If
+        Dim gr As New Font(TxtRFontname.Text, CSng(TxtRFontSize.Value), FontStyle.Bold)
+        Dim m As Integer
+        Dim rh As Integer
+        m = gr.GetHeight()
+        rh = m + TxtLineSpecing.Value
+        m = TxtRFHeight.Value / (m + TxtLineSpecing.Value)
+
+        ExecuteSQLQuery("UPDATE PrintingSettings SET maxrowsperpage=" & m & "  where schemename='" & txtSchemName.Text & "'")
+        ExecuteSQLQuery("UPDATE PrintingSettings SET rowheight=" & rh & "  where schemename='" & txtSchemName.Text & "'")
+        ExecuteSQLQuery("UPDATE printrecords SET [ftop]=" & TxtRtop.Value & "  where schemename='" & txtSchemName.Text & "'")
+        ExecuteSQLQuery("UPDATE printrecords SET height=" & TxtRFHeight.Value & "  where schemename='" & txtSchemName.Text & "'")
+        ExecuteSQLQuery("UPDATE printrecords SET ltop=" & TxtRlTop.Value & "  where schemename='" & txtSchemName.Text & "'")
+        ExecuteSQLQuery("UPDATE printrecords SET [space]=" & TxtLineSpecing.Value & "  where schemename='" & txtSchemName.Text & "'")
+
+        Dim SqlStr As String = ""
+        SqlStr = "UPDATE [PrintRecords]   SET [labletext] = @labletext,[IsVisible] = @IsVisible," _
+            & "[ftop] = @ftop,[fleft] = @fleft,[width] = @width,[height] = @height,[Fontname] = @Fontname,[fontsize] = @fontsize,[fontstyle] = @fontstyle,[fontcolor] = @fontcolor," _
+            & "[Align] = @Align,[lTop] = @lTop,[lleft] = @lleft,[lwidth] = @lwidth,[lheight] = @lheight,[lFontname] = @lFontname,[lfontsize] = @lfontsize,[lfontstyle] = @lfontstyle," _
+            & "[lfontcolor] = @lfontcolor,[Lcase] = @Lcase,[Rcase] = @Rcase,[lalign] = @lalign WHERE  schemename='" & txtSchemName.Text & "' and fieldname='" & TxtrecordItems.Text & "'"
+
+
+
+        MAINCON.ConnectionString = ConnectionStrinG
+        MAINCON.Open()
+        Try
+            Dim DBF2 As New SqlClient.SqlCommand(SqlStr, MAINCON)
+            With DBF2.Parameters
+                '.AddWithValue("fontcolor", = TxtLFontColor.Text)
+                .AddWithValue("labletext", TxtRlText.Text)
+                If TxtRShow.Checked = True Then
+                    .AddWithValue("isvisible", True)
+                Else
+                    .AddWithValue("isvisible", False)
+                End If
+                .AddWithValue("lleft", TxtRlLeft.Value)
+                .AddWithValue("lwidth", TxtRlwidth.Value)
+                .AddWithValue("lfontname", TxtRlfontname.Text)
+                .AddWithValue("lfontsize", TxtRlfontsize.Value)
+                .AddWithValue("lfontcolor", TxtRlfontcolor.Text)
+                If TxtRlStyleU.Checked = True Then
+                    If TxtRlstyelB.Checked = True And TxtRlStyleI.Checked = True Then
+                        .AddWithValue("lfontstyle", 7)
+                    ElseIf TxtRlstyelB.Checked = True Then
+                        .AddWithValue("lfontstyle", 5)
+                    ElseIf TxtRlStyleI.Checked = True Then
+                        .AddWithValue("lfontstyle", 1)
+                    Else
+                        .AddWithValue("lfontstyle", 3)
+                    End If
+                Else
+                    If TxtRlstyelB.Checked = True And TxtRlStyleI.Checked = True Then
+                        .AddWithValue("lfontstyle", 4)
+                    ElseIf TxtRlstyelB.Checked = True Then
+                        .AddWithValue("lfontstyle", 1)
+                    ElseIf TxtRlStyleI.Checked = True Then
+                        .AddWithValue("lfontstyle", 2)
+                    Else
+                        .AddWithValue("lfontstyle", 8)
+                    End If
+                End If
+                .AddWithValue("Lcase", TxtRlCase.Text)
+                .AddWithValue("lalign", TxtRlalign.Text)
+                .AddWithValue("fleft", TxtRFleft.Value)
+                .AddWithValue("width", TxtRwidht.Value)
+                .AddWithValue("fontname", TxtRFontname.Text)
+                .AddWithValue("fontsize", TxtRFontSize.Value)
+                .AddWithValue("fontcolor", TxtRfontColor.Text)
+                If TxtRStyleU.Checked = True Then
+                    If txtRStyleB.Checked = True And TxtRStyleI.Checked = True Then
+                        .AddWithValue("fontstyle", 7)
+                    ElseIf txtRStyleB.Checked = True Then
+                        .AddWithValue("fontstyle", 5)
+                    ElseIf TxtRStyleI.Checked = True Then
+                        .AddWithValue("fontstyle", 1)
+                    Else
+                        .AddWithValue("fontstyle", 3)
+                    End If
+                Else
+                    If txtRStyleB.Checked = True And TxtRStyleI.Checked = True Then
+                        .AddWithValue("fontstyle", 4)
+                    ElseIf txtRStyleB.Checked = True Then
+                        .AddWithValue("fontstyle", 1)
+                    ElseIf TxtRStyleI.Checked = True Then
+                        .AddWithValue("fontstyle", 2)
+                    Else
+                        .AddWithValue("fontstyle", 8)
+                    End If
+                End If
+                .AddWithValue("Rcase", TxtRCase.Text)
+                .AddWithValue("align", TxtRAlign.Text)
+
+            End With
+            DBF2.ExecuteNonQuery()
+            DBF2 = Nothing
+            MAINCON.Close()
+        Catch ex As Exception
+
+        End Try
+
+
+
+
+
+
+        If txtRLapplytoall.Checked = True Then
+            SqlStr = "UPDATE [PrintRecords]   SET [lFontname] = @lFontname,[lfontsize] = @lfontsize,[lfontstyle] = @lfontstyle," _
+         & "[lfontcolor] = @lfontcolor,[Lcase] = @Lcase  WHERE  schemename='" & txtSchemName.Text & "'"
+
+            MAINCON.ConnectionString = ConnectionStrinG
+            MAINCON.Open()
+            Try
+                Dim DBF2 As New SqlClient.SqlCommand(SqlStr, MAINCON)
+                With DBF2.Parameters
+                    .AddWithValue("lfontname", TxtRlfontname.Text)
+                    .AddWithValue("lfontsize", TxtRlfontsize.Value)
+                    .AddWithValue("lfontcolor", TxtRlfontcolor.Text)
+                    If TxtRlStyleU.Checked = True Then
+                        If TxtRlstyelB.Checked = True And TxtRlStyleI.Checked = True Then
+                            .AddWithValue("lfontstyle", 7)
+                        ElseIf TxtRlstyelB.Checked = True Then
+                            .AddWithValue("lfontstyle", 5)
+                        ElseIf TxtRlStyleI.Checked = True Then
+                            .AddWithValue("lfontstyle", 1)
+                        Else
+
+                            .AddWithValue("lfontstyle", 3)
+                        End If
+                    Else
+                        If TxtRlstyelB.Checked = True And TxtRlStyleI.Checked = True Then
+                            .AddWithValue("lfontstyle", 4)
+                        ElseIf TxtRlstyelB.Checked = True Then
+                            .AddWithValue("lfontstyle", 1)
+                        ElseIf TxtRlStyleI.Checked = True Then
+                            .AddWithValue("lfontstyle", 2)
+                        Else
+                            .AddWithValue("lfontstyle", 8)
+                        End If
+                    End If
+
+                    .AddWithValue("Lcase", TxtRlCase.Text)
+
+                End With
+                DBF2.ExecuteNonQuery()
+                DBF2 = Nothing
+                MAINCON.Close()
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+            txtRLapplytoall.Checked = False
+        End If
+
+
+
+
+
+        If TxtRapplytoall.Checked = True Then
+            TxtRapplytoall.Checked = False
+
+
+            SqlStr = "UPDATE [PrintRecords]   SET [Fontname] = @Fontname,[fontsize] = @fontsize,[fontstyle] = @fontstyle,[fontcolor] = @fontcolor,[Rcase]=@Rcase  WHERE   schemename='" & txtSchemName.Text & "'"
+
+            MAINCON.ConnectionString = ConnectionStrinG
+            MAINCON.Open()
+            Try
+                Dim DBF2 As New SqlClient.SqlCommand(SqlStr, MAINCON)
+                With DBF2.Parameters
+                    .AddWithValue("fontname", TxtRFontname.Text)
+                    .AddWithValue("fontsize", TxtRFontSize.Value)
+                    .AddWithValue("fontcolor", TxtRfontColor.Text)
+                    If TxtRStyleU.Checked = True Then
+                        If txtRStyleB.Checked = True And TxtRStyleI.Checked = True Then
+                            .AddWithValue("fontstyle", 7)
+                        ElseIf txtRStyleB.Checked = True Then
+                            .AddWithValue("fontstyle", 5)
+                        ElseIf TxtRStyleI.Checked = True Then
+                            .AddWithValue("fontstyle", 1)
+                        Else
+                            .AddWithValue("fontstyle", 3)
+                        End If
+                    Else
+                        If txtRStyleB.Checked = True And TxtRStyleI.Checked = True Then
+                            .AddWithValue("fontstyle", 4)
+                        ElseIf txtRStyleB.Checked = True Then
+                            .AddWithValue("fontstyle", 1)
+                        ElseIf TxtRStyleI.Checked = True Then
+                            .AddWithValue("fontstyle", 2)
+                        Else
+                            .AddWithValue("fontstyle", 8)
+                        End If
+                    End If
+                    .AddWithValue("Rcase", TxtRCase.Text)
+
+                End With
+                DBF2.ExecuteNonQuery()
+                DBF2 = Nothing
+                MAINCON.Close()
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+        End If
+
+        LoadReport()
+
+    End Sub
+
+    Private Sub txtselfontrr_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtselfontrr.Click
+        If txtFont.ShowDialog() Then
+
+
+            TxtRlfontname.Text = txtFont.Font.Name
+            If txtFont.Font.Underline = True Then
+                TxtRlStyleU.Checked = True
+            Else
+                TxtRlStyleU.Checked = False
+            End If
+            If txtFont.Font.Bold = True Then
+                TxtRlstyelB.Checked = True
+            Else
+                TxtRlstyelB.Checked = False
+            End If
+            If txtFont.Font.Italic = True Then
+                TxtRlStyleI.Checked = True
+            Else
+                TxtRlStyleI.Checked = False
+            End If
+            TxtRlfontsize.Value = txtFont.Font.Size
+            TxtRlfontcolor.Text = txtFont.Color.Name.ToString
+
+        End If
+    End Sub
+
+    Private Sub TxtRselecfotnr_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TxtRselecfotnr.Click
+        If txtFont.ShowDialog() Then
+
+            TxtRFontname.Text = txtFont.Font.Name
+            If txtFont.Font.Underline = True Then
+                TxtRStyleU.Checked = True
+            Else
+                TxtRStyleU.Checked = False
+            End If
+            If txtFont.Font.Bold = True Then
+                txtRStyleB.Checked = True
+            Else
+                txtRStyleB.Checked = False
+            End If
+            If txtFont.Font.Italic = True Then
+                TxtRStyleI.Checked = True
+            Else
+                TxtRStyleI.Checked = False
+            End If
+            TxtRFontSize.Value = txtFont.Font.Size
+            TxtRfontColor.Text = txtFont.Color.Name.ToString
+
+        End If
+    End Sub
+
+    Private Sub TxtrecordItems_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TxtrecordItems.SelectedIndexChanged
+
+        If TxtrecordItems.Text.Length > 0 Then
+
+            Dim SqlConn1 As New SqlClient.SqlConnection
+            Try
+                SqlConn1.ConnectionString = ConnectionStrinG
+                SqlConn1.Open()
+                SqlFcmd.Connection = SqlConn1
+                SqlFcmd.CommandText = "select * from printrecords where schemename='" & txtSchemName.Text & "' and fieldname='" & TxtrecordItems.Text & "'"
+                SqlFcmd.CommandType = CommandType.Text
+                Dim Sreader As SqlClient.SqlDataReader
+                Sreader = SqlFcmd.ExecuteReader
+                While Sreader.Read()
+                    TxtRlText.Text = Sreader("labletext").ToString.Trim
+                    If Sreader("isvisible") = True Then
+                        TxtRShow.Checked = True
+                    Else
+                        TxtRShow.Checked = False
+                    End If
+                    TxtRlLeft.Value = Sreader("lleft")
+                    TxtRlwidth.Value = Sreader("lwidth")
+                    TxtRlfontname.Text = Sreader("lfontname").ToString.Trim
+                    TxtRlfontsize.Value = Sreader("lfontsize")
+                    TxtRlfontcolor.Text = Sreader("lfontcolor").ToString.Trim
+
+                    If Sreader("lfontstyle") = 1 Then
+                        TxtRlstyelB.Checked = True
+                        TxtRlStyleI.Checked = False
+                        TxtRlStyleU.Checked = False
+                    ElseIf Sreader("lfontstyle") = 2 Then
+                        TxtRlstyelB.Checked = False
+                        TxtRlStyleI.Checked = False
+                        TxtRlStyleU.Checked = True
+                    ElseIf Sreader("lfontstyle") = 3 Then
+                        TxtRlstyelB.Checked = False
+                        TxtRlStyleI.Checked = False
+                        TxtRlStyleU.Checked = True
+                    ElseIf Sreader("lfontstyle") = 4 Then
+                        TxtRlstyelB.Checked = True
+                        TxtRlStyleI.Checked = True
+                        TxtRlStyleU.Checked = False
+                    ElseIf Sreader("lfontstyle") = 5 Then
+                        TxtRlstyelB.Checked = True
+                        TxtRlStyleI.Checked = False
+                        TxtRlStyleU.Checked = True
+                    ElseIf Sreader("lfontstyle") = 6 Then
+                        TxtRlstyelB.Checked = False
+                        TxtRlStyleU.Checked = True
+                        TxtRlStyleI.Checked = True
+                    ElseIf Sreader("lfontstyle") = 7 Then
+                        TxtRlstyelB.Checked = True
+                        TxtRlStyleI.Checked = True
+                        TxtRlStyleU.Checked = True
+                    Else
+                        TxtRlstyelB.Checked = False
+                        TxtRlStyleI.Checked = False
+                        TxtRlStyleU.Checked = False
+                    End If
+
+
+
+                    TxtRlCase.Text = Sreader("Lcase").ToString.Trim
+                    TxtRlalign.Text = Sreader("lalign").ToString.Trim
+
+                    TxtRFleft.Value = Sreader("fleft")
+                    TxtRwidht.Value = Sreader("width")
+                    TxtRFontname.Text = Sreader("fontname").ToString.Trim
+                    TxtRFontSize.Value = Sreader("fontsize")
+                    TxtRfontColor.Text = Sreader("fontcolor").ToString.Trim
+
+
+                    If Sreader("fontstyle") = 1 Then
+                        txtRStyleB.Checked = True
+                        TxtRStyleI.Checked = False
+                        TxtRStyleU.Checked = False
+                    ElseIf Sreader("fontstyle") = 2 Then
+                        txtRStyleB.Checked = False
+                        TxtRStyleI.Checked = False
+                        TxtRStyleU.Checked = True
+                    ElseIf Sreader("fontstyle") = 3 Then
+                        txtRStyleB.Checked = False
+                        TxtRStyleI.Checked = False
+                        TxtRStyleU.Checked = True
+                    ElseIf Sreader("fontstyle") = 4 Then
+                        txtRStyleB.Checked = True
+                        TxtRStyleI.Checked = True
+                        TxtRStyleU.Checked = False
+                    ElseIf Sreader("fontstyle") = 5 Then
+                        txtRStyleB.Checked = True
+                        TxtRStyleI.Checked = False
+                        TxtRStyleU.Checked = True
+                    ElseIf Sreader("fontstyle") = 6 Then
+                        txtRStyleB.Checked = False
+                        TxtRStyleU.Checked = True
+                        TxtRStyleI.Checked = True
+                    ElseIf Sreader("fontstyle") = 7 Then
+                        txtRStyleB.Checked = True
+                        TxtRStyleI.Checked = True
+                        TxtRStyleU.Checked = True
+                    Else
+                        txtRStyleB.Checked = False
+                        TxtRStyleI.Checked = False
+                        TxtRStyleU.Checked = False
+                    End If
+
+                    TxtRCase.Text = Sreader("Rcase").ToString.Trim
+                    TxtRAlign.Text = Sreader("align").ToString.Trim
+                End While
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            Finally
+                SqlConn1.Close()
+                SqlFcmd.Connection = Nothing
+            End Try
+
+
+
+
+        End If
+    End Sub
+
+    Private Sub Button23_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button23.Click
+        Dim inputval As String
+        inputval = InputBox("Enter The Line Name ?", "Line Name", "")
+        If inputval.Length > 0 Then
+            If txtLineNames.Items.Contains(inputval) = False Then
+                IsNewLine = False
+                txtLineNames.Items.Add(inputval)
+            Else
+                MsgBox("The Name is already exists, Please Try Again")
+            End If
+        End If
+    End Sub
+
+    Private Sub UserButton3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UserButton3.Click
+        If ColorDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
+            txtLineColor.Text = ColorDialog1.Color.Name
+        End If
+    End Sub
+
+
+    Private Sub UserButton2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UserButton2.Click
+        If txtLineNames.Text.Length = 0 Then
+            MsgBox("Please Select the Line Name       ")
+            txtLineNames.Focus()
+            Exit Sub
+        End If
+        If MsgBox("Do you want to save the line ?", MsgBoxStyle.YesNo + MsgBoxStyle.Information) = MsgBoxResult.No Then
+            Exit Sub
+        End If
+        Dim Sqlstr As String = ""
+        If txtLineNames.Text.Length > 0 Then
+            If SQLIsFieldExists("SELECT TOP 1 1 from   printlines where schemename='" & txtSchemName.Text & "' and fieldname='" & txtLineNames.Text & "'") = True Then
+                Sqlstr = "UPDATE [PrintLines] SET [schemename] = @schemename,[ftop] = @ftop,[fleft]=@fleft,[width] = @width,[height] = @height," _
+                    & "[fieldname] = @fieldname,[FieldType] = @FieldType,[LineColor] = @LineColor,[BoarderStyle] = @BoarderStyle,[BoarderWidth] = @BoarderWidth," _
+                    & "[IsVisible] = @IsVisible WHERE  schemename='" & txtSchemName.Text & "' and fieldname='" & txtLineNames.Text & "'"
+            Else
+                Sqlstr = "INSERT INTO [PrintLines]([schemename],[ftop],[fleft],[width],[height],[fieldname],[FieldType],[LineColor],[BoarderStyle],[BoarderWidth],[IsVisible])" _
+                    & " VALUES (@schemename,@ftop,@fleft,@width,@height,@fieldname,@FieldType,@LineColor,@BoarderStyle,@BoarderWidth,@IsVisible)"
+            End If
+            MAINCON.ConnectionString = ConnectionStrinG
+            MAINCON.Open()
+            Try
+                Dim DBF2 As New SqlClient.SqlCommand(Sqlstr, MAINCON)
+                With DBF2.Parameters
+                    If IsNewLine = True Then
+                        .AddWithValue("fieldtype", 0)
+                    Else
+                        .AddWithValue("fieldtype", 1)
+                    End If
+                    If TxtLineShow.Checked = True Then
+                        .AddWithValue("isvisible", True)
+                    Else
+                        .AddWithValue("isvisible", False)
+
+                    End If
+                    .AddWithValue("schemename", txtSchemName.Text)
+                    .AddWithValue("ftop", TxtLineY1.Value)
+                    .AddWithValue("fleft", TxtLineX1.Value)
+                    .AddWithValue("width", TxtLinex2.Value)
+                    .AddWithValue("height", TxtLineY2.Value)
+                    .AddWithValue("Fieldname", txtLineNames.Text)
+                    .AddWithValue("linecolor", txtLineColor.Text)
+                    .AddWithValue("boarderstyle", txtLineStyle.Text)
+                    .AddWithValue("boarderwidth", txtLineWidth.Value)
+                End With
+                DBF2.ExecuteNonQuery()
+                DBF2 = Nothing
+                MAINCON.Close()
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+
+            IsNewLine = False
+        End If
+
+        LoadReport()
+
+    End Sub
+
+    Private Sub txtLineNames_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtLineNames.SelectedIndexChanged
+        If txtLineNames.Text.Length = 0 Then
+            Exit Sub
+        End If
+        Dim SqlConn1 As New SqlClient.SqlConnection
+        Try
+            SqlConn1.ConnectionString = ConnectionStrinG
+            SqlConn1.Open()
+            SqlFcmd.Connection = SqlConn1
+            SqlFcmd.CommandText = "select * from printlines where schemename='" & txtSchemName.Text & "' and fieldname='" & txtLineNames.Text & "'"
+            SqlFcmd.CommandType = CommandType.Text
+            Dim Sreader As SqlClient.SqlDataReader
+            Sreader = SqlFcmd.ExecuteReader
+            While Sreader.Read()
+
+                If Sreader("isvisible") = True Then
+                    TxtLineShow.Checked = True
+                Else
+                    TxtLineShow.Checked = False
+                End If
+                TxtLineY1.Value = Sreader("ftop")
+                TxtLineX1.Value = Sreader("fleft")
+                TxtLinex2.Value = Sreader("width")
+                TxtLineY2.Value = Sreader("height")
+
+                txtLineColor.Text = Sreader("linecolor").ToString.Trim
+                txtLineStyle.Text = Sreader("boarderstyle").ToString.Trim
+                txtLineWidth.Value = Sreader("boarderwidth")
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            SqlConn1.Close()
+            SqlFcmd.Connection = Nothing
+        End Try
+
+
+
+
+    End Sub
+
+    Private Sub BtnHeadingSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnHeadingSave.Click
+        If txtheadingitems.Text.Length = 0 Then
+            MsgBox("Please Select The Headings form the list ")
+            txtheadingitems.Focus()
+            Exit Sub
+        End If
+        Dim sqlstr As String = ""
+        If MsgBox("Do you want to Save?      ", MsgBoxStyle.YesNo + MsgBoxStyle.Information) = MsgBoxResult.No Then
+            Exit Sub
+
+        End If
+        If SQLIsFieldExists("SELECT TOP 1 1 from   printheadings where schemename='" & txtSchemName.Text & "' and fieldname='" & txtheadingitems.Text & "'") = True Then
+            sqlstr = "UPDATE [PrintHeadings] SET [schemename] = @schemename,[fTop] = @fTop,[fleft] = @fleft,[width] = @width,[height] = @height," _
+                & "[Fontname] = @Fontname,[fontsize] = @fontsize,[fontstyle] = @fontstyle,[fontcolor] = @fontcolor,[fieldname] = @fieldname,[Align] = @Align," _
+                & "[IsVisible] = @IsVisible,[HeadText] = @HeadText WHERE schemename='" & txtSchemName.Text & "' and fieldname='" & txtheadingitems.Text & "'"
+        Else
+            sqlstr = "INSERT INTO [PrintHeadings] ([schemename],[fTop],[fleft],[width],[height],[Fontname],[fontsize],[fontstyle],[fontcolor],[fieldname]," _
+                & "[Align],[IsVisible],[HeadText])" _
+                & " VALUES (@schemename,@fTop,@fleft,@width,@height,@Fontname,@fontsize,@fontstyle,@fontcolor,@fieldname,@Align,@IsVisible,@HeadText)"
+        End If
+        MAINCON.ConnectionString = ConnectionStrinG
+        MAINCON.Open()
+        Try
+            Dim DBF2 As New SqlClient.SqlCommand(sqlstr, MAINCON)
+            With DBF2.Parameters
+                .AddWithValue("schemename", txtSchemName.Text)
+                .AddWithValue("fieldname", txtheadingitems.Text)
+                .AddWithValue("headtext", TxtHeadDisplyText.Text)
+                If TxtHeadShow.Checked = True Then
+                    .AddWithValue("isvisible", True)
+                Else
+                    .AddWithValue("isvisible", False)
+                End If
+
+                .AddWithValue("fontcolor", TxtHeadFontColor.Text)
+                .AddWithValue("ftop", TxtHeadTop.Value)
+                .AddWithValue("fleft", TxtHeadLeft.Value)
+                .AddWithValue("width", TxtHeadWidth.Value)
+                .AddWithValue("height", TxtHeadHeight.Value)
+                .AddWithValue("fontname", TxtHeadFontName.Text)
+                .AddWithValue("fontsize", TxtHeadFontSize.Value)
+
+                If TxtHeadStyleU.Checked = True Then
+                    If TxtHeadStyleB.Checked = True And TxtHeadStyleI.Checked = True Then
+                        .AddWithValue("fontstyle", 7)
+                    ElseIf TxtHeadStyleB.Checked = True Then
+                        .AddWithValue("fontstyle", 5)
+                    ElseIf TxtHeadStyleI.Checked = True Then
+                        .AddWithValue("fontstyle", 1)
+                    Else
+
+                        .AddWithValue("fontstyle", 3)
+                    End If
+                Else
+                    If TxtHeadStyleB.Checked = True And TxtHeadStyleI.Checked = True Then
+                        .AddWithValue("fontstyle", 4)
+                    ElseIf TxtHeadStyleB.Checked = True Then
+                        .AddWithValue("fontstyle", 1)
+                    ElseIf TxtHeadStyleI.Checked = True Then
+                        .AddWithValue("fontstyle", 2)
+                    Else
+                        .AddWithValue("fontstyle", 8)
+                    End If
+                End If
+                .AddWithValue("align", TxtHeadAlign.Text)
+            End With
+            DBF2.ExecuteNonQuery()
+            DBF2 = Nothing
+            MAINCON.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+        If TxtHeadApplytoall.Checked = True Then
+            TxtHeadApplytoall.Checked = False
+            sqlstr = "UPDATE [PrintHeadings] SET [Fontname] = @Fontname,[fontsize] = @fontsize,[fontstyle] = @fontstyle,[fontcolor] = @fontcolor," _
+                & "[Align] = @Align  WHERE schemename='" & txtSchemName.Text & "'"
+            MAINCON.ConnectionString = ConnectionStrinG
+            MAINCON.Open()
+            Try
+                Dim DBF2 As New SqlClient.SqlCommand(sqlstr, MAINCON)
+                With DBF2.Parameters
+                    .AddWithValue("fontcolor", TxtHeadFontColor.Text)
+                    .AddWithValue("fontname", TxtHeadFontName.Text)
+                    .AddWithValue("fontsize", TxtHeadFontSize.Value)
+
+                    If TxtHeadStyleU.Checked = True Then
+                        If TxtHeadStyleB.Checked = True And TxtHeadStyleI.Checked = True Then
+                            .AddWithValue("fontstyle", 7)
+                        ElseIf TxtHeadStyleB.Checked = True Then
+                            .AddWithValue("fontstyle", 5)
+                        ElseIf TxtHeadStyleI.Checked = True Then
+                            .AddWithValue("fontstyle", 1)
+                        Else
+                            .AddWithValue("fontstyle", 3)
+                        End If
+                    Else
+                        If TxtHeadStyleB.Checked = True And TxtHeadStyleI.Checked = True Then
+                            .AddWithValue("fontstyle", 4)
+                        ElseIf TxtHeadStyleB.Checked = True Then
+                            .AddWithValue("fontstyle", 1)
+                        ElseIf TxtHeadStyleI.Checked = True Then
+                            .AddWithValue("fontstyle", 2)
+                        Else
+                            .AddWithValue("fontstyle", 8)
+                        End If
+                    End If
+                    .AddWithValue("align", TxtHeadAlign.Text)
+                End With
+                DBF2.ExecuteNonQuery()
+                DBF2 = Nothing
+                MAINCON.Close()
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+        End If
+
+        LoadReport()
+    End Sub
+
+    Private Sub txtheadingitems_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtheadingitems.SelectedIndexChanged
+
+        Dim SqlConn1 As New SqlClient.SqlConnection
+        Try
+            SqlConn1.ConnectionString = ConnectionStrinG
+            SqlConn1.Open()
+            SqlFcmd.Connection = SqlConn1
+            SqlFcmd.CommandText = "select * from printheadings where schemename='" & txtSchemName.Text & "' and fieldname='" & txtheadingitems.Text & "'"
+            SqlFcmd.CommandType = CommandType.Text
+            Dim Sreader As SqlClient.SqlDataReader
+            Sreader = SqlFcmd.ExecuteReader
+            While Sreader.Read()
+                If Sreader("isvisible") = True Then
+                    TxtHeadShow.Checked = True
+                Else
+                    TxtHeadShow.Checked = False
+                End If
+                TxtHeadDisplyText.Text = Sreader("headtext").ToString.Trim
+                TxtHeadFontColor.Text = Sreader("fontcolor").ToString.Trim
+                TxtHeadTop.Value = Sreader("ftop")
+                TxtHeadLeft.Value = Sreader("fleft")
+                TxtHeadWidth.Value = Sreader("width")
+                TxtHeadHeight.Value = Sreader("height")
+                TxtHeadFontName.Text = Sreader("fontname").ToString.Trim
+                TxtHeadFontSize.Value = Sreader("fontsize")
+
+                If Sreader("fontstyle") = 1 Then
+                    TxtHeadStyleB.Checked = True
+                    TxtHeadStyleI.Checked = False
+                    TxtHeadStyleU.Checked = False
+                ElseIf Sreader("fontstyle") = 2 Then
+                    TxtHeadStyleB.Checked = False
+                    TxtHeadStyleI.Checked = False
+                    TxtHeadStyleU.Checked = True
+                ElseIf Sreader("fontstyle") = 3 Then
+                    TxtHeadStyleB.Checked = False
+                    TxtHeadStyleI.Checked = False
+                    TxtHeadStyleU.Checked = True
+                ElseIf Sreader("fontstyle") = 4 Then
+                    TxtHeadStyleB.Checked = True
+                    TxtHeadStyleI.Checked = True
+                    TxtHeadStyleU.Checked = False
+                ElseIf Sreader("fontstyle") = 5 Then
+                    TxtHeadStyleB.Checked = True
+                    TxtHeadStyleI.Checked = False
+                    TxtHeadStyleU.Checked = True
+                ElseIf Sreader("fontstyle") = 6 Then
+                    TxtHeadStyleB.Checked = False
+                    TxtHeadStyleI.Checked = True
+                    TxtHeadStyleU.Checked = True
+                ElseIf Sreader("fontstyle") = 7 Then
+                    TxtHeadStyleB.Checked = True
+                    TxtHeadStyleI.Checked = True
+                    TxtHeadStyleU.Checked = True
+                Else
+                    TxtHeadStyleB.Checked = False
+                    TxtHeadStyleI.Checked = False
+                    TxtHeadStyleU.Checked = False
+                End If
+                TxtHeadAlign.Text = Sreader("align").ToString.Trim
+
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            SqlConn1.Close()
+            SqlFcmd.Connection = Nothing
+        End Try
+
+    End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        Dim schemevalue As String
+        schemevalue = InputBox("Plese Enter the Scheme Name ", "New Scheme ", "")
+        If schemevalue.Length > 0 Then
+            If txtSchemName.Items.Contains(schemevalue) = False Then
+                If MsgBox("Do you want to create a new scheme ?", MsgBoxStyle.YesNo + MsgBoxStyle.Information) = MsgBoxResult.Yes Then
+                    Try
+                        Dim sqlStr As String = ""
+                        sqlStr = "INSERT INTO [PrintingSettings]([PrinterName],[schemename],[Width],[Height],[IsLandScape],[fleft],[fright],[ftop],[fbuttom],[multi],[showsubtotals],[IsActive],[PaperName],[LeftLogoIsOn],[RightLogoIson],[Leftlogoleft],[Leftlogotop],[Leftlogowidth],[Leftlogoheight],[Rightlogoleft],[Rightlogotop],[Rightlogowidth],[Rightlogoheight],[leftlogopath],[rightlogopath],[MaxRowsPerPage],[RowHeight],[showpageno],[pagenotop],[pagenoleft],[pageformat]) " _
+                            & " (SELECT  [PrinterName]," & schemevalue & " AS [schemename],[Width],[Height],[IsLandScape],[fleft],[fright],[ftop],[fbuttom],[multi],[showsubtotals],[IsActive],[PaperName],[LeftLogoIsOn],[RightLogoIson],[Leftlogoleft],[Leftlogotop],[Leftlogowidth],[Leftlogoheight],[Rightlogoleft],[Rightlogotop],[Rightlogowidth],[Rightlogoheight],[leftlogopath],[rightlogopath],[MaxRowsPerPage],[RowHeight],[showpageno],[pagenotop],[pagenoleft],[pageformat] FROM printingsettings where schemename='" & txtSchemName.Text & "')"
+                        ExecuteSQLQuery(sqlStr)
+
+                        sqlStr = "INSERT INTO [PrintFieldLabels] ([SchemeName],[Fieldname],[labletext],[DBField],[IsVisible],[ftop],[fleft],[width],[height],[Fontname],[fontsize],[fontstyle],[fontcolor],[Align],[lTop],[lleft],[lwidth],[lheight],[lFontname],[lfontsize],[lfontstyle],[lfontcolor],[lalign],[sample],[DBType],[FieldType],[PrintText],[FormatType]) " _
+                            & "(SELECT " & schemevalue & " AS [SchemeName],[Fieldname],[labletext],[DBField],[IsVisible],[ftop],[fleft],[width],[height],[Fontname],[fontsize],[fontstyle],[fontcolor],[Align],[lTop],[lleft],[lwidth],[lheight],[lFontname],[lfontsize],[lfontstyle],[lfontcolor],[lalign],[sample],[DBType],[FieldType],[PrintText],[FormatType] FROM printfieldlabels where schemename='" & txtSchemName.Text & "')"
+                        ExecuteSQLQuery(sqlStr)
+
+                        sqlStr = "INSERT INTO [PrintHeadings] ([schemename],[fTop],[fleft],[width],[height],[Fontname],[fontsize],[fontstyle],[fontcolor],[fieldname],[Align],[fcase],[IsVisible],[HeadText]) " _
+                            & "(SELECT " & schemevalue & " AS [schemename],[fTop],[fleft],[width],[height],[Fontname],[fontsize],[fontstyle],[fontcolor],[fieldname],[Align],[fcase],[IsVisible],[HeadText] from printheadings where schemename='" & txtSchemName.Text & "')"
+                        ExecuteSQLQuery(sqlStr)
+
+                        sqlStr = "INSERT INTO [PrintLables] ([schemename],[ftop],[fleft],[width],[height],[Fontname],[fontsize],[fontstyle],[fontcolor],[fieldname],[labletext],[isvisible],[align]) " _
+                            & "(SELECT " & schemevalue & " AS [schemename],[ftop],[fleft],[width],[height],[Fontname],[fontsize],[fontstyle],[fontcolor],[fieldname],[labletext],[isvisible],[align] from printlables where schemename='" & txtSchemName.Text & "')"
+                        ExecuteSQLQuery(sqlStr)
+
+                        sqlStr = "INSERT INTO [PrintLines] ([schemename],[ftop],[fleft],[width],[height],[fieldname],[FieldType],[LineColor],[BoarderStyle],[BoarderWidth],[IsVisible]) " _
+                            & "(SELECT " & schemevalue & " AS [schemename],[ftop],[fleft],[width],[height],[fieldname],[FieldType],[LineColor],[BoarderStyle],[BoarderWidth],[IsVisible] from printlines where schemename='" & txtSchemName.Text & "')"
+                        ExecuteSQLQuery(sqlStr)
+
+                        sqlStr = "INSERT INTO [PrintRecords] ([SchemeName],[Fieldname],[labletext],[ObjectType],[IsVisible],[ftop],[fleft],[width],[height],[Fontname],[fontsize],[fontstyle],[fontcolor],[Align],[lTop],[lleft],[lwidth],[lheight],[lFontname],[lfontsize],[lfontstyle],[lfontcolor],[Lcase],[Rcase],[lalign],[space],[DBType],[DBField],[FormatType]) " _
+                            & " (SELECT " & schemevalue & " AS [SchemeName],[Fieldname],[labletext],[ObjectType],[IsVisible],[ftop],[fleft],[width],[height],[Fontname],[fontsize],[fontstyle],[fontcolor],[Align],[lTop],[lleft],[lwidth],[lheight],[lFontname],[lfontsize],[lfontstyle],[lfontcolor],[Lcase],[Rcase],[lalign],[space],[DBType],[DBField],[FormatType] from printrecords where schemename='" & txtSchemName.Text & "')"
+
+                        ExecuteSQLQuery(sqlStr)
+                    Catch ex As Exception
+                        MsgBox(ex.Message)
+                    End Try
+
+                    txtSchemName.Items.Add(schemevalue)
+                End If
+            End If
+        End If
+    End Sub
+
+    Private Sub txtSchemName_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtSchemName.SelectedIndexChanged
+        LoadDefauls()
+        LoadReport()
+    End Sub
+
+
+
+
+    Private Sub UserButton6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UserButton6.Click
+        Try
+            PrintPreviewControl1.StartPage = PrintPreviewControl1.StartPage + 1
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Private Sub UserButton5_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UserButton5.Click
+        Try
+            PrintPreviewControl1.StartPage = PrintPreviewControl1.StartPage - 1
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    'Private Sub UserButton14_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UserButton14.Click
+    '    If SRList.Text.Length = 0 Then Exit Sub
+    '    Dim Dbf As New ADODB.Recordset
+    '    Dbf.Open("select * from PrintingSchemes where schemename='" & SRList.Text & "' and vouchername='SalesReturns'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+    '    If Dbf.RecordCount > 0 Then
+    '        Dbf.Close()
+    '        MsgBox("The Scheme Name is already exist....")
+    '    Else
+
+    '        If MsgBox("Do you want to add (Y/N) ?                ", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+    '            Dbf.AddNew()
+    '            Dbf.Fields("schemename").Value = SRList.Text
+    '            Dbf.Fields("vouchername").Value = "SalesReturns"
+    '            Dbf.Fields("isactive").Value = 0
+    '            Dbf.Update()
+    '            Dim r As Integer
+    '            r = SalesRSList.Rows.Add()
+    '            SalesRSList.Item(1, r).Value = SRList.Text
+    '            SalesRSList.Item(2, r).Value = "NO"
+
+    '        End If
+    '        Dbf.Close()
+    '    End If
+    'End Sub
+
+    'Private Sub UserButton7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UserButton7.Click
+    '    If PList.Text.Length = 0 Then Exit Sub
+    '    Dim Dbf As New ADODB.Recordset
+    '    Dbf.Open("select * from PrintingSchemes where schemename='" & PList.Text & "' and vouchername='Purchase'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+    '    If Dbf.RecordCount > 0 Then
+    '        Dbf.Close()
+    '        MsgBox("The Scheme Name is already exist....")
+    '    Else
+
+    '        If MsgBox("Do you want to add (Y/N) ?                ", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+    '            Dbf.AddNew()
+    '            Dbf.Fields("schemename").Value = PList.Text
+    '            Dbf.Fields("vouchername").Value = "Purchase"
+    '            Dbf.Fields("isactive").Value = 0
+    '            Dbf.Update()
+    '            Dim r As Integer
+    '            r = PurchaseSList.Rows.Add()
+    '            PurchaseSList.Item(1, r).Value = PList.Text
+    '            PurchaseSList.Item(2, r).Value = "NO"
+
+    '        End If
+    '        Dbf.Close()
+    '    End If
+
+    'End Sub
+
+    'Private Sub UserButton10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UserButton10.Click
+    '    If PRList.Text.Length = 0 Then Exit Sub
+    '    Dim Dbf As New ADODB.Recordset
+    '    Dbf.Open("select * from PrintingSchemes where schemename='" & PRList.Text & "' and vouchername='PurchaseReturns'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+    '    If Dbf.RecordCount > 0 Then
+    '        Dbf.Close()
+    '        MsgBox("The Scheme Name is already exist....")
+    '    Else
+
+    '        If MsgBox("Do you want to add (Y/N) ?                ", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+    '            Dbf.AddNew()
+    '            Dbf.Fields("schemename").Value = PRList.Text
+    '            Dbf.Fields("vouchername").Value = "PurchaseReturns"
+    '            Dbf.Fields("isactive").Value = 0
+    '            Dbf.Update()
+    '            Dim r As Integer
+    '            r = PurchaseRSList.Rows.Add()
+    '            PurchaseRSList.Item(1, r).Value = PRList.Text
+    '            PurchaseRSList.Item(2, r).Value = "NO"
+
+    '        End If
+    '        Dbf.Close()
+    '    End If
+    'End Sub
+
+    'Private Sub UserButton12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UserButton12.Click
+    '    If SList.Text.Length = 0 Then Exit Sub
+    '    Dim Dbf As New ADODB.Recordset
+    '    Dbf.Open("select * from PrintingSchemes where schemename='" & SList.Text & "' and vouchername='Sales'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+    '    If Dbf.RecordCount > 0 Then
+    '        Dbf.Close()
+    '        MsgBox("The Scheme Name is already exist....")
+    '    Else
+
+    '        If MsgBox("Do you want to add (Y/N) ?                ", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+    '            Dbf.AddNew()
+    '            Dbf.Fields("schemename").Value = SList.Text
+    '            Dbf.Fields("vouchername").Value = "Sales"
+    '            Dbf.Fields("isactive").Value = 0
+    '            Dbf.Update()
+    '            Dim r As Integer
+    '            r = salesSlist.Rows.Add()
+    '            salesSlist.Item(1, r).Value = SList.Text
+    '            salesSlist.Item(2, r).Value = "NO"
+
+    '        End If
+    '        Dbf.Close()
+    '    End If
+    'End Sub
+
+    'Private Sub UserButton13_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UserButton13.Click
+    '    If SalesRSList.RowCount = 1 Then Exit Sub
+    '    If SalesRSList.SelectedRows.Count > 0 Then
+    '        If MsgBox("Do you want to Delete selected scheme Name (Y/N)?  ", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+    '            Dim Dbf As New ADODB.Recordset
+    '            Dbf.Open("delete * from PrintingSchemes where schemename='" & SalesRSList.Item(1, SalesRSList.CurrentRow.Index).Value & "' and vouchername='Salesreturns'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+    '            SalesRSList.Rows.RemoveAt(SalesRSList.CurrentRow.Index)
+    '            Dbf.Open("select * from PrintingSchemes where  vouchername='SalesReturns'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+    '            If Dbf.RecordCount = 1 Then
+    '                Dbf.Fields("isactive").Value = 1
+    '                Dbf.Update()
+    '                Dbf.Close()
+    '                LoadSchemeList()
+    '            Else
+    '                Dbf.Close()
+    '            End If
+	
+
+    '        End If
+    '    Else
+    '        MsgBox("Please Select the Scheme from the list.... ")
+    '    End If
+    'End Sub
+
+    'Private Sub UserButton11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UserButton11.Click
+    '    If salesSlist.RowCount = 1 Then Exit Sub
+    '    If salesSlist.SelectedRows.Count > 0 Then
+    '        If MsgBox("Do you want to Delete selected scheme Name (Y/N)?  ", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+    '            Dim Dbf As New ADODB.Recordset
+    '            Dbf.Open("delete * from PrintingSchemes where schemename='" & salesSlist.Item(1, salesSlist.CurrentRow.Index).Value & "' and vouchername='Sales'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+    '            salesSlist.Rows.RemoveAt(salesSlist.CurrentRow.Index)
+    '            Dbf.Open("select * from PrintingSchemes where  vouchername='Sales'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+    '            If Dbf.RecordCount = 1 Then
+    '                Dbf.Fields("isactive").Value = 1
+    '                Dbf.Update()
+    '                Dbf.Close()
+    '                LoadSchemeList()
+    '            Else
+    '                Dbf.Close()
+    '            End If
+
+
+    '        End If
+    '    Else
+    '        MsgBox("Please Select the Scheme from the list.... ")
+    '    End If
+    'End Sub
+
+    'Private Sub UserButton9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UserButton9.Click
+    '    If PurchaseRSList.RowCount = 1 Then Exit Sub
+    '    If PurchaseRSList.SelectedRows.Count > 0 Then
+    '        If MsgBox("Do you want to Delete selected scheme Name (Y/N)?  ", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+    '            Dim Dbf As New ADODB.Recordset
+    '            Dbf.Open("delete * from PrintingSchemes where schemename='" & PurchaseRSList.Item(1, PurchaseRSList.CurrentRow.Index).Value & "' and vouchername='PurchaseReturns'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+    '            PurchaseRSList.Rows.RemoveAt(PurchaseRSList.CurrentRow.Index)
+    '            Dbf.Open("select * from PrintingSchemes where  vouchername='PurchaseReturns'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+    '            If Dbf.RecordCount = 1 Then
+    '                Dbf.Fields("isactive").Value = 1
+    '                Dbf.Update()
+    '                Dbf.Close()
+    '                LoadSchemeList()
+    '            Else
+    '                Dbf.Close()
+    '            End If
+
+
+    '        End If
+    '    Else
+    '        MsgBox("Please Select the Scheme from the list.... ")
+    '    End If
+    'End Sub
+
+    'Private Sub UserButton8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UserButton8.Click
+    '    If PurchaseSList.RowCount = 1 Then Exit Sub
+    '    If PurchaseSList.SelectedRows.Count > 0 Then
+    '        If MsgBox("Do you want to Delete selected scheme Name (Y/N)?  ", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+    '            Dim Dbf As New ADODB.Recordset
+    '            Dbf.Open("delete * from PrintingSchemes where schemename='" & PurchaseSList.Item(1, PurchaseSList.CurrentRow.Index).Value & "' and vouchername='Purchase'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+    '            PurchaseSList.Rows.RemoveAt(PurchaseSList.CurrentRow.Index)
+    '            Dbf.Open("select * from PrintingSchemes where  vouchername='Purchase'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+    '            If Dbf.RecordCount = 1 Then
+    '                Dbf.Fields("isactive").Value = 1
+    '                Dbf.Update()
+    '                Dbf.Close()
+    '                LoadSchemeList()
+    '            Else
+    '                Dbf.Close()
+    '            End If
+
+
+
+    '        End If
+    '    Else
+    '        MsgBox("Please Select the Scheme from the list.... ")
+    '    End If
+    'End Sub
+
+    'Private Sub UserButton20_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UserButton20.Click
+    '    If PurchaseSList.SelectedRows.Count > 0 Then
+    '        If MsgBox("Do you want to  selected scheme Name as Default Secheme (Y/N)?  ", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+    '            Dim Dbf As New ADODB.Recordset
+    '            Dbf.Open("update PrintingSchemes set isactive=0 where vouchername='Purchase'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+    '            Dbf.Open("update PrintingSchemes set isactive=1 where schemename='" & PurchaseSList.Item(1, PurchaseSList.CurrentRow.Index).Value & "' and vouchername='Purchase'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+    '            'PurchaseSList.Rows.RemoveAt(PurchaseSList.CurrentRow.Index)
+    '            LoadSchemeList()
+    '        End If
+    '    Else
+    '        MsgBox("Please Select the Scheme from the list.... ")
+    '    End If
+    'End Sub
+
+    'Private Sub UserButton19_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UserButton19.Click
+    '    If PurchaseRSList.SelectedRows.Count > 0 Then
+    '        If MsgBox("Do you want to  selected scheme Name as Default Secheme (Y/N)?  ", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+    '            Dim Dbf As New ADODB.Recordset
+    '            Dbf.Open("update PrintingSchemes set isactive=0 where vouchername='PurchaseReturns'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+    '            Dbf.Open("update PrintingSchemes set isactive=1 where schemename='" & PurchaseRSList.Item(1, PurchaseRSList.CurrentRow.Index).Value & "' and vouchername='PurchaseReturns'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+    '            'PurchaseSList.Rows.RemoveAt(PurchaseSList.CurrentRow.Index)
+    '            LoadSchemeList()
+    '        End If
+    '    Else
+    '        MsgBox("Please Select the Scheme from the list.... ")
+    '    End If
+    'End Sub
+
+    'Private Sub UserButton18_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UserButton18.Click
+
+    '    If salesSlist.SelectedRows.Count > 0 Then
+    '        If MsgBox("Do you want to  selected scheme Name as Default Secheme (Y/N)?  ", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+    '            Dim Dbf As New ADODB.Recordset
+    '            Dbf.Open("update PrintingSchemes set isactive=0 where vouchername='Sales'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+    '            Dbf.Open("update PrintingSchemes set isactive=1 where schemename='" & salesSlist.Item(1, salesSlist.CurrentRow.Index).Value & "' and vouchername='Sales'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+    '            'PurchaseSList.Rows.RemoveAt(PurchaseSList.CurrentRow.Index)
+    '            LoadSchemeList()
+    '        End If
+    '    Else
+    '        MsgBox("Please Select the Scheme from the list.... ")
+    '    End If
+    'End Sub
+
+    'Private Sub UserButton17_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UserButton17.Click
+    '    If SalesRSList.SelectedRows.Count > 0 Then
+    '        If MsgBox("Do you want to  selected scheme Name as Default Secheme (Y/N)?  ", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+    '            Dim Dbf As New ADODB.Recordset
+    '            Dbf.Open("update PrintingSchemes set isactive=0 where vouchername='SalesReturns'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+    '            Dbf.Open("update PrintingSchemes set isactive=1 where schemename='" & SalesRSList.Item(1, SalesRSList.CurrentRow.Index).Value & "' and vouchername='SalesReturns'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+    '            'PurchaseSList.Rows.RemoveAt(PurchaseSList.CurrentRow.Index)
+    '            LoadSchemeList()
+    '        End If
+    '    Else
+    '        MsgBox("Please Select the Scheme from the list.... ")
+    '    End If
+    'End Sub
+
+    'Private Sub UserButton21_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UserButton21.Click
+    '    If MsgBox("Do you want to save the Invoice Pre Fix...  ", MsgBoxStyle.YesNo + MsgBoxStyle.Information) = MsgBoxResult.Yes Then
+    '        Dim Dbf As New ADODB.Recordset
+    '        Dbf.Open("select * from company", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+    '        Dbf.MoveFirst()
+    '        Dbf.Fields("salesbillprefix").Value = TxtSalesPreFix.Text
+    '        Dbf.Fields("purchasebillprefix").Value = TxtPurchasePreFix.Text
+    '        SalesInvoicePreFix = TxtSalesPreFix.Text
+    '        PurchaseInvoicePreFix = TxtPurchasePreFix.Text
+    '        Dbf.Update()
+    '        Dbf.Close()
+
+    '    End If
+
+    'End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        If txtSchemName.Text.Length = 0 Then
+            MsgBox("Please Select the Scheme Name        ")
+            txtSchemName.Focus()
+            Exit Sub
+        End If
+        If MsgBox("Make Sure, Do not Duplicate More than 2  Do you want to Duplicate All Fileds for the Scheme : " & txtSchemName.Text, MsgBoxStyle.YesNo) = MsgBoxResult.No Then
+            Exit Sub
+        End If
+       
+
+
+        Dim SqlStr As String
+        Dim Dbf As New ADODB.Recordset
+        Dim NDbf As New ADODB.Recordset
+
+
+        Try
+
+            ' SqlStr = "INSERT INTO [PrintingSettings]([PrinterName],[schemename],[Width],[Height],[IsLandScape],[fleft],[fright],[ftop],[fbuttom],[multi],[showsubtotals],[IsActive],[PaperName],[LeftLogoIsOn],[RightLogoIson],[Leftlogoleft],[Leftlogotop],[Leftlogowidth],[Leftlogoheight],[Rightlogoleft],[Rightlogotop],[Rightlogowidth],[Rightlogoheight],[leftlogopath],[rightlogopath],[MaxRowsPerPage],[RowHeight],[showpageno],[pagenotop],[pagenoleft],[pageformat]) " _
+            '   & " (SELECT  [PrinterName],[schemename],[Width],[Height],[IsLandScape],[fleft],[fright],[ftop],[fbuttom],[multi],[showsubtotals],[IsActive],[PaperName],[LeftLogoIsOn],[RightLogoIson],[Leftlogoleft],[Leftlogotop],[Leftlogowidth],[Leftlogoheight],[Rightlogoleft],[Rightlogotop],[Rightlogowidth],[Rightlogoheight],[leftlogopath],[rightlogopath],[MaxRowsPerPage],[RowHeight],[showpageno],[pagenotop],[pagenoleft],[pageformat] FROM printingsettings where schemename='" & txtSchemName.Text & "')"
+            'ExecuteSQLQuery(sqlStr)
+
+            SqlStr = "INSERT INTO [PrintFieldLabels] ([SchemeName],[Fieldname],[labletext],[DBField],[IsVisible],[ftop],[fleft],[width],[height],[Fontname],[fontsize],[fontstyle],[fontcolor],[Align],[lTop],[lleft],[lwidth],[lheight],[lFontname],[lfontsize],[lfontstyle],[lfontcolor],[lalign],[sample],[DBType],[FieldType],[PrintText],[FormatType]) " _
+                & "(SELECT   [SchemeName],CONCAT([Fieldname], '2') AS [Fieldname],[labletext],[DBField],'FALSE' AS [IsVisible],[ftop],[fleft],[width],[height],[Fontname],[fontsize],[fontstyle],[fontcolor],[Align],[lTop],[lleft],[lwidth],[lheight],[lFontname],[lfontsize],[lfontstyle],[lfontcolor],[lalign],[sample],[DBType],[FieldType],[PrintText],[FormatType] FROM printfieldlabels where schemename='" & txtSchemName.Text & "')"
+            ExecuteSQLQuery(sqlStr)
+
+            SqlStr = "INSERT INTO [PrintHeadings] ([schemename],[fTop],[fleft],[width],[height],[Fontname],[fontsize],[fontstyle],[fontcolor],[fieldname],[Align],[fcase],[IsVisible],[HeadText]) " _
+                & "(SELECT  [schemename],[fTop],[fleft],[width],[height],[Fontname],[fontsize],[fontstyle],[fontcolor],CONCAT([Fieldname], '2') AS [fieldname],[Align],[fcase],'FALSE' AS [IsVisible],[HeadText] from printheadings where schemename='" & txtSchemName.Text & "')"
+            ExecuteSQLQuery(sqlStr)
+
+            SqlStr = "INSERT INTO [PrintLables] ([schemename],[ftop],[fleft],[width],[height],[Fontname],[fontsize],[fontstyle],[fontcolor],[fieldname],[labletext],[isvisible],[align]) " _
+                & "(SELECT  [schemename],[ftop],[fleft],[width],[height],[Fontname],[fontsize],[fontstyle],[fontcolor],CONCAT([Fieldname], '2') AS [fieldname],[labletext],'FALSE' AS [IsVisible],[align] from printlables where schemename='" & txtSchemName.Text & "')"
+            ExecuteSQLQuery(sqlStr)
+
+            SqlStr = "INSERT INTO [PrintLines] ([schemename],[ftop],[fleft],[width],[height],[fieldname],[FieldType],[LineColor],[BoarderStyle],[BoarderWidth],[IsVisible]) " _
+                & "(SELECT  [schemename],[ftop],[fleft],[width],[height],CONCAT([Fieldname], '2') AS [fieldname],[FieldType],[LineColor],[BoarderStyle],[BoarderWidth],'FALSE' AS [IsVisible] from printlines where schemename='" & txtSchemName.Text & "')"
+            ExecuteSQLQuery(sqlStr)
+
+            SqlStr = "INSERT INTO [PrintRecords] ([SchemeName],[Fieldname],[labletext],[ObjectType],[IsVisible],[ftop],[fleft],[width],[height],[Fontname],[fontsize],[fontstyle],[fontcolor],[Align],[lTop],[lleft],[lwidth],[lheight],[lFontname],[lfontsize],[lfontstyle],[lfontcolor],[Lcase],[Rcase],[lalign],[space],[DBType],[DBField],[FormatType]) " _
+                & " (SELECT   [SchemeName],CONCAT([Fieldname], '2') AS [Fieldname],[labletext],[ObjectType],'FALSE' AS [IsVisible],[ftop],[fleft],[width],[height],[Fontname],[fontsize],[fontstyle],[fontcolor],[Align],[lTop],[lleft],[lwidth],[lheight],[lFontname],[lfontsize],[lfontstyle],[lfontcolor],[Lcase],[Rcase],[lalign],[space],[DBType],[DBField],[FormatType] from printrecords where schemename='" & txtSchemName.Text & "')"
+
+            ExecuteSQLQuery(sqlStr)
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+        
+
+    End Sub

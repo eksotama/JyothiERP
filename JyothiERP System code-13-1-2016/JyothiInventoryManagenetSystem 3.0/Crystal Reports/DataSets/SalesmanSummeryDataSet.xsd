@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SalesmanSummeryDataSet" targetNamespace="http://tempuri.org/SalesmanSummeryDataSet.xsd" xmlns:mstns="http://tempuri.org/SalesmanSummeryDataSet.xsd" xmlns="http://tempuri.org/SalesmanSummeryDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SalesmanSummeryDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SalesmanSummeryDataSet" msprop:Generator_UserDSName="SalesmanSummeryDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Salesman_x0020_Name" msprop:Generator_ColumnVarNameInTable="columnSalesman_Name" msprop:Generator_ColumnPropNameInRow="Salesman_Name" msprop:Generator_ColumnPropNameInTable="Salesman_NameColumn" msprop:Generator_UserColumnName="Salesman Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Sales_x0020_Amount" msprop:Generator_ColumnVarNameInTable="columnSales_Amount" msprop:Generator_ColumnPropNameInRow="Sales_Amount" msprop:Generator_ColumnPropNameInTable="Sales_AmountColumn" msprop:Generator_UserColumnName="Sales Amount" type="xs:double" minOccurs="0" />
+              <xs:element name="Returns_x0020_Amount" msprop:Generator_ColumnVarNameInTable="columnReturns_Amount" msprop:Generator_ColumnPropNameInRow="Returns_Amount" msprop:Generator_ColumnPropNameInTable="Returns_AmountColumn" msprop:Generator_UserColumnName="Returns Amount" type="xs:double" minOccurs="0" />
+              <xs:element name="Net_x0020_Sales" msprop:Generator_ColumnVarNameInTable="columnNet_Sales" msprop:Generator_ColumnPropNameInRow="Net_Sales" msprop:Generator_ColumnPropNameInTable="Net_SalesColumn" msprop:Generator_UserColumnName="Net Sales" type="xs:double" minOccurs="0" />
+              <xs:element name="Commision_x0020_Amount" msprop:Generator_ColumnVarNameInTable="columnCommision_Amount" msprop:Generator_ColumnPropNameInRow="Commision_Amount" msprop:Generator_ColumnPropNameInTable="Commision_AmountColumn" msprop:Generator_UserColumnName="Commision Amount" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,3 @@
+﻿Public Class MulitInvoicePritingFormForCustomers
+
+End Class

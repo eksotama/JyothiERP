@@ -1,0 +1,24 @@
+E:\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\obj\Debug\Serial Maker.exe
+E:\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\obj\Debug\Serial Maker.pdb
+E:\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\bin\Debug\Serial Maker.exe.config
+E:\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\bin\Debug\Serial Maker.exe
+E:\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\bin\Debug\Serial Maker.pdb
+E:\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\bin\Debug\FilterControls.dll
+E:\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\bin\Debug\SerialBoxes.pdb
+E:\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\bin\Debug\FilterControls.pdb
+E:\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\obj\Debug\ResolveAssemblyReference.cache
+E:\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\obj\Debug\Serial_Maker.frmMain.resources
+E:\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\obj\Debug\GenerateResource.read.1.tlog
+E:\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\obj\Debug\GenerateResource.write.1.tlog
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\bin\Debug\Serial Maker.exe.config
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\bin\Debug\Serial Maker.exe
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\bin\Debug\Serial Maker.pdb
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\bin\Debug\FilterControls.dll
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\bin\Debug\SerialBoxes.pdb
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\bin\Debug\FilterControls.pdb
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\obj\Debug\ResolveAssemblyReference.cache
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\obj\Debug\Serial_Maker.frmMain.resources
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\obj\Debug\GenerateResource.read.1.tlog
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\obj\Debug\GenerateResource.write.1.tlog
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\obj\Debug\Serial Maker.exe
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Serial_Maker\Serial Maker\Serial Maker\obj\Debug\Serial Maker.pdb

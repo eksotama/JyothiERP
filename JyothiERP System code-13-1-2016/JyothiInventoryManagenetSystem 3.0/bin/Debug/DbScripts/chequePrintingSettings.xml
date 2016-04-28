@@ -1,0 +1,105 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <chequePrintingSettings>
+    <PrinterName>Microsoft XPS Document Writer </PrinterName>
+    <schemename>SBI</schemename>
+    <Width>650</Width>
+    <Height>350</Height>
+    <IsLandScape>false</IsLandScape>
+    <fleft>10</fleft>
+    <fright>10</fright>
+    <ftop>10</ftop>
+    <fbuttom>10</fbuttom>
+    <multi>false</multi>
+    <showsubtotals>true</showsubtotals>
+    <IsActive>true</IsActive>
+    <PaperName>TRUE</PaperName>
+    <LeftLogoIsOn>false</LeftLogoIsOn>
+    <RightLogoIson>false</RightLogoIson>
+    <Leftlogoleft>0</Leftlogoleft>
+    <Leftlogotop>20</Leftlogotop>
+    <Leftlogowidth>12</Leftlogowidth>
+    <Leftlogoheight>60</Leftlogoheight>
+    <Rightlogoleft>650</Rightlogoleft>
+    <Rightlogotop>14</Rightlogotop>
+    <Rightlogowidth>80</Rightlogowidth>
+    <Rightlogoheight>80</Rightlogoheight>
+    <leftlogopath />
+    <rightlogopath />
+    <MaxRowsPerPage>31</MaxRowsPerPage>
+    <RowHeight>19</RowHeight>
+    <showpageno>false</showpageno>
+    <pagenotop>1100</pagenotop>
+    <pagenoleft>570</pagenoleft>
+    <pageformat>1</pageformat>
+    <Watermark />
+  </chequePrintingSettings>
+  <chequePrintingSettings>
+    <PrinterName>Microsoft XPS Document Writer </PrinterName>
+    <schemename>SBI</schemename>
+    <Width>650</Width>
+    <Height>350</Height>
+    <IsLandScape>false</IsLandScape>
+    <fleft>10</fleft>
+    <fright>10</fright>
+    <ftop>10</ftop>
+    <fbuttom>10</fbuttom>
+    <multi>false</multi>
+    <showsubtotals>true</showsubtotals>
+    <IsActive>true</IsActive>
+    <PaperName>TRUE</PaperName>
+    <LeftLogoIsOn>false</LeftLogoIsOn>
+    <RightLogoIson>false</RightLogoIson>
+    <Leftlogoleft>0</Leftlogoleft>
+    <Leftlogotop>20</Leftlogotop>
+    <Leftlogowidth>12</Leftlogowidth>
+    <Leftlogoheight>60</Leftlogoheight>
+    <Rightlogoleft>650</Rightlogoleft>
+    <Rightlogotop>14</Rightlogotop>
+    <Rightlogowidth>80</Rightlogowidth>
+    <Rightlogoheight>80</Rightlogoheight>
+    <leftlogopath />
+    <rightlogopath />
+    <MaxRowsPerPage>31</MaxRowsPerPage>
+    <RowHeight>19</RowHeight>
+    <showpageno>false</showpageno>
+    <pagenotop>1100</pagenotop>
+    <pagenoleft>570</pagenoleft>
+    <pageformat>1</pageformat>
+    <Watermark />
+  </chequePrintingSettings>
+  <chequePrintingSettings>
+    <PrinterName>Microsoft XPS Document Writer </PrinterName>
+    <schemename>SBI</schemename>
+    <Width>650</Width>
+    <Height>350</Height>
+    <IsLandScape>false</IsLandScape>
+    <fleft>10</fleft>
+    <fright>10</fright>
+    <ftop>10</ftop>
+    <fbuttom>10</fbuttom>
+    <multi>false</multi>
+    <showsubtotals>true</showsubtotals>
+    <IsActive>true</IsActive>
+    <PaperName>TRUE</PaperName>
+    <LeftLogoIsOn>false</LeftLogoIsOn>
+    <RightLogoIson>false</RightLogoIson>
+    <Leftlogoleft>0</Leftlogoleft>
+    <Leftlogotop>20</Leftlogotop>
+    <Leftlogowidth>12</Leftlogowidth>
+    <Leftlogoheight>60</Leftlogoheight>
+    <Rightlogoleft>650</Rightlogoleft>
+    <Rightlogotop>14</Rightlogotop>
+    <Rightlogowidth>80</Rightlogowidth>
+    <Rightlogoheight>80</Rightlogoheight>
+    <leftlogopath />
+    <rightlogopath />
+    <MaxRowsPerPage>31</MaxRowsPerPage>
+    <RowHeight>19</RowHeight>
+    <showpageno>false</showpageno>
+    <pagenotop>1100</pagenotop>
+    <pagenoleft>570</pagenoleft>
+    <pageformat>1</pageformat>
+    <Watermark />
+  </chequePrintingSettings>
+</NewDataSet>

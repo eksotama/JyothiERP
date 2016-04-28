@@ -1,0 +1,207 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <BarcodeFieldSettings>
+    <Schemename>4x4</Schemename>
+    <FiledName>Barcode</FiledName>
+    <Lwidth>48</Lwidth>
+    <LHeight>10</LHeight>
+    <LTop>4</LTop>
+    <Lleft>0</Lleft>
+    <DbName>Barcode</DbName>
+    <LText />
+    <Fontname>IDAutomationHC39M Free Version</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <Align>Centre</Align>
+    <IsVisible>true</IsVisible>
+    <backcolor>NULL</backcolor>
+  </BarcodeFieldSettings>
+  <BarcodeFieldSettings>
+    <Schemename>4x4</Schemename>
+    <FiledName>BarcodeText</FiledName>
+    <Lwidth>40</Lwidth>
+    <LHeight>20</LHeight>
+    <LTop>0</LTop>
+    <Lleft>0</Lleft>
+    <DbName>BarcodeText</DbName>
+    <LText />
+    <Fontname>ARIAL</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>Black</fontcolor>
+    <Align>Left</Align>
+    <IsVisible>false</IsVisible>
+    <backcolor>NULL</backcolor>
+  </BarcodeFieldSettings>
+  <BarcodeFieldSettings>
+    <Schemename>4x4</Schemename>
+    <FiledName>CompanyName</FiledName>
+    <Lwidth>48</Lwidth>
+    <LHeight>4</LHeight>
+    <LTop>0</LTop>
+    <Lleft>0</Lleft>
+    <DbName>CompanyName</DbName>
+    <LText />
+    <Fontname>ARIAL</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>Black</fontcolor>
+    <Align>Centre</Align>
+    <IsVisible>true</IsVisible>
+    <backcolor>NULL</backcolor>
+  </BarcodeFieldSettings>
+  <BarcodeFieldSettings>
+    <Schemename>65 PCS</Schemename>
+    <FiledName>Barcode</FiledName>
+    <Lwidth>38</Lwidth>
+    <LHeight>5</LHeight>
+    <LTop>0</LTop>
+    <Lleft>1</Lleft>
+    <DbName>Barcode</DbName>
+    <LText />
+    <Fontname>IDAutomationHC39M Free Version</Fontname>
+    <fontsize>9</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <Align>Centre</Align>
+    <IsVisible>true</IsVisible>
+    <backcolor>NULL</backcolor>
+  </BarcodeFieldSettings>
+  <BarcodeFieldSettings>
+    <Schemename>65 PCS</Schemename>
+    <FiledName>BarcodeText</FiledName>
+    <Lwidth>38</Lwidth>
+    <LHeight>4</LHeight>
+    <LTop>5</LTop>
+    <Lleft>0</Lleft>
+    <DbName>BarcodeText</DbName>
+    <LText />
+    <Fontname>Calibri</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <Align>Centre</Align>
+    <IsVisible>true</IsVisible>
+    <backcolor>NULL</backcolor>
+  </BarcodeFieldSettings>
+  <BarcodeFieldSettings>
+    <Schemename>65 PCS</Schemename>
+    <FiledName>CompanyName</FiledName>
+    <Lwidth>40</Lwidth>
+    <LHeight>20</LHeight>
+    <LTop>0</LTop>
+    <Lleft>0</Lleft>
+    <DbName>CompanyName</DbName>
+    <LText />
+    <Fontname>ARIAL</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>0</fontstyle>
+    <fontcolor>Black</fontcolor>
+    <Align>Left</Align>
+    <IsVisible>false</IsVisible>
+    <backcolor>NULL</backcolor>
+  </BarcodeFieldSettings>
+  <BarcodeFieldSettings>
+    <Schemename>65 PCS</Schemename>
+    <FiledName>ItemName</FiledName>
+    <Lwidth>38</Lwidth>
+    <LHeight>7</LHeight>
+    <LTop>8</LTop>
+    <Lleft>0</Lleft>
+    <DbName>ItemName</DbName>
+    <LText />
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <Align>Centre</Align>
+    <IsVisible>true</IsVisible>
+    <backcolor>NULL</backcolor>
+  </BarcodeFieldSettings>
+  <BarcodeFieldSettings>
+    <Schemename>65 PCS</Schemename>
+    <FiledName>MRP</FiledName>
+    <Lwidth>38</Lwidth>
+    <LHeight>4</LHeight>
+    <LTop>13</LTop>
+    <Lleft>0</Lleft>
+    <DbName>MRP</DbName>
+    <LText>MRP: </LText>
+    <Fontname>Calibri</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <Align>Centre</Align>
+    <IsVisible>true</IsVisible>
+    <backcolor>NULL</backcolor>
+  </BarcodeFieldSettings>
+  <BarcodeFieldSettings>
+    <Schemename>65 PCS</Schemename>
+    <FiledName>Price</FiledName>
+    <Lwidth>38</Lwidth>
+    <LHeight>4</LHeight>
+    <LTop>16</LTop>
+    <Lleft>0</Lleft>
+    <DbName>Price</DbName>
+    <LText>Rate: </LText>
+    <Fontname>Calibri</Fontname>
+    <fontsize>9</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <Align>Centre</Align>
+    <IsVisible>true</IsVisible>
+    <backcolor>NULL</backcolor>
+  </BarcodeFieldSettings>
+  <BarcodeFieldSettings>
+    <Schemename>4x4</Schemename>
+    <FiledName>ItemName</FiledName>
+    <Lwidth>48</Lwidth>
+    <LHeight>4</LHeight>
+    <LTop>14</LTop>
+    <Lleft>0</Lleft>
+    <DbName>ItemName</DbName>
+    <LText />
+    <Fontname>ARIAL</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>Black</fontcolor>
+    <Align>Centre</Align>
+    <IsVisible>true</IsVisible>
+    <backcolor>NULL</backcolor>
+  </BarcodeFieldSettings>
+  <BarcodeFieldSettings>
+    <Schemename>4x4</Schemename>
+    <FiledName>MRP</FiledName>
+    <Lwidth>40</Lwidth>
+    <LHeight>20</LHeight>
+    <LTop>0</LTop>
+    <Lleft>0</Lleft>
+    <DbName>MRP</DbName>
+    <LText />
+    <Fontname>ARIAL</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>Black</fontcolor>
+    <Align>Left</Align>
+    <IsVisible>false</IsVisible>
+    <backcolor>NULL</backcolor>
+  </BarcodeFieldSettings>
+  <BarcodeFieldSettings>
+    <Schemename>4x4</Schemename>
+    <FiledName>Price</FiledName>
+    <Lwidth>48</Lwidth>
+    <LHeight>4</LHeight>
+    <LTop>19</LTop>
+    <Lleft>0</Lleft>
+    <DbName>Price</DbName>
+    <LText />
+    <Fontname>ARIAL</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>Black</fontcolor>
+    <Align>Centre</Align>
+    <IsVisible>true</IsVisible>
+    <backcolor>NULL</backcolor>
+  </BarcodeFieldSettings>
+</NewDataSet>

@@ -1,0 +1,9 @@
+bin\Debug\SerialBoxes.dll
+bin\Debug\SerialBoxes.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\SerialBox.SerialBox.resources
+obj\Debug\SerialBox.csproj.GenerateResource.Cache
+obj\Debug\SerialBoxes.dll
+obj\Debug\SerialBoxes.pdb
+bin\Debug\FilterControls.dll
+bin\Debug\FilterControls.pdb

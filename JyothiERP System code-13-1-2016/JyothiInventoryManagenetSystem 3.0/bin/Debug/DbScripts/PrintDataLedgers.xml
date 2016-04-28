@@ -1,0 +1,52 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <PrintDataLedgers>
+    <LedgerName>Jyothi Suresh</LedgerName>
+    <LedgerCode>Sup1</LedgerCode>
+    <TaxRegno>9455</TaxRegno>
+    <AccountGroup>East Suppliers</AccountGroup>
+    <address>4445</address>
+    <location>4445</location>
+    <state>Ap</state>
+    <country>India</country>
+    <Tel>88</Tel>
+    <fax>45654</fax>
+    <emailid>sureshjyothijv@Gmail.Com</emailid>
+    <website />
+    <accounttype>East Suppliers</accounttype>
+    <createdby>Admin</createdby>
+    <alterby />
+    <verifiedby />
+    <Isactive>1</Isactive>
+    <creditlimit>50000</creditlimit>
+    <discount>2</discount>
+    <Contactperson xml:space="preserve"> </Contactperson>
+    <pdesignation />
+    <ptel>4555</ptel>
+    <pphoneno>45 </pphoneno>
+    <pemail xml:space="preserve"> </pemail>
+    <Dr>0</Dr>
+    <Cr>4500</Cr>
+    <OpDr>0</OpDr>
+    <OpCr>4500</OpCr>
+    <IsBillWise>0</IsBillWise>
+    <photopath />
+    <currentbalance>9501.6</currentbalance>
+    <partyaddresscity />
+    <StoreName />
+    <CreditPeriod>30</CreditPeriod>
+    <Currency>USD       </Currency>
+    <LedgerNameTemp>JyothiSuresh </LedgerNameTemp>
+    <F1 />
+    <F2 />
+    <N1>0</N1>
+    <n2>0</n2>
+    <PriceLevel />
+    <Activity />
+    <BankAccNo />
+    <EnableChequePrinting>false</EnableChequePrinting>
+    <pincode />
+    <IsAllowCostCentre>false</IsAllowCostCentre>
+    <Isprimary>1</Isprimary>
+  </PrintDataLedgers>
+</NewDataSet>

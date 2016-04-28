@@ -1,0 +1,1091 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <PrintingDataRowsItems>
+    <TransCode>0</TransCode>
+    <TransDate>2014-10-04T00:00:00+05:30</TransDate>
+    <TransDateValue>41350</TransDateValue>
+    <QutoNo>billno1</QutoNo>
+    <QutoRef>billno1</QutoRef>
+    <OrderNo>billno1</OrderNo>
+    <OrderRef>billno1</OrderRef>
+    <DNoteno>billno1</DNoteno>
+    <DnoteRef>billno1</DnoteRef>
+    <StoreName>MainStore</StoreName>
+    <Currency>USD</Currency>
+    <StockName>Intex Keyboard</StockName>
+    <StockCode>CoverDrive Flip Cover for Samsung Galaxy S3 WHITE </StockCode>
+    <stockgroup>Stockgroup</stockgroup>
+    <Barcode>10000000011</Barcode>
+    <StockSize>50Kg Pack</StockSize>
+    <Location>MainLocation</Location>
+    <description />
+    <BaseUnit>Bags Of 50 Kgs</BaseUnit>
+    <MainUnit>Bags</MainUnit>
+    <SubUnit>Kgs</SubUnit>
+    <IsSimpleUnit>0</IsSimpleUnit>
+    <MainQty>10</MainQty>
+    <TotalQty>500</TotalQty>
+    <SubUnitQty>0</SubUnitQty>
+    <QtyText>10 Bags 0 Kgs</QtyText>
+    <StockRate>358</StockRate>
+    <Expiry>2016-01-02T00:00:00+05:30</Expiry>
+    <BatchNo>25455</BatchNo>
+    <StockType>0</StockType>
+    <StockDisc>0</StockDisc>
+    <RatePer>Bags</RatePer>
+    <UnitCon>50</UnitCon>
+    <CustBarcode />
+    <sno>1</sno>
+    <StockAmount>123548.78</StockAmount>
+    <Isdelete>0</Isdelete>
+    <QtyValues>25 pcs</QtyValues>
+    <VoucherName>POS</VoucherName>
+    <CurrencyCon1>1</CurrencyCon1>
+    <Tax>14.5</Tax>
+    <NetRate>25487.58</NetRate>
+    <origin />
+    <HScode />
+    <Utranscode>0</Utranscode>
+    <UsedQty>0</UsedQty>
+    <DeliveryNote>false</DeliveryNote>
+    <allocateledger />
+    <PresetRate>0</PresetRate>
+    <N1>0</N1>
+    <F1 />
+    <IsDirect>false</IsDirect>
+    <TaxAmount>43548.78</TaxAmount>
+    <disc2>0</disc2>
+    <transtype>0</transtype>
+    <Servicetax>0</Servicetax>
+    <netStockAmount>125487.58</netStockAmount>
+    <mrp>0</mrp>
+    <packing>10s</packing>
+    <slnos>8883453,34534</slnos>
+    <Tax2>14.5</Tax2>
+    <TaxAmount2>3548.78</TaxAmount2>
+    <FreeQty>1</FreeQty>
+    <FreeQtyText>1 Pcs</FreeQtyText>
+    <FreeMQty>1</FreeMQty>
+    <FreeMQtyText>1 Pcs</FreeMQtyText>
+  </PrintingDataRowsItems>
+  <PrintingDataRowsItems>
+    <TransCode>0</TransCode>
+    <TransDate>2014-10-04T00:00:00+05:30</TransDate>
+    <TransDateValue>41350</TransDateValue>
+    <QutoNo>billno1</QutoNo>
+    <QutoRef>billno1</QutoRef>
+    <OrderNo>billno1</OrderNo>
+    <OrderRef>billno1</OrderRef>
+    <DNoteno>billno1</DNoteno>
+    <DnoteRef>billno1</DnoteRef>
+    <StoreName>MainStore</StoreName>
+    <Currency>USD</Currency>
+    <StockName>Intex Keyboard</StockName>
+    <StockCode>CoverDrive Flip Cover for Samsung Galaxy S3 WHITE </StockCode>
+    <stockgroup>Stockgroup</stockgroup>
+    <Barcode>10000000011</Barcode>
+    <StockSize>50Kg Pack</StockSize>
+    <Location>MainLocation</Location>
+    <description />
+    <BaseUnit>Bags Of 50 Kgs</BaseUnit>
+    <MainUnit>Bags</MainUnit>
+    <SubUnit>Kgs</SubUnit>
+    <IsSimpleUnit>0</IsSimpleUnit>
+    <MainQty>10</MainQty>
+    <TotalQty>500</TotalQty>
+    <SubUnitQty>0</SubUnitQty>
+    <QtyText>10 Bags 0 Kgs</QtyText>
+    <StockRate>358</StockRate>
+    <Expiry>2016-01-02T00:00:00+05:30</Expiry>
+    <BatchNo>25455</BatchNo>
+    <StockType>0</StockType>
+    <StockDisc>0</StockDisc>
+    <RatePer>Bags</RatePer>
+    <UnitCon>50</UnitCon>
+    <CustBarcode />
+    <sno>1</sno>
+    <StockAmount>123548.78</StockAmount>
+    <Isdelete>0</Isdelete>
+    <QtyValues>25 pcs</QtyValues>
+    <VoucherName>POS</VoucherName>
+    <CurrencyCon1>1</CurrencyCon1>
+    <Tax>14.5</Tax>
+    <NetRate>25487.58</NetRate>
+    <origin />
+    <HScode />
+    <Utranscode>0</Utranscode>
+    <UsedQty>0</UsedQty>
+    <DeliveryNote>false</DeliveryNote>
+    <allocateledger />
+    <PresetRate>0</PresetRate>
+    <N1>0</N1>
+    <F1 />
+    <IsDirect>false</IsDirect>
+    <TaxAmount>43548.78</TaxAmount>
+    <disc2>0</disc2>
+    <transtype>0</transtype>
+    <Servicetax>0</Servicetax>
+    <netStockAmount>125487.58</netStockAmount>
+    <mrp>0</mrp>
+    <packing>10s</packing>
+    <slnos>8883453,34534</slnos>
+    <Tax2>14.5</Tax2>
+    <TaxAmount2>3548.78</TaxAmount2>
+    <FreeQty>1</FreeQty>
+    <FreeQtyText>1 Pcs</FreeQtyText>
+    <FreeMQty>1</FreeMQty>
+    <FreeMQtyText>1 Pcs</FreeMQtyText>
+  </PrintingDataRowsItems>
+  <PrintingDataRowsItems>
+    <TransCode>0</TransCode>
+    <TransDate>2014-10-04T00:00:00+05:30</TransDate>
+    <TransDateValue>41350</TransDateValue>
+    <QutoNo>billno1</QutoNo>
+    <QutoRef>billno1</QutoRef>
+    <OrderNo>billno1</OrderNo>
+    <OrderRef>billno1</OrderRef>
+    <DNoteno>billno1</DNoteno>
+    <DnoteRef>billno1</DnoteRef>
+    <StoreName>MainStore</StoreName>
+    <Currency>USD</Currency>
+    <StockName>Intex Keyboard</StockName>
+    <StockCode>CoverDrive Flip Cover for Samsung Galaxy S3 WHITE </StockCode>
+    <stockgroup>Stockgroup</stockgroup>
+    <Barcode>10000000011</Barcode>
+    <StockSize>50Kg Pack</StockSize>
+    <Location>MainLocation</Location>
+    <description />
+    <BaseUnit>Bags Of 50 Kgs</BaseUnit>
+    <MainUnit>Bags</MainUnit>
+    <SubUnit>Kgs</SubUnit>
+    <IsSimpleUnit>0</IsSimpleUnit>
+    <MainQty>10</MainQty>
+    <TotalQty>500</TotalQty>
+    <SubUnitQty>0</SubUnitQty>
+    <QtyText>10 Bags 0 Kgs</QtyText>
+    <StockRate>358</StockRate>
+    <Expiry>2016-01-02T00:00:00+05:30</Expiry>
+    <BatchNo>25455</BatchNo>
+    <StockType>0</StockType>
+    <StockDisc>0</StockDisc>
+    <RatePer>Bags</RatePer>
+    <UnitCon>50</UnitCon>
+    <CustBarcode />
+    <sno>1</sno>
+    <StockAmount>123548.78</StockAmount>
+    <Isdelete>0</Isdelete>
+    <QtyValues>25 pcs</QtyValues>
+    <VoucherName>POS</VoucherName>
+    <CurrencyCon1>1</CurrencyCon1>
+    <Tax>14.5</Tax>
+    <NetRate>25487.58</NetRate>
+    <origin />
+    <HScode />
+    <Utranscode>0</Utranscode>
+    <UsedQty>0</UsedQty>
+    <DeliveryNote>false</DeliveryNote>
+    <allocateledger />
+    <PresetRate>0</PresetRate>
+    <N1>0</N1>
+    <F1 />
+    <IsDirect>false</IsDirect>
+    <TaxAmount>43548.78</TaxAmount>
+    <disc2>0</disc2>
+    <transtype>0</transtype>
+    <Servicetax>0</Servicetax>
+    <netStockAmount>125487.58</netStockAmount>
+    <mrp>0</mrp>
+    <packing>10s</packing>
+    <slnos>8883453,34534</slnos>
+    <Tax2>14.5</Tax2>
+    <TaxAmount2>3548.78</TaxAmount2>
+    <FreeQty>1</FreeQty>
+    <FreeQtyText>1 Pcs</FreeQtyText>
+    <FreeMQty>1</FreeMQty>
+    <FreeMQtyText>1 Pcs</FreeMQtyText>
+  </PrintingDataRowsItems>
+  <PrintingDataRowsItems>
+    <TransCode>0</TransCode>
+    <TransDate>2014-10-04T00:00:00+05:30</TransDate>
+    <TransDateValue>41350</TransDateValue>
+    <QutoNo>billno1</QutoNo>
+    <QutoRef>billno1</QutoRef>
+    <OrderNo>billno1</OrderNo>
+    <OrderRef>billno1</OrderRef>
+    <DNoteno>billno1</DNoteno>
+    <DnoteRef>billno1</DnoteRef>
+    <StoreName>MainStore</StoreName>
+    <Currency>USD</Currency>
+    <StockName>Intex Keyboard</StockName>
+    <StockCode>CoverDrive Flip Cover for Samsung Galaxy S3 WHITE </StockCode>
+    <stockgroup>Stockgroup</stockgroup>
+    <Barcode>10000000011</Barcode>
+    <StockSize>50Kg Pack</StockSize>
+    <Location>MainLocation</Location>
+    <description />
+    <BaseUnit>Bags Of 50 Kgs</BaseUnit>
+    <MainUnit>Bags</MainUnit>
+    <SubUnit>Kgs</SubUnit>
+    <IsSimpleUnit>0</IsSimpleUnit>
+    <MainQty>10</MainQty>
+    <TotalQty>500</TotalQty>
+    <SubUnitQty>0</SubUnitQty>
+    <QtyText>10 Bags 0 Kgs</QtyText>
+    <StockRate>358</StockRate>
+    <Expiry>2016-01-02T00:00:00+05:30</Expiry>
+    <BatchNo>25455</BatchNo>
+    <StockType>0</StockType>
+    <StockDisc>0</StockDisc>
+    <RatePer>Bags</RatePer>
+    <UnitCon>50</UnitCon>
+    <CustBarcode />
+    <sno>1</sno>
+    <StockAmount>123548.78</StockAmount>
+    <Isdelete>0</Isdelete>
+    <QtyValues>25 pcs</QtyValues>
+    <VoucherName>POS</VoucherName>
+    <CurrencyCon1>1</CurrencyCon1>
+    <Tax>14.5</Tax>
+    <NetRate>25487.58</NetRate>
+    <origin />
+    <HScode />
+    <Utranscode>0</Utranscode>
+    <UsedQty>0</UsedQty>
+    <DeliveryNote>false</DeliveryNote>
+    <allocateledger />
+    <PresetRate>0</PresetRate>
+    <N1>0</N1>
+    <F1 />
+    <IsDirect>false</IsDirect>
+    <TaxAmount>43548.78</TaxAmount>
+    <disc2>0</disc2>
+    <transtype>0</transtype>
+    <Servicetax>0</Servicetax>
+    <netStockAmount>125487.58</netStockAmount>
+    <mrp>0</mrp>
+    <packing>10s</packing>
+    <slnos>8883453,34534</slnos>
+    <Tax2>14.5</Tax2>
+    <TaxAmount2>3548.78</TaxAmount2>
+    <FreeQty>1</FreeQty>
+    <FreeQtyText>1 Pcs</FreeQtyText>
+    <FreeMQty>1</FreeMQty>
+    <FreeMQtyText>1 Pcs</FreeMQtyText>
+  </PrintingDataRowsItems>
+  <PrintingDataRowsItems>
+    <TransCode>0</TransCode>
+    <TransDate>2014-10-04T00:00:00+05:30</TransDate>
+    <TransDateValue>41350</TransDateValue>
+    <QutoNo>billno1</QutoNo>
+    <QutoRef>billno1</QutoRef>
+    <OrderNo>billno1</OrderNo>
+    <OrderRef>billno1</OrderRef>
+    <DNoteno>billno1</DNoteno>
+    <DnoteRef>billno1</DnoteRef>
+    <StoreName>MainStore</StoreName>
+    <Currency>USD</Currency>
+    <StockName>Intex Keyboard</StockName>
+    <StockCode>CoverDrive Flip Cover for Samsung Galaxy S3 WHITE </StockCode>
+    <stockgroup>Stockgroup</stockgroup>
+    <Barcode>10000000011</Barcode>
+    <StockSize>50Kg Pack</StockSize>
+    <Location>MainLocation</Location>
+    <description />
+    <BaseUnit>Bags Of 50 Kgs</BaseUnit>
+    <MainUnit>Bags</MainUnit>
+    <SubUnit>Kgs</SubUnit>
+    <IsSimpleUnit>0</IsSimpleUnit>
+    <MainQty>10</MainQty>
+    <TotalQty>500</TotalQty>
+    <SubUnitQty>0</SubUnitQty>
+    <QtyText>10 Bags 0 Kgs</QtyText>
+    <StockRate>358</StockRate>
+    <Expiry>2016-01-02T00:00:00+05:30</Expiry>
+    <BatchNo>25455</BatchNo>
+    <StockType>0</StockType>
+    <StockDisc>0</StockDisc>
+    <RatePer>Bags</RatePer>
+    <UnitCon>50</UnitCon>
+    <CustBarcode />
+    <sno>1</sno>
+    <StockAmount>123548.78</StockAmount>
+    <Isdelete>0</Isdelete>
+    <QtyValues>25 pcs</QtyValues>
+    <VoucherName>POS</VoucherName>
+    <CurrencyCon1>1</CurrencyCon1>
+    <Tax>14.5</Tax>
+    <NetRate>25487.58</NetRate>
+    <origin />
+    <HScode />
+    <Utranscode>0</Utranscode>
+    <UsedQty>0</UsedQty>
+    <DeliveryNote>false</DeliveryNote>
+    <allocateledger />
+    <PresetRate>0</PresetRate>
+    <N1>0</N1>
+    <F1 />
+    <IsDirect>false</IsDirect>
+    <TaxAmount>43548.78</TaxAmount>
+    <disc2>0</disc2>
+    <transtype>0</transtype>
+    <Servicetax>0</Servicetax>
+    <netStockAmount>125487.58</netStockAmount>
+    <mrp>0</mrp>
+    <packing>10s</packing>
+    <slnos>8883453,34534</slnos>
+    <Tax2>14.5</Tax2>
+    <TaxAmount2>3548.78</TaxAmount2>
+    <FreeQty>1</FreeQty>
+    <FreeQtyText>1 Pcs</FreeQtyText>
+    <FreeMQty>1</FreeMQty>
+    <FreeMQtyText>1 Pcs</FreeMQtyText>
+  </PrintingDataRowsItems>
+  <PrintingDataRowsItems>
+    <TransCode>0</TransCode>
+    <TransDate>2014-10-04T00:00:00+05:30</TransDate>
+    <TransDateValue>41350</TransDateValue>
+    <QutoNo>billno1</QutoNo>
+    <QutoRef>billno1</QutoRef>
+    <OrderNo>billno1</OrderNo>
+    <OrderRef>billno1</OrderRef>
+    <DNoteno>billno1</DNoteno>
+    <DnoteRef>billno1</DnoteRef>
+    <StoreName>MainStore</StoreName>
+    <Currency>USD</Currency>
+    <StockName>Intex Keyboard</StockName>
+    <StockCode>CoverDrive Flip Cover for Samsung Galaxy S3 WHITE </StockCode>
+    <stockgroup>Stockgroup</stockgroup>
+    <Barcode>10000000011</Barcode>
+    <StockSize>50Kg Pack</StockSize>
+    <Location>MainLocation</Location>
+    <description />
+    <BaseUnit>Bags Of 50 Kgs</BaseUnit>
+    <MainUnit>Bags</MainUnit>
+    <SubUnit>Kgs</SubUnit>
+    <IsSimpleUnit>0</IsSimpleUnit>
+    <MainQty>10</MainQty>
+    <TotalQty>500</TotalQty>
+    <SubUnitQty>0</SubUnitQty>
+    <QtyText>10 Bags 0 Kgs</QtyText>
+    <StockRate>358</StockRate>
+    <Expiry>2016-01-02T00:00:00+05:30</Expiry>
+    <BatchNo>25455</BatchNo>
+    <StockType>0</StockType>
+    <StockDisc>0</StockDisc>
+    <RatePer>Bags</RatePer>
+    <UnitCon>50</UnitCon>
+    <CustBarcode />
+    <sno>1</sno>
+    <StockAmount>123548.78</StockAmount>
+    <Isdelete>0</Isdelete>
+    <QtyValues>25 pcs</QtyValues>
+    <VoucherName>POS</VoucherName>
+    <CurrencyCon1>1</CurrencyCon1>
+    <Tax>14.5</Tax>
+    <NetRate>25487.58</NetRate>
+    <origin />
+    <HScode />
+    <Utranscode>0</Utranscode>
+    <UsedQty>0</UsedQty>
+    <DeliveryNote>false</DeliveryNote>
+    <allocateledger />
+    <PresetRate>0</PresetRate>
+    <N1>0</N1>
+    <F1 />
+    <IsDirect>false</IsDirect>
+    <TaxAmount>43548.78</TaxAmount>
+    <disc2>0</disc2>
+    <transtype>0</transtype>
+    <Servicetax>0</Servicetax>
+    <netStockAmount>125487.58</netStockAmount>
+    <mrp>0</mrp>
+    <packing>10s</packing>
+    <slnos>8883453,34534</slnos>
+    <Tax2>14.5</Tax2>
+    <TaxAmount2>3548.78</TaxAmount2>
+    <FreeQty>1</FreeQty>
+    <FreeQtyText>1 Pcs</FreeQtyText>
+    <FreeMQty>1</FreeMQty>
+    <FreeMQtyText>1 Pcs</FreeMQtyText>
+  </PrintingDataRowsItems>
+  <PrintingDataRowsItems>
+    <TransCode>0</TransCode>
+    <TransDate>2014-10-04T00:00:00+05:30</TransDate>
+    <TransDateValue>41350</TransDateValue>
+    <QutoNo>billno1</QutoNo>
+    <QutoRef>billno1</QutoRef>
+    <OrderNo>billno1</OrderNo>
+    <OrderRef>billno1</OrderRef>
+    <DNoteno>billno1</DNoteno>
+    <DnoteRef>billno1</DnoteRef>
+    <StoreName>MainStore</StoreName>
+    <Currency>USD</Currency>
+    <StockName>Intex Keyboard</StockName>
+    <StockCode>CoverDrive Flip Cover for Samsung Galaxy S3 WHITE </StockCode>
+    <stockgroup>Stockgroup</stockgroup>
+    <Barcode>10000000011</Barcode>
+    <StockSize>50Kg Pack</StockSize>
+    <Location>MainLocation</Location>
+    <description />
+    <BaseUnit>Bags Of 50 Kgs</BaseUnit>
+    <MainUnit>Bags</MainUnit>
+    <SubUnit>Kgs</SubUnit>
+    <IsSimpleUnit>0</IsSimpleUnit>
+    <MainQty>10</MainQty>
+    <TotalQty>500</TotalQty>
+    <SubUnitQty>0</SubUnitQty>
+    <QtyText>10 Bags 0 Kgs</QtyText>
+    <StockRate>358</StockRate>
+    <Expiry>2016-01-02T00:00:00+05:30</Expiry>
+    <BatchNo>25455</BatchNo>
+    <StockType>0</StockType>
+    <StockDisc>0</StockDisc>
+    <RatePer>Bags</RatePer>
+    <UnitCon>50</UnitCon>
+    <CustBarcode />
+    <sno>1</sno>
+    <StockAmount>123548.78</StockAmount>
+    <Isdelete>0</Isdelete>
+    <QtyValues>25 pcs</QtyValues>
+    <VoucherName>POS</VoucherName>
+    <CurrencyCon1>1</CurrencyCon1>
+    <Tax>14.5</Tax>
+    <NetRate>25487.58</NetRate>
+    <origin />
+    <HScode />
+    <Utranscode>0</Utranscode>
+    <UsedQty>0</UsedQty>
+    <DeliveryNote>false</DeliveryNote>
+    <allocateledger />
+    <PresetRate>0</PresetRate>
+    <N1>0</N1>
+    <F1 />
+    <IsDirect>false</IsDirect>
+    <TaxAmount>43548.78</TaxAmount>
+    <disc2>0</disc2>
+    <transtype>0</transtype>
+    <Servicetax>0</Servicetax>
+    <netStockAmount>125487.58</netStockAmount>
+    <mrp>0</mrp>
+    <packing>10s</packing>
+    <slnos>8883453,34534</slnos>
+    <Tax2>14.5</Tax2>
+    <TaxAmount2>3548.78</TaxAmount2>
+    <FreeQty>1</FreeQty>
+    <FreeQtyText>1 Pcs</FreeQtyText>
+    <FreeMQty>1</FreeMQty>
+    <FreeMQtyText>1 Pcs</FreeMQtyText>
+  </PrintingDataRowsItems>
+  <PrintingDataRowsItems>
+    <TransCode>0</TransCode>
+    <TransDate>2014-10-04T00:00:00+05:30</TransDate>
+    <TransDateValue>41350</TransDateValue>
+    <QutoNo>billno1</QutoNo>
+    <QutoRef>billno1</QutoRef>
+    <OrderNo>billno1</OrderNo>
+    <OrderRef>billno1</OrderRef>
+    <DNoteno>billno1</DNoteno>
+    <DnoteRef>billno1</DnoteRef>
+    <StoreName>MainStore</StoreName>
+    <Currency>USD</Currency>
+    <StockName>Intex Keyboard</StockName>
+    <StockCode>CoverDrive Flip Cover for Samsung Galaxy S3 WHITE </StockCode>
+    <stockgroup>Stockgroup</stockgroup>
+    <Barcode>10000000011</Barcode>
+    <StockSize>50Kg Pack</StockSize>
+    <Location>MainLocation</Location>
+    <description />
+    <BaseUnit>Bags Of 50 Kgs</BaseUnit>
+    <MainUnit>Bags</MainUnit>
+    <SubUnit>Kgs</SubUnit>
+    <IsSimpleUnit>0</IsSimpleUnit>
+    <MainQty>10</MainQty>
+    <TotalQty>500</TotalQty>
+    <SubUnitQty>0</SubUnitQty>
+    <QtyText>10 Bags 0 Kgs</QtyText>
+    <StockRate>358</StockRate>
+    <Expiry>2016-01-02T00:00:00+05:30</Expiry>
+    <BatchNo>25455</BatchNo>
+    <StockType>0</StockType>
+    <StockDisc>0</StockDisc>
+    <RatePer>Bags</RatePer>
+    <UnitCon>50</UnitCon>
+    <CustBarcode />
+    <sno>1</sno>
+    <StockAmount>123548.78</StockAmount>
+    <Isdelete>0</Isdelete>
+    <QtyValues>25 pcs</QtyValues>
+    <VoucherName>POS</VoucherName>
+    <CurrencyCon1>1</CurrencyCon1>
+    <Tax>14.5</Tax>
+    <NetRate>25487.58</NetRate>
+    <origin />
+    <HScode />
+    <Utranscode>0</Utranscode>
+    <UsedQty>0</UsedQty>
+    <DeliveryNote>false</DeliveryNote>
+    <allocateledger />
+    <PresetRate>0</PresetRate>
+    <N1>0</N1>
+    <F1 />
+    <IsDirect>false</IsDirect>
+    <TaxAmount>43548.78</TaxAmount>
+    <disc2>0</disc2>
+    <transtype>0</transtype>
+    <Servicetax>0</Servicetax>
+    <netStockAmount>125487.58</netStockAmount>
+    <mrp>0</mrp>
+    <packing>10s</packing>
+    <slnos>8883453,34534</slnos>
+    <Tax2>14.5</Tax2>
+    <TaxAmount2>3548.78</TaxAmount2>
+    <FreeQty>1</FreeQty>
+    <FreeQtyText>1 Pcs</FreeQtyText>
+    <FreeMQty>1</FreeMQty>
+    <FreeMQtyText>1 Pcs</FreeMQtyText>
+  </PrintingDataRowsItems>
+  <PrintingDataRowsItems>
+    <TransCode>0</TransCode>
+    <TransDate>2014-10-04T00:00:00+05:30</TransDate>
+    <TransDateValue>41350</TransDateValue>
+    <QutoNo>billno1</QutoNo>
+    <QutoRef>billno1</QutoRef>
+    <OrderNo>billno1</OrderNo>
+    <OrderRef>billno1</OrderRef>
+    <DNoteno>billno1</DNoteno>
+    <DnoteRef>billno1</DnoteRef>
+    <StoreName>MainStore</StoreName>
+    <Currency>USD</Currency>
+    <StockName>Intex Keyboard</StockName>
+    <StockCode>CoverDrive Flip Cover for Samsung Galaxy S3 WHITE </StockCode>
+    <stockgroup>Stockgroup</stockgroup>
+    <Barcode>10000000011</Barcode>
+    <StockSize>50Kg Pack</StockSize>
+    <Location>MainLocation</Location>
+    <description />
+    <BaseUnit>Bags Of 50 Kgs</BaseUnit>
+    <MainUnit>Bags</MainUnit>
+    <SubUnit>Kgs</SubUnit>
+    <IsSimpleUnit>0</IsSimpleUnit>
+    <MainQty>10</MainQty>
+    <TotalQty>500</TotalQty>
+    <SubUnitQty>0</SubUnitQty>
+    <QtyText>10 Bags 0 Kgs</QtyText>
+    <StockRate>358</StockRate>
+    <Expiry>2016-01-02T00:00:00+05:30</Expiry>
+    <BatchNo>25455</BatchNo>
+    <StockType>0</StockType>
+    <StockDisc>0</StockDisc>
+    <RatePer>Bags</RatePer>
+    <UnitCon>50</UnitCon>
+    <CustBarcode />
+    <sno>1</sno>
+    <StockAmount>123548.78</StockAmount>
+    <Isdelete>0</Isdelete>
+    <QtyValues>25 pcs</QtyValues>
+    <VoucherName>POS</VoucherName>
+    <CurrencyCon1>1</CurrencyCon1>
+    <Tax>14.5</Tax>
+    <NetRate>25487.58</NetRate>
+    <origin />
+    <HScode />
+    <Utranscode>0</Utranscode>
+    <UsedQty>0</UsedQty>
+    <DeliveryNote>false</DeliveryNote>
+    <allocateledger />
+    <PresetRate>0</PresetRate>
+    <N1>0</N1>
+    <F1 />
+    <IsDirect>false</IsDirect>
+    <TaxAmount>43548.78</TaxAmount>
+    <disc2>0</disc2>
+    <transtype>0</transtype>
+    <Servicetax>0</Servicetax>
+    <netStockAmount>125487.58</netStockAmount>
+    <mrp>0</mrp>
+    <packing>10s</packing>
+    <slnos>8883453,34534</slnos>
+    <Tax2>14.5</Tax2>
+    <TaxAmount2>3548.78</TaxAmount2>
+    <FreeQty>1</FreeQty>
+    <FreeQtyText>1 Pcs</FreeQtyText>
+    <FreeMQty>1</FreeMQty>
+    <FreeMQtyText>1 Pcs</FreeMQtyText>
+  </PrintingDataRowsItems>
+  <PrintingDataRowsItems>
+    <TransCode>0</TransCode>
+    <TransDate>2014-10-04T00:00:00+05:30</TransDate>
+    <TransDateValue>41350</TransDateValue>
+    <QutoNo>billno1</QutoNo>
+    <QutoRef>billno1</QutoRef>
+    <OrderNo>billno1</OrderNo>
+    <OrderRef>billno1</OrderRef>
+    <DNoteno>billno1</DNoteno>
+    <DnoteRef>billno1</DnoteRef>
+    <StoreName>MainStore</StoreName>
+    <Currency>USD</Currency>
+    <StockName>Intex Keyboard</StockName>
+    <StockCode>CoverDrive Flip Cover for Samsung Galaxy S3 WHITE </StockCode>
+    <stockgroup>Stockgroup</stockgroup>
+    <Barcode>10000000011</Barcode>
+    <StockSize>50Kg Pack</StockSize>
+    <Location>MainLocation</Location>
+    <description />
+    <BaseUnit>Bags Of 50 Kgs</BaseUnit>
+    <MainUnit>Bags</MainUnit>
+    <SubUnit>Kgs</SubUnit>
+    <IsSimpleUnit>0</IsSimpleUnit>
+    <MainQty>10</MainQty>
+    <TotalQty>500</TotalQty>
+    <SubUnitQty>0</SubUnitQty>
+    <QtyText>10 Bags 0 Kgs</QtyText>
+    <StockRate>358</StockRate>
+    <Expiry>2016-01-02T00:00:00+05:30</Expiry>
+    <BatchNo>25455</BatchNo>
+    <StockType>0</StockType>
+    <StockDisc>0</StockDisc>
+    <RatePer>Bags</RatePer>
+    <UnitCon>50</UnitCon>
+    <CustBarcode />
+    <sno>1</sno>
+    <StockAmount>123548.78</StockAmount>
+    <Isdelete>0</Isdelete>
+    <QtyValues>25 pcs</QtyValues>
+    <VoucherName>POS</VoucherName>
+    <CurrencyCon1>1</CurrencyCon1>
+    <Tax>14.5</Tax>
+    <NetRate>25487.58</NetRate>
+    <origin />
+    <HScode />
+    <Utranscode>0</Utranscode>
+    <UsedQty>0</UsedQty>
+    <DeliveryNote>false</DeliveryNote>
+    <allocateledger />
+    <PresetRate>0</PresetRate>
+    <N1>0</N1>
+    <F1 />
+    <IsDirect>false</IsDirect>
+    <TaxAmount>43548.78</TaxAmount>
+    <disc2>0</disc2>
+    <transtype>0</transtype>
+    <Servicetax>0</Servicetax>
+    <netStockAmount>125487.58</netStockAmount>
+    <mrp>0</mrp>
+    <packing>10s</packing>
+    <slnos>8883453,34534</slnos>
+    <Tax2>14.5</Tax2>
+    <TaxAmount2>3548.78</TaxAmount2>
+    <FreeQty>1</FreeQty>
+    <FreeQtyText>1 Pcs</FreeQtyText>
+    <FreeMQty>1</FreeMQty>
+    <FreeMQtyText>1 Pcs</FreeMQtyText>
+  </PrintingDataRowsItems>
+  <PrintingDataRowsItems>
+    <TransCode>0</TransCode>
+    <TransDate>2014-10-04T00:00:00+05:30</TransDate>
+    <TransDateValue>41350</TransDateValue>
+    <QutoNo>billno1</QutoNo>
+    <QutoRef>billno1</QutoRef>
+    <OrderNo>billno1</OrderNo>
+    <OrderRef>billno1</OrderRef>
+    <DNoteno>billno1</DNoteno>
+    <DnoteRef>billno1</DnoteRef>
+    <StoreName>MainStore</StoreName>
+    <Currency>USD</Currency>
+    <StockName>Intex Keyboard</StockName>
+    <StockCode>CoverDrive Flip Cover for Samsung Galaxy S3 WHITE </StockCode>
+    <stockgroup>Stockgroup</stockgroup>
+    <Barcode>10000000011</Barcode>
+    <StockSize>50Kg Pack</StockSize>
+    <Location>MainLocation</Location>
+    <description />
+    <BaseUnit>Bags Of 50 Kgs</BaseUnit>
+    <MainUnit>Bags</MainUnit>
+    <SubUnit>Kgs</SubUnit>
+    <IsSimpleUnit>0</IsSimpleUnit>
+    <MainQty>10</MainQty>
+    <TotalQty>500</TotalQty>
+    <SubUnitQty>0</SubUnitQty>
+    <QtyText>10 Bags 0 Kgs</QtyText>
+    <StockRate>358</StockRate>
+    <Expiry>2016-01-02T00:00:00+05:30</Expiry>
+    <BatchNo>25455</BatchNo>
+    <StockType>0</StockType>
+    <StockDisc>0</StockDisc>
+    <RatePer>Bags</RatePer>
+    <UnitCon>50</UnitCon>
+    <CustBarcode />
+    <sno>1</sno>
+    <StockAmount>123548.78</StockAmount>
+    <Isdelete>0</Isdelete>
+    <QtyValues>25 pcs</QtyValues>
+    <VoucherName>POS</VoucherName>
+    <CurrencyCon1>1</CurrencyCon1>
+    <Tax>14.5</Tax>
+    <NetRate>25487.58</NetRate>
+    <origin />
+    <HScode />
+    <Utranscode>0</Utranscode>
+    <UsedQty>0</UsedQty>
+    <DeliveryNote>false</DeliveryNote>
+    <allocateledger />
+    <PresetRate>0</PresetRate>
+    <N1>0</N1>
+    <F1 />
+    <IsDirect>false</IsDirect>
+    <TaxAmount>43548.78</TaxAmount>
+    <disc2>0</disc2>
+    <transtype>0</transtype>
+    <Servicetax>0</Servicetax>
+    <netStockAmount>125487.58</netStockAmount>
+    <mrp>0</mrp>
+    <packing>10s</packing>
+    <slnos>8883453,34534</slnos>
+    <Tax2>14.5</Tax2>
+    <TaxAmount2>3548.78</TaxAmount2>
+    <FreeQty>1</FreeQty>
+    <FreeQtyText>1 Pcs</FreeQtyText>
+    <FreeMQty>1</FreeMQty>
+    <FreeMQtyText>1 Pcs</FreeMQtyText>
+  </PrintingDataRowsItems>
+  <PrintingDataRowsItems>
+    <TransCode>0</TransCode>
+    <TransDate>2014-10-04T00:00:00+05:30</TransDate>
+    <TransDateValue>41350</TransDateValue>
+    <QutoNo>billno1</QutoNo>
+    <QutoRef>billno1</QutoRef>
+    <OrderNo>billno1</OrderNo>
+    <OrderRef>billno1</OrderRef>
+    <DNoteno>billno1</DNoteno>
+    <DnoteRef>billno1</DnoteRef>
+    <StoreName>MainStore</StoreName>
+    <Currency>USD</Currency>
+    <StockName>Intex Keyboard</StockName>
+    <StockCode>CoverDrive Flip Cover for Samsung Galaxy S3 WHITE </StockCode>
+    <stockgroup>Stockgroup</stockgroup>
+    <Barcode>10000000011</Barcode>
+    <StockSize>50Kg Pack</StockSize>
+    <Location>MainLocation</Location>
+    <description />
+    <BaseUnit>Bags Of 50 Kgs</BaseUnit>
+    <MainUnit>Bags</MainUnit>
+    <SubUnit>Kgs</SubUnit>
+    <IsSimpleUnit>0</IsSimpleUnit>
+    <MainQty>10</MainQty>
+    <TotalQty>500</TotalQty>
+    <SubUnitQty>0</SubUnitQty>
+    <QtyText>10 Bags 0 Kgs</QtyText>
+    <StockRate>358</StockRate>
+    <Expiry>2016-01-02T00:00:00+05:30</Expiry>
+    <BatchNo>25455</BatchNo>
+    <StockType>0</StockType>
+    <StockDisc>0</StockDisc>
+    <RatePer>Bags</RatePer>
+    <UnitCon>50</UnitCon>
+    <CustBarcode />
+    <sno>1</sno>
+    <StockAmount>123548.78</StockAmount>
+    <Isdelete>0</Isdelete>
+    <QtyValues>25 pcs</QtyValues>
+    <VoucherName>POS</VoucherName>
+    <CurrencyCon1>1</CurrencyCon1>
+    <Tax>14.5</Tax>
+    <NetRate>25487.58</NetRate>
+    <origin />
+    <HScode />
+    <Utranscode>0</Utranscode>
+    <UsedQty>0</UsedQty>
+    <DeliveryNote>false</DeliveryNote>
+    <allocateledger />
+    <PresetRate>0</PresetRate>
+    <N1>0</N1>
+    <F1 />
+    <IsDirect>false</IsDirect>
+    <TaxAmount>43548.78</TaxAmount>
+    <disc2>0</disc2>
+    <transtype>0</transtype>
+    <Servicetax>0</Servicetax>
+    <netStockAmount>125487.58</netStockAmount>
+    <mrp>0</mrp>
+    <packing>10s</packing>
+    <slnos>8883453,34534</slnos>
+    <Tax2>14.5</Tax2>
+    <TaxAmount2>3548.78</TaxAmount2>
+    <FreeQty>1</FreeQty>
+    <FreeQtyText>1 Pcs</FreeQtyText>
+    <FreeMQty>1</FreeMQty>
+    <FreeMQtyText>1 Pcs</FreeMQtyText>
+  </PrintingDataRowsItems>
+  <PrintingDataRowsItems>
+    <TransCode>0</TransCode>
+    <TransDate>2014-10-04T00:00:00+05:30</TransDate>
+    <TransDateValue>41350</TransDateValue>
+    <QutoNo>billno1</QutoNo>
+    <QutoRef>billno1</QutoRef>
+    <OrderNo>billno1</OrderNo>
+    <OrderRef>billno1</OrderRef>
+    <DNoteno>billno1</DNoteno>
+    <DnoteRef>billno1</DnoteRef>
+    <StoreName>MainStore</StoreName>
+    <Currency>USD</Currency>
+    <StockName>Intex Keyboard</StockName>
+    <StockCode>CoverDrive Flip Cover for Samsung Galaxy S3 WHITE </StockCode>
+    <stockgroup>Stockgroup</stockgroup>
+    <Barcode>10000000011</Barcode>
+    <StockSize>50Kg Pack</StockSize>
+    <Location>MainLocation</Location>
+    <description />
+    <BaseUnit>Bags Of 50 Kgs</BaseUnit>
+    <MainUnit>Bags</MainUnit>
+    <SubUnit>Kgs</SubUnit>
+    <IsSimpleUnit>0</IsSimpleUnit>
+    <MainQty>10</MainQty>
+    <TotalQty>500</TotalQty>
+    <SubUnitQty>0</SubUnitQty>
+    <QtyText>10 Bags 0 Kgs</QtyText>
+    <StockRate>358</StockRate>
+    <Expiry>2016-01-02T00:00:00+05:30</Expiry>
+    <BatchNo>25455</BatchNo>
+    <StockType>0</StockType>
+    <StockDisc>0</StockDisc>
+    <RatePer>Bags</RatePer>
+    <UnitCon>50</UnitCon>
+    <CustBarcode />
+    <sno>1</sno>
+    <StockAmount>123548.78</StockAmount>
+    <Isdelete>0</Isdelete>
+    <QtyValues>25 pcs</QtyValues>
+    <VoucherName>POS</VoucherName>
+    <CurrencyCon1>1</CurrencyCon1>
+    <Tax>14.5</Tax>
+    <NetRate>25487.58</NetRate>
+    <origin />
+    <HScode />
+    <Utranscode>0</Utranscode>
+    <UsedQty>0</UsedQty>
+    <DeliveryNote>false</DeliveryNote>
+    <allocateledger />
+    <PresetRate>0</PresetRate>
+    <N1>0</N1>
+    <F1 />
+    <IsDirect>false</IsDirect>
+    <TaxAmount>43548.78</TaxAmount>
+    <disc2>0</disc2>
+    <transtype>0</transtype>
+    <Servicetax>0</Servicetax>
+    <netStockAmount>125487.58</netStockAmount>
+    <mrp>0</mrp>
+    <packing>10s</packing>
+    <slnos>8883453,34534</slnos>
+    <Tax2>14.5</Tax2>
+    <TaxAmount2>3548.78</TaxAmount2>
+    <FreeQty>1</FreeQty>
+    <FreeQtyText>1 Pcs</FreeQtyText>
+    <FreeMQty>1</FreeMQty>
+    <FreeMQtyText>1 Pcs</FreeMQtyText>
+  </PrintingDataRowsItems>
+  <PrintingDataRowsItems>
+    <TransCode>0</TransCode>
+    <TransDate>2014-10-04T00:00:00+05:30</TransDate>
+    <TransDateValue>41350</TransDateValue>
+    <QutoNo>billno1</QutoNo>
+    <QutoRef>billno1</QutoRef>
+    <OrderNo>billno1</OrderNo>
+    <OrderRef>billno1</OrderRef>
+    <DNoteno>billno1</DNoteno>
+    <DnoteRef>billno1</DnoteRef>
+    <StoreName>MainStore</StoreName>
+    <Currency>USD</Currency>
+    <StockName>Intex Keyboard</StockName>
+    <StockCode>CoverDrive Flip Cover for Samsung Galaxy S3 WHITE </StockCode>
+    <stockgroup>Stockgroup</stockgroup>
+    <Barcode>10000000011</Barcode>
+    <StockSize>50Kg Pack</StockSize>
+    <Location>MainLocation</Location>
+    <description />
+    <BaseUnit>Bags Of 50 Kgs</BaseUnit>
+    <MainUnit>Bags</MainUnit>
+    <SubUnit>Kgs</SubUnit>
+    <IsSimpleUnit>0</IsSimpleUnit>
+    <MainQty>10</MainQty>
+    <TotalQty>500</TotalQty>
+    <SubUnitQty>0</SubUnitQty>
+    <QtyText>10 Bags 0 Kgs</QtyText>
+    <StockRate>358</StockRate>
+    <Expiry>2016-01-02T00:00:00+05:30</Expiry>
+    <BatchNo>25455</BatchNo>
+    <StockType>0</StockType>
+    <StockDisc>0</StockDisc>
+    <RatePer>Bags</RatePer>
+    <UnitCon>50</UnitCon>
+    <CustBarcode />
+    <sno>1</sno>
+    <StockAmount>123548.78</StockAmount>
+    <Isdelete>0</Isdelete>
+    <QtyValues>25 pcs</QtyValues>
+    <VoucherName>POS</VoucherName>
+    <CurrencyCon1>1</CurrencyCon1>
+    <Tax>14.5</Tax>
+    <NetRate>25487.58</NetRate>
+    <origin />
+    <HScode />
+    <Utranscode>0</Utranscode>
+    <UsedQty>0</UsedQty>
+    <DeliveryNote>false</DeliveryNote>
+    <allocateledger />
+    <PresetRate>0</PresetRate>
+    <N1>0</N1>
+    <F1 />
+    <IsDirect>false</IsDirect>
+    <TaxAmount>43548.78</TaxAmount>
+    <disc2>0</disc2>
+    <transtype>0</transtype>
+    <Servicetax>0</Servicetax>
+    <netStockAmount>125487.58</netStockAmount>
+    <mrp>0</mrp>
+    <packing>10s</packing>
+    <slnos>8883453,34534</slnos>
+    <Tax2>14.5</Tax2>
+    <TaxAmount2>3548.78</TaxAmount2>
+    <FreeQty>1</FreeQty>
+    <FreeQtyText>1 Pcs</FreeQtyText>
+    <FreeMQty>1</FreeMQty>
+    <FreeMQtyText>1 Pcs</FreeMQtyText>
+  </PrintingDataRowsItems>
+  <PrintingDataRowsItems>
+    <TransCode>0</TransCode>
+    <TransDate>2014-10-04T00:00:00+05:30</TransDate>
+    <TransDateValue>41350</TransDateValue>
+    <QutoNo>billno1</QutoNo>
+    <QutoRef>billno1</QutoRef>
+    <OrderNo>billno1</OrderNo>
+    <OrderRef>billno1</OrderRef>
+    <DNoteno>billno1</DNoteno>
+    <DnoteRef>billno1</DnoteRef>
+    <StoreName>MainStore</StoreName>
+    <Currency>USD</Currency>
+    <StockName>Intex Keyboard</StockName>
+    <StockCode>CoverDrive Flip Cover for Samsung Galaxy S3 WHITE </StockCode>
+    <stockgroup>Stockgroup</stockgroup>
+    <Barcode>10000000011</Barcode>
+    <StockSize>50Kg Pack</StockSize>
+    <Location>MainLocation</Location>
+    <description />
+    <BaseUnit>Bags Of 50 Kgs</BaseUnit>
+    <MainUnit>Bags</MainUnit>
+    <SubUnit>Kgs</SubUnit>
+    <IsSimpleUnit>0</IsSimpleUnit>
+    <MainQty>10</MainQty>
+    <TotalQty>500</TotalQty>
+    <SubUnitQty>0</SubUnitQty>
+    <QtyText>10 Bags 0 Kgs</QtyText>
+    <StockRate>358</StockRate>
+    <Expiry>2016-01-02T00:00:00+05:30</Expiry>
+    <BatchNo>25455</BatchNo>
+    <StockType>0</StockType>
+    <StockDisc>0</StockDisc>
+    <RatePer>Bags</RatePer>
+    <UnitCon>50</UnitCon>
+    <CustBarcode />
+    <sno>1</sno>
+    <StockAmount>123548.78</StockAmount>
+    <Isdelete>0</Isdelete>
+    <QtyValues>25 pcs</QtyValues>
+    <VoucherName>POS</VoucherName>
+    <CurrencyCon1>1</CurrencyCon1>
+    <Tax>14.5</Tax>
+    <NetRate>25487.58</NetRate>
+    <origin />
+    <HScode />
+    <Utranscode>0</Utranscode>
+    <UsedQty>0</UsedQty>
+    <DeliveryNote>false</DeliveryNote>
+    <allocateledger />
+    <PresetRate>0</PresetRate>
+    <N1>0</N1>
+    <F1 />
+    <IsDirect>false</IsDirect>
+    <TaxAmount>43548.78</TaxAmount>
+    <disc2>0</disc2>
+    <transtype>0</transtype>
+    <Servicetax>0</Servicetax>
+    <netStockAmount>125487.58</netStockAmount>
+    <mrp>0</mrp>
+    <packing>10s</packing>
+    <slnos>8883453,34534</slnos>
+    <Tax2>14.5</Tax2>
+    <TaxAmount2>3548.78</TaxAmount2>
+    <FreeQty>1</FreeQty>
+    <FreeQtyText>1 Pcs</FreeQtyText>
+    <FreeMQty>1</FreeMQty>
+    <FreeMQtyText>1 Pcs</FreeMQtyText>
+  </PrintingDataRowsItems>
+  <PrintingDataRowsItems>
+    <TransCode>0</TransCode>
+    <TransDate>2014-10-04T00:00:00+05:30</TransDate>
+    <TransDateValue>41350</TransDateValue>
+    <QutoNo>billno1</QutoNo>
+    <QutoRef>billno1</QutoRef>
+    <OrderNo>billno1</OrderNo>
+    <OrderRef>billno1</OrderRef>
+    <DNoteno>billno1</DNoteno>
+    <DnoteRef>billno1</DnoteRef>
+    <StoreName>MainStore</StoreName>
+    <Currency>USD</Currency>
+    <StockName>Intex Keyboard</StockName>
+    <StockCode>CoverDrive Flip Cover for Samsung Galaxy S3 WHITE </StockCode>
+    <stockgroup>Stockgroup</stockgroup>
+    <Barcode>10000000011</Barcode>
+    <StockSize>50Kg Pack</StockSize>
+    <Location>MainLocation</Location>
+    <description />
+    <BaseUnit>Bags Of 50 Kgs</BaseUnit>
+    <MainUnit>Bags</MainUnit>
+    <SubUnit>Kgs</SubUnit>
+    <IsSimpleUnit>0</IsSimpleUnit>
+    <MainQty>10</MainQty>
+    <TotalQty>500</TotalQty>
+    <SubUnitQty>0</SubUnitQty>
+    <QtyText>10 Bags 0 Kgs</QtyText>
+    <StockRate>358</StockRate>
+    <Expiry>2016-01-02T00:00:00+05:30</Expiry>
+    <BatchNo>25455</BatchNo>
+    <StockType>0</StockType>
+    <StockDisc>0</StockDisc>
+    <RatePer>Bags</RatePer>
+    <UnitCon>50</UnitCon>
+    <CustBarcode />
+    <sno>1</sno>
+    <StockAmount>123548.78</StockAmount>
+    <Isdelete>0</Isdelete>
+    <QtyValues>25 pcs</QtyValues>
+    <VoucherName>POS</VoucherName>
+    <CurrencyCon1>1</CurrencyCon1>
+    <Tax>14.5</Tax>
+    <NetRate>25487.58</NetRate>
+    <origin />
+    <HScode />
+    <Utranscode>0</Utranscode>
+    <UsedQty>0</UsedQty>
+    <DeliveryNote>false</DeliveryNote>
+    <allocateledger />
+    <PresetRate>0</PresetRate>
+    <N1>0</N1>
+    <F1 />
+    <IsDirect>false</IsDirect>
+    <TaxAmount>43548.78</TaxAmount>
+    <disc2>0</disc2>
+    <transtype>0</transtype>
+    <Servicetax>0</Servicetax>
+    <netStockAmount>125487.58</netStockAmount>
+    <mrp>0</mrp>
+    <packing>10s</packing>
+    <slnos>8883453,34534</slnos>
+    <Tax2>14.5</Tax2>
+    <TaxAmount2>3548.78</TaxAmount2>
+    <FreeQty>1</FreeQty>
+    <FreeQtyText>1 Pcs</FreeQtyText>
+    <FreeMQty>1</FreeMQty>
+    <FreeMQtyText>1 Pcs</FreeMQtyText>
+  </PrintingDataRowsItems>
+</NewDataSet>

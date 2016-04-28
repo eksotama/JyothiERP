@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StockUnitsMasterDataSet" targetNamespace="http://tempuri.org/StockUnitsMasterDataSet.xsd" xmlns:mstns="http://tempuri.org/StockUnitsMasterDataSet.xsd" xmlns="http://tempuri.org/StockUnitsMasterDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="JVSKINVDB103ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="JVSKINVDB103ConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.JyothiPharmaERPSystem3.My.MySettings.GlobalReference.Default.JVSKINVDB103ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="StockunitsTableAdapter" GeneratorDataComponentClassName="StockunitsTableAdapter" Name="Stockunits" UserDataComponentName="StockunitsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="JVSKINVDB103ConnectionString (MySettings)" DbObjectName="JVSKINVDB103.dbo.Stockunits" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT RTRIM(UnitName) AS UNITNAME, (CASE UNITTYPE WHEN 0 THEN 'Simple' ELSE 'Compound' END) AS UNITTYPE, RTRIM(formalname) AS FORMALNAME FROM Stockunits</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="UNITNAME" DataSetColumn="UNITNAME" />
+              <Mapping SourceColumn="UNITTYPE" DataSetColumn="UNITTYPE" />
+              <Mapping SourceColumn="FORMALNAME" DataSetColumn="FORMALNAME" />
+              <Mapping SourceColumn="unitconversion" DataSetColumn="unitconversion" />
+              <Mapping SourceColumn="decimals" DataSetColumn="decimals" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StockUnitsMasterDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="StockUnitsMasterDataSet" msprop:Generator_UserDSName="StockUnitsMasterDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Stockunits" msprop:Generator_TableClassName="StockunitsDataTable" msprop:Generator_TableVarName="tableStockunits" msprop:Generator_RowChangedName="StockunitsRowChanged" msprop:Generator_TablePropName="Stockunits" msprop:Generator_RowDeletingName="StockunitsRowDeleting" msprop:Generator_RowChangingName="StockunitsRowChanging" msprop:Generator_RowEvHandlerName="StockunitsRowChangeEventHandler" msprop:Generator_RowDeletedName="StockunitsRowDeleted" msprop:Generator_RowClassName="StockunitsRow" msprop:Generator_UserTableName="Stockunits" msprop:Generator_RowEvArgName="StockunitsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UNITNAME" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnUNITNAME" msprop:Generator_ColumnPropNameInRow="UNITNAME" msprop:Generator_ColumnPropNameInTable="UNITNAMEColumn" msprop:Generator_UserColumnName="UNITNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="75" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNITTYPE" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnUNITTYPE" msprop:Generator_ColumnPropNameInRow="UNITTYPE" msprop:Generator_ColumnPropNameInTable="UNITTYPEColumn" msprop:Generator_UserColumnName="UNITTYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FORMALNAME" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnFORMALNAME" msprop:Generator_ColumnPropNameInRow="FORMALNAME" msprop:Generator_ColumnPropNameInTable="FORMALNAMEColumn" msprop:Generator_UserColumnName="FORMALNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="unitconversion" msprop:Generator_ColumnVarNameInTable="columnunitconversion" msprop:Generator_ColumnPropNameInRow="unitconversion" msprop:Generator_ColumnPropNameInTable="unitconversionColumn" msprop:Generator_UserColumnName="unitconversion" type="xs:decimal" minOccurs="0" />
+              <xs:element name="decimals" msprop:Generator_ColumnVarNameInTable="columndecimals" msprop:Generator_ColumnPropNameInRow="decimals" msprop:Generator_ColumnPropNameInTable="decimalsColumn" msprop:Generator_UserColumnName="decimals" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

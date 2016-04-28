@@ -1,0 +1,76 @@
+E:\JyothiInventoryManagenetSystem 3.0\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.exe.config
+E:\JyothiInventoryManagenetSystem 3.0\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.exe
+E:\JyothiInventoryManagenetSystem 3.0\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.pdb
+E:\JyothiInventoryManagenetSystem 3.0\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.xml
+E:\JyothiInventoryManagenetSystem 3.0\IMSRequestServer\IMSRequestServer\obj\x86\Debug\IMSRequestServer.IMSServerForm.resources
+E:\JyothiInventoryManagenetSystem 3.0\IMSRequestServer\IMSRequestServer\obj\x86\Debug\IMSRequestServer.Resources.resources
+E:\JyothiInventoryManagenetSystem 3.0\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERP Request Server.vbproj.GenerateResource.Cache
+E:\JyothiInventoryManagenetSystem 3.0\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.exe
+E:\JyothiInventoryManagenetSystem 3.0\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.xml
+E:\JyothiInventoryManagenetSystem 3.0\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.pdb
+E:\JyothiInventoryManagenetSystem 3.0\IMSRequestServer\IMSRequestServer\obj\x86\Debug\IMSRequestServer.AdminLogin.resources
+E:\JyothiERPManagenetSystem\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.exe.config
+E:\JyothiERPManagenetSystem\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.exe
+E:\JyothiERPManagenetSystem\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.pdb
+E:\JyothiERPManagenetSystem\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.xml
+E:\JyothiERPManagenetSystem\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\IMSRequestServer.AdminLogin.resources
+E:\JyothiERPManagenetSystem\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\IMSRequestServer.IMSServerForm.resources
+E:\JyothiERPManagenetSystem\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\IMSRequestServer.Resources.resources
+E:\JyothiERPManagenetSystem\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERP Request Server.vbproj.GenerateResource.Cache
+E:\JyothiERPManagenetSystem\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.exe
+E:\JyothiERPManagenetSystem\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.xml
+E:\JyothiERPManagenetSystem\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.pdb
+E:\JyothiERPManagenetSystem - B\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.exe.config
+E:\JyothiERPManagenetSystem - B\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.exe
+E:\JyothiERPManagenetSystem - B\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.pdb
+E:\JyothiERPManagenetSystem - B\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.xml
+E:\JyothiERPManagenetSystem - B\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\IMSRequestServer.AdminLogin.resources
+E:\JyothiERPManagenetSystem - B\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\IMSRequestServer.IMSServerForm.resources
+E:\JyothiERPManagenetSystem - B\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\IMSRequestServer.Resources.resources
+E:\JyothiERPManagenetSystem - B\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERP Request Server.vbproj.GenerateResource.Cache
+E:\JyothiERPManagenetSystem - B\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.exe
+E:\JyothiERPManagenetSystem - B\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.xml
+E:\JyothiERPManagenetSystem - B\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.pdb
+E:\JyothiERPManagenetSystem VS2010\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.exe.config
+E:\JyothiERPManagenetSystem VS2010\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.exe
+E:\JyothiERPManagenetSystem VS2010\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.pdb
+E:\JyothiERPManagenetSystem VS2010\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.xml
+E:\JyothiERPManagenetSystem VS2010\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\JyothiERPManagenetSystem VS2010\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\IMSRequestServer.AdminLogin.resources
+E:\JyothiERPManagenetSystem VS2010\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\IMSRequestServer.IMSServerForm.resources
+E:\JyothiERPManagenetSystem VS2010\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\IMSRequestServer.Resources.resources
+E:\JyothiERPManagenetSystem VS2010\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ResGen.read.1.tlog
+E:\JyothiERPManagenetSystem VS2010\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ResGen.write.1.tlog
+E:\JyothiERPManagenetSystem VS2010\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.exe
+E:\JyothiERPManagenetSystem VS2010\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.xml
+E:\JyothiERPManagenetSystem VS2010\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.pdb
+E:\JyothiERP System 02-2014\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.exe.config
+E:\JyothiERP System 02-2014\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.exe
+E:\JyothiERP System 02-2014\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.pdb
+E:\JyothiERP System 02-2014\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.xml
+E:\JyothiERP System 02-2014\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\JyothiERP System 02-2014\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\IMSRequestServer.AdminLogin.resources
+E:\JyothiERP System 02-2014\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\IMSRequestServer.IMSServerForm.resources
+E:\JyothiERP System 02-2014\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\IMSRequestServer.Resources.resources
+E:\JyothiERP System 02-2014\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ResGen.read.1.tlog
+E:\JyothiERP System 02-2014\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ResGen.write.1.tlog
+E:\JyothiERP System 02-2014\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.exe
+E:\JyothiERP System 02-2014\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.xml
+E:\JyothiERP System 02-2014\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.pdb
+E:\JyothiERP System Jun-14-Dora\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.exe.config
+E:\JyothiERP System Jun-14-Dora\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.exe
+E:\JyothiERP System Jun-14-Dora\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.xml
+E:\JyothiERP System Jun-14-Dora\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.pdb
+E:\JyothiERP System sep- mtw\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.exe.config
+E:\JyothiERP System sep- mtw\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.exe
+E:\JyothiERP System sep- mtw\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.pdb
+E:\JyothiERP System sep- mtw\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\bin\Debug\ERPServer.xml
+E:\JyothiERP System sep- mtw\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\JyothiERP System sep- mtw\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\IMSRequestServer.AdminLogin.resources
+E:\JyothiERP System sep- mtw\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\IMSRequestServer.IMSServerForm.resources
+E:\JyothiERP System sep- mtw\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\IMSRequestServer.Resources.resources
+E:\JyothiERP System sep- mtw\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ResGen.read.1.tlog
+E:\JyothiERP System sep- mtw\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ResGen.write.1.tlog
+E:\JyothiERP System sep- mtw\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.exe
+E:\JyothiERP System sep- mtw\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.xml
+E:\JyothiERP System sep- mtw\ERPRequestServer-StandAlone\IMSRequestServer\IMSRequestServer\obj\x86\Debug\ERPServer.pdb

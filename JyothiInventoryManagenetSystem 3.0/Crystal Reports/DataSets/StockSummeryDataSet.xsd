@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StockSummeryDataSet" targetNamespace="http://tempuri.org/StockSummeryDataSet.xsd" xmlns:mstns="http://tempuri.org/StockSummeryDataSet.xsd" xmlns="http://tempuri.org/StockSummeryDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StockSummeryDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="StockSummeryDataSet" msprop:Generator_UserDSName="StockSummeryDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="StockDbf" msprop:Generator_TableClassName="StockDbfDataTable" msprop:Generator_TableVarName="tableStockDbf" msprop:Generator_RowChangedName="StockDbfRowChanged" msprop:Generator_TablePropName="StockDbf" msprop:Generator_RowDeletingName="StockDbfRowDeleting" msprop:Generator_RowChangingName="StockDbfRowChanging" msprop:Generator_RowEvHandlerName="StockDbfRowChangeEventHandler" msprop:Generator_RowDeletedName="StockDbfRowDeleted" msprop:Generator_RowClassName="StockDbfRow" msprop:Generator_UserTableName="StockDbf" msprop:Generator_RowEvArgName="StockDbfRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ITEM_x0020_CODE" msprop:Generator_ColumnVarNameInTable="columnITEM_CODE" msprop:Generator_ColumnPropNameInRow="ITEM_CODE" msprop:Generator_ColumnPropNameInTable="ITEM_CODEColumn" msprop:Generator_UserColumnName="ITEM CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEM_x0020_MORE_x0020_INFO" msprop:Generator_ColumnVarNameInTable="columnITEM_MORE_INFO" msprop:Generator_ColumnPropNameInRow="ITEM_MORE_INFO" msprop:Generator_ColumnPropNameInTable="ITEM_MORE_INFOColumn" msprop:Generator_UserColumnName="ITEM MORE INFO" type="xs:string" minOccurs="0" />
+              <xs:element name="OPENING_x0020_QTY" msprop:Generator_ColumnVarNameInTable="columnOPENING_QTY" msprop:Generator_ColumnPropNameInRow="OPENING_QTY" msprop:Generator_ColumnPropNameInTable="OPENING_QTYColumn" msprop:Generator_UserColumnName="OPENING QTY" type="xs:string" minOccurs="0" />
+              <xs:element name="OPENING_x0020_VALUE" msprop:Generator_ColumnVarNameInTable="columnOPENING_VALUE" msprop:Generator_ColumnPropNameInRow="OPENING_VALUE" msprop:Generator_ColumnPropNameInTable="OPENING_VALUEColumn" msprop:Generator_UserColumnName="OPENING VALUE" type="xs:double" minOccurs="0" />
+              <xs:element name="INWARDS_x0020_QTY" msprop:Generator_ColumnVarNameInTable="columnINWARDS_QTY" msprop:Generator_ColumnPropNameInRow="INWARDS_QTY" msprop:Generator_ColumnPropNameInTable="INWARDS_QTYColumn" msprop:Generator_UserColumnName="INWARDS QTY" type="xs:string" minOccurs="0" />
+              <xs:element name="INWARDS_x0020_VALUE" msprop:Generator_ColumnVarNameInTable="columnINWARDS_VALUE" msprop:Generator_ColumnPropNameInRow="INWARDS_VALUE" msprop:Generator_ColumnPropNameInTable="INWARDS_VALUEColumn" msprop:Generator_UserColumnName="INWARDS VALUE" type="xs:double" minOccurs="0" />
+              <xs:element name="OUTWARD_x0020_QTY" msprop:Generator_ColumnVarNameInTable="columnOUTWARD_QTY" msprop:Generator_ColumnPropNameInRow="OUTWARD_QTY" msprop:Generator_ColumnPropNameInTable="OUTWARD_QTYColumn" msprop:Generator_UserColumnName="OUTWARD QTY" type="xs:string" minOccurs="0" />
+              <xs:element name="OUTWARD_x0020_VALUE" msprop:Generator_ColumnVarNameInTable="columnOUTWARD_VALUE" msprop:Generator_ColumnPropNameInRow="OUTWARD_VALUE" msprop:Generator_ColumnPropNameInTable="OUTWARD_VALUEColumn" msprop:Generator_UserColumnName="OUTWARD VALUE" type="xs:double" minOccurs="0" />
+              <xs:element name="CLOSING_x0020_QTY" msprop:Generator_ColumnVarNameInTable="columnCLOSING_QTY" msprop:Generator_ColumnPropNameInRow="CLOSING_QTY" msprop:Generator_ColumnPropNameInTable="CLOSING_QTYColumn" msprop:Generator_UserColumnName="CLOSING QTY" type="xs:string" minOccurs="0" />
+              <xs:element name="CLOSING_x0020_VALUE" msprop:Generator_ColumnVarNameInTable="columnCLOSING_VALUE" msprop:Generator_ColumnPropNameInRow="CLOSING_VALUE" msprop:Generator_ColumnPropNameInTable="CLOSING_VALUEColumn" msprop:Generator_UserColumnName="CLOSING VALUE" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

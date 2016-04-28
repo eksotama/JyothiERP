@@ -1,0 +1,297 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>purchase Quote</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>1</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>purchase goods</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>2</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>purchase order</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>3</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>purchase invoice</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>4</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>purchase returns</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>5</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4 HALF1</SchemeName>
+    <VoucherName>sales pos</VoucherName>
+    <IsActive>0</IsActive>
+    <ID>40</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>sales quote</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>7</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>sales order</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>8</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>sales delivery</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>9</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>sales invoice</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>10</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>sales returns</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>11</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>payment</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>12</ID>
+    <SchemeType>2</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>receipt</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>13</ID>
+    <SchemeType>2</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>journal</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>14</ID>
+    <SchemeType>2</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>contra</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>15</ID>
+    <SchemeType>2</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>purchase voucher</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>16</ID>
+    <SchemeType>2</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>debit note</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>17</ID>
+    <SchemeType>2</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>sales voucher</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>18</ID>
+    <SchemeType>2</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>credit note</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>19</ID>
+    <SchemeType>2</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>other1</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>20</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>other2</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>21</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>other3</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>22</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>other4</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>23</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>other5</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>24</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>form8</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>25</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>form8b</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>26</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>form8d</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>27</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>return form8</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>28</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>return form8b</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>29</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>return form8d</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>30</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>other6</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>31</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>other7</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>32</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4 HALF DOUBLE SIDE 2</SchemeName>
+    <VoucherName>sales pos</VoucherName>
+    <IsActive>0</IsActive>
+    <ID>41</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4 HALF DOUBLE SIDE3</SchemeName>
+    <VoucherName>sales pos</VoucherName>
+    <IsActive>0</IsActive>
+    <ID>42</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>ROLL 3INCH</SchemeName>
+    <VoucherName>sales pos</VoucherName>
+    <IsActive>0</IsActive>
+    <ID>43</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>HALF 600X500</SchemeName>
+    <VoucherName>sales pos</VoucherName>
+    <IsActive>0</IsActive>
+    <ID>38</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>HALF 900X600</SchemeName>
+    <VoucherName>sales pos</VoucherName>
+    <IsActive>0</IsActive>
+    <ID>39</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>creditpurchase</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>44</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>cashpurchase</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>45</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>cashsales</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>46</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>A4SizeSalesQuote</SchemeName>
+    <VoucherName>creditsales</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>47</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+  <PrintingSchemes>
+    <SchemeName>4TH OF A4SIZE</SchemeName>
+    <VoucherName>sales pos</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>48</ID>
+    <SchemeType>1</SchemeType>
+  </PrintingSchemes>
+</NewDataSet>

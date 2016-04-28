@@ -1,0 +1,210 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <AccountGroups>
+    <GroupName>Bank Accounts</GroupName>
+    <GroupNameTemp>BankAccounts</GroupNameTemp>
+    <GroupRoot>Current Assets</GroupRoot>
+    <GroupLevel>1</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>3</AcType>
+  </AccountGroups>
+  <AccountGroups>
+    <GroupName>Bank O D</GroupName>
+    <GroupNameTemp>BankOD</GroupNameTemp>
+    <GroupRoot>Current Liabilities</GroupRoot>
+    <GroupLevel>1</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>4</AcType>
+  </AccountGroups>
+  <AccountGroups>
+    <GroupName>Capital Accounts</GroupName>
+    <GroupNameTemp>Capitalaccounts</GroupNameTemp>
+    <GroupRoot />
+    <GroupLevel>0</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>1</AcType>
+  </AccountGroups>
+  <AccountGroups>
+    <GroupName>Cash Accounts</GroupName>
+    <GroupNameTemp>CashAccounts</GroupNameTemp>
+    <GroupRoot>Current Assets</GroupRoot>
+    <GroupLevel>1</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>3</AcType>
+  </AccountGroups>
+  <AccountGroups>
+    <GroupName>Current Assets</GroupName>
+    <GroupNameTemp>Currentassets</GroupNameTemp>
+    <GroupRoot />
+    <GroupLevel>0</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>3</AcType>
+  </AccountGroups>
+  <AccountGroups>
+    <GroupName>Current Liabilities</GroupName>
+    <GroupNameTemp>Currentliabilities</GroupNameTemp>
+    <GroupRoot />
+    <GroupLevel>0</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>4</AcType>
+  </AccountGroups>
+  <AccountGroups>
+    <GroupName>Customers Accounts</GroupName>
+    <GroupNameTemp>CustomersAccounts</GroupNameTemp>
+    <GroupRoot>Current Assets</GroupRoot>
+    <GroupLevel>1</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>3</AcType>
+  </AccountGroups>
+  <AccountGroups>
+    <GroupName>Deposits Accounts (Assets)</GroupName>
+    <GroupNameTemp>DepositsAccounts(Assets)</GroupNameTemp>
+    <GroupRoot>Current Assets</GroupRoot>
+    <GroupLevel>1</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>3</AcType>
+  </AccountGroups>
+  <AccountGroups>
+    <GroupName>Direct Expenses</GroupName>
+    <GroupNameTemp>DirectExpenses</GroupNameTemp>
+    <GroupRoot />
+    <GroupLevel>0</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>8</AcType>
+  </AccountGroups>
+  <AccountGroups>
+    <GroupName>Direct Incomes</GroupName>
+    <GroupNameTemp>Directincomes</GroupNameTemp>
+    <GroupRoot />
+    <GroupLevel>0</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>10</AcType>
+  </AccountGroups>
+  <AccountGroups>
+    <GroupName>Duties &amp; Taxes</GroupName>
+    <GroupNameTemp>Duties&amp;Taxes</GroupNameTemp>
+    <GroupRoot />
+    <GroupLevel>0</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>12</AcType>
+  </AccountGroups>
+  <AccountGroups>
+    <GroupName>Fixed Assets</GroupName>
+    <GroupNameTemp>Fixedassets</GroupNameTemp>
+    <GroupRoot />
+    <GroupLevel>0</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>2</AcType>
+  </AccountGroups>
+  <AccountGroups>
+    <GroupName>Indirect Expenses</GroupName>
+    <GroupNameTemp>Indirectexpenses</GroupNameTemp>
+    <GroupRoot />
+    <GroupLevel>0</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>7</AcType>
+  </AccountGroups>
+  <AccountGroups>
+    <GroupName>Indirect Incomes</GroupName>
+    <GroupNameTemp>Indirectincomes</GroupNameTemp>
+    <GroupRoot />
+    <GroupLevel>0</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>9</AcType>
+  </AccountGroups>
+  <AccountGroups>
+    <GroupName>Loans &amp; Advances (Assets)</GroupName>
+    <GroupNameTemp>Loans&amp;Advances(Assets)</GroupNameTemp>
+    <GroupRoot>Current Assets</GroupRoot>
+    <GroupLevel>1</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>3</AcType>
+  </AccountGroups>
+  <AccountGroups>
+    <GroupName>Loans Accounts (Laibilities)</GroupName>
+    <GroupNameTemp>LoansAccounts(Laibilities)</GroupNameTemp>
+    <GroupRoot>Current Liabilities</GroupRoot>
+    <GroupLevel>1</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>4</AcType>
+  </AccountGroups>
+  <AccountGroups>
+    <GroupName>Profit &amp; Loss Accounts</GroupName>
+    <GroupNameTemp>profit&amp;lossaccounts</GroupNameTemp>
+    <GroupRoot />
+    <GroupLevel>0</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>13</AcType>
+  </AccountGroups>
+  <AccountGroups>
+    <GroupName>Provisions Acounts</GroupName>
+    <GroupNameTemp>ProvisionsAcounts</GroupNameTemp>
+    <GroupRoot>Current Liabilities</GroupRoot>
+    <GroupLevel>1</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>4</AcType>
+  </AccountGroups>
+  <AccountGroups>
+    <GroupName>Purchase Accounts</GroupName>
+    <GroupNameTemp>Purchaseaccounts</GroupNameTemp>
+    <GroupRoot />
+    <GroupLevel>0</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>6</AcType>
+  </AccountGroups>
+  <AccountGroups>
+    <GroupName>Sales Accounts</GroupName>
+    <GroupNameTemp>Salesaccounts</GroupNameTemp>
+    <GroupRoot />
+    <GroupLevel>0</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>5</AcType>
+  </AccountGroups>
+  <AccountGroups>
+    <GroupName>Stock Accounts</GroupName>
+    <GroupNameTemp>StockAccounts</GroupNameTemp>
+    <GroupRoot>Current Assets</GroupRoot>
+    <GroupLevel>1</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>3</AcType>
+  </AccountGroups>
+  <AccountGroups>
+    <GroupName>Suppliers Accounts</GroupName>
+    <GroupNameTemp>SuppliersAccounts</GroupNameTemp>
+    <GroupRoot>Current Liabilities</GroupRoot>
+    <GroupLevel>1</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>4</AcType>
+  </AccountGroups>
+  <AccountGroups>
+    <GroupName>Suspense Accounts</GroupName>
+    <GroupNameTemp>Suspenseaccounts</GroupNameTemp>
+    <GroupRoot />
+    <GroupLevel>0</GroupLevel>
+    <UserName>Admin</UserName>
+    <Isprimary>1</Isprimary>
+    <AcType>11</AcType>
+  </AccountGroups>
+</NewDataSet>

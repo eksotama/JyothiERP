@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <barcodeprintimages>
+    <Schemename>2x1</Schemename>
+    <imagewidth>5</imagewidth>
+    <imageHeight>5</imageHeight>
+    <LTop>3</LTop>
+    <Lleft>3</Lleft>
+    <imagepath>D:\ABARIS BUSINESS MANAGER\JyothiInventoryManagenetSystem 3.0\move.jpg</imagepath>
+    <Orderno>1</Orderno>
+    <IsVisible>false</IsVisible>
+    <Imagename>logo1</Imagename>
+    <Rotate>0</Rotate>
+  </barcodeprintimages>
+</NewDataSet>

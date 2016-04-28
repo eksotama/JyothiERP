@@ -1,0 +1,71 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <PrintDataDetails>
+    <TransCode>0</TransCode>
+    <TransDate>2014-10-04T00:00:00+05:30</TransDate>
+    <TransDateValue>41350</TransDateValue>
+    <QutoNo>1</QutoNo>
+    <QutoRef>1</QutoRef>
+    <OrderNo />
+    <OrderRef />
+    <DNoteno />
+    <DnoteRef />
+    <StoreName>MainStore</StoreName>
+    <Currency>INR</Currency>
+    <PriceList>Custom</PriceList>
+    <SalesPerson>Jyothi</SalesPerson>
+    <ProjectName />
+    <Area />
+    <LedgerName>Krishna Mohan</LedgerName>
+    <LedgerAddress>Ragithotapalem</LedgerAddress>
+    <IsCommit>0</IsCommit>
+    <IsDelete>0</IsDelete>
+    <IsPending>1</IsPending>
+    <subtotal>4475</subtotal>
+    <grosstotal>4475</grosstotal>
+    <discountper>0</discountper>
+    <nettotal>4475</nettotal>
+    <taxtotal>0</taxtotal>
+    <InvoiceTotal>0</InvoiceTotal>
+    <AccountTotal>0</AccountTotal>
+    <amountinwords>Four thousand laksh fify thousand seven hunderd and seventy five only</amountinwords>
+    <narration />
+    <InvoiceNo />
+    <InvoiceRef />
+    <GoodNo />
+    <GoodRef />
+    <CurrencyCon1>1</CurrencyCon1>
+    <CurrencyCon2>1</CurrencyCon2>
+    <F1 />
+    <F2 />
+    <N1>0</N1>
+    <N2>0</N2>
+    <VoucherName>DP</VoucherName>
+    <DelivaryDate>2014-10-04T00:00:00+05:30</DelivaryDate>
+    <DelivaryDateValue>41582</DelivaryDateValue>
+    <Additions>0</Additions>
+    <Deductions>0</Deductions>
+    <PaymentMethod>Cash</PaymentMethod>
+    <PaymentLedger>Cash</PaymentLedger>
+    <PaymentDetails />
+    <AccountLedgerName>Purchase A/c</AccountLedgerName>
+    <InvoiceType>1</InvoiceType>
+    <DeliveryNote>false</DeliveryNote>
+    <allocateledger />
+    <IsDirect>false</IsDirect>
+    <transtype />
+    <servicetaxtotal>0</servicetaxtotal>
+    <roundoff>0</roundoff>
+    <surcharge>0</surcharge>
+    <BillCurrency>INR</BillCurrency>
+    <DiscPer>0</DiscPer>
+    <CDiscount>0</CDiscount>
+    <CouponName>CDName</CouponName>
+    <CDisCountPer>0</CDisCountPer>
+    <sinvoiceno>1</sinvoiceno>
+    <sinvoicedate>2014-05-12T00:00:00+05:30</sinvoicedate>
+    <taxtotal2>4</taxtotal2>
+    <cstamount>0</cstamount>
+    <VoucherType>Sales Invoice</VoucherType>
+  </PrintDataDetails>
+</NewDataSet>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TrailBalanceSheetDataset" targetNamespace="http://tempuri.org/TrailBalanceSheetDataset.xsd" xmlns:mstns="http://tempuri.org/TrailBalanceSheetDataset.xsd" xmlns="http://tempuri.org/TrailBalanceSheetDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TrailBalanceSheetDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="TrailBalanceSheetDataset" msprop:Generator_UserDSName="TrailBalanceSheetDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tsno" msprop:Generator_ColumnVarNameInTable="columntsno" msprop:Generator_ColumnPropNameInRow="tsno" msprop:Generator_ColumnPropNameInTable="tsnoColumn" msprop:Generator_UserColumnName="tsno" type="xs:double" minOccurs="0" />
+              <xs:element name="TLedger" msprop:Generator_ColumnVarNameInTable="columnTLedger" msprop:Generator_ColumnPropNameInRow="TLedger" msprop:Generator_ColumnPropNameInTable="TLedgerColumn" msprop:Generator_UserColumnName="TLedger" type="xs:string" minOccurs="0" />
+              <xs:element name="Topdr" msprop:Generator_ColumnVarNameInTable="columnTopdr" msprop:Generator_ColumnPropNameInRow="Topdr" msprop:Generator_ColumnPropNameInTable="TopdrColumn" msprop:Generator_UserColumnName="Topdr" type="xs:double" minOccurs="0" />
+              <xs:element name="Topcr" msprop:Generator_ColumnVarNameInTable="columnTopcr" msprop:Generator_ColumnPropNameInRow="Topcr" msprop:Generator_ColumnPropNameInTable="TopcrColumn" msprop:Generator_UserColumnName="Topcr" type="xs:double" minOccurs="0" />
+              <xs:element name="tprimary" msprop:Generator_ColumnVarNameInTable="columntprimary" msprop:Generator_ColumnPropNameInRow="tprimary" msprop:Generator_ColumnPropNameInTable="tprimaryColumn" msprop:Generator_UserColumnName="tprimary" type="xs:double" minOccurs="0" />
+              <xs:element name="TDr" msprop:Generator_ColumnVarNameInTable="columnTDr" msprop:Generator_ColumnPropNameInRow="TDr" msprop:Generator_ColumnPropNameInTable="TDrColumn" msprop:Generator_UserColumnName="TDr" type="xs:double" minOccurs="0" />
+              <xs:element name="TCr" msprop:Generator_ColumnVarNameInTable="columnTCr" msprop:Generator_ColumnPropNameInRow="TCr" msprop:Generator_ColumnPropNameInTable="TCrColumn" msprop:Generator_UserColumnName="TCr" type="xs:double" minOccurs="0" />
+              <xs:element name="tclosing" msprop:Generator_ColumnVarNameInTable="columntclosing" msprop:Generator_ColumnPropNameInRow="tclosing" msprop:Generator_ColumnPropNameInTable="tclosingColumn" msprop:Generator_UserColumnName="tclosing" type="xs:double" minOccurs="0" />
+              <xs:element name="tCloCr" msprop:Generator_ColumnVarNameInTable="columntCloCr" msprop:Generator_ColumnPropNameInRow="tCloCr" msprop:Generator_ColumnPropNameInTable="tCloCrColumn" msprop:Generator_UserColumnName="tCloCr" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

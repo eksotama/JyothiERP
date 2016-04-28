@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LedgerTransactionDataSet1" targetNamespace="http://tempuri.org/LedgerTransactionDataSet1.xsd" xmlns:mstns="http://tempuri.org/LedgerTransactionDataSet1.xsd" xmlns="http://tempuri.org/LedgerTransactionDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LedgerTransactionDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="LedgerTransactionDataSet1" msprop:Generator_UserDSName="LedgerTransactionDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LedgerBook" msprop:Generator_TableClassName="LedgerBookDataTable" msprop:Generator_TableVarName="tableLedgerBook" msprop:Generator_TablePropName="LedgerBook" msprop:Generator_RowDeletingName="LedgerBookRowDeleting" msprop:Generator_RowChangingName="LedgerBookRowChanging" msprop:Generator_RowEvHandlerName="LedgerBookRowChangeEventHandler" msprop:Generator_RowDeletedName="LedgerBookRowDeleted" msprop:Generator_UserTableName="LedgerBook" msprop:Generator_RowChangedName="LedgerBookRowChanged" msprop:Generator_RowEvArgName="LedgerBookRowChangeEvent" msprop:Generator_RowClassName="LedgerBookRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="_Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Details" msprop:Generator_ColumnVarNameInTable="columnDetails" msprop:Generator_ColumnPropNameInRow="Details" msprop:Generator_ColumnPropNameInTable="DetailsColumn" msprop:Generator_UserColumnName="Details" type="xs:string" minOccurs="0" />
+              <xs:element name="Narration" msprop:Generator_ColumnVarNameInTable="columnNarration" msprop:Generator_ColumnPropNameInRow="Narration" msprop:Generator_ColumnPropNameInTable="NarrationColumn" msprop:Generator_UserColumnName="Narration" type="xs:string" minOccurs="0" />
+              <xs:element name="Voucher_x0020_No" msprop:Generator_ColumnVarNameInTable="columnVoucher_No" msprop:Generator_ColumnPropNameInRow="Voucher_No" msprop:Generator_ColumnPropNameInTable="Voucher_NoColumn" msprop:Generator_UserColumnName="Voucher No" type="xs:string" minOccurs="0" />
+              <xs:element name="Voucher_x0020_Name" msprop:Generator_ColumnVarNameInTable="columnVoucher_Name" msprop:Generator_ColumnPropNameInRow="Voucher_Name" msprop:Generator_ColumnPropNameInTable="Voucher_NameColumn" msprop:Generator_UserColumnName="Voucher Name" type="xs:string" minOccurs="0" />
+              <xs:element name="DR" msprop:Generator_ColumnVarNameInTable="columnDR" msprop:Generator_ColumnPropNameInRow="DR" msprop:Generator_ColumnPropNameInTable="DRColumn" msprop:Generator_UserColumnName="DR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CR" msprop:Generator_ColumnVarNameInTable="columnCR" msprop:Generator_ColumnPropNameInRow="CR" msprop:Generator_ColumnPropNameInTable="CRColumn" msprop:Generator_UserColumnName="CR" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

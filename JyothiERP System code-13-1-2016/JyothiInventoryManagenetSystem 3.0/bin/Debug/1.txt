@@ -1,0 +1,26 @@
+<xpml><page quantity='0' pitch='23.0 mm'></xpml>SIZE 99.1 mm, 23 mm
+DIRECTION 0,0
+REFERENCE 0,0
+OFFSET 0 mm
+SET PEEL OFF
+SET CUTTER OFF
+<xpml></page></xpml><xpml><page quantity='2' pitch='23.0 mm'></xpml>SET TEAR ON
+CLS
+CODEPAGE 1252
+TEXT 758,149,"0",180,6,10,"@itemname"
+TEXT 640,149,"0",180,5,10,"MRP:@mrp \-"
+BARCODE 726,120,"128M",51,0,180,1,2,"@barcode"
+TEXT 706,63,"0",180,8,8,"@itemcode"
+
+TEXT 494,149,"0",180,6,10,"@itemcode"
+TEXT 376,149,"0",180,5,10,"MRP:@mrp \-"
+BARCODE 462,120,"128M",51,0,180,1,2,"@barcode"
+TEXT 442,63,"0",180,8,8,"@itemcode"
+
+TEXT 230,149,"0",180,6,10,"@itemname"
+TEXT 112,149,"0",180,5,10,"MRP:@mrp \-"
+BARCODE 198,120,"128M",51,0,180,1,2,"@barcode"
+TEXT 178,63,"0",180,8,8,"@itemcode"
+
+PRINT 1,1
+<xpml></page></xpml><xpml><end/></xpml>

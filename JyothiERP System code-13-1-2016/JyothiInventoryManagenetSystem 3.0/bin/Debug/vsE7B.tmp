@@ -1,0 +1,2660 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+JyothiInventoryERP
+</name>
+</assembly>
+<members>
+<member name="T:JyothiPharmaERPSystem3.AttendEntryDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AttendEntryDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AttendEntryDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AttendEntryDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpAttendeceMonthlyDaywiseDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpAttendeceMonthlyDaywiseDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpAttendeceMonthlyDaywiseDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpAttendeceMonthlyDaywiseDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ProfitdatasetByDate.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ProfitdatasetByDate.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ProfitdatasetByDate.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ProfitdatasetByDate">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockAgingDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockAgingDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockAgingDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockAgingDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VATComputationDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VATComputationDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VATComputationDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VATComputationDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterDbf.CostCentersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterDbf.CostCentersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterDbf.CostCentersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterDbf">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterDbfTableAdapters.CostCentersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.CostCenterDbfTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.CostCenterDbf,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.CostCenterDbfTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.CostCenterDbf,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.CostCenterDbfTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.CostCenterDbf,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.CostCenterDbfTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.CostCenterDbfTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.CostCenterDbf)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterDbfTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterDbfTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterDbfTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DutiesMEDataSet.DutiesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DutiesMEDataSet.DutiesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DutiesMEDataSet.DutiesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DutiesMEDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DutiesMEDataSetTableAdapters.DutiesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.DutiesMEDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.DutiesMEDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.DutiesMEDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.DutiesMEDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.DutiesMEDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.DutiesMEDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.DutiesMEDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.DutiesMEDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.DutiesMEDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DutiesMEDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DutiesMEDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DutiesMEDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.issuesdocdataset.documentissuesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.issuesdocdataset.documentissuesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.issuesdocdataset.documentissuesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.issuesdocdataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.issuesdocdatasetTableAdapters.documentissuesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.issuesdocdatasetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.issuesdocdataset,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.issuesdocdatasetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.issuesdocdataset,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.issuesdocdatasetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.issuesdocdataset,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.issuesdocdatasetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.issuesdocdatasetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.issuesdocdataset)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.issuesdocdatasetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.issuesdocdatasetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.issuesdocdatasetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.MovementByGroupDataset.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.MovementByGroupDataset.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.MovementByGroupDataset.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.MovementByGroupDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.OrdersummeryDataSet.StockInvoiceRowItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.OrdersummeryDataSet.StockInvoiceRowItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.OrdersummeryDataSet.StockInvoiceRowItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.OrdersummeryDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AddDeductionDbfDataSet.PayTypesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AddDeductionDbfDataSet.PayTypesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AddDeductionDbfDataSet.PayTypesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AddDeductionDbfDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AddDeductionDbfDataSetTableAdapters.PayTypesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.AddDeductionDbfDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.AddDeductionDbfDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.AddDeductionDbfDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.AddDeductionDbfDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.AddDeductionDbfDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.AddDeductionDbfDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.AddDeductionDbfDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.AddDeductionDbfDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.AddDeductionDbfDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AddDeductionDbfDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AddDeductionDbfDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AddDeductionDbfDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DocDDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DocDDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DocDDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DocDDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmployeIDMonitorDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmployeIDMonitorDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmployeIDMonitorDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmployeIDMonitorDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.monthlyledgerdataset.ledgerbookDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.monthlyledgerdataset.ledgerbookRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.monthlyledgerdataset.ledgerbookRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.monthlyledgerdataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.PaySlipReportDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.PaySlipReportDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.PaySlipReportDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.PaySlipReportDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SerialNumberMasterDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SerialNumberMasterDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SerialNumberMasterDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SerialNumberMasterDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgerBookDataSetForVouchers.LedgerBookDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgerBookDataSetForVouchers.LedgerBookRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgerBookDataSetForVouchers.LedgerBookRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgerBookDataSetForVouchers">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgerBookDataSetForVouchersTableAdapters.LedgerBookTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.LedgerBookDataSetForVouchersTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.LedgerBookDataSetForVouchers,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.LedgerBookDataSetForVouchersTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.LedgerBookDataSetForVouchers,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.LedgerBookDataSetForVouchersTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.LedgerBookDataSetForVouchers,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.LedgerBookDataSetForVouchersTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.LedgerBookDataSetForVouchersTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.LedgerBookDataSetForVouchers)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgerBookDataSetForVouchersTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgerBookDataSetForVouchersTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgerBookDataSetForVouchersTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.RegisterSumDataSet.StockInvoiceRowItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.RegisterSumDataSet.StockInvoiceRowItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.RegisterSumDataSet.StockInvoiceRowItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.RegisterSumDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:JyothiPharmaERPSystem3.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:JyothiPharmaERPSystem3.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpLeaveMngDataSet.EMPLEAVESDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpLeaveMngDataSet.EMPLEAVESRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpLeaveMngDataSet.EMPLEAVESRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpLeaveMngDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmployeeMonthlyAttendDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmployeeMonthlyAttendDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmployeeMonthlyAttendDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmployeeMonthlyAttendDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ExpiryStockDataSet.StockBatchDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ExpiryStockDataSet.StockBatchRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ExpiryStockDataSet.StockBatchRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ExpiryStockDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ExpiryStockDataSetTableAdapters.StockBatchTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.ExpiryStockDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.ExpiryStockDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.ExpiryStockDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.ExpiryStockDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.ExpiryStockDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.ExpiryStockDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.ExpiryStockDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.ExpiryStockDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.ExpiryStockDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ExpiryStockDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ExpiryStockDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ExpiryStockDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.IncrementsDataset.empsalaryincrementsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.IncrementsDataset.empsalaryincrementsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.IncrementsDataset.empsalaryincrementsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.IncrementsDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.IncrementsDatasetTableAdapters.empsalaryincrementsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.IncrementsDatasetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.IncrementsDataset,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.IncrementsDatasetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.IncrementsDataset,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.IncrementsDatasetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.IncrementsDataset,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.IncrementsDatasetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.IncrementsDatasetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.IncrementsDataset)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.IncrementsDatasetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.IncrementsDatasetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.IncrementsDatasetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ItemwiseQuantityDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ItemwiseQuantityDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ItemwiseQuantityDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ItemwiseQuantityDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LeaveTblDataset.LeavesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LeaveTblDataset.LeavesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LeaveTblDataset.LeavesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LeaveTblDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.dutiesDataSet.DutiesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.dutiesDataSet.DutiesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.dutiesDataSet.DutiesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.dutiesDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.dutiesDataSetTableAdapters.DutiesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.dutiesDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.dutiesDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.dutiesDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.dutiesDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.dutiesDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.dutiesDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.dutiesDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.dutiesDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.dutiesDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.dutiesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.dutiesDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.dutiesDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ReorderStatusDataset.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ReorderStatusDataset.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ReorderStatusDataset.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ReorderStatusDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesmanReportDetDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesmanReportDetDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesmanReportDetDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesmanReportDetDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockItemWiseDataSet.StockInvoiceRowItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockItemWiseDataSet.StockInvoiceRowItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockItemWiseDataSet.StockInvoiceRowItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockItemWiseDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockSummeryDataSet.StockDbfDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockSummeryDataSet.StockDbfRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockSummeryDataSet.StockDbfRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockSummeryDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockUnitsMasterDataSet.StockunitsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockUnitsMasterDataSet.StockunitsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockUnitsMasterDataSet.StockunitsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockUnitsMasterDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockUnitsMasterDataSetTableAdapters.StockunitsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.StockUnitsMasterDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.StockUnitsMasterDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.StockUnitsMasterDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.StockUnitsMasterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.StockUnitsMasterDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.StockUnitsMasterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.StockUnitsMasterDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.StockUnitsMasterDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.StockUnitsMasterDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockUnitsMasterDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockUnitsMasterDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockUnitsMasterDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.UserLogFileDataSet.UserLogFileDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.UserLogFileDataSet.UserLogFileRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.UserLogFileDataSet.UserLogFileRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.UserLogFileDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.Ledgerbook.LedgerBookDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.Ledgerbook.LedgerBookRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.Ledgerbook.LedgerBookRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.Ledgerbook">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgerbookTableAdapters.LedgerBookTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.LedgerbookTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.Ledgerbook,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.LedgerbookTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.Ledgerbook,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.LedgerbookTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.Ledgerbook,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.LedgerbookTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.LedgerbookTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.Ledgerbook)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgerbookTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgerbookTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgerbookTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.InvoiceReportDataSet.StockInvoiceRowItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.InvoiceReportDataSet.ledgersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.InvoiceReportDataSet.StockInvoiceDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.InvoiceReportDataSet.StockInvoiceRowItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.InvoiceReportDataSet.ledgersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.InvoiceReportDataSet.StockInvoiceDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.InvoiceReportDataSet.StockInvoiceRowItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.InvoiceReportDataSet.ledgersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.InvoiceReportDataSet.StockInvoiceDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.InvoiceReportDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.InvoiceReportDataSetTableAdapters.StockInvoiceRowItemsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.InvoiceReportDataSetTableAdapters.ledgersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.InvoiceReportDataSetTableAdapters.StockInvoiceDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.InvoiceReportDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.InvoiceReportDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.InvoiceReportDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.InvoiceReportDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.InvoiceReportDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.InvoiceReportDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.InvoiceReportDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.InvoiceReportDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.InvoiceReportDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.InvoiceReportDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.InvoiceReportDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.InvoiceReportDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ProfitandLossDataset.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ProfitandLossDataset.DataTable2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ProfitandLossDataset.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ProfitandLossDataset.DataTable2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ProfitandLossDataset.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ProfitandLossDataset.DataTable2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ProfitandLossDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.dialyprofitdataset.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.dialyprofitdataset.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.dialyprofitdataset.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.dialyprofitdataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgersDbfDataset.ledgersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgersDbfDataset.ledgersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgersDbfDataset.ledgersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgersDbfDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgersDbfDatasetTableAdapters.ledgersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.LedgersDbfDatasetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.LedgersDbfDataset,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.LedgersDbfDatasetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.LedgersDbfDataset,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.LedgersDbfDatasetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.LedgersDbfDataset,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.LedgersDbfDatasetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.LedgersDbfDatasetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.LedgersDbfDataset)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgersDbfDatasetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgersDbfDatasetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgersDbfDatasetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CutomerEmailReportDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CutomerEmailReportDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CutomerEmailReportDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CutomerEmailReportDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DocDataset.DocumentsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DocDataset.DocumentsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DocDataset.DocumentsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DocDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DocDatasetTableAdapters.DocumentsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.DocDatasetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.DocDataset,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.DocDatasetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.DocDataset,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.DocDatasetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.DocDataset,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.DocDatasetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.DocDatasetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.DocDataset)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DocDatasetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DocDatasetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DocDatasetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.MonthlyRegisterDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.MonthlyRegisterDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.MonthlyRegisterDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.MonthlyRegisterDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.stockCatogoriesMasterDataSet.CategoriesgroupsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.stockCatogoriesMasterDataSet.CategoriesgroupsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.stockCatogoriesMasterDataSet.CategoriesgroupsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.stockCatogoriesMasterDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.stockCatogoriesMasterDataSetTableAdapters.CategoriesgroupsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.stockCatogoriesMasterDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.stockCatogoriesMasterDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.stockCatogoriesMasterDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.stockCatogoriesMasterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.stockCatogoriesMasterDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.stockCatogoriesMasterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.stockCatogoriesMasterDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.stockCatogoriesMasterDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.stockCatogoriesMasterDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.stockCatogoriesMasterDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.stockCatogoriesMasterDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.stockCatogoriesMasterDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockJournalPrintDataSet.StockInvoiceRowItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockJournalPrintDataSet.StockInvoiceRowItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockJournalPrintDataSet.StockInvoiceRowItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockJournalPrintDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockJournalPrintDataSetTableAdapters.StockInvoiceRowItemsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.StockJournalPrintDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.StockJournalPrintDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.StockJournalPrintDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.StockJournalPrintDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.StockJournalPrintDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.StockJournalPrintDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.StockJournalPrintDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.StockJournalPrintDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.StockJournalPrintDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockJournalPrintDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockJournalPrintDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockJournalPrintDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.UserActivityDataSet.LogFileDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.UserActivityDataSet.LogFileRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.UserActivityDataSet.LogFileRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.UserActivityDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VoucherPrintingCashDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VoucherPrintingCashDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VoucherPrintingCashDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VoucherPrintingCashDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CustomerMobileReportDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CustomerMobileReportDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CustomerMobileReportDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CustomerMobileReportDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.invoicewiseprofitdataset.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.invoicewiseprofitdataset.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.invoicewiseprofitdataset.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.invoicewiseprofitdataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgerTransactionDataSet1.LedgerBookDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgerTransactionDataSet1.LedgerBookRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgerTransactionDataSet1.LedgerBookRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgerTransactionDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.OutgoingStockDataset.StockInvoiceRowItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.OutgoingStockDataset.StockInvoiceRowItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.OutgoingStockDataset.StockInvoiceRowItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.OutgoingStockDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesCollectionDataSet2.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesCollectionDataSet2.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesCollectionDataSet2.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesCollectionDataSet2">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesmanSummeryDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesmanSummeryDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesmanSummeryDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesmanSummeryDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.STOCKMOVEDETAIELDDATASET.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.STOCKMOVEDETAIELDDATASET.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.STOCKMOVEDETAIELDDATASET.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.STOCKMOVEDETAIELDDATASET">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VehicleDataSet.VehicleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VehicleDataSet.VehicleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VehicleDataSet.VehicleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VehicleDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VehicleDataSetTableAdapters.VehicleTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.VehicleDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.VehicleDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.VehicleDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.VehicleDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.VehicleDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.VehicleDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.VehicleDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.VehicleDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.VehicleDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VehicleDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VehicleDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VehicleDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.MovementByStockCodeDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.MovementByStockCodeDataSet.DataTable2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.MovementByStockCodeDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.MovementByStockCodeDataSet.DataTable2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.MovementByStockCodeDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.MovementByStockCodeDataSet.DataTable2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.MovementByStockCodeDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VoucherRowsDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VoucherRowsDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VoucherRowsDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VoucherRowsDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CouponMasterDataSet.couponmasterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CouponMasterDataSet.couponmasterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CouponMasterDataSet.couponmasterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CouponMasterDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CouponMasterDataSetTableAdapters.couponmasterTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.CouponMasterDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.CouponMasterDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.CouponMasterDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.CouponMasterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.CouponMasterDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.CouponMasterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.CouponMasterDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.CouponMasterDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.CouponMasterDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CouponMasterDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CouponMasterDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CouponMasterDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterNamesDataSet.CostCenterNamesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterNamesDataSet.CostCenterNamesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterNamesDataSet.CostCenterNamesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterNamesDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterNamesDataSetTableAdapters.CostCenterNamesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.CostCenterNamesDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.CostCenterNamesDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.CostCenterNamesDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.CostCenterNamesDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.CostCenterNamesDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.CostCenterNamesDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.CostCenterNamesDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.CostCenterNamesDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.CostCenterNamesDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterNamesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterNamesDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterNamesDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CurrentStockDataSet.StockDbfDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CurrentStockDataSet.StockDbfRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CurrentStockDataSet.StockDbfRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CurrentStockDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CustomInvoiceDataSet.StockInvoiceDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CustomInvoiceDataSet.StockInvoiceRowItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CustomInvoiceDataSet.ledgersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CustomInvoiceDataSet.StockInvoiceDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CustomInvoiceDataSet.StockInvoiceRowItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CustomInvoiceDataSet.ledgersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CustomInvoiceDataSet.StockInvoiceDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CustomInvoiceDataSet.StockInvoiceRowItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CustomInvoiceDataSet.ledgersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CustomInvoiceDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CustomInvoiceDataSetTableAdapters.StockInvoiceDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CustomInvoiceDataSetTableAdapters.StockInvoiceRowItemsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CustomInvoiceDataSetTableAdapters.ledgersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.CustomInvoiceDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.CustomInvoiceDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.CustomInvoiceDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.CustomInvoiceDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.CustomInvoiceDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.CustomInvoiceDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.CustomInvoiceDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.CustomInvoiceDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.CustomInvoiceDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CustomInvoiceDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CustomInvoiceDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CustomInvoiceDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpBarcodeDataset.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpBarcodeDataset.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpBarcodeDataset.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpBarcodeDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.InventoryTransactoionDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.InventoryTransactoionDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.InventoryTransactoionDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.InventoryTransactoionDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.RegisterDataSet.StockInvoiceDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.RegisterDataSet.StockInvoiceDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.RegisterDataSet.StockInvoiceDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.RegisterDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.RegisterDataSetTableAdapters.StockInvoiceDetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.RegisterDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.RegisterDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.RegisterDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.RegisterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.RegisterDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.RegisterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.RegisterDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.RegisterDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.RegisterDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.RegisterDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.RegisterDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.RegisterDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpDepartmentDbfDataset.DepartmentGroupsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpDepartmentDbfDataset.DepartmentGroupsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpDepartmentDbfDataset.DepartmentGroupsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpDepartmentDbfDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpDepartmentDbfDatasetTableAdapters.DepartmentGroupsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.EmpDepartmentDbfDatasetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.EmpDepartmentDbfDataset,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.EmpDepartmentDbfDatasetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.EmpDepartmentDbfDataset,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.EmpDepartmentDbfDatasetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.EmpDepartmentDbfDataset,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.EmpDepartmentDbfDatasetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.EmpDepartmentDbfDatasetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.EmpDepartmentDbfDataset)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpDepartmentDbfDatasetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpDepartmentDbfDatasetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpDepartmentDbfDatasetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ItemwisemovementByLedgerDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ItemwisemovementByLedgerDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ItemwisemovementByLedgerDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ItemwisemovementByLedgerDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.notesdataset.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.notesdataset.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.notesdataset.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.notesdataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StcokItemsDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StcokItemsDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StcokItemsDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StcokItemsDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.UsersDataSet.UsersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.UsersDataSet.UsersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.UsersDataSet.UsersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.UsersDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VouchersDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VouchersDataSet.DataTable2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VouchersDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VouchersDataSet.DataTable2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VouchersDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VouchersDataSet.DataTable2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VouchersDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DailyAppServiceDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DailyAppServiceDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DailyAppServiceDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.DailyAppServiceDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.Bill2billdataset.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.Bill2billdataset.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.Bill2billdataset.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.Bill2billdataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CompanyLeavesDataSet.companyleavesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CompanyLeavesDataSet.companyleavesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CompanyLeavesDataSet.companyleavesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CompanyLeavesDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpAttendenceRepDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpAttendenceRepDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpAttendenceRepDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpAttendenceRepDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgerDaywiseBalanceDataSet.ledgerbookDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgerDaywiseBalanceDataSet.ledgerbookRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgerDaywiseBalanceDataSet.ledgerbookRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.LedgerDaywiseBalanceDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesStatusDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesStatusDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesStatusDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesStatusDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.stockbatchdataset.StockBatchDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.stockbatchdataset.StockBatchRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.stockbatchdataset.StockBatchRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.stockbatchdataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.stockbatchdatasetTableAdapters.StockBatchTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.stockbatchdatasetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.stockbatchdataset,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.stockbatchdatasetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.stockbatchdataset,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.stockbatchdatasetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.stockbatchdataset,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.stockbatchdatasetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.stockbatchdatasetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.stockbatchdataset)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.stockbatchdatasetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.stockbatchdatasetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.stockbatchdatasetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VehicleReportDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VehicleReportDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VehicleReportDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.VehicleReportDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.employeeDataSet.EmployeesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.employeeDataSet.ImagesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.employeeDataSet.EmployeesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.employeeDataSet.ImagesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.employeeDataSet.EmployeesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.employeeDataSet.ImagesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.employeeDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.employeeDataSetTableAdapters.EmployeesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.employeeDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.employeeDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.employeeDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.employeeDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.employeeDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.employeeDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.employeeDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.employeeDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.employeeDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.employeeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.employeeDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.employeeDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesCOllectionDataSet1.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesCOllectionDataSet1.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesCOllectionDataSet1.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesCOllectionDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesPersonMasterDataSet.salespersonsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesPersonMasterDataSet.salespersonsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesPersonMasterDataSet.salespersonsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesPersonMasterDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesPersonMasterDataSetTableAdapters.salespersonsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.SalesPersonMasterDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.SalesPersonMasterDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.SalesPersonMasterDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.SalesPersonMasterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.SalesPersonMasterDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.SalesPersonMasterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.SalesPersonMasterDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.SalesPersonMasterDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.SalesPersonMasterDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesPersonMasterDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesPersonMasterDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.SalesPersonMasterDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockGroupMasterDataSet.StockGroupsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockGroupMasterDataSet.StockGroupsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockGroupMasterDataSet.StockGroupsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockGroupMasterDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockGroupMasterDataSetTableAdapters.StockGroupsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.StockGroupMasterDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.StockGroupMasterDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.StockGroupMasterDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.StockGroupMasterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.StockGroupMasterDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.StockGroupMasterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.StockGroupMasterDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.StockGroupMasterDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.StockGroupMasterDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockGroupMasterDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockGroupMasterDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockGroupMasterDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockJournalSingleRowDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockJournalSingleRowDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockJournalSingleRowDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.StockJournalSingleRowDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.BalancesDataSet.LedgerBookDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.BalancesDataSet.LedgerBookRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.BalancesDataSet.LedgerBookRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.BalancesDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AccountGroupsDataSet.AccountGroupsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AccountGroupsDataSet.AccountGroupsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AccountGroupsDataSet.AccountGroupsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AccountGroupsDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AccountGroupsDataSetTableAdapters.AccountGroupsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.AccountGroupsDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.AccountGroupsDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.AccountGroupsDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.AccountGroupsDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.AccountGroupsDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.AccountGroupsDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.AccountGroupsDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.AccountGroupsDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.AccountGroupsDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AccountGroupsDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AccountGroupsDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AccountGroupsDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpAttendenseDailyDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpAttendenseDailyDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpAttendenseDailyDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpAttendenseDailyDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.invoceRowDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.invoceRowDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.invoceRowDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.invoceRowDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.OverDueDataset.Bill2BillDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.OverDueDataset.Bill2BillRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.OverDueDataset.Bill2BillRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.OverDueDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.PayrollListReportDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.PayrollListReportDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.PayrollListReportDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.PayrollListReportDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.PaySlipDatasetforEmployee.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.PaySlipDatasetforEmployee.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.PaySlipDatasetforEmployee.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.PaySlipDatasetforEmployee">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.BalanceSheetDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.BalanceSheetDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.BalanceSheetDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.BalanceSheetDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CashFlowDataSet.ledgerbookDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CashFlowDataSet.ledgerbookRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CashFlowDataSet.ledgerbookRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CashFlowDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpPayslipDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpPayslipDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpPayslipDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.EmpPayslipDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AccountLedgerDataSet.LedgerBookDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AccountLedgerDataSet.ImagesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AccountLedgerDataSet.LedgerBookRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AccountLedgerDataSet.ImagesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AccountLedgerDataSet.LedgerBookRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AccountLedgerDataSet.ImagesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AccountLedgerDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AccountLedgerDataSetTableAdapters.LedgerBookTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.AccountLedgerDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.AccountLedgerDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.AccountLedgerDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.AccountLedgerDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.AccountLedgerDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.AccountLedgerDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.AccountLedgerDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.AccountLedgerDataSetTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.AccountLedgerDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AccountLedgerDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AccountLedgerDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.AccountLedgerDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ASSETTYPEMASTERDATASET.assetgroupsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ASSETTYPEMASTERDATASET.assetgroupsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ASSETTYPEMASTERDATASET.assetgroupsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ASSETTYPEMASTERDATASET">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ASSETTYPEMASTERDATASETTableAdapters.assetgroupsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.ASSETTYPEMASTERDATASETTableAdapters.TableAdapterManager.UpdateUpdatedRows(JyothiPharmaERPSystem3.ASSETTYPEMASTERDATASET,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.ASSETTYPEMASTERDATASETTableAdapters.TableAdapterManager.UpdateInsertedRows(JyothiPharmaERPSystem3.ASSETTYPEMASTERDATASET,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.ASSETTYPEMASTERDATASETTableAdapters.TableAdapterManager.UpdateDeletedRows(JyothiPharmaERPSystem3.ASSETTYPEMASTERDATASET,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.ASSETTYPEMASTERDATASETTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:JyothiPharmaERPSystem3.ASSETTYPEMASTERDATASETTableAdapters.TableAdapterManager.UpdateAll(JyothiPharmaERPSystem3.ASSETTYPEMASTERDATASET)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ASSETTYPEMASTERDATASETTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ASSETTYPEMASTERDATASETTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.ASSETTYPEMASTERDATASETTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterDetDataSet.costcenterbookDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterDetDataSet.costcenterbookRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterDetDataSet.costcenterbookRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterDetDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterSummeryDataSet.costcenterbookDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterSummeryDataSet.costcenterbookRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterSummeryDataSet.costcenterbookRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.CostCenterSummeryDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.TrailBalanceSheetDataset.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.TrailBalanceSheetDataset.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.TrailBalanceSheetDataset.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:JyothiPharmaERPSystem3.TrailBalanceSheetDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+</members>
+</doc>

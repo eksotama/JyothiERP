@@ -1,0 +1,1085 @@
+﻿Module PrintingModule
+    Dim PrtDbf As New ADODB.Recordset
+    Public TotalPagesPrint As Long
+    Public IsCashBill As Boolean = False
+    Dim Conn As New ADODB.Connection
+    Sub Printingset(ByRef sender As System.Object, ByRef e As System.Drawing.Printing.PrintPageEventArgs, ByVal Transcode As Single, ByVal PrintingScheme As String, ByVal Dbitemsname As String, ByVal dbname As String)
+
+        Static IsFirstOpen As Boolean = True
+        Static pagerecords As Integer = 0
+        Static PresentRecords As Integer = 0
+        Static PageTop As Double = 0
+        Static PageSpace As Double = 0
+        Static RowHeight As Double = 0
+        Static PageNos As Integer = 1
+        Static PageNo As Integer = 1
+        Static Pagenoformat As Byte = 0
+        Static isPageNoyesno As Boolean = True
+        Static PageTopConst As Double = 0
+        Static FooterTop As Integer = 0
+        Dim PageTotal As Double = 0
+        Dim Dbf As New ADODB.Recordset
+        If IsFirstOpen = True Then
+            IsFirstOpen = False
+            Try
+                Conn.ConnectionString = "Provider=SQLOLEDB;Data Source=" & TxtSoftwareSQlServer & ";Integrated Security=SSPI;Initial Catalog=" & TxtSoftwareSQLDatabaseName
+                Conn.Open()
+            Catch ex As Exception
+                MsgBox("Sql Connection error....")
+                e.HasMorePages = False
+                Exit Sub
+            End Try
+
+            Dbf.Open("select * from PrintingSettings where schemename='" & PrintingScheme & "'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+            If Dbf.RecordCount > 0 Then
+                pagerecords = Dbf.Fields("maxrowsperpage").Value
+                RowHeight = Dbf.Fields("rowheight").Value
+            End If
+            e.PageSettings.PrinterSettings.PrinterName = Dbf.Fields("PrinterName").Value
+            PresentRecords = 1
+            Dbf.Close()
+
+            Dbf.Open("select * from printrecords where schemename='" & PrintingScheme & "'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+            If Dbf.RecordCount > 0 Then
+                PageTop = Dbf.Fields("ftop").Value
+                PageSpace = Dbf.Fields("space").Value
+                FooterTop = Dbf.Fields("ftop").Value + Dbf.Fields("height").Value
+            End If
+            Dbf.Close()
+
+            Dbf.Open("select * from  " & dbname & " where transcode=" & Transcode, Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+            If Dbf.RecordCount > 0 Then
+                If UCase(Dbf.Fields("ledgername").Value) = UCase(DefCashAccount) Then
+                    IsCashBill = True
+                Else
+                    IsCashBill = False
+                End If
+            End If
+            Dbf.Close()
+
+            PageTopConst = PageTop
+            PrtDbf.Open("select * from  " & Dbitemsname & " where transcode=" & Transcode, Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+            PrtDbf.MoveFirst()
+            If PrtDbf.RecordCount < pagerecords Then
+                pagerecords = PrtDbf.RecordCount
+            End If
+            PageNos = Math.Ceiling(PrtDbf.RecordCount / pagerecords)
+            PageNo = 1
+        End If
+
+
+
+
+        Dim ImageValue As System.Drawing.Image
+
+        If PageNo = PageNos Then
+            Dbf.Open("select * from PrintFieldLabels where schemename='" & PrintingScheme & "' ", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        Else
+            Dbf.Open("select * from PrintFieldLabels where schemename='" & PrintingScheme & "' and ltop<" & FooterTop, Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        End If
+        ' Dbf.Open("select * from PrintFieldLabels where schemename='" & PrintingScheme & "' and ltop<" & FooterTop, Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        If Dbf.RecordCount > 0 Then
+            Dim Sdbf As New ADODB.Recordset
+            Sdbf.Open("select * from " & dbname & " where transcode=" & Transcode, Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+            Dim Ldbf As New ADODB.Recordset
+            Ldbf.Open("select * from ledgers where ledgername='" & Sdbf.Fields("ledgername").Value & "'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+            Dbf.MoveFirst()
+            For i As Integer = 1 To Dbf.RecordCount
+                Try
+                    If Dbf.Fields("databasevalue").Value = 1 Then
+                        Dbf.Fields("printtext").Value = Ldbf.Fields(Dbf.Fields("dbfield").Value).Value
+                        Dbf.Update()
+                    Else
+                        Dbf.Fields("printtext").Value = Sdbf.Fields(Dbf.Fields("dbfield").Value).Value
+                        Dbf.Update()
+                    End If
+                Catch ex As Exception
+
+                End Try
+                Dbf.MoveNext()
+            Next
+            Sdbf.Close()
+            Ldbf.Close()
+        End If
+        Dbf.Close()
+
+
+
+        Dbf.Open("select * from printingsettings where schemename='" & PrintingScheme & "'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        If Dbf.RecordCount > 0 Then
+
+            Try
+                If Dbf.Fields("LeftLogoIsOn").Value = True Then
+                    ImageValue = Image.FromFile(Dbf.Fields("leftlogopath").Value)
+                    e.Graphics.DrawImage(ImageValue, CSng(Dbf.Fields("Leftlogoleft").Value), CSng(Dbf.Fields("leftlogotop").Value), CSng(Dbf.Fields("Leftlogowidth").Value), CSng(Dbf.Fields("Leftlogoheight").Value))
+                End If
+            Catch ex As Exception
+            End Try
+
+            Try
+                If Dbf.Fields("rightLogoIsOn").Value = True Then
+                    ImageValue = Image.FromFile(Dbf.Fields("rightlogopath").Value)
+                    e.Graphics.DrawImage(ImageValue, CSng(Dbf.Fields("rightlogoleft").Value), CSng(Dbf.Fields("rightlogotop").Value), CSng(Dbf.Fields("rightlogowidth").Value), CSng(Dbf.Fields("rightlogoheight").Value))
+                End If
+            Catch ex As Exception
+
+            End Try
+
+        End If
+        Dbf.Close()
+
+
+
+        Dbf.Open("select * from PrintLables where schemename='" & PrintingScheme & "'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        If Dbf.RecordCount > 0 Then
+            Dbf.MoveFirst()
+            For i As Integer = 0 To Dbf.RecordCount - 1
+                If Dbf.Fields("IsVisible").Value = True Then
+                    Dim drawFormat As New StringFormat
+                    Dim drawFont As Font = New Font("arial", 10)
+                    Dim drawBrush As New SolidBrush(Color.FromName(Dbf.Fields("fontcolor").Value.ToString))
+                    Select Case Dbf.Fields("fontstyle").Value
+                        Case 1
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold)
+                        Case 2
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Italic)
+                        Case 3
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Underline)
+                        Case 4
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Italic)
+                        Case 5
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Underline)
+                        Case 6
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Italic Or FontStyle.Underline)
+                        Case 7
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline)
+                        Case 8
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Regular)
+
+                    End Select
+
+
+
+                    If Dbf.Fields("align").Value = "Left" Then
+                        drawFormat.Alignment = StringAlignment.Near
+                    ElseIf Dbf.Fields("align").Value = "Right" Then
+                        drawFormat.Alignment = StringAlignment.Far
+                    Else
+                        drawFormat.Alignment = StringAlignment.Center
+                    End If
+                    'modified start
+
+                    If CSng(Dbf.Fields("width").Value) > 50 Then
+                        Dim rect1 As New Rectangle(CSng(Dbf.Fields("fleft").Value), CSng(Dbf.Fields("ftop").Value), CSng(Dbf.Fields("width").Value), CSng(Dbf.Fields("height").Value))
+                        e.Graphics.DrawString(Dbf.Fields("labletext").Value.ToString, drawFont, drawBrush, rect1, drawFormat)
+                    Else
+                        e.Graphics.DrawString(Dbf.Fields("labletext").Value.ToString, drawFont, drawBrush, CSng(Dbf.Fields("fleft").Value), CSng(Dbf.Fields("ftop").Value), drawFormat)
+                    End If
+
+                    'modified end
+
+                    '  e.Graphics.DrawString(Dbf.Fields("labletext").Value.ToString, drawFont, drawBrush, CSng(Dbf.Fields("fleft").Value), CSng(Dbf.Fields("ftop").Value), drawFormat)
+                End If
+                Dbf.MoveNext()
+            Next
+        End If
+        Dbf.Close()
+
+        Dbf.Open("select * from printheadings where schemename='" & PrintingScheme & "'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        If Dbf.RecordCount > 0 Then
+            Dbf.MoveFirst()
+            For i As Integer = 0 To Dbf.RecordCount - 1
+                If Dbf.Fields("IsVisible").Value = True Then
+                    Dim drawFormat As New StringFormat
+                    Dim drawFont As Font = New Font("arial", 10)
+                    Dim drawBrush As New SolidBrush(Color.FromName(Dbf.Fields("fontcolor").Value.ToString))
+
+                    Select Case Dbf.Fields("fontstyle").Value
+                        Case 1
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold)
+                        Case 2
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Italic)
+                        Case 3
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Underline)
+                        Case 4
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Italic)
+                        Case 5
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Underline)
+                        Case 6
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Italic Or FontStyle.Underline)
+                        Case 7
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline)
+                        Case 8
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Regular)
+
+                    End Select
+
+
+                    If Dbf.Fields("align").Value = "Left" Then
+                        drawFormat.Alignment = StringAlignment.Near
+                    ElseIf Dbf.Fields("align").Value = "Right" Then
+                        drawFormat.Alignment = StringAlignment.Far
+                    Else
+                        drawFormat.Alignment = StringAlignment.Center
+                    End If
+                    e.Graphics.DrawString(Dbf.Fields("HeadText").Value.ToString, drawFont, drawBrush, CSng(Dbf.Fields("fleft").Value), CSng(Dbf.Fields("ftop").Value), drawFormat)
+                End If
+                Dbf.MoveNext()
+            Next
+        End If
+        Dbf.Close()
+
+
+
+
+        Dbf.Open("select * from printlines where schemename='" & PrintingScheme & "'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        If Dbf.RecordCount > 0 Then
+            Dbf.MoveFirst()
+            For i As Integer = 0 To Dbf.RecordCount - 1
+                If Dbf.Fields("IsVisible").Value = True Then
+                    Dim penstyle As New Pen(Color.FromName(Dbf.Fields("LineColor").Value), CSng(Dbf.Fields("BoarderWidth").Value))
+
+                    If Dbf.Fields("BoarderStyle").Value = "Solid" Then
+                        penstyle.DashStyle = Drawing2D.DashStyle.Solid
+                    ElseIf Dbf.Fields("BoarderStyle").Value = "Dash" Then
+                        penstyle.DashStyle = Drawing2D.DashStyle.Dash
+                    ElseIf Dbf.Fields("BoarderStyle").Value = "Dot" Then
+                        penstyle.DashStyle = Drawing2D.DashStyle.Dot
+                    ElseIf Dbf.Fields("BoarderStyle").Value = "DashDot" Then
+                        penstyle.DashStyle = Drawing2D.DashStyle.DashDot
+                    Else
+                        penstyle.DashStyle = Drawing2D.DashStyle.DashDotDot
+                    End If
+                    If Dbf.Fields("FieldType").Value = 0 Then
+                        e.Graphics.DrawLine(penstyle, CSng(Dbf.Fields("fleft").Value), CSng(Dbf.Fields("ftop").Value), CSng(Dbf.Fields("width").Value), CSng(Dbf.Fields("height").Value))
+                    Else
+                        e.Graphics.DrawRectangle(penstyle, CSng(Dbf.Fields("fleft").Value), CSng(Dbf.Fields("ftop").Value), CSng(Dbf.Fields("width").Value), CSng(Dbf.Fields("height").Value))
+                    End If
+                End If
+                Dbf.MoveNext()
+            Next
+        End If
+        Dbf.Close()
+
+
+
+
+
+        If PageNo = PageNos Then
+            Dbf.Open("select * from PrintFieldLabels where schemename='" & PrintingScheme & "' ", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        Else
+            Dbf.Open("select * from PrintFieldLabels where schemename='" & PrintingScheme & "' and ltop<" & FooterTop, Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        End If
+        ' Dbf.Open("select * from PrintFieldLabels where schemename='" & PrintingScheme & "' and ltop<" & FooterTop, Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        If Dbf.RecordCount > 0 Then
+            Dbf.MoveFirst()
+            For i As Integer = 0 To Dbf.RecordCount - 1
+                If Dbf.Fields("IsVisible").Value = True Then
+                    Dim drawFormat As New StringFormat
+                    Dim drawFont As Font = New Font("arial", 10)
+                    Dim drawBrush As New SolidBrush(Color.FromName(Dbf.Fields("fontcolor").Value.ToString))
+
+                    Select Case Dbf.Fields("fontstyle").Value
+                        Case 1
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold)
+                        Case 2
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Italic)
+                        Case 3
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Underline)
+                        Case 4
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Italic)
+                        Case 5
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Underline)
+                        Case 6
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Italic Or FontStyle.Underline)
+                        Case 7
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline)
+                        Case 8
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Regular)
+
+                    End Select
+
+
+
+
+                    'MsgBox(Dbf.Fields("printtext").Value.ToString)
+                    If Dbf.Fields("align").Value = "Left" Then
+                        drawFormat.Alignment = StringAlignment.Near
+                    ElseIf Dbf.Fields("align").Value = "Right" Then
+                        drawFormat.Alignment = StringAlignment.Far
+                    Else
+                        drawFormat.Alignment = StringAlignment.Center
+                    End If
+
+                    If CSng(Dbf.Fields("width").Value) > 50 Then
+                        Dim rect1 As New Rectangle(CSng(Dbf.Fields("fleft").Value), CSng(Dbf.Fields("ftop").Value), CSng(Dbf.Fields("width").Value), CSng(Dbf.Fields("height").Value))
+                        If Dbf.Fields("formattype").Value = 0 Then
+                            e.Graphics.DrawString(Dbf.Fields("printtext").Value.ToString, drawFont, drawBrush, rect1, drawFormat)
+                        Else
+                            e.Graphics.DrawString(FormatNumber(Dbf.Fields("printtext").Value, 2).ToString, drawFont, drawBrush, rect1, drawFormat)
+                        End If
+
+
+                    Else
+                        If Dbf.Fields("formattype").Value = 0 Then
+                            e.Graphics.DrawString(Dbf.Fields("printtext").Value.ToString, drawFont, drawBrush, CSng(Dbf.Fields("fleft").Value), CSng(Dbf.Fields("ftop").Value), drawFormat)
+                        Else
+                            Try
+                                e.Graphics.DrawString(FormatNumber(Dbf.Fields("printtext").Value, 2).ToString, drawFont, drawBrush, CSng(Dbf.Fields("fleft").Value), CSng(Dbf.Fields("ftop").Value), drawFormat)
+                            Catch ex As Exception
+                                e.Graphics.DrawString(Dbf.Fields("printtext").Value.ToString, drawFont, drawBrush, CSng(Dbf.Fields("fleft").Value), CSng(Dbf.Fields("ftop").Value), drawFormat)
+                            End Try
+
+                        End If
+                    End If
+
+                    'If Dbf.Fields("formattype").Value = 0 Then
+                    'e.Graphics.DrawString(Dbf.Fields("printtext").Value.ToString, drawFont, drawBrush, CSng(Dbf.Fields("fleft").Value), CSng(Dbf.Fields("ftop").Value), drawFormat)
+                    'Else
+                    '   e.Graphics.DrawString(FormatNumber(Dbf.Fields("printtext").Value, 2).ToString, drawFont, drawBrush, CSng(Dbf.Fields("fleft").Value), CSng(Dbf.Fields("ftop").Value), drawFormat)
+                    'End If
+
+
+
+                    Select Case Dbf.Fields("lfontstyle").Value
+                        Case 1
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Bold)
+                        Case 2
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Italic)
+                        Case 3
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Underline)
+                        Case 4
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Bold Or FontStyle.Italic)
+                        Case 5
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Bold Or FontStyle.Underline)
+                        Case 6
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Italic Or FontStyle.Underline)
+                        Case 7
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline)
+                        Case 8
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Regular)
+
+                    End Select
+
+
+
+                    drawBrush.Color = Color.FromName(Dbf.Fields("lfontcolor").Value.ToString)
+                    If Dbf.Fields("lalign").Value = "Left" Then
+                        drawFormat.Alignment = StringAlignment.Near
+                    ElseIf Dbf.Fields("lalign").Value = "Right" Then
+                        drawFormat.Alignment = StringAlignment.Far
+                    Else
+                        drawFormat.Alignment = StringAlignment.Center
+                    End If
+
+                    e.Graphics.DrawString(Dbf.Fields("labletext").Value.ToString, drawFont, drawBrush, CSng(Dbf.Fields("lleft").Value), CSng(Dbf.Fields("ltop").Value), drawFormat)
+                End If
+                Dbf.MoveNext()
+            Next
+        End If
+        Dbf.Close()
+
+
+
+
+        Dbf.Open("select * from Printrecords where schemename='" & PrintingScheme & "'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        If Dbf.RecordCount > 0 Then
+            Dbf.MoveFirst()
+            For i As Integer = 0 To Dbf.RecordCount - 1
+                If Dbf.Fields("IsVisible").Value = True Then
+                    Dim drawFormat As New StringFormat
+                    Dim drawFont As Font = New Font("arial", 10)
+                    Dim drawBrush As New SolidBrush(Color.FromName(Dbf.Fields("lfontcolor").Value.ToString))
+
+                    Select Case Dbf.Fields("lfontstyle").Value
+                        Case 1
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Bold)
+                        Case 2
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Italic)
+                        Case 3
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Underline)
+                        Case 4
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Bold Or FontStyle.Italic)
+                        Case 5
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Bold Or FontStyle.Underline)
+                        Case 6
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Italic Or FontStyle.Underline)
+                        Case 7
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline)
+                        Case 8
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Regular)
+
+                    End Select
+
+
+                    If Dbf.Fields("lalign").Value = "Left" Then
+                        drawFormat.Alignment = StringAlignment.Near
+                    ElseIf Dbf.Fields("lalign").Value = "Right" Then
+                        drawFormat.Alignment = StringAlignment.Far
+                    Else
+                        drawFormat.Alignment = StringAlignment.Center
+                    End If
+                    e.Graphics.DrawString(Dbf.Fields("labletext").Value.ToString, drawFont, drawBrush, CSng(Dbf.Fields("lleft").Value), CSng(Dbf.Fields("ltop").Value), drawFormat)
+                End If
+                Dbf.MoveNext()
+            Next
+        End If
+        Dbf.Close()
+
+
+
+
+        For ri As Integer = 1 To pagerecords
+            Try
+                Dim k As String = PrtDbf.Fields("stockname").Value
+            Catch ex As Exception
+                GoTo SSS
+            End Try
+            Dbf.Open("select * from Printrecords where schemename='" & PrintingScheme & "'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+            If Dbf.RecordCount > 0 Then
+                Dbf.MoveFirst()
+                For i As Integer = 0 To Dbf.RecordCount - 1
+
+                    If Dbf.Fields("IsVisible").Value = True Then
+                        Dim drawFormat As New StringFormat
+                        Dim drawFont As Font = New Font("arial", 10)
+                        Dim drawBrush As New SolidBrush(Color.FromName(Dbf.Fields("fontcolor").Value.ToString))
+
+                        Select Case Dbf.Fields("fontstyle").Value
+                            Case 1
+                                drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold)
+                            Case 2
+                                drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Italic)
+                            Case 3
+                                drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Underline)
+                            Case 4
+                                drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Italic)
+                            Case 5
+                                drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Underline)
+                            Case 6
+                                drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Italic Or FontStyle.Underline)
+                            Case 7
+                                drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline)
+                            Case 8
+                                drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Regular)
+
+                        End Select
+
+
+                        If Dbf.Fields("align").Value = "Left" Then
+                            drawFormat.Alignment = StringAlignment.Near
+                        ElseIf Dbf.Fields("align").Value = "Right" Then
+                            drawFormat.Alignment = StringAlignment.Far
+                        Else
+                            drawFormat.Alignment = StringAlignment.Center
+                        End If
+                        If UCase(Dbf.Fields("DBField").Value.ToString) <> "SNO" Then
+                            If Dbf.Fields("formattype").Value = 0 Then
+                                e.Graphics.DrawString(PrtDbf.Fields(Dbf.Fields("DBField").Value.ToString).Value.ToString, drawFont, drawBrush, CSng(Dbf.Fields("fleft").Value), PageTop, drawFormat)
+                            Else
+                                e.Graphics.DrawString(FormatNumber(PrtDbf.Fields(Dbf.Fields("DBField").Value).Value, 2).ToString, drawFont, drawBrush, CSng(Dbf.Fields("fleft").Value), PageTop, drawFormat)
+                            End If
+                        Else
+                            e.Graphics.DrawString(PresentRecords, drawFont, drawBrush, CSng(Dbf.Fields("fleft").Value), PageTop, drawFormat)
+                        End If
+
+                    End If
+                    Dbf.MoveNext()
+                Next
+
+            End If
+            Dbf.Close()
+            PageTotal = PageTotal + PrtDbf.Fields("StockAmount").Value
+            Try
+                PageTop = PageTop + RowHeight
+                PresentRecords = PresentRecords + 1
+                PrtDbf.MoveNext()
+
+            Catch ex As Exception
+                PresentRecords = PrtDbf.RecordCount
+                GoTo sss
+            End Try
+
+        Next
+
+
+
+
+SSS:
+        Dbf.Open("select * from PrintingSettings where schemename='" & PrintingScheme & "'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        If Dbf.RecordCount > 0 Then
+            If Dbf.Fields("showpageno").Value = True Then
+                If Dbf.Fields("pageformat").Value = 0 Then
+                    e.Graphics.DrawString("Page " & PageNo.ToString, New Font("Arial", 10, FontStyle.Bold), Brushes.Black, CSng(Dbf.Fields("pagenoleft").Value), CSng(Dbf.Fields("pagenotop").Value))
+                Else
+                    e.Graphics.DrawString("Page " & PageNo.ToString & " of " & PageNos.ToString, New Font("Arial", 10, FontStyle.Bold), Brushes.Black, CSng(Dbf.Fields("pagenoleft").Value), CSng(Dbf.Fields("pagenotop").Value))
+                End If
+            End If
+            If PageNo < PageNos Then
+                'PageTotal
+                e.Graphics.DrawString("Page Total= " & FormatNumber(PageTotal, 2).ToString, New Font("Arial", 10, FontStyle.Bold), Brushes.Black, CSng(Dbf.Fields("pagenoleft").Value), CSng(Dbf.Fields("pagenotop").Value) - 80)
+                e.Graphics.DrawString("Continue........", New Font("Arial", 10, FontStyle.Bold), Brushes.Black, CSng(Dbf.Fields("pagenoleft").Value), CSng(Dbf.Fields("pagenotop").Value) - 50)
+            End If
+        End If
+        Dbf.Close()
+
+        If PresentRecords >= PrtDbf.RecordCount Then
+            PrtDbf.Close()
+            Conn.Close()
+            IsFirstOpen = True
+            PageTop = 0
+            PageSpace = 0
+            RowHeight = 0
+            PresentRecords = 1
+            pagerecords = 1
+            PageNo = 1
+            PageNos = 1
+            e.HasMorePages = False
+        Else
+
+            e.HasMorePages = True
+            PageNo = PageNo + 1
+            PageTop = PageTopConst
+        End If
+
+
+    End Sub
+
+
+    Sub PrintingMultiple(ByRef sender As System.Object, ByRef e As System.Drawing.Printing.PrintPageEventArgs, ByVal Vhtype As Byte, ByVal PrintingScheme As String, ByVal InvoiceList As ComboBox, ByVal Dbitemsname As String, ByVal dbname As String)
+
+
+        Static IsFirstOpen As Boolean = True
+        Static pagerecords As Integer = 0
+        Static PresentRecords As Integer = 0
+        Static PageTop As Double = 0
+        Static PageSpace As Double = 0
+        Static RowHeight As Double = 0
+        Static PageNos As Integer = 1
+        Static PageNo As Integer = 1
+        Static Pagenoformat As Byte = 0
+        Static isPageNoyesno As Boolean = True
+        Static PageTopConst As Double = 0
+        Static FooterTop As Integer = 0
+        Dim PageTotal As Double = 0
+        Dim Dbf As New ADODB.Recordset
+        Dim Transcode As Single
+        Static InvCount As Long = 0
+        Static NewBill As Boolean = True
+        '  MsgBox("ddf")
+
+        If IsFirstOpen = True Then
+            Try
+                Conn.ConnectionString = "Provider=SQLOLEDB;Data Source=" & TxtSoftwareSQlServer & ";Integrated Security=SSPI;Initial Catalog=" & TxtSoftwareSQLDatabaseName
+                Conn.Open()
+            Catch ex As Exception
+                MsgBox("Sql Connection error....")
+                e.HasMorePages = False
+                Exit Sub
+            End Try
+            Transcode = CSng(InvoiceList.Items(InvCount))
+            InvCount = InvCount + 1
+            IsFirstOpen = False
+            Dbf.Open("select * from PrintingSettings where schemename='" & PrintingScheme & "'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+            If Dbf.RecordCount > 0 Then
+                pagerecords = Dbf.Fields("maxrowsperpage").Value
+                RowHeight = Dbf.Fields("rowheight").Value
+            End If
+            PresentRecords = 1
+            Dbf.Close()
+
+            Dbf.Open("select * from printrecords where schemename='" & PrintingScheme & "'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+            If Dbf.RecordCount > 0 Then
+                PageTop = Dbf.Fields("ftop").Value
+                PageSpace = Dbf.Fields("space").Value
+                FooterTop = Dbf.Fields("ftop").Value + Dbf.Fields("height").Value
+            End If
+            Dbf.Close()
+            PageTopConst = PageTop
+            PrtDbf.Open("select * from  " & Dbitemsname & " where transcode=" & Transcode, Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+            PrtDbf.MoveFirst()
+            If PrtDbf.RecordCount < pagerecords Then
+                pagerecords = PrtDbf.RecordCount
+            End If
+            PageNos = Math.Ceiling(PrtDbf.RecordCount / pagerecords)
+            PageNo = 1
+        End If
+
+
+
+
+        Dim ImageValue As System.Drawing.Image
+
+        If PageNo = PageNos Then
+            Dbf.Open("select * from PrintFieldLabels where schemename='" & PrintingScheme & "' ", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        Else
+            Dbf.Open("select * from PrintFieldLabels where schemename='" & PrintingScheme & "' and ltop<" & FooterTop, Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        End If
+        ' Dbf.Open("select * from PrintFieldLabels where schemename='" & PrintingScheme & "' and ltop<" & FooterTop, Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        If Dbf.RecordCount > 0 Then
+            Dim Sdbf As New ADODB.Recordset
+            Sdbf.Open("select * from " & dbname & " where transcode=" & Transcode, Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+            Dim Ldbf As New ADODB.Recordset
+            Ldbf.Open("select * from ledgerdbf where sname='" & Sdbf.Fields("ledgername").Value & "'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+            Dbf.MoveFirst()
+            For i As Integer = 1 To Dbf.RecordCount
+                Try
+                    Dbf.Fields("printtext").Value = Sdbf.Fields(Dbf.Fields("dbfield").Value).Value
+                    Dbf.Update()
+                Catch ex As Exception
+                    Try
+                        Dbf.Fields("printtext").Value = Ldbf.Fields(Dbf.Fields("dbfield").Value).Value
+                        Dbf.Update()
+                    Catch ex2 As Exception
+
+                    End Try
+                End Try
+                Dbf.MoveNext()
+            Next
+            Sdbf.Close()
+            Ldbf.Close()
+        End If
+        Dbf.Close()
+
+
+
+        Dbf.Open("select * from printingsettings where schemename='" & PrintingScheme & "'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        If Dbf.RecordCount > 0 Then
+
+            Try
+                If Dbf.Fields("LeftLogoIsOn").Value = True Then
+                    ImageValue = Image.FromFile(Dbf.Fields("leftlogopath").Value)
+                    e.Graphics.DrawImage(ImageValue, CSng(Dbf.Fields("Leftlogoleft").Value), CSng(Dbf.Fields("leftlogotop").Value), CSng(Dbf.Fields("Leftlogowidth").Value), CSng(Dbf.Fields("Leftlogoheight").Value))
+                End If
+            Catch ex As Exception
+            End Try
+
+            Try
+                If Dbf.Fields("rightLogoIsOn").Value = True Then
+                    ImageValue = Image.FromFile(Dbf.Fields("rightlogopath").Value)
+                    e.Graphics.DrawImage(ImageValue, CSng(Dbf.Fields("rightlogoleft").Value), CSng(Dbf.Fields("rightlogotop").Value), CSng(Dbf.Fields("rightlogowidth").Value), CSng(Dbf.Fields("rightlogoheight").Value))
+                End If
+            Catch ex As Exception
+
+            End Try
+
+        End If
+        Dbf.Close()
+
+
+
+        Dbf.Open("select * from PrintLables where schemename='" & PrintingScheme & "'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        If Dbf.RecordCount > 0 Then
+            Dbf.MoveFirst()
+            For i As Integer = 0 To Dbf.RecordCount - 1
+                If Dbf.Fields("IsVisible").Value = True Then
+                    Dim drawFormat As New StringFormat
+                    Dim drawFont As Font = New Font("arial", 10)
+                    Dim drawBrush As New SolidBrush(Color.FromName(Dbf.Fields("fontcolor").Value.ToString))
+                    Select Case Dbf.Fields("fontstyle").Value
+                        Case 1
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold)
+                        Case 2
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Italic)
+                        Case 3
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Underline)
+                        Case 4
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Italic)
+                        Case 5
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Underline)
+                        Case 6
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Italic Or FontStyle.Underline)
+                        Case 7
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline)
+                        Case 8
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Regular)
+
+                    End Select
+
+
+
+                    If Dbf.Fields("align").Value = "Left" Then
+                        drawFormat.Alignment = StringAlignment.Near
+                    ElseIf Dbf.Fields("align").Value = "Right" Then
+                        drawFormat.Alignment = StringAlignment.Far
+                    Else
+                        drawFormat.Alignment = StringAlignment.Center
+                    End If
+                    e.Graphics.DrawString(Dbf.Fields("labletext").Value.ToString, drawFont, drawBrush, CSng(Dbf.Fields("fleft").Value), CSng(Dbf.Fields("ftop").Value), drawFormat)
+                End If
+                Dbf.MoveNext()
+            Next
+        End If
+        Dbf.Close()
+
+        Dbf.Open("select * from printheadings where schemename='" & PrintingScheme & "'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        If Dbf.RecordCount > 0 Then
+            Dbf.MoveFirst()
+            For i As Integer = 0 To Dbf.RecordCount - 1
+                If Dbf.Fields("IsVisible").Value = True Then
+                    Dim drawFormat As New StringFormat
+                    Dim drawFont As Font = New Font("arial", 10)
+                    Dim drawBrush As New SolidBrush(Color.FromName(Dbf.Fields("fontcolor").Value.ToString))
+
+                    Select Case Dbf.Fields("fontstyle").Value
+                        Case 1
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold)
+                        Case 2
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Italic)
+                        Case 3
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Underline)
+                        Case 4
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Italic)
+                        Case 5
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Underline)
+                        Case 6
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Italic Or FontStyle.Underline)
+                        Case 7
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline)
+                        Case 8
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Regular)
+
+                    End Select
+
+
+                    If Dbf.Fields("align").Value = "Left" Then
+                        drawFormat.Alignment = StringAlignment.Near
+                    ElseIf Dbf.Fields("align").Value = "Right" Then
+                        drawFormat.Alignment = StringAlignment.Far
+                    Else
+                        drawFormat.Alignment = StringAlignment.Center
+                    End If
+                    e.Graphics.DrawString(Dbf.Fields("HeadText").Value.ToString, drawFont, drawBrush, CSng(Dbf.Fields("fleft").Value), CSng(Dbf.Fields("ftop").Value), drawFormat)
+                End If
+                Dbf.MoveNext()
+            Next
+        End If
+        Dbf.Close()
+
+
+
+
+        Dbf.Open("select * from printlines where schemename='" & PrintingScheme & "'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        If Dbf.RecordCount > 0 Then
+            Dbf.MoveFirst()
+            For i As Integer = 0 To Dbf.RecordCount - 1
+                If Dbf.Fields("IsVisible").Value = True Then
+                    Dim penstyle As New Pen(Color.FromName(Dbf.Fields("LineColor").Value), CSng(Dbf.Fields("BoarderWidth").Value))
+
+                    If Dbf.Fields("BoarderStyle").Value = "Solid" Then
+                        penstyle.DashStyle = Drawing2D.DashStyle.Solid
+                    ElseIf Dbf.Fields("BoarderStyle").Value = "Dash" Then
+                        penstyle.DashStyle = Drawing2D.DashStyle.Dash
+                    ElseIf Dbf.Fields("BoarderStyle").Value = "Dot" Then
+                        penstyle.DashStyle = Drawing2D.DashStyle.Dot
+                    ElseIf Dbf.Fields("BoarderStyle").Value = "DashDot" Then
+                        penstyle.DashStyle = Drawing2D.DashStyle.DashDot
+                    Else
+                        penstyle.DashStyle = Drawing2D.DashStyle.DashDotDot
+                    End If
+                    If Dbf.Fields("FieldType").Value = 0 Then
+                        e.Graphics.DrawLine(penstyle, CSng(Dbf.Fields("fleft").Value), CSng(Dbf.Fields("ftop").Value), CSng(Dbf.Fields("width").Value), CSng(Dbf.Fields("height").Value))
+                    Else
+                        e.Graphics.DrawRectangle(penstyle, CSng(Dbf.Fields("fleft").Value), CSng(Dbf.Fields("ftop").Value), CSng(Dbf.Fields("width").Value), CSng(Dbf.Fields("height").Value))
+                    End If
+                End If
+                Dbf.MoveNext()
+            Next
+        End If
+        Dbf.Close()
+
+
+
+
+
+        If PageNo = PageNos Then
+            Dbf.Open("select * from PrintFieldLabels where schemename='" & PrintingScheme & "' ", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        Else
+            Dbf.Open("select * from PrintFieldLabels where schemename='" & PrintingScheme & "' and ltop<" & FooterTop, Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        End If
+        ' Dbf.Open("select * from PrintFieldLabels where schemename='" & PrintingScheme & "' and ltop<" & FooterTop, Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        If Dbf.RecordCount > 0 Then
+            Dbf.MoveFirst()
+            For i As Integer = 0 To Dbf.RecordCount - 1
+                If Dbf.Fields("IsVisible").Value = True Then
+                    Dim drawFormat As New StringFormat
+                    Dim drawFont As Font = New Font("arial", 10)
+                    Dim drawBrush As New SolidBrush(Color.FromName(Dbf.Fields("fontcolor").Value.ToString))
+
+                    Select Case Dbf.Fields("fontstyle").Value
+                        Case 1
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold)
+                        Case 2
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Italic)
+                        Case 3
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Underline)
+                        Case 4
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Italic)
+                        Case 5
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Underline)
+                        Case 6
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Italic Or FontStyle.Underline)
+                        Case 7
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline)
+                        Case 8
+                            drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Regular)
+
+                    End Select
+
+
+
+
+
+                    If Dbf.Fields("align").Value = "Left" Then
+                        drawFormat.Alignment = StringAlignment.Near
+                    ElseIf Dbf.Fields("align").Value = "Right" Then
+                        drawFormat.Alignment = StringAlignment.Far
+                    Else
+                        drawFormat.Alignment = StringAlignment.Center
+                    End If
+
+                    If CSng(Dbf.Fields("width").Value) > 100 Then
+                        Dim rect1 As New Rectangle(CSng(Dbf.Fields("fleft").Value), CSng(Dbf.Fields("ftop").Value), CSng(Dbf.Fields("width").Value), CSng(Dbf.Fields("height").Value))
+                        If Dbf.Fields("formattype").Value = 0 Then
+                            e.Graphics.DrawString(Dbf.Fields("printtext").Value.ToString, drawFont, drawBrush, rect1, drawFormat)
+                        Else
+                            e.Graphics.DrawString(FormatNumber(Dbf.Fields("printtext").Value, 2).ToString, drawFont, drawBrush, rect1, drawFormat)
+                        End If
+
+
+                    Else
+                        If Dbf.Fields("formattype").Value = 0 Then
+                            e.Graphics.DrawString(Dbf.Fields("printtext").Value.ToString, drawFont, drawBrush, CSng(Dbf.Fields("fleft").Value), CSng(Dbf.Fields("ftop").Value), drawFormat)
+                        Else
+                            Try
+                                e.Graphics.DrawString(FormatNumber(Dbf.Fields("printtext").Value, 2).ToString, drawFont, drawBrush, CSng(Dbf.Fields("fleft").Value), CSng(Dbf.Fields("ftop").Value), drawFormat)
+                            Catch ex As Exception
+                                e.Graphics.DrawString(Dbf.Fields("printtext").Value.ToString, drawFont, drawBrush, CSng(Dbf.Fields("fleft").Value), CSng(Dbf.Fields("ftop").Value), drawFormat)
+                            End Try
+
+                        End If
+                    End If
+
+                    'If Dbf.Fields("formattype").Value = 0 Then
+                    'e.Graphics.DrawString(Dbf.Fields("printtext").Value.ToString, drawFont, drawBrush, CSng(Dbf.Fields("fleft").Value), CSng(Dbf.Fields("ftop").Value), drawFormat)
+                    'Else
+                    '   e.Graphics.DrawString(FormatNumber(Dbf.Fields("printtext").Value, 2).ToString, drawFont, drawBrush, CSng(Dbf.Fields("fleft").Value), CSng(Dbf.Fields("ftop").Value), drawFormat)
+                    'End If
+
+
+
+                    Select Case Dbf.Fields("lfontstyle").Value
+                        Case 1
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Bold)
+                        Case 2
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Italic)
+                        Case 3
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Underline)
+                        Case 4
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Bold Or FontStyle.Italic)
+                        Case 5
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Bold Or FontStyle.Underline)
+                        Case 6
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Italic Or FontStyle.Underline)
+                        Case 7
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline)
+                        Case 8
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Regular)
+
+                    End Select
+
+
+
+                    drawBrush.Color = Color.FromName(Dbf.Fields("lfontcolor").Value.ToString)
+                    If Dbf.Fields("lalign").Value = "Left" Then
+                        drawFormat.Alignment = StringAlignment.Near
+                    ElseIf Dbf.Fields("lalign").Value = "Right" Then
+                        drawFormat.Alignment = StringAlignment.Far
+                    Else
+                        drawFormat.Alignment = StringAlignment.Center
+                    End If
+
+
+
+
+                    e.Graphics.DrawString(Dbf.Fields("labletext").Value.ToString, drawFont, drawBrush, CSng(Dbf.Fields("lleft").Value), CSng(Dbf.Fields("ltop").Value), drawFormat)
+                End If
+                Dbf.MoveNext()
+            Next
+        End If
+        Dbf.Close()
+
+
+
+
+        Dbf.Open("select * from Printrecords where schemename='" & PrintingScheme & "'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        If Dbf.RecordCount > 0 Then
+            Dbf.MoveFirst()
+            For i As Integer = 0 To Dbf.RecordCount - 1
+                If Dbf.Fields("IsVisible").Value = True Then
+                    Dim drawFormat As New StringFormat
+                    Dim drawFont As Font = New Font("arial", 10)
+                    Dim drawBrush As New SolidBrush(Color.FromName(Dbf.Fields("lfontcolor").Value.ToString))
+
+                    Select Case Dbf.Fields("lfontstyle").Value
+                        Case 1
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Bold)
+                        Case 2
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Italic)
+                        Case 3
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Underline)
+                        Case 4
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Bold Or FontStyle.Italic)
+                        Case 5
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Bold Or FontStyle.Underline)
+                        Case 6
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Italic Or FontStyle.Underline)
+                        Case 7
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline)
+                        Case 8
+                            drawFont = New Font(Dbf.Fields("lFontname").Value.ToString, CSng(Dbf.Fields("lfontsize").Value), FontStyle.Regular)
+
+                    End Select
+
+
+                    If Dbf.Fields("lalign").Value = "Left" Then
+                        drawFormat.Alignment = StringAlignment.Near
+                    ElseIf Dbf.Fields("lalign").Value = "Right" Then
+                        drawFormat.Alignment = StringAlignment.Far
+                    Else
+                        drawFormat.Alignment = StringAlignment.Center
+                    End If
+                    e.Graphics.DrawString(Dbf.Fields("labletext").Value.ToString, drawFont, drawBrush, CSng(Dbf.Fields("lleft").Value), CSng(Dbf.Fields("ltop").Value), drawFormat)
+                End If
+                Dbf.MoveNext()
+            Next
+        End If
+        Dbf.Close()
+
+
+
+
+        For ri As Integer = 1 To pagerecords
+            Try
+                Dim k As String = PrtDbf.Fields("stockname").Value
+            Catch ex As Exception
+                GoTo SSS
+            End Try
+            Dbf.Open("select * from Printrecords where schemename='" & PrintingScheme & "'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+            If Dbf.RecordCount > 0 Then
+                Dbf.MoveFirst()
+                For i As Integer = 0 To Dbf.RecordCount - 1
+
+                    If Dbf.Fields("IsVisible").Value = True Then
+                        Dim drawFormat As New StringFormat
+                        Dim drawFont As Font = New Font("arial", 10)
+                        Dim drawBrush As New SolidBrush(Color.FromName(Dbf.Fields("fontcolor").Value.ToString))
+
+                        Select Case Dbf.Fields("fontstyle").Value
+                            Case 1
+                                drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold)
+                            Case 2
+                                drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Italic)
+                            Case 3
+                                drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Underline)
+                            Case 4
+                                drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Italic)
+                            Case 5
+                                drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Underline)
+                            Case 6
+                                drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Italic Or FontStyle.Underline)
+                            Case 7
+                                drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline)
+                            Case 8
+                                drawFont = New Font(Dbf.Fields("Fontname").Value.ToString, CSng(Dbf.Fields("fontsize").Value), FontStyle.Regular)
+
+                        End Select
+
+
+                        If Dbf.Fields("align").Value = "Left" Then
+                            drawFormat.Alignment = StringAlignment.Near
+                        ElseIf Dbf.Fields("align").Value = "Right" Then
+                            drawFormat.Alignment = StringAlignment.Far
+                        Else
+                            drawFormat.Alignment = StringAlignment.Center
+                        End If
+                        If UCase(Dbf.Fields("DBField").Value.ToString) <> "SNO" Then
+                            If Dbf.Fields("formattype").Value = 0 Then
+                                e.Graphics.DrawString(PrtDbf.Fields(Dbf.Fields("DBField").Value.ToString).Value.ToString, drawFont, drawBrush, CSng(Dbf.Fields("fleft").Value), PageTop, drawFormat)
+                            Else
+                                e.Graphics.DrawString(FormatNumber(PrtDbf.Fields(Dbf.Fields("DBField").Value).Value, 2).ToString, drawFont, drawBrush, CSng(Dbf.Fields("fleft").Value), PageTop, drawFormat)
+                            End If
+                        Else
+                            e.Graphics.DrawString(PresentRecords, drawFont, drawBrush, CSng(Dbf.Fields("fleft").Value), PageTop, drawFormat)
+                        End If
+
+                    End If
+                    Dbf.MoveNext()
+                Next
+
+            End If
+            Dbf.Close()
+            PageTotal = PageTotal + PrtDbf.Fields("StockAmount").Value
+            Try
+                PageTop = PageTop + RowHeight
+                PresentRecords = PresentRecords + 1
+                PrtDbf.MoveNext()
+
+            Catch ex As Exception
+                PresentRecords = PrtDbf.RecordCount
+                GoTo sss
+            End Try
+
+        Next
+
+
+
+
+SSS:
+        Dbf.Open("select * from PrintingSettings where schemename='" & PrintingScheme & "'", Conn, ADODB.CursorTypeEnum.adOpenStatic, ADODB.LockTypeEnum.adLockOptimistic)
+        If Dbf.RecordCount > 0 Then
+            If Dbf.Fields("showpageno").Value = True Then
+                If Dbf.Fields("pageformat").Value = 0 Then
+                    e.Graphics.DrawString("Page " & PageNo.ToString, New Font("Arial", 10, FontStyle.Bold), Brushes.Black, CSng(Dbf.Fields("pagenoleft").Value), CSng(Dbf.Fields("pagenotop").Value))
+                Else
+                    e.Graphics.DrawString("Page " & PageNo.ToString & " of " & PageNos.ToString, New Font("Arial", 10, FontStyle.Bold), Brushes.Black, CSng(Dbf.Fields("pagenoleft").Value), CSng(Dbf.Fields("pagenotop").Value))
+                End If
+            End If
+            If PageNo < PageNos Then
+                'PageTotal
+                e.Graphics.DrawString("Page Total= " & FormatNumber(PageTotal, 2).ToString, New Font("Arial", 10, FontStyle.Bold), Brushes.Black, CSng(Dbf.Fields("pagenoleft").Value), CSng(Dbf.Fields("pagenotop").Value) - 80)
+                e.Graphics.DrawString("Continue........", New Font("Arial", 10, FontStyle.Bold), Brushes.Black, CSng(Dbf.Fields("pagenoleft").Value), CSng(Dbf.Fields("pagenotop").Value) - 50)
+            End If
+        End If
+        Dbf.Close()
+
+        If PresentRecords >= PrtDbf.RecordCount Then
+            PrtDbf.Close()
+            IsFirstOpen = True
+            PageTop = 0
+            PageSpace = 0
+            RowHeight = 0
+            PresentRecords = 1
+            pagerecords = 1
+            PageNo = 1
+            PageNos = 1
+            If InvCount >= InvoiceList.Items.Count Then
+                e.HasMorePages = False
+                'MsgBox(TotalPagesPrint)
+                InvCount = 0
+                Conn.Close()
+            Else
+                TotalPagesPrint = TotalPagesPrint + 1
+                e.HasMorePages = True
+            End If
+
+        Else
+            TotalPagesPrint = TotalPagesPrint + 1
+            e.HasMorePages = True
+            PageNo = PageNo + 1
+            PageTop = PageTopConst
+        End If
+
+
+    End Sub
+End Module

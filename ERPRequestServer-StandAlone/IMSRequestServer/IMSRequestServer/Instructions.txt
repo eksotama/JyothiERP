@@ -1,0 +1,17 @@
+﻿AFTER REBUILD THIS ERPSERVER PROJECT, YOU NEED TO COPY THE EXE (ERPSERVER.EXE )  FILE INTO THE JYOTHIERP DEBUG FOLDER
+
+IF YOU CHANGE THE PROJECT APPLICATION NAME, YOU NEED TO CHANGE IN MAIN FORM LOAD EVEN ALSO OF JYOTHIERP PROJECT
+
+FOR ANY, MAIL ME 'MESWETHAKUMARI@GMAIL.COM' 
+WEBSITE:  http://jyothierp.com/
+
+YOUTUBE:   http://www.youtube.com/user/SUPERAPSTUDENT
+Video Demos
+
+1. http://www.youtube.com/watch?v=gdVSR8anAlE
+2. http://www.youtube.com/watch?v=xPKiKayHUrc
+3. http://www.youtube.com/watch?v=gSD0_mPEKHA
+4. http://www.youtube.com/watch?v=SonJo4ZxsNE
+5. http://www.youtube.com/watch?v=5GP0pn7A9AY
+
+

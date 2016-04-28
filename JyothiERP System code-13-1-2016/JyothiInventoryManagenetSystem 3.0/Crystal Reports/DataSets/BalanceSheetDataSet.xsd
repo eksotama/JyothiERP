@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BalanceSheetDataSet" targetNamespace="http://tempuri.org/BalanceSheetDataSet.xsd" xmlns:mstns="http://tempuri.org/BalanceSheetDataSet.xsd" xmlns="http://tempuri.org/BalanceSheetDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BalanceSheetDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="BalanceSheetDataSet" msprop:Generator_UserDSName="BalanceSheetDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Ts1" msprop:Generator_ColumnVarNameInTable="columnTs1" msprop:Generator_ColumnPropNameInRow="Ts1" msprop:Generator_ColumnPropNameInTable="Ts1Column" msprop:Generator_UserColumnName="Ts1" type="xs:string" minOccurs="0" />
+              <xs:element name="Tadetails" msprop:Generator_ColumnVarNameInTable="columnTadetails" msprop:Generator_ColumnPropNameInRow="Tadetails" msprop:Generator_ColumnPropNameInTable="TadetailsColumn" msprop:Generator_UserColumnName="Tadetails" type="xs:string" minOccurs="0" />
+              <xs:element name="tavalues" msprop:Generator_ColumnVarNameInTable="columntavalues" msprop:Generator_ColumnPropNameInRow="tavalues" msprop:Generator_ColumnPropNameInTable="tavaluesColumn" msprop:Generator_UserColumnName="tavalues" type="xs:string" minOccurs="0" />
+              <xs:element name="ts2" msprop:Generator_ColumnVarNameInTable="columnts2" msprop:Generator_ColumnPropNameInRow="ts2" msprop:Generator_ColumnPropNameInTable="ts2Column" msprop:Generator_UserColumnName="ts2" type="xs:string" minOccurs="0" />
+              <xs:element name="Tldetails" msprop:Generator_ColumnVarNameInTable="columnTldetails" msprop:Generator_ColumnPropNameInRow="Tldetails" msprop:Generator_ColumnPropNameInTable="TldetailsColumn" msprop:Generator_UserColumnName="Tldetails" type="xs:string" minOccurs="0" />
+              <xs:element name="tlvalues" msprop:Generator_ColumnVarNameInTable="columntlvalues" msprop:Generator_ColumnPropNameInRow="tlvalues" msprop:Generator_ColumnPropNameInTable="tlvaluesColumn" msprop:Generator_UserColumnName="tlvalues" type="xs:string" minOccurs="0" />
+              <xs:element name="tasubvalues" msprop:Generator_ColumnVarNameInTable="columntasubvalues" msprop:Generator_ColumnPropNameInRow="tasubvalues" msprop:Generator_ColumnPropNameInTable="tasubvaluesColumn" msprop:Generator_UserColumnName="tasubvalues" type="xs:string" minOccurs="0" />
+              <xs:element name="tlsubvalues" msprop:Generator_ColumnVarNameInTable="columntlsubvalues" msprop:Generator_ColumnPropNameInRow="tlsubvalues" msprop:Generator_ColumnPropNameInTable="tlsubvaluesColumn" msprop:Generator_UserColumnName="tlsubvalues" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

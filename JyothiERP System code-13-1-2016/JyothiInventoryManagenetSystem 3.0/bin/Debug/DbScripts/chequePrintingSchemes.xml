@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <chequePrintingSchemes>
+    <SchemeName>SBI</SchemeName>
+    <VoucherName>SBI</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>1</ID>
+  </chequePrintingSchemes>
+  <chequePrintingSchemes>
+    <SchemeName>SBI</SchemeName>
+    <VoucherName>SBI</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>1</ID>
+  </chequePrintingSchemes>
+  <chequePrintingSchemes>
+    <SchemeName>SBI</SchemeName>
+    <VoucherName>SBI</VoucherName>
+    <IsActive>1</IsActive>
+    <ID>1</ID>
+  </chequePrintingSchemes>
+</NewDataSet>

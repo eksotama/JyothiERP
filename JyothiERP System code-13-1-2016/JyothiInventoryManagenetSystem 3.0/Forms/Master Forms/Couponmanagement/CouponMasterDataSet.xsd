@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CouponMasterDataSet" targetNamespace="http://tempuri.org/CouponMasterDataSet.xsd" xmlns:mstns="http://tempuri.org/CouponMasterDataSet.xsd" xmlns="http://tempuri.org/CouponMasterDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="JVSKRestorAccDBFConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="JVSKRestorAccDBFConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.JyothiPharmaERPSystem3.My.MySettings.GlobalReference.Default.JVSKRestorAccDBFConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="couponmasterTableAdapter" GeneratorDataComponentClassName="couponmasterTableAdapter" Name="couponmaster" UserDataComponentName="couponmasterTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="JVSKRestorAccDBFConnectionString (MySettings)" DbObjectName="JVSKRestorAccDBF.dbo.couponmaster" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT '' AS [SNO], Cname AS [Coupon Name], cper AS Percentage, datefrom AS [Date From], dateto AS [Date To], MaxValues AS [Max Value], UsedValue AS [Used Value], (CASE WHEN MaxValues - UsedValue &gt;= 0 THEN MaxValues - UsedValue ELSE 0 END) AS [Unused Value], isActive AS Status FROM couponmaster</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Coupon Name" DataSetColumn="Coupon Name" />
+              <Mapping SourceColumn="Percentage" DataSetColumn="Percentage" />
+              <Mapping SourceColumn="Date From" DataSetColumn="Date From" />
+              <Mapping SourceColumn="Date To" DataSetColumn="Date To" />
+              <Mapping SourceColumn="Max Value" DataSetColumn="Max Value" />
+              <Mapping SourceColumn="Used Value" DataSetColumn="Used Value" />
+              <Mapping SourceColumn="Unused Value" DataSetColumn="Unused Value" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="SNO" DataSetColumn="SNO" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CouponMasterDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="CouponMasterDataSet" msprop:Generator_UserDSName="CouponMasterDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="couponmaster" msprop:Generator_TableClassName="couponmasterDataTable" msprop:Generator_TableVarName="tablecouponmaster" msprop:Generator_TablePropName="couponmaster" msprop:Generator_RowDeletingName="couponmasterRowDeleting" msprop:Generator_UserTableName="couponmaster" msprop:Generator_RowChangingName="couponmasterRowChanging" msprop:Generator_RowEvHandlerName="couponmasterRowChangeEventHandler" msprop:Generator_RowDeletedName="couponmasterRowDeleted" msprop:Generator_RowEvArgName="couponmasterRowChangeEvent" msprop:Generator_RowChangedName="couponmasterRowChanged" msprop:Generator_RowClassName="couponmasterRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Coupon_x0020_Name" msprop:Generator_ColumnVarNameInTable="columnCoupon_Name" msprop:Generator_ColumnPropNameInRow="Coupon_Name" msprop:Generator_ColumnPropNameInTable="Coupon_NameColumn" msprop:Generator_UserColumnName="Coupon Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Percentage" msprop:Generator_ColumnVarNameInTable="columnPercentage" msprop:Generator_ColumnPropNameInRow="Percentage" msprop:Generator_ColumnPropNameInTable="PercentageColumn" msprop:Generator_UserColumnName="Percentage" type="xs:double" minOccurs="0" />
+              <xs:element name="Date_x0020_From" msprop:Generator_ColumnVarNameInTable="columnDate_From" msprop:Generator_ColumnPropNameInRow="Date_From" msprop:Generator_ColumnPropNameInTable="Date_FromColumn" msprop:Generator_UserColumnName="Date From" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Date_x0020_To" msprop:Generator_ColumnVarNameInTable="columnDate_To" msprop:Generator_ColumnPropNameInRow="Date_To" msprop:Generator_ColumnPropNameInTable="Date_ToColumn" msprop:Generator_UserColumnName="Date To" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Max_x0020_Value" msprop:Generator_ColumnVarNameInTable="columnMax_Value" msprop:Generator_ColumnPropNameInRow="Max_Value" msprop:Generator_ColumnPropNameInTable="Max_ValueColumn" msprop:Generator_UserColumnName="Max Value" type="xs:double" minOccurs="0" />
+              <xs:element name="Used_x0020_Value" msprop:Generator_ColumnVarNameInTable="columnUsed_Value" msprop:Generator_ColumnPropNameInRow="Used_Value" msprop:Generator_ColumnPropNameInTable="Used_ValueColumn" msprop:Generator_UserColumnName="Used Value" type="xs:double" minOccurs="0" />
+              <xs:element name="Unused_x0020_Value" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnUnused_Value" msprop:Generator_ColumnPropNameInRow="Unused_Value" msprop:Generator_ColumnPropNameInTable="Unused_ValueColumn" msprop:Generator_UserColumnName="Unused Value" type="xs:double" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:boolean" minOccurs="0" />
+              <xs:element name="SNO" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSNO" msprop:Generator_ColumnPropNameInRow="SNO" msprop:Generator_ColumnPropNameInTable="SNOColumn" msprop:Generator_UserColumnName="SNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

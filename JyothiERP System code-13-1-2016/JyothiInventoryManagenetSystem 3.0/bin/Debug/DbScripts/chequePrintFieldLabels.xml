@@ -1,0 +1,483 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <chequePrintFieldLabels>
+    <SchemeName>SBI</SchemeName>
+    <Fieldname>DateLine</Fieldname>
+    <labletext />
+    <DBField>TransDate</DBField>
+    <IsVisible>true</IsVisible>
+    <ftop>10</ftop>
+    <fleft>500</fleft>
+    <width>10</width>
+    <height>10</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>Black</fontcolor>
+    <Align>Left</Align>
+    <lTop>10</lTop>
+    <lleft>550</lleft>
+    <lwidth>10</lwidth>
+    <lheight>10</lheight>
+    <lFontname>Arial</lFontname>
+    <lfontsize>10</lfontsize>
+    <lfontstyle>2</lfontstyle>
+    <lfontcolor>Black</lfontcolor>
+    <lalign>left</lalign>
+    <sample>12-05-2010</sample>
+    <DBType>1</DBType>
+    <FieldType>1</FieldType>
+    <PrintText>Sample Text</PrintText>
+    <FormatType>0</FormatType>
+    <DatabaseValue>1</DatabaseValue>
+    <IsLedgerValue>1</IsLedgerValue>
+  </chequePrintFieldLabels>
+  <chequePrintFieldLabels>
+    <SchemeName>SBI</SchemeName>
+    <Fieldname>Pay Name</Fieldname>
+    <labletext />
+    <DBField>LedgerName</DBField>
+    <IsVisible>true</IsVisible>
+    <ftop>55</ftop>
+    <fleft>27</fleft>
+    <width>10</width>
+    <height>10</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>Black</fontcolor>
+    <Align>Left</Align>
+    <lTop>10</lTop>
+    <lleft>10</lleft>
+    <lwidth>10</lwidth>
+    <lheight>10</lheight>
+    <lFontname>Arial</lFontname>
+    <lfontsize>10</lfontsize>
+    <lfontstyle>2</lfontstyle>
+    <lfontcolor>Black</lfontcolor>
+    <lalign>left</lalign>
+    <sample>Jyothi Suresh</sample>
+    <DBType>1</DBType>
+    <FieldType>1</FieldType>
+    <PrintText>Sample Text</PrintText>
+    <FormatType>0</FormatType>
+    <DatabaseValue>1</DatabaseValue>
+    <IsLedgerValue>1</IsLedgerValue>
+  </chequePrintFieldLabels>
+  <chequePrintFieldLabels>
+    <SchemeName>SBI</SchemeName>
+    <Fieldname>Amount</Fieldname>
+    <labletext />
+    <DBField>Amount</DBField>
+    <IsVisible>true</IsVisible>
+    <ftop>120</ftop>
+    <fleft>500</fleft>
+    <width>10</width>
+    <height>10</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>Black</fontcolor>
+    <Align>Left</Align>
+    <lTop>10</lTop>
+    <lleft>10</lleft>
+    <lwidth>10</lwidth>
+    <lheight>10</lheight>
+    <lFontname>Arial</lFontname>
+    <lfontsize>10</lfontsize>
+    <lfontstyle>2</lfontstyle>
+    <lfontcolor>Black</lfontcolor>
+    <lalign>left</lalign>
+    <sample>652554.48</sample>
+    <DBType>1</DBType>
+    <FieldType>1</FieldType>
+    <PrintText>Sample Text</PrintText>
+    <FormatType>0</FormatType>
+    <DatabaseValue>1</DatabaseValue>
+    <IsLedgerValue>1</IsLedgerValue>
+  </chequePrintFieldLabels>
+  <chequePrintFieldLabels>
+    <SchemeName>SBI</SchemeName>
+    <Fieldname>AmountWordsLine1</Fieldname>
+    <labletext />
+    <DBField>AmountLine1</DBField>
+    <IsVisible>true</IsVisible>
+    <ftop>82</ftop>
+    <fleft>35</fleft>
+    <width>900</width>
+    <height>20</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>11</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>Black</fontcolor>
+    <Align>Left</Align>
+    <lTop>82</lTop>
+    <lleft>30</lleft>
+    <lwidth>200</lwidth>
+    <lheight>10</lheight>
+    <lFontname>Arial</lFontname>
+    <lfontsize>10</lfontsize>
+    <lfontstyle>2</lfontstyle>
+    <lfontcolor>Black</lfontcolor>
+    <lalign>left</lalign>
+    <sample>INR : Six Laks and Fifty Two Thousand and Fify Four </sample>
+    <DBType>1</DBType>
+    <FieldType>1</FieldType>
+    <PrintText>Sample Text</PrintText>
+    <FormatType>0</FormatType>
+    <DatabaseValue>1</DatabaseValue>
+    <IsLedgerValue>1</IsLedgerValue>
+  </chequePrintFieldLabels>
+  <chequePrintFieldLabels>
+    <SchemeName>SBI</SchemeName>
+    <Fieldname>AmountWordsLine2</Fieldname>
+    <labletext />
+    <DBField>AmountLine2</DBField>
+    <IsVisible>true</IsVisible>
+    <ftop>117</ftop>
+    <fleft>10</fleft>
+    <width>10</width>
+    <height>10</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>Black</fontcolor>
+    <Align>Left</Align>
+    <lTop>110</lTop>
+    <lleft>10</lleft>
+    <lwidth>10</lwidth>
+    <lheight>10</lheight>
+    <lFontname>Arial</lFontname>
+    <lfontsize>10</lfontsize>
+    <lfontstyle>2</lfontstyle>
+    <lfontcolor>Black</lfontcolor>
+    <lalign>left</lalign>
+    <sample>and fourty eight Paise Only</sample>
+    <DBType>1</DBType>
+    <FieldType>1</FieldType>
+    <PrintText>Sample Text</PrintText>
+    <FormatType>0</FormatType>
+    <DatabaseValue>1</DatabaseValue>
+    <IsLedgerValue>1</IsLedgerValue>
+  </chequePrintFieldLabels>
+  <chequePrintFieldLabels>
+    <SchemeName>SBI</SchemeName>
+    <Fieldname>DateLine</Fieldname>
+    <labletext />
+    <DBField>TransDate</DBField>
+    <IsVisible>true</IsVisible>
+    <ftop>10</ftop>
+    <fleft>500</fleft>
+    <width>10</width>
+    <height>10</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>Black</fontcolor>
+    <Align>Left</Align>
+    <lTop>10</lTop>
+    <lleft>550</lleft>
+    <lwidth>10</lwidth>
+    <lheight>10</lheight>
+    <lFontname>Arial</lFontname>
+    <lfontsize>10</lfontsize>
+    <lfontstyle>2</lfontstyle>
+    <lfontcolor>Black</lfontcolor>
+    <lalign>left</lalign>
+    <sample>12-05-2010</sample>
+    <DBType>1</DBType>
+    <FieldType>1</FieldType>
+    <PrintText>Sample Text</PrintText>
+    <FormatType>0</FormatType>
+    <DatabaseValue>1</DatabaseValue>
+    <IsLedgerValue>1</IsLedgerValue>
+  </chequePrintFieldLabels>
+  <chequePrintFieldLabels>
+    <SchemeName>SBI</SchemeName>
+    <Fieldname>Pay Name</Fieldname>
+    <labletext />
+    <DBField>LedgerName</DBField>
+    <IsVisible>true</IsVisible>
+    <ftop>55</ftop>
+    <fleft>27</fleft>
+    <width>10</width>
+    <height>10</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>Black</fontcolor>
+    <Align>Left</Align>
+    <lTop>10</lTop>
+    <lleft>10</lleft>
+    <lwidth>10</lwidth>
+    <lheight>10</lheight>
+    <lFontname>Arial</lFontname>
+    <lfontsize>10</lfontsize>
+    <lfontstyle>2</lfontstyle>
+    <lfontcolor>Black</lfontcolor>
+    <lalign>left</lalign>
+    <sample>Jyothi Suresh</sample>
+    <DBType>1</DBType>
+    <FieldType>1</FieldType>
+    <PrintText>Sample Text</PrintText>
+    <FormatType>0</FormatType>
+    <DatabaseValue>1</DatabaseValue>
+    <IsLedgerValue>1</IsLedgerValue>
+  </chequePrintFieldLabels>
+  <chequePrintFieldLabels>
+    <SchemeName>SBI</SchemeName>
+    <Fieldname>Amount</Fieldname>
+    <labletext />
+    <DBField>Amount</DBField>
+    <IsVisible>true</IsVisible>
+    <ftop>120</ftop>
+    <fleft>500</fleft>
+    <width>10</width>
+    <height>10</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>Black</fontcolor>
+    <Align>Left</Align>
+    <lTop>10</lTop>
+    <lleft>10</lleft>
+    <lwidth>10</lwidth>
+    <lheight>10</lheight>
+    <lFontname>Arial</lFontname>
+    <lfontsize>10</lfontsize>
+    <lfontstyle>2</lfontstyle>
+    <lfontcolor>Black</lfontcolor>
+    <lalign>left</lalign>
+    <sample>652554.48</sample>
+    <DBType>1</DBType>
+    <FieldType>1</FieldType>
+    <PrintText>Sample Text</PrintText>
+    <FormatType>0</FormatType>
+    <DatabaseValue>1</DatabaseValue>
+    <IsLedgerValue>1</IsLedgerValue>
+  </chequePrintFieldLabels>
+  <chequePrintFieldLabels>
+    <SchemeName>SBI</SchemeName>
+    <Fieldname>AmountWordsLine1</Fieldname>
+    <labletext />
+    <DBField>AmountLine1</DBField>
+    <IsVisible>true</IsVisible>
+    <ftop>82</ftop>
+    <fleft>35</fleft>
+    <width>900</width>
+    <height>20</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>11</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>Black</fontcolor>
+    <Align>Left</Align>
+    <lTop>82</lTop>
+    <lleft>30</lleft>
+    <lwidth>200</lwidth>
+    <lheight>10</lheight>
+    <lFontname>Arial</lFontname>
+    <lfontsize>10</lfontsize>
+    <lfontstyle>2</lfontstyle>
+    <lfontcolor>Black</lfontcolor>
+    <lalign>left</lalign>
+    <sample>INR : Six Laks and Fifty Two Thousand and Fify Four </sample>
+    <DBType>1</DBType>
+    <FieldType>1</FieldType>
+    <PrintText>Sample Text</PrintText>
+    <FormatType>0</FormatType>
+    <DatabaseValue>1</DatabaseValue>
+    <IsLedgerValue>1</IsLedgerValue>
+  </chequePrintFieldLabels>
+  <chequePrintFieldLabels>
+    <SchemeName>SBI</SchemeName>
+    <Fieldname>AmountWordsLine2</Fieldname>
+    <labletext />
+    <DBField>AmountLine2</DBField>
+    <IsVisible>true</IsVisible>
+    <ftop>117</ftop>
+    <fleft>10</fleft>
+    <width>10</width>
+    <height>10</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>Black</fontcolor>
+    <Align>Left</Align>
+    <lTop>110</lTop>
+    <lleft>10</lleft>
+    <lwidth>10</lwidth>
+    <lheight>10</lheight>
+    <lFontname>Arial</lFontname>
+    <lfontsize>10</lfontsize>
+    <lfontstyle>2</lfontstyle>
+    <lfontcolor>Black</lfontcolor>
+    <lalign>left</lalign>
+    <sample>and fourty eight Paise Only</sample>
+    <DBType>1</DBType>
+    <FieldType>1</FieldType>
+    <PrintText>Sample Text</PrintText>
+    <FormatType>0</FormatType>
+    <DatabaseValue>1</DatabaseValue>
+    <IsLedgerValue>1</IsLedgerValue>
+  </chequePrintFieldLabels>
+  <chequePrintFieldLabels>
+    <SchemeName>SBI</SchemeName>
+    <Fieldname>DateLine</Fieldname>
+    <labletext />
+    <DBField>TransDate</DBField>
+    <IsVisible>true</IsVisible>
+    <ftop>10</ftop>
+    <fleft>500</fleft>
+    <width>10</width>
+    <height>10</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>Black</fontcolor>
+    <Align>Left</Align>
+    <lTop>10</lTop>
+    <lleft>550</lleft>
+    <lwidth>10</lwidth>
+    <lheight>10</lheight>
+    <lFontname>Arial</lFontname>
+    <lfontsize>10</lfontsize>
+    <lfontstyle>2</lfontstyle>
+    <lfontcolor>Black</lfontcolor>
+    <lalign>left</lalign>
+    <sample>12-05-2010</sample>
+    <DBType>1</DBType>
+    <FieldType>1</FieldType>
+    <PrintText>Sample Text</PrintText>
+    <FormatType>0</FormatType>
+    <DatabaseValue>1</DatabaseValue>
+    <IsLedgerValue>1</IsLedgerValue>
+  </chequePrintFieldLabels>
+  <chequePrintFieldLabels>
+    <SchemeName>SBI</SchemeName>
+    <Fieldname>Pay Name</Fieldname>
+    <labletext />
+    <DBField>LedgerName</DBField>
+    <IsVisible>true</IsVisible>
+    <ftop>55</ftop>
+    <fleft>27</fleft>
+    <width>10</width>
+    <height>10</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>Black</fontcolor>
+    <Align>Left</Align>
+    <lTop>10</lTop>
+    <lleft>10</lleft>
+    <lwidth>10</lwidth>
+    <lheight>10</lheight>
+    <lFontname>Arial</lFontname>
+    <lfontsize>10</lfontsize>
+    <lfontstyle>2</lfontstyle>
+    <lfontcolor>Black</lfontcolor>
+    <lalign>left</lalign>
+    <sample>Jyothi Suresh</sample>
+    <DBType>1</DBType>
+    <FieldType>1</FieldType>
+    <PrintText>Sample Text</PrintText>
+    <FormatType>0</FormatType>
+    <DatabaseValue>1</DatabaseValue>
+    <IsLedgerValue>1</IsLedgerValue>
+  </chequePrintFieldLabels>
+  <chequePrintFieldLabels>
+    <SchemeName>SBI</SchemeName>
+    <Fieldname>Amount</Fieldname>
+    <labletext />
+    <DBField>Amount</DBField>
+    <IsVisible>true</IsVisible>
+    <ftop>120</ftop>
+    <fleft>500</fleft>
+    <width>10</width>
+    <height>10</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>Black</fontcolor>
+    <Align>Left</Align>
+    <lTop>10</lTop>
+    <lleft>10</lleft>
+    <lwidth>10</lwidth>
+    <lheight>10</lheight>
+    <lFontname>Arial</lFontname>
+    <lfontsize>10</lfontsize>
+    <lfontstyle>2</lfontstyle>
+    <lfontcolor>Black</lfontcolor>
+    <lalign>left</lalign>
+    <sample>652554.48</sample>
+    <DBType>1</DBType>
+    <FieldType>1</FieldType>
+    <PrintText>Sample Text</PrintText>
+    <FormatType>0</FormatType>
+    <DatabaseValue>1</DatabaseValue>
+    <IsLedgerValue>1</IsLedgerValue>
+  </chequePrintFieldLabels>
+  <chequePrintFieldLabels>
+    <SchemeName>SBI</SchemeName>
+    <Fieldname>AmountWordsLine1</Fieldname>
+    <labletext />
+    <DBField>AmountLine1</DBField>
+    <IsVisible>true</IsVisible>
+    <ftop>82</ftop>
+    <fleft>35</fleft>
+    <width>900</width>
+    <height>20</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>11</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>Black</fontcolor>
+    <Align>Left</Align>
+    <lTop>82</lTop>
+    <lleft>30</lleft>
+    <lwidth>200</lwidth>
+    <lheight>10</lheight>
+    <lFontname>Arial</lFontname>
+    <lfontsize>10</lfontsize>
+    <lfontstyle>2</lfontstyle>
+    <lfontcolor>Black</lfontcolor>
+    <lalign>left</lalign>
+    <sample>INR : Six Laks and Fifty Two Thousand and Fify Four </sample>
+    <DBType>1</DBType>
+    <FieldType>1</FieldType>
+    <PrintText>Sample Text</PrintText>
+    <FormatType>0</FormatType>
+    <DatabaseValue>1</DatabaseValue>
+    <IsLedgerValue>1</IsLedgerValue>
+  </chequePrintFieldLabels>
+  <chequePrintFieldLabels>
+    <SchemeName>SBI</SchemeName>
+    <Fieldname>AmountWordsLine2</Fieldname>
+    <labletext />
+    <DBField>AmountLine2</DBField>
+    <IsVisible>true</IsVisible>
+    <ftop>117</ftop>
+    <fleft>10</fleft>
+    <width>10</width>
+    <height>10</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>Black</fontcolor>
+    <Align>Left</Align>
+    <lTop>110</lTop>
+    <lleft>10</lleft>
+    <lwidth>10</lwidth>
+    <lheight>10</lheight>
+    <lFontname>Arial</lFontname>
+    <lfontsize>10</lfontsize>
+    <lfontstyle>2</lfontstyle>
+    <lfontcolor>Black</lfontcolor>
+    <lalign>left</lalign>
+    <sample>and fourty eight Paise Only</sample>
+    <DBType>1</DBType>
+    <FieldType>1</FieldType>
+    <PrintText>Sample Text</PrintText>
+    <FormatType>0</FormatType>
+    <DatabaseValue>1</DatabaseValue>
+    <IsLedgerValue>1</IsLedgerValue>
+  </chequePrintFieldLabels>
+</NewDataSet>

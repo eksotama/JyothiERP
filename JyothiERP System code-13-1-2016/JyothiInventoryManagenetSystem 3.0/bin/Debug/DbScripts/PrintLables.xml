@@ -1,0 +1,2328 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <PrintLables>
+    <schemename>A4SizeSalesOrder</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4SizeSalesOrder</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>true</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4SizeSalesOrder</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>true</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4SizeSalesOrder</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>true</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4SizeSalesOrder</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>true</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4SizeSalesQuote</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4SizeSalesQuote</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>true</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4SizeSalesQuote</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>true</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4SizeSalesQuote</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>true</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4SizeSalesQuote</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>true</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>VATA4Scheme</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>VATA4Scheme</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>true</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>VATA4Scheme</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>true</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>VATA4Scheme</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>true</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>VATA4Scheme</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>true</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>VATA4Scheme</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs12</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>VATA4Scheme</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign12</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>VATA4Scheme</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing22</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>VATA4Scheme</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer12</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>VATA4Scheme</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks2</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Roll1</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Roll1</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Roll1</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Roll1</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Roll1</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Roll1</schemename>
+    <ftop>162</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>20</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>noexchange</fieldname>
+    <labletext>* NO EXCHANGE</labletext>
+    <isvisible>true</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Roll1</schemename>
+    <ftop>177</ftop>
+    <fleft>20</fleft>
+    <width>300</width>
+    <height>20</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>GOOD ONCE</fieldname>
+    <labletext>* GOODS ONCE SOLD CANNOT BE TAKEN BACK</labletext>
+    <isvisible>true</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Roll1</schemename>
+    <ftop>195</ftop>
+    <fleft>20</fleft>
+    <width>300</width>
+    <height>20</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>CONDITIONAPPLY</fieldname>
+    <labletext>** CONDITION APPLY **</labletext>
+    <isvisible>true</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Roll 1 for Purchase</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Roll 1 for Purchase</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Roll 1 for Purchase</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Roll 1 for Purchase</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Roll 1 for Purchase</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Roll 1 for Purchase</schemename>
+    <ftop>162</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>20</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>noexchange</fieldname>
+    <labletext>* NO EXCHANGE</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Roll 1 for Purchase</schemename>
+    <ftop>177</ftop>
+    <fleft>20</fleft>
+    <width>300</width>
+    <height>20</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>GOOD ONCE</fieldname>
+    <labletext>* GOODS ONCE SOLD CANNOT BE TAKEN BACK</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Roll 1 for Purchase</schemename>
+    <ftop>195</ftop>
+    <fleft>20</fleft>
+    <width>300</width>
+    <height>20</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>CONDITIONAPPLY</fieldname>
+    <labletext>** CONDITION APPLY **</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Purchase ROLL Print</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Purchase ROLL Print</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Purchase ROLL Print</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Purchase ROLL Print</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Purchase ROLL Print</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Purchase ROLL Print</schemename>
+    <ftop>162</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>20</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>noexchange</fieldname>
+    <labletext>* NO EXCHANGE</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Purchase ROLL Print</schemename>
+    <ftop>177</ftop>
+    <fleft>20</fleft>
+    <width>300</width>
+    <height>20</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>GOOD ONCE</fieldname>
+    <labletext>* GOODS ONCE SOLD CANNOT BE TAKEN BACK</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>Purchase ROLL Print</schemename>
+    <ftop>195</ftop>
+    <fleft>20</fleft>
+    <width>300</width>
+    <height>20</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>CONDITIONAPPLY</fieldname>
+    <labletext>** CONDITION APPLY **</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>HALF 600X500</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>HALF 600X500</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>HALF 600X500</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>HALF 600X500</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>HALF 600X500</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>HALF 900X600</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>HALF 900X600</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>HALF 900X600</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>HALF 900X600</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>HALF 900X600</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>half page 800x600</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>half page 800x600</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>half page 800x600</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>half page 800x600</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>half page 800x600</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>HALF 900X600WITH GRID</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>HALF 900X600WITH GRID</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>HALF 900X600WITH GRID</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>HALF 900X600WITH GRID</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>HALF 900X600WITH GRID</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>FULL 900X200</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>FULL 900X200</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>FULL 900X200</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>FULL 900X200</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>FULL 900X200</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 </schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 </schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 </schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 </schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 </schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>ROLL 3INCH</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>ROLL 3INCH</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>ROLL 3INCH</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>ROLL 3INCH</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>ROLL 3INCH</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>ROLL 3INCH</schemename>
+    <ftop>282</ftop>
+    <fleft>10</fleft>
+    <width>250</width>
+    <height>20</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>9</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>noexchange</fieldname>
+    <labletext>Dharmo Rakshithi Rakshitha Ha</labletext>
+    <isvisible>true</isvisible>
+    <align>Centre</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>ROLL 3INCH</schemename>
+    <ftop>177</ftop>
+    <fleft>20</fleft>
+    <width>300</width>
+    <height>20</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>GOOD ONCE</fieldname>
+    <labletext>* GOODS ONCE SOLD CANNOT BE TAKEN BACK</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>ROLL 3INCH</schemename>
+    <ftop>262</ftop>
+    <fleft>10</fleft>
+    <width>250</width>
+    <height>20</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>9</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>CONDITIONAPPLY</fieldname>
+    <labletext>Thank you , Visit Again</labletext>
+    <isvisible>true</isvisible>
+    <align>Centre</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>ROLL 4INCH</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>ROLL 4INCH</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>ROLL 4INCH</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>ROLL 4INCH</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>ROLL 4INCH</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>ROLL 4INCH</schemename>
+    <ftop>162</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>20</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>noexchange</fieldname>
+    <labletext>* NO EXCHANGE</labletext>
+    <isvisible>true</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>ROLL 4INCH</schemename>
+    <ftop>177</ftop>
+    <fleft>20</fleft>
+    <width>300</width>
+    <height>20</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>GOOD ONCE</fieldname>
+    <labletext>* GOODS ONCE SOLD CANNOT BE TAKEN BACK</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>ROLL 4INCH</schemename>
+    <ftop>195</ftop>
+    <fleft>20</fleft>
+    <width>300</width>
+    <height>20</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>CONDITIONAPPLY</fieldname>
+    <labletext>THANK YOU , VISIT AGAIN</labletext>
+    <isvisible>true</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF1</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF1</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF1</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF1</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF1</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF2</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF2</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF2</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF2</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF2</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF3</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF3</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF3</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF3</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF3</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE 2</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE 2</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE 2</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE 2</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE 2</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE 2</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs12</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE 2</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign12</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE 2</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing22</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE 2</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer12</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE 2</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks2</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE3</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE3</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE3</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE3</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE3</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE3</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs12</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE3</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign12</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE3</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing22</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE3</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer12</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 HALF DOUBLE SIDE3</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks2</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>NEW A4 DOUBLE SIDE</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>NEW A4 DOUBLE SIDE</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>NEW A4 DOUBLE SIDE</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>NEW A4 DOUBLE SIDE</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>NEW A4 DOUBLE SIDE</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>NEW A4 DOUBLE SIDE</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs12</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>NEW A4 DOUBLE SIDE</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign12</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>NEW A4 DOUBLE SIDE</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing22</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>NEW A4 DOUBLE SIDE</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer12</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>NEW A4 DOUBLE SIDE</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks2</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 DOUBLE SIDE</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 DOUBLE SIDE</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 DOUBLE SIDE</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 DOUBLE SIDE</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 DOUBLE SIDE</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 DOUBLE SIDE</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs12</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 DOUBLE SIDE</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign12</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 DOUBLE SIDE</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing22</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 DOUBLE SIDE</schemename>
+    <ftop>1080</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer12</fieldname>
+    <labletext>** Goods once sold cannot be taken back Thank you Visit Again</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>A4 DOUBLE SIDE</schemename>
+    <ftop>920</ftop>
+    <fleft>20</fleft>
+    <width>250</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>8</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks2</fieldname>
+    <labletext>Remarks:</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>4TH OF A4SIZE</schemename>
+    <ftop>50</ftop>
+    <fleft>20</fleft>
+    <width>29</width>
+    <height>100</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>12</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>jvs1</fieldname>
+    <labletext>jyoth suresh</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>4TH OF A4SIZE</schemename>
+    <ftop>1000</ftop>
+    <fleft>50</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sign1</fieldname>
+    <labletext>Authorized Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>4TH OF A4SIZE</schemename>
+    <ftop>1000</ftop>
+    <fleft>600</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>10</fontsize>
+    <fontstyle>1</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Sing2</fieldname>
+    <labletext>Customer Signature</labletext>
+    <isvisible>false</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>4TH OF A4SIZE</schemename>
+    <ftop>550</ftop>
+    <fleft>10</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>9</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>footer1</fieldname>
+    <labletext>Thanks For Your Business. Please Visit Again.</labletext>
+    <isvisible>true</isvisible>
+    <align>Left</align>
+  </PrintLables>
+  <PrintLables>
+    <schemename>4TH OF A4SIZE</schemename>
+    <ftop>550</ftop>
+    <fleft>380</fleft>
+    <width>0</width>
+    <height>0</height>
+    <Fontname>Microsoft Sans Serif</Fontname>
+    <fontsize>9</fontsize>
+    <fontstyle>8</fontstyle>
+    <fontcolor>ControlText</fontcolor>
+    <fieldname>Remarks</fieldname>
+    <labletext>E.&amp; O.E.</labletext>
+    <isvisible>true</isvisible>
+    <align>Right</align>
+  </PrintLables>
+</NewDataSet>

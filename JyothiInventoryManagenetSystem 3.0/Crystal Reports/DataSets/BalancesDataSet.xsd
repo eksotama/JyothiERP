@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BalancesDataSet" targetNamespace="http://tempuri.org/BalancesDataSet.xsd" xmlns:mstns="http://tempuri.org/BalancesDataSet.xsd" xmlns="http://tempuri.org/BalancesDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BalancesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="BalancesDataSet" msprop:Generator_UserDSName="BalancesDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LedgerBook" msprop:Generator_TableClassName="LedgerBookDataTable" msprop:Generator_TableVarName="tableLedgerBook" msprop:Generator_TablePropName="LedgerBook" msprop:Generator_RowDeletingName="LedgerBookRowDeleting" msprop:Generator_RowChangingName="LedgerBookRowChanging" msprop:Generator_RowEvHandlerName="LedgerBookRowChangeEventHandler" msprop:Generator_RowDeletedName="LedgerBookRowDeleted" msprop:Generator_UserTableName="LedgerBook" msprop:Generator_RowChangedName="LedgerBookRowChanged" msprop:Generator_RowEvArgName="LedgerBookRowChangeEvent" msprop:Generator_RowClassName="LedgerBookRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Account_x0020_Name" msprop:Generator_ColumnVarNameInTable="columnAccount_Name" msprop:Generator_ColumnPropNameInRow="Account_Name" msprop:Generator_ColumnPropNameInTable="Account_NameColumn" msprop:Generator_UserColumnName="Account Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Dr_x0020_Amount" msprop:Generator_ColumnVarNameInTable="columnDr_Amount" msprop:Generator_ColumnPropNameInRow="Dr_Amount" msprop:Generator_ColumnPropNameInTable="Dr_AmountColumn" msprop:Generator_UserColumnName="Dr Amount" type="xs:double" minOccurs="0" />
+              <xs:element name="Cr_x0020_Amount" msprop:Generator_ColumnVarNameInTable="columnCr_Amount" msprop:Generator_ColumnPropNameInRow="Cr_Amount" msprop:Generator_ColumnPropNameInTable="Cr_AmountColumn" msprop:Generator_UserColumnName="Cr Amount" type="xs:double" minOccurs="0" />
+              <xs:element name="Balance" msprop:Generator_ColumnVarNameInTable="columnBalance" msprop:Generator_ColumnPropNameInRow="Balance" msprop:Generator_ColumnPropNameInTable="BalanceColumn" msprop:Generator_UserColumnName="Balance" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

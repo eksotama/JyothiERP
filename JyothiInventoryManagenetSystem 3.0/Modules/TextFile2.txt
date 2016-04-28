@@ -1,0 +1,185 @@
+﻿Try
+
+                        Using sr As StreamReader = New StreamReader(Application.StartupPath & "\DbScripts" & "\ACCOUNTGROUPS.CSV")
+                            Dim line As String
+                            'inserting account groups from file
+                            line = sr.ReadLine()
+
+                            Do While (Not line Is Nothing)
+                                If line.Length > 0 Then
+                                    SQLFcmd.CommandText = "INSERT INTO [AccountGroups] (groupname,groupnametemp,grouproot,grouplevel,username,isprimary,actype) VALUES (" & line & ")"
+                                    SQLFcmd.CommandType = CommandType.Text
+                                    SQLFcmd.ExecuteNonQuery()
+                                End If
+                                line = sr.ReadLine
+                            Loop
+                            sr.Close()
+                        End Using
+                    Catch Ex As Exception
+                        ' Let the user know what went wrong.
+
+                        MsgBox("The file could not be read, it may not exists, Please consult your adimn, path: " & Application.StartupPath & "\DbScripts" & "\ACCOUNTGROUPS.CSV")
+                        MsgBox(Ex.Message)
+                    End Try
+
+
+                    'LOAD CURRENCIES
+                    Try
+
+                        Using sr As StreamReader = New StreamReader(Application.StartupPath & "\DbScripts" & "\LISTOFCURRENCIES.CSV")
+                            Dim line As String
+                            'inserting account groups from file
+                            line = sr.ReadLine()
+
+                            Do While (Not line Is Nothing)
+                                If line.Length > 0 Then
+                                    SQLFcmd.CommandText = "INSERT INTO [Currencies]([CurrencyName],[CurrencyCode],[CurrencySymbol],[Isactive]) VALUES (" & line & ",1)"
+                                    SQLFcmd.CommandType = CommandType.Text
+                                    SQLFcmd.ExecuteNonQuery()
+                                End If
+                                line = sr.ReadLine
+                            Loop
+                            sr.Close()
+                        End Using
+                    Catch Ex As Exception
+                        ' Let the user know what went wrong.
+                        MsgBox("The file could not be read, it may not exists, Please consult your adimn,  Path: " & Application.StartupPath & "\DbScripts" & "\LISTOFCURRENCIES.CSV")
+                        MsgBox(Ex.Message)
+                    End Try
+
+
+                    Dim lineno As Integer = 1
+
+
+
+                    lineno = 1
+
+                    Try
+
+                        Using sr As StreamReader = New StreamReader(Application.StartupPath & "\DbScripts" & "\PrintSchemes.CSV")
+                            Dim line As String
+                            'inserting account groups from file
+                            line = sr.ReadLine()
+
+                            Do While (Not line Is Nothing)
+                                If line.Length > 0 Then
+
+                                    SQLFcmd.CommandText = "INSERT INTO [PrintingSchemes] ([SchemeName],[VoucherName],[IsActive],[ID],[SchemeType]) VALUES (" & line & ")"
+                                    SQLFcmd.CommandType = CommandType.Text
+                                    SQLFcmd.ExecuteNonQuery()
+                                End If
+                                line = sr.ReadLine
+                                lineno = lineno + 1
+                            Loop
+                            sr.Close()
+                        End Using
+                    Catch Ex As Exception
+                        ' Let the user know what went wrong.
+                        MsgBox("The file could not be read, it may not exists, Please consult your adimn, Path: " & Application.StartupPath & "\DbScripts" & "\PrintSchemes.CSV")
+                        MsgBox(Ex.Message & "Line No: " & lineno.ToString)
+                    End Try
+
+                    'printdatadetails
+                    lineno = 1
+                    Try
+
+                        Using sr As StreamReader = New StreamReader(Application.StartupPath & "\DbScripts" & "\printdatadetails.CSV")
+                            Dim line As String
+                            'inserting account groups from file
+                            line = sr.ReadLine()
+
+                            Do While (Not line Is Nothing)
+                                If line.Length > 0 Then
+                                    SQLFcmd.CommandText = "INSERT INTO [PrintDataDetails] ([TransCode],[TransDate],[TransDateValue],[QutoNo],[QutoRef],[OrderNo],[OrderRef],[DNoteno],[DnoteRef],[StoreName],[Currency],[PriceList],[SalesPerson],[ProjectName],[Area],[LedgerName],[LedgerAddress],[IsCommit],[IsDelete],[IsPending],[subtotal],[grosstotal],[discountper],[nettotal],[taxtotal],[InvoiceTotal],[AccountTotal],[amountinwords],[narration],[InvoiceNo],[InvoiceRef],[GoodNo],[GoodRef],[CurrencyCon1],[CurrencyCon2],[F1],[F2],[N1],[N2],[VoucherName],[DelivaryDate],[DelivaryDateValue],[Additions],[Deductions],[PaymentMethod],[PaymentLedger],[PaymentDetails],[AccountLedgerName],[InvoiceType],[DeliveryNote],[allocateledger],[IsDirect],[transtype],[servicetaxtotal],[roundoff],[surcharge]) VALUES (" & line & ")"
+                                    SQLFcmd.CommandType = CommandType.Text
+                                    SQLFcmd.ExecuteNonQuery()
+                                End If
+                                line = sr.ReadLine
+                                lineno = lineno + 1
+                            Loop
+                            sr.Close()
+                        End Using
+                    Catch Ex As Exception
+                        ' Let the user know what went wrong.
+                        MsgBox("The file could not be read, it may not exists, Please consult your adimn, Path:" & Application.StartupPath & "\DbScripts" & "\printdatadetails.CSV")
+                        MsgBox(Ex.Message & "Line No: " & lineno.ToString)
+                    End Try
+
+
+                    lineno = 1
+                    Try
+
+                        Using sr As StreamReader = New StreamReader(Application.StartupPath & "\DbScripts" & "\alldata.CSV")
+                            Dim line As String
+                            'inserting account groups from file
+                            line = sr.ReadLine()
+
+                            Do While (Not line Is Nothing)
+                                If line.Length > 0 Then
+                                    SQLFcmd.CommandText = line
+                                    SQLFcmd.CommandType = CommandType.Text
+                                    SQLFcmd.ExecuteNonQuery()
+                                End If
+                                line = sr.ReadLine
+                                lineno = lineno + 1
+                            Loop
+                            sr.Close()
+                        End Using
+                    Catch Ex As Exception
+                        ' Let the user know what went wrong.
+                        MsgBox("The file could not be read, it may not exists, Please consult your adimn, Path: " & Application.StartupPath & "\DbScripts" & "\printdataitemsrows.CSV")
+                        MsgBox(Ex.Message & "Line No: " & lineno.ToString)
+                    End Try
+
+
+                    lineno = 1
+                    Try
+
+                        Using sr As StreamReader = New StreamReader(Application.StartupPath & "\DbScripts" & "\printdataitemsrows.CSV")
+                            Dim line As String
+                            'inserting account groups from file
+                            line = sr.ReadLine()
+
+                            Do While (Not line Is Nothing)
+                                If line.Length > 0 Then
+                                    SQLFcmd.CommandText = "INSERT INTO [PrintingDataRowsItems] ([TransCode],[TransDate],[TransDateValue],[QutoNo],[QutoRef],[OrderNo],[OrderRef],[DNoteno],[DnoteRef],[StoreName],[Currency],[StockName],[StockCode],[stockgroup],[Barcode],[StockSize],[Location],[description],[BaseUnit],[MainUnit],[SubUnit],[IsSimpleUnit],[MainQty],[TotalQty],[SubUnitQty],[QtyText],[StockRate],[Expiry],[BatchNo],[StockType],[StockDisc],[RatePer],[UnitCon],[CustBarcode],[sno],[StockAmount],[Isdelete],[QtyValues],[VoucherName],[CurrencyCon1],[Tax],[NetRate],[origin],[HScode],[Utranscode],[UsedQty],[DeliveryNote],[allocateledger],[PresetRate],[N1],[F1],[IsDirect],[TaxAmount],[disc2],[transtype],[Servicetax],[netStockAmount],[mrp],[packing])   VALUES (" & line & ")"
+                                    SQLFcmd.CommandType = CommandType.Text
+                                    SQLFcmd.ExecuteNonQuery()
+                                End If
+                                line = sr.ReadLine
+                                lineno = lineno + 1
+                            Loop
+                            sr.Close()
+                        End Using
+                    Catch Ex As Exception
+                        ' Let the user know what went wrong.
+                        MsgBox("The file could not be read, it may not exists, Please consult your adimn, Path: " & Application.StartupPath & "\DbScripts" & "\printdataitemsrows.CSV")
+                        MsgBox(Ex.Message & "Line No: " & lineno.ToString)
+                    End Try
+
+                    lineno = 1
+                    Try
+
+                        Using sr As StreamReader = New StreamReader(Application.StartupPath & "\DbScripts" & "\printdataledgers.CSV")
+                            Dim line As String
+                            'inserting account groups from file
+                            line = sr.ReadLine()
+
+                            Do While (Not line Is Nothing)
+                                If line.Length > 0 Then
+
+                                    SQLFcmd.CommandText = "INSERT INTO [PrintDataLedgers]([LedgerName],[LedgerCode],[TaxRegno],[AccountGroup],[address],[location],[state],[country],[Tel],[fax],[emailid],[website],[accounttype],[createdby],[alterby],[verifiedby],[Isactive],[creditlimit],[discount],[Contactperson],[pdesignation],[ptel],[pphoneno],[pemail],[Dr],[Cr],[OpDr],[OpCr],[IsBillWise],[photopath],[currentbalance],[partyaddresscity],[StoreName],[CreditPeriod],[Currency],[LedgerNameTemp],[F1],[F2],[N1],[n2],[PriceLevel],[Activity],[BankAccNo],[EnableChequePrinting],[pincode],[IsAllowCostCentre],[Isprimary])   VALUES (" & line & ")"
+                                    SQLFcmd.CommandType = CommandType.Text
+                                    SQLFcmd.ExecuteNonQuery()
+                                End If
+                                line = sr.ReadLine
+                                lineno = lineno + 1
+                            Loop
+                            sr.Close()
+                        End Using
+                    Catch Ex As Exception
+                        ' Let the user know what went wrong.
+                        MsgBox("The file could not be read, it may not exists, Please consult your adimn, Path: " & Application.StartupPath & "\DbScripts" & "\printdataledgers.CSV")
+                        MsgBox(Ex.Message & "Line No: " & lineno.ToString)
+                    End Try
+                    '1

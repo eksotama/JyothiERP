@@ -1,0 +1,34 @@
+E:\TrialMaker\Example\TrialMaker Example\TrialMaker Example\obj\Debug\TrialMaker Example.exe
+E:\TrialMaker\Example\TrialMaker Example\TrialMaker Example\obj\Debug\TrialMaker Example.pdb
+E:\TrialMaker\Example\TrialMaker Example\TrialMaker Example\bin\Debug\TrialMaker Example.exe
+E:\TrialMaker\Example\TrialMaker Example\TrialMaker Example\bin\Debug\TrialMaker Example.pdb
+E:\TrialMaker\Example\TrialMaker Example\TrialMaker Example\bin\Debug\SerialBoxes.dll
+E:\TrialMaker\Example\TrialMaker Example\TrialMaker Example\bin\Debug\FilterControls.dll
+E:\TrialMaker\Example\TrialMaker Example\TrialMaker Example\bin\Debug\SoftwareLocker.pdb
+E:\TrialMaker\Example\TrialMaker Example\TrialMaker Example\bin\Debug\SerialBoxes.pdb
+E:\TrialMaker\Example\TrialMaker Example\TrialMaker Example\bin\Debug\FilterControls.pdb
+E:\TrialMaker\Example\TrialMaker Example\TrialMaker Example\obj\Debug\ResolveAssemblyReference.cache
+E:\TrialMaker\Example\TrialMaker Example\TrialMaker Example\obj\Debug\TrialMaker_Example.Form1.resources
+E:\TrialMaker\Example\TrialMaker Example\TrialMaker Example\obj\Debug\TrialMaker_Example.Properties.Resources.resources
+E:\TrialMaker\Example\TrialMaker Example\TrialMaker Example\obj\Debug\ResGen.read.1.tlog
+E:\TrialMaker\Example\TrialMaker Example\TrialMaker Example\obj\Debug\ResGen.write.1.tlog
+E:\TrialMaker\Example\TrialMaker Example\TrialMaker Example\bin\Debug\TrialMaker Example.exe.config
+E:\TrialMaker\Example\TrialMaker Example\TrialMaker Example\obj\Debug\GenerateResource.read.1.tlog
+E:\TrialMaker\Example\TrialMaker Example\TrialMaker Example\obj\Debug\GenerateResource.write.1.tlog
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Example\TrialMaker Example\TrialMaker Example\bin\Debug\TrialMaker Example.exe.config
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Example\TrialMaker Example\TrialMaker Example\obj\Debug\TrialMaker Example.exe
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Example\TrialMaker Example\TrialMaker Example\obj\Debug\TrialMaker Example.pdb
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Example\TrialMaker Example\TrialMaker Example\bin\Debug\TrialMaker Example.exe
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Example\TrialMaker Example\TrialMaker Example\bin\Debug\TrialMaker Example.pdb
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Example\TrialMaker Example\TrialMaker Example\bin\Debug\SerialBoxes.dll
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Example\TrialMaker Example\TrialMaker Example\bin\Debug\FilterControls.dll
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Example\TrialMaker Example\TrialMaker Example\bin\Debug\FilterControls.pdb
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Example\TrialMaker Example\TrialMaker Example\obj\Debug\ResolveAssemblyReference.cache
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Example\TrialMaker Example\TrialMaker Example\obj\Debug\TrialMaker_Example.Form1.resources
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Example\TrialMaker Example\TrialMaker Example\obj\Debug\TrialMaker_Example.Properties.Resources.resources
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Example\TrialMaker Example\TrialMaker Example\obj\Debug\GenerateResource.read.1.tlog
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Example\TrialMaker Example\TrialMaker Example\obj\Debug\ResGen.read.1.tlog
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Example\TrialMaker Example\TrialMaker Example\obj\Debug\GenerateResource.write.1.tlog
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Example\TrialMaker Example\TrialMaker Example\obj\Debug\ResGen.write.1.tlog
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Example\TrialMaker Example\TrialMaker Example\bin\Debug\erpLocker.dll
+D:\ABARIS BUSINESS MANAGER\TrialMaker\Example\TrialMaker Example\TrialMaker Example\bin\Debug\erpLocker.pdb

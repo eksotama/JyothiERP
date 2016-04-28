@@ -1,0 +1,49 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <barcodeprintsettings>
+    <Schemename>4x4</Schemename>
+    <PaperSize>A4</PaperSize>
+    <lwidht>48</lwidht>
+    <lheight>24</lheight>
+    <TopMargin>3</TopMargin>
+    <LeftMargin>3</LeftMargin>
+    <HGap>0</HGap>
+    <Vgap>4</Vgap>
+    <IsPrintItemCode>false</IsPrintItemCode>
+    <IsPrintMRP>false</IsPrintMRP>
+    <IsPrintWRP>false</IsPrintWRP>
+    <Noofcolumns>4</Noofcolumns>
+    <IsPrintComp>false</IsPrintComp>
+    <Currency>INR</Currency>
+    <IsWithDecimal>0</IsWithDecimal>
+    <LOGO>/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAPAA8DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD6u/ak/bQ+C/j/APY48e6F4d+Ifwz8MfFbwz4Ms9U1bV9XsrG41DXrxtPuZn06xmmmSWTUfMhEckqrM8BudoHnkmLP+Nv7e/wL+Hvwd1D4f+F/if8ADTXfjlovh+x1Oz8aeCLGx0tdYVtRNvNHbPZXEojvFt4mae3WRAUkeRIwm9IuE/bd/aP8GfDb9h/4keDfAGp+DdD+P3iLwRaeA/Hdrqei6pKuufZNPuNOlsxcQssAvYxdSRwXUhmizHEjsYdkkGf4/wDjD4f/AG7Ph3Po+i3vgvxj+1n458NWXhya60DStT0i0mgtNQOrTWVpLfPiOCNBcM7tLC1y9vGxQYihX1aVBTi3c89uSkf/2Q==</LOGO>
+    <logowidth>5</logowidth>
+    <logoheight>2</logoheight>
+    <logoleft>0</logoleft>
+    <logotop>16</logotop>
+    <IslogoEnable>false</IslogoEnable>
+  </barcodeprintsettings>
+  <barcodeprintsettings>
+    <Schemename>65 PCS</Schemename>
+    <PaperSize>A4</PaperSize>
+    <lwidht>38</lwidht>
+    <lheight>21.25</lheight>
+    <TopMargin>10</TopMargin>
+    <LeftMargin>5</LeftMargin>
+    <HGap>0.45</HGap>
+    <Vgap>2.75</Vgap>
+    <IsPrintItemCode>false</IsPrintItemCode>
+    <IsPrintMRP>false</IsPrintMRP>
+    <IsPrintWRP>false</IsPrintWRP>
+    <Noofcolumns>5</Noofcolumns>
+    <IsPrintComp>false</IsPrintComp>
+    <Currency />
+    <IsWithDecimal>2</IsWithDecimal>
+    <LOGO>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</LOGO>
+    <logowidth>5</logowidth>
+    <logoheight>2</logoheight>
+    <logoleft>0</logoleft>
+    <logotop>16</logotop>
+    <IslogoEnable>false</IslogoEnable>
+  </barcodeprintsettings>
+</NewDataSet>

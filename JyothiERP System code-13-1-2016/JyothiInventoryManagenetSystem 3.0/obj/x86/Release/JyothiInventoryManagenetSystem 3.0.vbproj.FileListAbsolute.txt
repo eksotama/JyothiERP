@@ -1,0 +1,84 @@
+H:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\bin\Release\JyothiInventoryManagenetSystem 3.0.exe.config
+H:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\bin\Release\JyothiInventoryManagenetSystem 3.0.exe
+H:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\bin\Release\JyothiInventoryManagenetSystem 3.0.pdb
+H:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\bin\Release\JyothiInventoryManagenetSystem 3.0.xml
+H:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\ResolveAssemblyReference.cache
+H:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.Form1.resources
+H:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.IMSTextBox.resources
+H:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.Resources.resources
+H:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\GenerateResource.read.1.tlog
+H:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\GenerateResource.write.1.tlog
+H:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem 3.0.exe
+H:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem 3.0.xml
+H:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem 3.0.pdb
+H:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.IMSNumericTextBox.resources
+H:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.IMSQtyBox.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\bin\Release\JyothiInventoryManagenetSystem 3.0.exe.config
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\bin\Release\JyothiInventoryManagenetSystem 3.0.pdb
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\bin\Release\JyothiInventoryManagenetSystem 3.0.xml
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem 3.0.vbprojResolveAssemblyReference.cache
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.AdminLogin.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.BatchExpiryRow.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.Billing_Settings.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.AccountGroups.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.Company.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.CreateAccountGroups.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.CreateEmployee.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.CreateNewStockItem.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.CreateSalesPersons.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.CreateStockCategories.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.CreateStockGroups.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.CreateUnits.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.IMSComboBox.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.IMSHeadingLabel.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.IMSlabel.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.Employees.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.Ledgers.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.MainForm.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.IMSNumericTextBox.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.IMSQtyBox.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.IMSTextBox.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.SalesPersons.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.StockItems.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.Resources.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.SqlServersForm.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.StockCategories.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.StockGroups.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.StockUnits.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem 3.0.vbproj.GenerateResource.Cache
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem 3.0.exe
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem 3.0.xml
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem 3.0.pdb
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.IMSQTYE.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.IMSBatchNoExpiryControl.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\bin\Release\Bytescout.BarCode.dll
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.IMSInvoiceEntry.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.CreateLedgerAccounts.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.OpeningStockQty.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.OpeningStockQtyRow.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.CreateStockLocations.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.Locations.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.LedgerOpeningBalanceControl.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.LedgerOpeningBalanceRow.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.CreateSuppliers.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.IMSGrid.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.ChooseItems.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.SalesQuotoControl.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.CreateCustomers.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.currencies.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.Customers.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.Suppliers.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.SalesQutoForm.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.DefaultLedgerSettingsForm.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.VoucherEntryForm.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.VoucherEntryControl.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.VoucherRow.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.AddMoreDet.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.ChooseInvoiceNumber.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.ChooseItemByVoucherDetails.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.PriceList.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.SalesOrderControl.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.SalesOrderForm.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.CreateNewPriceList.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.SelectLedgerNameForm.resources
+E:\JyothiInventoryManagenetSystem 3.0\JyothiInventoryManagenetSystem 3.0\obj\x86\Release\JyothiInventoryManagenetSystem_3._0.test.resources

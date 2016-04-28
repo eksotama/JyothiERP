@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EmpLeaveMngDataSet" targetNamespace="http://tempuri.org/EmpLeaveMngDataSet.xsd" xmlns:mstns="http://tempuri.org/EmpLeaveMngDataSet.xsd" xmlns="http://tempuri.org/EmpLeaveMngDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EmpLeaveMngDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="EmpLeaveMngDataSet" msprop:Generator_UserDSName="EmpLeaveMngDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EMPLEAVES" msprop:Generator_TableClassName="EMPLEAVESDataTable" msprop:Generator_TableVarName="tableEMPLEAVES" msprop:Generator_RowChangedName="EMPLEAVESRowChanged" msprop:Generator_TablePropName="EMPLEAVES" msprop:Generator_RowDeletingName="EMPLEAVESRowDeleting" msprop:Generator_RowChangingName="EMPLEAVESRowChanging" msprop:Generator_RowEvHandlerName="EMPLEAVESRowChangeEventHandler" msprop:Generator_RowDeletedName="EMPLEAVESRowDeleted" msprop:Generator_RowClassName="EMPLEAVESRow" msprop:Generator_UserTableName="EMPLEAVES" msprop:Generator_RowEvArgName="EMPLEAVESRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="S.No" msprop:Generator_ColumnVarNameInTable="_columnS_No" msprop:Generator_ColumnPropNameInRow="_S_No" msprop:Generator_ColumnPropNameInTable="_S_NoColumn" msprop:Generator_UserColumnName="S.No" type="xs:string" minOccurs="0" />
+              <xs:element name="EMPLOYEE_x0020_NAME" msprop:Generator_ColumnVarNameInTable="columnEMPLOYEE_NAME" msprop:Generator_ColumnPropNameInRow="EMPLOYEE_NAME" msprop:Generator_ColumnPropNameInTable="EMPLOYEE_NAMEColumn" msprop:Generator_UserColumnName="EMPLOYEE NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="LEAVE_x0020_TYPE" msprop:Generator_ColumnVarNameInTable="columnLEAVE_TYPE" msprop:Generator_ColumnPropNameInRow="LEAVE_TYPE" msprop:Generator_ColumnPropNameInTable="LEAVE_TYPEColumn" msprop:Generator_UserColumnName="LEAVE TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_x0020_FROM" msprop:Generator_ColumnVarNameInTable="columnDATE_FROM" msprop:Generator_ColumnPropNameInRow="DATE_FROM" msprop:Generator_ColumnPropNameInTable="DATE_FROMColumn" msprop:Generator_UserColumnName="DATE FROM" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DATE_x0020_TO" msprop:Generator_ColumnVarNameInTable="columnDATE_TO" msprop:Generator_ColumnPropNameInRow="DATE_TO" msprop:Generator_ColumnPropNameInTable="DATE_TOColumn" msprop:Generator_UserColumnName="DATE TO" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FOR_x0020_YEAR" msprop:Generator_ColumnVarNameInTable="columnFOR_YEAR" msprop:Generator_ColumnPropNameInRow="FOR_YEAR" msprop:Generator_ColumnPropNameInTable="FOR_YEARColumn" msprop:Generator_UserColumnName="FOR YEAR" type="xs:string" minOccurs="0" />
+              <xs:element name="COLORC" msprop:Generator_ColumnVarNameInTable="columnCOLORC" msprop:Generator_ColumnPropNameInRow="COLORC" msprop:Generator_ColumnPropNameInTable="COLORCColumn" msprop:Generator_UserColumnName="COLORC" type="xs:string" minOccurs="0" />
+              <xs:element name="Transcode" msprop:Generator_ColumnVarNameInTable="columnTranscode" msprop:Generator_ColumnPropNameInRow="Transcode" msprop:Generator_ColumnPropNameInTable="TranscodeColumn" msprop:Generator_UserColumnName="Transcode" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

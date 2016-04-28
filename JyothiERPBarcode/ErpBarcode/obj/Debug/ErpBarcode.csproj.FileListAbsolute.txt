@@ -1,0 +1,4 @@
+E:\ErpBarcode\ErpBarcode\bin\Debug\ErpBarcode.dll
+E:\ErpBarcode\ErpBarcode\bin\Debug\ErpBarcode.pdb
+E:\ErpBarcode\ErpBarcode\obj\Debug\ErpBarcode.dll
+E:\ErpBarcode\ErpBarcode\obj\Debug\ErpBarcode.pdb

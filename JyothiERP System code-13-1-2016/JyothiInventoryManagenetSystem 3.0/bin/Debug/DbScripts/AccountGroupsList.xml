@@ -1,0 +1,135 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <AccountGroupsList>
+    <groupname>Bank Accounts</groupname>
+    <subgroup>Bank Accounts</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Bank O D</groupname>
+    <subgroup>Bank O D</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Capital Accounts</groupname>
+    <subgroup>Capital Accounts</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Cash Accounts</groupname>
+    <subgroup>Cash Accounts</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Current Assets</groupname>
+    <subgroup>Current Assets</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Current Assets</groupname>
+    <subgroup>Bank Accounts</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Current Assets</groupname>
+    <subgroup>Cash Accounts</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Current Assets</groupname>
+    <subgroup>Customers Accounts</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Current Assets</groupname>
+    <subgroup>Deposits Accounts (Assets)</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Current Assets</groupname>
+    <subgroup>Loans &amp; Advances (Assets)</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Current Assets</groupname>
+    <subgroup>Stock Accounts</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Current Liabilities</groupname>
+    <subgroup>Current Liabilities</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Current Liabilities</groupname>
+    <subgroup>Bank O D</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Current Liabilities</groupname>
+    <subgroup>Loans Accounts (Laibilities)</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Current Liabilities</groupname>
+    <subgroup>Provisions Acounts</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Current Liabilities</groupname>
+    <subgroup>Suppliers Accounts</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Customers Accounts</groupname>
+    <subgroup>Customers Accounts</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Deposits Accounts (Assets)</groupname>
+    <subgroup>Deposits Accounts (Assets)</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Direct Expenses</groupname>
+    <subgroup>Direct Expenses</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Direct Incomes</groupname>
+    <subgroup>Direct Incomes</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Duties &amp; Taxes</groupname>
+    <subgroup>Duties &amp; Taxes</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Fixed Assets</groupname>
+    <subgroup>Fixed Assets</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Indirect Expenses</groupname>
+    <subgroup>Indirect Expenses</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Indirect Incomes</groupname>
+    <subgroup>Indirect Incomes</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Loans &amp; Advances (Assets)</groupname>
+    <subgroup>Loans &amp; Advances (Assets)</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Loans Accounts (Laibilities)</groupname>
+    <subgroup>Loans Accounts (Laibilities)</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Profit &amp; Loss Accounts</groupname>
+    <subgroup>Profit &amp; Loss Accounts</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Provisions Acounts</groupname>
+    <subgroup>Provisions Acounts</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Purchase Accounts</groupname>
+    <subgroup>Purchase Accounts</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Sales Accounts</groupname>
+    <subgroup>Sales Accounts</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Stock Accounts</groupname>
+    <subgroup>Stock Accounts</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Suppliers Accounts</groupname>
+    <subgroup>Suppliers Accounts</subgroup>
+  </AccountGroupsList>
+  <AccountGroupsList>
+    <groupname>Suspense Accounts</groupname>
+    <subgroup>Suspense Accounts</subgroup>
+  </AccountGroupsList>
+</NewDataSet>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CompanyLeavesDataSet" targetNamespace="http://tempuri.org/CompanyLeavesDataSet.xsd" xmlns:mstns="http://tempuri.org/CompanyLeavesDataSet.xsd" xmlns="http://tempuri.org/CompanyLeavesDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CompanyLeavesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="CompanyLeavesDataSet" msprop:Generator_UserDSName="CompanyLeavesDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="companyleaves" msprop:Generator_TableClassName="companyleavesDataTable" msprop:Generator_TableVarName="tablecompanyleaves" msprop:Generator_TablePropName="companyleaves" msprop:Generator_RowDeletingName="companyleavesRowDeleting" msprop:Generator_RowChangingName="companyleavesRowChanging" msprop:Generator_RowEvHandlerName="companyleavesRowChangeEventHandler" msprop:Generator_RowDeletedName="companyleavesRowDeleted" msprop:Generator_UserTableName="companyleaves" msprop:Generator_RowChangedName="companyleavesRowChanged" msprop:Generator_RowEvArgName="companyleavesRowChangeEvent" msprop:Generator_RowClassName="companyleavesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="S.No" msprop:Generator_ColumnVarNameInTable="_columnS_No" msprop:Generator_ColumnPropNameInRow="_S_No" msprop:Generator_ColumnPropNameInTable="_S_NoColumn" msprop:Generator_UserColumnName="S.No" type="xs:string" minOccurs="0" />
+              <xs:element name="Holyday_x0020_Name" msprop:Generator_ColumnVarNameInTable="columnHolyday_Name" msprop:Generator_ColumnPropNameInRow="Holyday_Name" msprop:Generator_ColumnPropNameInTable="Holyday_NameColumn" msprop:Generator_UserColumnName="Holyday Name" type="xs:string" minOccurs="0" />
+              <xs:element name="From_x0020_Date" msprop:Generator_ColumnVarNameInTable="columnFrom_Date" msprop:Generator_ColumnPropNameInRow="From_Date" msprop:Generator_ColumnPropNameInTable="From_DateColumn" msprop:Generator_UserColumnName="From Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="To_x0020_Date" msprop:Generator_ColumnVarNameInTable="columnTo_Date" msprop:Generator_ColumnPropNameInRow="To_Date" msprop:Generator_ColumnPropNameInTable="To_DateColumn" msprop:Generator_UserColumnName="To Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Narration" msprop:Generator_ColumnVarNameInTable="columnNarration" msprop:Generator_ColumnPropNameInRow="Narration" msprop:Generator_ColumnPropNameInTable="NarrationColumn" msprop:Generator_UserColumnName="Narration" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

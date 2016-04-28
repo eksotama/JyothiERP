@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StockJournalSingleRowDataSet" targetNamespace="http://tempuri.org/StockJournalSingleRowDataSet.xsd" xmlns:mstns="http://tempuri.org/StockJournalSingleRowDataSet.xsd" xmlns="http://tempuri.org/StockJournalSingleRowDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StockJournalSingleRowDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="StockJournalSingleRowDataSet" msprop:Generator_UserDSName="StockJournalSingleRowDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FStockCode" msprop:Generator_ColumnVarNameInTable="columnFStockCode" msprop:Generator_ColumnPropNameInRow="FStockCode" msprop:Generator_ColumnPropNameInTable="FStockCodeColumn" msprop:Generator_UserColumnName="FStockCode" type="xs:string" minOccurs="0" />
+              <xs:element name="FStockName" msprop:Generator_ColumnVarNameInTable="columnFStockName" msprop:Generator_ColumnPropNameInRow="FStockName" msprop:Generator_ColumnPropNameInTable="FStockNameColumn" msprop:Generator_UserColumnName="FStockName" type="xs:string" minOccurs="0" />
+              <xs:element name="FQty" msprop:Generator_ColumnVarNameInTable="columnFQty" msprop:Generator_ColumnPropNameInRow="FQty" msprop:Generator_ColumnPropNameInTable="FQtyColumn" msprop:Generator_UserColumnName="FQty" type="xs:string" minOccurs="0" />
+              <xs:element name="FRate" msprop:Generator_ColumnVarNameInTable="columnFRate" msprop:Generator_ColumnPropNameInRow="FRate" msprop:Generator_ColumnPropNameInTable="FRateColumn" msprop:Generator_UserColumnName="FRate" type="xs:double" minOccurs="0" />
+              <xs:element name="FTotal" msprop:Generator_ColumnVarNameInTable="columnFTotal" msprop:Generator_ColumnPropNameInRow="FTotal" msprop:Generator_ColumnPropNameInTable="FTotalColumn" msprop:Generator_UserColumnName="FTotal" type="xs:double" minOccurs="0" />
+              <xs:element name="TStockCode" msprop:Generator_ColumnVarNameInTable="columnTStockCode" msprop:Generator_ColumnPropNameInRow="TStockCode" msprop:Generator_ColumnPropNameInTable="TStockCodeColumn" msprop:Generator_UserColumnName="TStockCode" type="xs:string" minOccurs="0" />
+              <xs:element name="TstockName" msprop:Generator_ColumnVarNameInTable="columnTstockName" msprop:Generator_ColumnPropNameInRow="TstockName" msprop:Generator_ColumnPropNameInTable="TstockNameColumn" msprop:Generator_UserColumnName="TstockName" type="xs:string" minOccurs="0" />
+              <xs:element name="TQty" msprop:Generator_ColumnVarNameInTable="columnTQty" msprop:Generator_ColumnPropNameInRow="TQty" msprop:Generator_ColumnPropNameInTable="TQtyColumn" msprop:Generator_UserColumnName="TQty" type="xs:string" minOccurs="0" />
+              <xs:element name="TRate" msprop:Generator_ColumnVarNameInTable="columnTRate" msprop:Generator_ColumnPropNameInRow="TRate" msprop:Generator_ColumnPropNameInTable="TRateColumn" msprop:Generator_UserColumnName="TRate" type="xs:double" minOccurs="0" />
+              <xs:element name="TTotal" msprop:Generator_ColumnVarNameInTable="columnTTotal" msprop:Generator_ColumnPropNameInRow="TTotal" msprop:Generator_ColumnPropNameInTable="TTotalColumn" msprop:Generator_UserColumnName="TTotal" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
