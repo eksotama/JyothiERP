@@ -24,8 +24,8 @@ Partial Class MainForm
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.AppSideBarContainer = New System.Windows.Forms.ToolStripContainer()
         Me.APPSideBar = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
@@ -381,6 +381,20 @@ Partial Class MainForm
         Me.OtherSettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmailSettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BarcodeSettingsToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem71 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem70 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem62 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem63 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem64 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem65 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem66 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem67 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem68 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem69 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem61 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem60 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem59 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem58 = New System.Windows.Forms.ToolStripMenuItem()
         Me.SMSSettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DefaultLedgerSettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UserSettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -400,20 +414,11 @@ Partial Class MainForm
         Me.TenMinuteTimer = New System.Windows.Forms.Timer(Me.components)
         Me.ClientBackGroudImage = New System.Windows.Forms.Panel()
         Me.CompaniesDatabaseLists = New JyothiPharmaERPSystem3.IMSList()
-        Me.ToolStripMenuItem58 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem59 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem60 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem61 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem62 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem63 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem64 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem65 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem66 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem67 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem68 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem69 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem70 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem71 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem72 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem73 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem74 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem75 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem76 = New System.Windows.Forms.ToolStripMenuItem()
         Me.AppSideBarContainer.ContentPanel.SuspendLayout()
         Me.AppSideBarContainer.SuspendLayout()
         Me.APPSideBar.SuspendLayout()
@@ -720,54 +725,54 @@ Partial Class MainForm
         '
         'TransactionsToolStripMenuItem
         '
-        Me.TransactionsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContraToolStripMenuItem, Me.PaymentsToolStripMenuItem, Me.ReceiptsToolStripMenuItem, Me.JournalToolStripMenuItem, Me.SalesToolStripMenuItem, Me.CreditNoteToolStripMenuItem, Me.PurchaseToolStripMenuItem, Me.DebitNoteToolStripMenuItem})
-        Me.TransactionsToolStripMenuItem.Name = "TransactionsToolStripMenuItem"
+        Me.TransactionsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContraToolStripMenuItem, Me.ToolStripMenuItem73, Me.ToolStripMenuItem72, Me.PaymentsToolStripMenuItem, Me.ReceiptsToolStripMenuItem, Me.JournalToolStripMenuItem, Me.SalesToolStripMenuItem, Me.CreditNoteToolStripMenuItem, Me.PurchaseToolStripMenuItem, Me.DebitNoteToolStripMenuItem})
         resources.ApplyResources(Me.TransactionsToolStripMenuItem, "TransactionsToolStripMenuItem")
+        Me.TransactionsToolStripMenuItem.Name = "TransactionsToolStripMenuItem"
         '
         'ContraToolStripMenuItem
         '
-        Me.ContraToolStripMenuItem.Name = "ContraToolStripMenuItem"
         resources.ApplyResources(Me.ContraToolStripMenuItem, "ContraToolStripMenuItem")
+        Me.ContraToolStripMenuItem.Name = "ContraToolStripMenuItem"
         '
         'PaymentsToolStripMenuItem
         '
-        Me.PaymentsToolStripMenuItem.Name = "PaymentsToolStripMenuItem"
         resources.ApplyResources(Me.PaymentsToolStripMenuItem, "PaymentsToolStripMenuItem")
+        Me.PaymentsToolStripMenuItem.Name = "PaymentsToolStripMenuItem"
         '
         'ReceiptsToolStripMenuItem
         '
-        Me.ReceiptsToolStripMenuItem.Name = "ReceiptsToolStripMenuItem"
         resources.ApplyResources(Me.ReceiptsToolStripMenuItem, "ReceiptsToolStripMenuItem")
+        Me.ReceiptsToolStripMenuItem.Name = "ReceiptsToolStripMenuItem"
         '
         'JournalToolStripMenuItem
         '
-        Me.JournalToolStripMenuItem.Name = "JournalToolStripMenuItem"
         resources.ApplyResources(Me.JournalToolStripMenuItem, "JournalToolStripMenuItem")
+        Me.JournalToolStripMenuItem.Name = "JournalToolStripMenuItem"
         '
         'SalesToolStripMenuItem
         '
-        Me.SalesToolStripMenuItem.Name = "SalesToolStripMenuItem"
         resources.ApplyResources(Me.SalesToolStripMenuItem, "SalesToolStripMenuItem")
+        Me.SalesToolStripMenuItem.Name = "SalesToolStripMenuItem"
         '
         'CreditNoteToolStripMenuItem
         '
-        Me.CreditNoteToolStripMenuItem.Name = "CreditNoteToolStripMenuItem"
         resources.ApplyResources(Me.CreditNoteToolStripMenuItem, "CreditNoteToolStripMenuItem")
+        Me.CreditNoteToolStripMenuItem.Name = "CreditNoteToolStripMenuItem"
         '
         'PurchaseToolStripMenuItem
         '
-        Me.PurchaseToolStripMenuItem.Name = "PurchaseToolStripMenuItem"
         resources.ApplyResources(Me.PurchaseToolStripMenuItem, "PurchaseToolStripMenuItem")
+        Me.PurchaseToolStripMenuItem.Name = "PurchaseToolStripMenuItem"
         '
         'DebitNoteToolStripMenuItem
         '
-        Me.DebitNoteToolStripMenuItem.Name = "DebitNoteToolStripMenuItem"
         resources.ApplyResources(Me.DebitNoteToolStripMenuItem, "DebitNoteToolStripMenuItem")
+        Me.DebitNoteToolStripMenuItem.Name = "DebitNoteToolStripMenuItem"
         '
         'PDCClearanceToolStripMenuItem
         '
-        Me.PDCClearanceToolStripMenuItem.Name = "PDCClearanceToolStripMenuItem"
         resources.ApplyResources(Me.PDCClearanceToolStripMenuItem, "PDCClearanceToolStripMenuItem")
+        Me.PDCClearanceToolStripMenuItem.Name = "PDCClearanceToolStripMenuItem"
         '
         'AccountAuditToolStripMenuItem
         '
@@ -848,13 +853,13 @@ Partial Class MainForm
         '
         'ApprovePurchaseEnquiriesToolStripMenuItem
         '
-        Me.ApprovePurchaseEnquiriesToolStripMenuItem.Name = "ApprovePurchaseEnquiriesToolStripMenuItem"
         resources.ApplyResources(Me.ApprovePurchaseEnquiriesToolStripMenuItem, "ApprovePurchaseEnquiriesToolStripMenuItem")
+        Me.ApprovePurchaseEnquiriesToolStripMenuItem.Name = "ApprovePurchaseEnquiriesToolStripMenuItem"
         '
         'ApproveTransferRequestToolStripMenuItem
         '
-        Me.ApproveTransferRequestToolStripMenuItem.Name = "ApproveTransferRequestToolStripMenuItem"
         resources.ApplyResources(Me.ApproveTransferRequestToolStripMenuItem, "ApproveTransferRequestToolStripMenuItem")
+        Me.ApproveTransferRequestToolStripMenuItem.Name = "ApproveTransferRequestToolStripMenuItem"
         '
         'ToolStripMenuItem51
         '
@@ -951,8 +956,8 @@ Partial Class MainForm
         '
         'ProfitLossAcToolStripMenuItem
         '
-        Me.ProfitLossAcToolStripMenuItem.Name = "ProfitLossAcToolStripMenuItem"
         resources.ApplyResources(Me.ProfitLossAcToolStripMenuItem, "ProfitLossAcToolStripMenuItem")
+        Me.ProfitLossAcToolStripMenuItem.Name = "ProfitLossAcToolStripMenuItem"
         '
         'BalanceSheetToolStripMenuItem
         '
@@ -966,13 +971,13 @@ Partial Class MainForm
         '
         'CashFlowToolStripMenuItem1
         '
-        Me.CashFlowToolStripMenuItem1.Name = "CashFlowToolStripMenuItem1"
         resources.ApplyResources(Me.CashFlowToolStripMenuItem1, "CashFlowToolStripMenuItem1")
+        Me.CashFlowToolStripMenuItem1.Name = "CashFlowToolStripMenuItem1"
         '
         'FundFlowToolStripMenuItem
         '
-        Me.FundFlowToolStripMenuItem.Name = "FundFlowToolStripMenuItem"
         resources.ApplyResources(Me.FundFlowToolStripMenuItem, "FundFlowToolStripMenuItem")
+        Me.FundFlowToolStripMenuItem.Name = "FundFlowToolStripMenuItem"
         '
         'ToolStripMenuItem31
         '
@@ -1011,24 +1016,24 @@ Partial Class MainForm
         '
         'AdvanceReportsToolStripMenuItem
         '
-        Me.AdvanceReportsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BalanceSheetToolStripMenuItem1, Me.ProfitLossAcToolStripMenuItem1, Me.LedgerAccountReportsToolStripMenuItem})
+        Me.AdvanceReportsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BalanceSheetToolStripMenuItem1, Me.ProfitLossAcToolStripMenuItem1, Me.ToolStripMenuItem76, Me.ToolStripMenuItem75, Me.ToolStripMenuItem74, Me.LedgerAccountReportsToolStripMenuItem})
         resources.ApplyResources(Me.AdvanceReportsToolStripMenuItem, "AdvanceReportsToolStripMenuItem")
         Me.AdvanceReportsToolStripMenuItem.Name = "AdvanceReportsToolStripMenuItem"
         '
         'BalanceSheetToolStripMenuItem1
         '
-        Me.BalanceSheetToolStripMenuItem1.Name = "BalanceSheetToolStripMenuItem1"
         resources.ApplyResources(Me.BalanceSheetToolStripMenuItem1, "BalanceSheetToolStripMenuItem1")
+        Me.BalanceSheetToolStripMenuItem1.Name = "BalanceSheetToolStripMenuItem1"
         '
         'ProfitLossAcToolStripMenuItem1
         '
-        Me.ProfitLossAcToolStripMenuItem1.Name = "ProfitLossAcToolStripMenuItem1"
         resources.ApplyResources(Me.ProfitLossAcToolStripMenuItem1, "ProfitLossAcToolStripMenuItem1")
+        Me.ProfitLossAcToolStripMenuItem1.Name = "ProfitLossAcToolStripMenuItem1"
         '
         'LedgerAccountReportsToolStripMenuItem
         '
-        Me.LedgerAccountReportsToolStripMenuItem.Name = "LedgerAccountReportsToolStripMenuItem"
         resources.ApplyResources(Me.LedgerAccountReportsToolStripMenuItem, "LedgerAccountReportsToolStripMenuItem")
+        Me.LedgerAccountReportsToolStripMenuItem.Name = "LedgerAccountReportsToolStripMenuItem"
         '
         'MainMenuProduction
         '
@@ -1038,13 +1043,13 @@ Partial Class MainForm
         '
         'StockJournalVoucherToolStripMenuItem1
         '
-        Me.StockJournalVoucherToolStripMenuItem1.Name = "StockJournalVoucherToolStripMenuItem1"
         resources.ApplyResources(Me.StockJournalVoucherToolStripMenuItem1, "StockJournalVoucherToolStripMenuItem1")
+        Me.StockJournalVoucherToolStripMenuItem1.Name = "StockJournalVoucherToolStripMenuItem1"
         '
         'StockTransferByLocationsToolStripMenuItem
         '
-        Me.StockTransferByLocationsToolStripMenuItem.Name = "StockTransferByLocationsToolStripMenuItem"
         resources.ApplyResources(Me.StockTransferByLocationsToolStripMenuItem, "StockTransferByLocationsToolStripMenuItem")
+        Me.StockTransferByLocationsToolStripMenuItem.Name = "StockTransferByLocationsToolStripMenuItem"
         '
         'ToolStripMenuItem39
         '
@@ -1053,8 +1058,8 @@ Partial Class MainForm
         '
         'InterBranchTransferToolStripMenuItem
         '
-        Me.InterBranchTransferToolStripMenuItem.Name = "InterBranchTransferToolStripMenuItem"
         resources.ApplyResources(Me.InterBranchTransferToolStripMenuItem, "InterBranchTransferToolStripMenuItem")
+        Me.InterBranchTransferToolStripMenuItem.Name = "InterBranchTransferToolStripMenuItem"
         '
         'MenuSales
         '
@@ -1075,43 +1080,43 @@ Partial Class MainForm
         'TransactionsToolStripMenuItem1
         '
         Me.TransactionsToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.POSToolStripMenuItem, Me.POSInvoiceToolStripMenuItem, Me.SalesForm8DToolStripMenuItem, Me.SalesForm8BToolStripMenuItem, Me.ToolStripMenuItem45, Me.ToolStripMenuItem46, Me.SalesForm8ToolStripMenuItem, Me.ToolStripMenuItem12, Me.QuatotionToolStripMenuItem, Me.SalesOrderToolStripMenuItem, Me.InvoiceToolStripMenuItem, Me.ZeroTaxSalesToolStripMenuItem, Me.ToolStripMenuItem13, Me.CashSalesReturnsToolStripMenuItem, Me.SalesReturnsCreditNoteToolStripMenuItem, Me.ToolStripMenuItem56, Me.SalesReturns8DToolStripMenuItem, Me.SalesReturnsForm8BToolStripMenuItem, Me.SalesReturnsForm8ToolStripMenuItem})
-        Me.TransactionsToolStripMenuItem1.Name = "TransactionsToolStripMenuItem1"
         resources.ApplyResources(Me.TransactionsToolStripMenuItem1, "TransactionsToolStripMenuItem1")
+        Me.TransactionsToolStripMenuItem1.Name = "TransactionsToolStripMenuItem1"
         '
         'POSToolStripMenuItem
         '
-        Me.POSToolStripMenuItem.Name = "POSToolStripMenuItem"
         resources.ApplyResources(Me.POSToolStripMenuItem, "POSToolStripMenuItem")
+        Me.POSToolStripMenuItem.Name = "POSToolStripMenuItem"
         '
         'POSInvoiceToolStripMenuItem
         '
-        Me.POSInvoiceToolStripMenuItem.Name = "POSInvoiceToolStripMenuItem"
         resources.ApplyResources(Me.POSInvoiceToolStripMenuItem, "POSInvoiceToolStripMenuItem")
+        Me.POSInvoiceToolStripMenuItem.Name = "POSInvoiceToolStripMenuItem"
         '
         'SalesForm8DToolStripMenuItem
         '
-        Me.SalesForm8DToolStripMenuItem.Name = "SalesForm8DToolStripMenuItem"
         resources.ApplyResources(Me.SalesForm8DToolStripMenuItem, "SalesForm8DToolStripMenuItem")
+        Me.SalesForm8DToolStripMenuItem.Name = "SalesForm8DToolStripMenuItem"
         '
         'SalesForm8BToolStripMenuItem
         '
-        Me.SalesForm8BToolStripMenuItem.Name = "SalesForm8BToolStripMenuItem"
         resources.ApplyResources(Me.SalesForm8BToolStripMenuItem, "SalesForm8BToolStripMenuItem")
+        Me.SalesForm8BToolStripMenuItem.Name = "SalesForm8BToolStripMenuItem"
         '
         'ToolStripMenuItem45
         '
-        Me.ToolStripMenuItem45.Name = "ToolStripMenuItem45"
         resources.ApplyResources(Me.ToolStripMenuItem45, "ToolStripMenuItem45")
+        Me.ToolStripMenuItem45.Name = "ToolStripMenuItem45"
         '
         'ToolStripMenuItem46
         '
-        Me.ToolStripMenuItem46.Name = "ToolStripMenuItem46"
         resources.ApplyResources(Me.ToolStripMenuItem46, "ToolStripMenuItem46")
+        Me.ToolStripMenuItem46.Name = "ToolStripMenuItem46"
         '
         'SalesForm8ToolStripMenuItem
         '
-        Me.SalesForm8ToolStripMenuItem.Name = "SalesForm8ToolStripMenuItem"
         resources.ApplyResources(Me.SalesForm8ToolStripMenuItem, "SalesForm8ToolStripMenuItem")
+        Me.SalesForm8ToolStripMenuItem.Name = "SalesForm8ToolStripMenuItem"
         '
         'ToolStripMenuItem12
         '
@@ -1120,23 +1125,23 @@ Partial Class MainForm
         '
         'QuatotionToolStripMenuItem
         '
-        Me.QuatotionToolStripMenuItem.Name = "QuatotionToolStripMenuItem"
         resources.ApplyResources(Me.QuatotionToolStripMenuItem, "QuatotionToolStripMenuItem")
+        Me.QuatotionToolStripMenuItem.Name = "QuatotionToolStripMenuItem"
         '
         'SalesOrderToolStripMenuItem
         '
-        Me.SalesOrderToolStripMenuItem.Name = "SalesOrderToolStripMenuItem"
         resources.ApplyResources(Me.SalesOrderToolStripMenuItem, "SalesOrderToolStripMenuItem")
+        Me.SalesOrderToolStripMenuItem.Name = "SalesOrderToolStripMenuItem"
         '
         'InvoiceToolStripMenuItem
         '
-        Me.InvoiceToolStripMenuItem.Name = "InvoiceToolStripMenuItem"
         resources.ApplyResources(Me.InvoiceToolStripMenuItem, "InvoiceToolStripMenuItem")
+        Me.InvoiceToolStripMenuItem.Name = "InvoiceToolStripMenuItem"
         '
         'ZeroTaxSalesToolStripMenuItem
         '
-        Me.ZeroTaxSalesToolStripMenuItem.Name = "ZeroTaxSalesToolStripMenuItem"
         resources.ApplyResources(Me.ZeroTaxSalesToolStripMenuItem, "ZeroTaxSalesToolStripMenuItem")
+        Me.ZeroTaxSalesToolStripMenuItem.Name = "ZeroTaxSalesToolStripMenuItem"
         '
         'ToolStripMenuItem13
         '
@@ -1145,13 +1150,13 @@ Partial Class MainForm
         '
         'CashSalesReturnsToolStripMenuItem
         '
-        Me.CashSalesReturnsToolStripMenuItem.Name = "CashSalesReturnsToolStripMenuItem"
         resources.ApplyResources(Me.CashSalesReturnsToolStripMenuItem, "CashSalesReturnsToolStripMenuItem")
+        Me.CashSalesReturnsToolStripMenuItem.Name = "CashSalesReturnsToolStripMenuItem"
         '
         'SalesReturnsCreditNoteToolStripMenuItem
         '
-        Me.SalesReturnsCreditNoteToolStripMenuItem.Name = "SalesReturnsCreditNoteToolStripMenuItem"
         resources.ApplyResources(Me.SalesReturnsCreditNoteToolStripMenuItem, "SalesReturnsCreditNoteToolStripMenuItem")
+        Me.SalesReturnsCreditNoteToolStripMenuItem.Name = "SalesReturnsCreditNoteToolStripMenuItem"
         '
         'ToolStripMenuItem56
         '
@@ -1160,18 +1165,18 @@ Partial Class MainForm
         '
         'SalesReturns8DToolStripMenuItem
         '
-        Me.SalesReturns8DToolStripMenuItem.Name = "SalesReturns8DToolStripMenuItem"
         resources.ApplyResources(Me.SalesReturns8DToolStripMenuItem, "SalesReturns8DToolStripMenuItem")
+        Me.SalesReturns8DToolStripMenuItem.Name = "SalesReturns8DToolStripMenuItem"
         '
         'SalesReturnsForm8BToolStripMenuItem
         '
-        Me.SalesReturnsForm8BToolStripMenuItem.Name = "SalesReturnsForm8BToolStripMenuItem"
         resources.ApplyResources(Me.SalesReturnsForm8BToolStripMenuItem, "SalesReturnsForm8BToolStripMenuItem")
+        Me.SalesReturnsForm8BToolStripMenuItem.Name = "SalesReturnsForm8BToolStripMenuItem"
         '
         'SalesReturnsForm8ToolStripMenuItem
         '
-        Me.SalesReturnsForm8ToolStripMenuItem.Name = "SalesReturnsForm8ToolStripMenuItem"
         resources.ApplyResources(Me.SalesReturnsForm8ToolStripMenuItem, "SalesReturnsForm8ToolStripMenuItem")
+        Me.SalesReturnsForm8ToolStripMenuItem.Name = "SalesReturnsForm8ToolStripMenuItem"
         '
         'ToolStripMenuItem7
         '
@@ -1181,23 +1186,23 @@ Partial Class MainForm
         'MainOrderMenuItem
         '
         Me.MainOrderMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SalesOrdersToolStripMenuItem, Me.SalesOrdersDetailsToolStripMenuItem, Me.SalesOrdersTransactionsToolStripMenuItem})
-        Me.MainOrderMenuItem.Name = "MainOrderMenuItem"
         resources.ApplyResources(Me.MainOrderMenuItem, "MainOrderMenuItem")
+        Me.MainOrderMenuItem.Name = "MainOrderMenuItem"
         '
         'SalesOrdersToolStripMenuItem
         '
-        Me.SalesOrdersToolStripMenuItem.Name = "SalesOrdersToolStripMenuItem"
         resources.ApplyResources(Me.SalesOrdersToolStripMenuItem, "SalesOrdersToolStripMenuItem")
+        Me.SalesOrdersToolStripMenuItem.Name = "SalesOrdersToolStripMenuItem"
         '
         'SalesOrdersDetailsToolStripMenuItem
         '
-        Me.SalesOrdersDetailsToolStripMenuItem.Name = "SalesOrdersDetailsToolStripMenuItem"
         resources.ApplyResources(Me.SalesOrdersDetailsToolStripMenuItem, "SalesOrdersDetailsToolStripMenuItem")
+        Me.SalesOrdersDetailsToolStripMenuItem.Name = "SalesOrdersDetailsToolStripMenuItem"
         '
         'SalesOrdersTransactionsToolStripMenuItem
         '
-        Me.SalesOrdersTransactionsToolStripMenuItem.Name = "SalesOrdersTransactionsToolStripMenuItem"
         resources.ApplyResources(Me.SalesOrdersTransactionsToolStripMenuItem, "SalesOrdersTransactionsToolStripMenuItem")
+        Me.SalesOrdersTransactionsToolStripMenuItem.Name = "SalesOrdersTransactionsToolStripMenuItem"
         '
         'TransactionsReportsToolStripMenuItem
         '
@@ -1232,8 +1237,8 @@ Partial Class MainForm
         '
         'MaterialTransferRequestToolStripMenuItem
         '
-        Me.MaterialTransferRequestToolStripMenuItem.Name = "MaterialTransferRequestToolStripMenuItem"
         resources.ApplyResources(Me.MaterialTransferRequestToolStripMenuItem, "MaterialTransferRequestToolStripMenuItem")
+        Me.MaterialTransferRequestToolStripMenuItem.Name = "MaterialTransferRequestToolStripMenuItem"
         '
         'MenuPurchase
         '
@@ -1243,44 +1248,44 @@ Partial Class MainForm
         '
         'SuppliseInfoToolStripMenuItem
         '
-        Me.SuppliseInfoToolStripMenuItem.Name = "SuppliseInfoToolStripMenuItem"
         resources.ApplyResources(Me.SuppliseInfoToolStripMenuItem, "SuppliseInfoToolStripMenuItem")
+        Me.SuppliseInfoToolStripMenuItem.Name = "SuppliseInfoToolStripMenuItem"
         '
         'TransactionsToolStripMenuItem2
         '
         Me.TransactionsToolStripMenuItem2.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.QuotationToolStripMenuItem, Me.OrderToolStripMenuItem, Me.DirectPurchaseInvoiceToolStripMenuItem, Me.InvoiceToolStripMenuItem1, Me.CashPurchaseToolStripMenuItem, Me.CreditPurchaseToolStripMenuItem, Me.ToolStripMenuItem6, Me.PurchaseReturnsDebitNoteToolStripMenuItem})
-        Me.TransactionsToolStripMenuItem2.Name = "TransactionsToolStripMenuItem2"
         resources.ApplyResources(Me.TransactionsToolStripMenuItem2, "TransactionsToolStripMenuItem2")
+        Me.TransactionsToolStripMenuItem2.Name = "TransactionsToolStripMenuItem2"
         '
         'QuotationToolStripMenuItem
         '
-        Me.QuotationToolStripMenuItem.Name = "QuotationToolStripMenuItem"
         resources.ApplyResources(Me.QuotationToolStripMenuItem, "QuotationToolStripMenuItem")
+        Me.QuotationToolStripMenuItem.Name = "QuotationToolStripMenuItem"
         '
         'OrderToolStripMenuItem
         '
-        Me.OrderToolStripMenuItem.Name = "OrderToolStripMenuItem"
         resources.ApplyResources(Me.OrderToolStripMenuItem, "OrderToolStripMenuItem")
+        Me.OrderToolStripMenuItem.Name = "OrderToolStripMenuItem"
         '
         'DirectPurchaseInvoiceToolStripMenuItem
         '
-        Me.DirectPurchaseInvoiceToolStripMenuItem.Name = "DirectPurchaseInvoiceToolStripMenuItem"
         resources.ApplyResources(Me.DirectPurchaseInvoiceToolStripMenuItem, "DirectPurchaseInvoiceToolStripMenuItem")
+        Me.DirectPurchaseInvoiceToolStripMenuItem.Name = "DirectPurchaseInvoiceToolStripMenuItem"
         '
         'InvoiceToolStripMenuItem1
         '
-        Me.InvoiceToolStripMenuItem1.Name = "InvoiceToolStripMenuItem1"
         resources.ApplyResources(Me.InvoiceToolStripMenuItem1, "InvoiceToolStripMenuItem1")
+        Me.InvoiceToolStripMenuItem1.Name = "InvoiceToolStripMenuItem1"
         '
         'CashPurchaseToolStripMenuItem
         '
-        Me.CashPurchaseToolStripMenuItem.Name = "CashPurchaseToolStripMenuItem"
         resources.ApplyResources(Me.CashPurchaseToolStripMenuItem, "CashPurchaseToolStripMenuItem")
+        Me.CashPurchaseToolStripMenuItem.Name = "CashPurchaseToolStripMenuItem"
         '
         'CreditPurchaseToolStripMenuItem
         '
-        Me.CreditPurchaseToolStripMenuItem.Name = "CreditPurchaseToolStripMenuItem"
         resources.ApplyResources(Me.CreditPurchaseToolStripMenuItem, "CreditPurchaseToolStripMenuItem")
+        Me.CreditPurchaseToolStripMenuItem.Name = "CreditPurchaseToolStripMenuItem"
         '
         'ToolStripMenuItem6
         '
@@ -1289,8 +1294,8 @@ Partial Class MainForm
         '
         'PurchaseReturnsDebitNoteToolStripMenuItem
         '
-        Me.PurchaseReturnsDebitNoteToolStripMenuItem.Name = "PurchaseReturnsDebitNoteToolStripMenuItem"
         resources.ApplyResources(Me.PurchaseReturnsDebitNoteToolStripMenuItem, "PurchaseReturnsDebitNoteToolStripMenuItem")
+        Me.PurchaseReturnsDebitNoteToolStripMenuItem.Name = "PurchaseReturnsDebitNoteToolStripMenuItem"
         '
         'ToolStripMenuItem8
         '
@@ -1300,18 +1305,18 @@ Partial Class MainForm
         'OutstandingsToolStripMenuItem1
         '
         Me.OutstandingsToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PurchaseOrdersToolStripMenuItem1, Me.PurchaseOrdersDetailsToolStripMenuItem})
-        Me.OutstandingsToolStripMenuItem1.Name = "OutstandingsToolStripMenuItem1"
         resources.ApplyResources(Me.OutstandingsToolStripMenuItem1, "OutstandingsToolStripMenuItem1")
+        Me.OutstandingsToolStripMenuItem1.Name = "OutstandingsToolStripMenuItem1"
         '
         'PurchaseOrdersToolStripMenuItem1
         '
-        Me.PurchaseOrdersToolStripMenuItem1.Name = "PurchaseOrdersToolStripMenuItem1"
         resources.ApplyResources(Me.PurchaseOrdersToolStripMenuItem1, "PurchaseOrdersToolStripMenuItem1")
+        Me.PurchaseOrdersToolStripMenuItem1.Name = "PurchaseOrdersToolStripMenuItem1"
         '
         'PurchaseOrdersDetailsToolStripMenuItem
         '
-        Me.PurchaseOrdersDetailsToolStripMenuItem.Name = "PurchaseOrdersDetailsToolStripMenuItem"
         resources.ApplyResources(Me.PurchaseOrdersDetailsToolStripMenuItem, "PurchaseOrdersDetailsToolStripMenuItem")
+        Me.PurchaseOrdersDetailsToolStripMenuItem.Name = "PurchaseOrdersDetailsToolStripMenuItem"
         '
         'TransactionReportsToolStripMenuItem
         '
@@ -1343,49 +1348,49 @@ Partial Class MainForm
         'ItemInfoToolStripMenuItem
         '
         Me.ItemInfoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CreateNewStockItemToolStripMenuItem, Me.StockGroupsToolStripMenuItem, Me.BatchWiseStockDetailsToolStripMenuItem, Me.UnitsOfMeasurementsToolStripMenuItem, Me.StockCatogoriesToolStripMenuItem, Me.StockLocationsToolStripMenuItem, Me.PriceListToolStripMenuItem, Me.SerialNumbersToolStripMenuItem, Me.CustomBarcodeSettingsToolStripMenuItem, Me.ToolStripMenuItem5, Me.AlternativeBarcodeToolStripMenuItem, Me.ToolStripMenuItem53, Me.PrintBarcodeToolStripMenuItem, Me.PrintBarcodeToolStripMenuItem1, Me.ToolStripMenuItem54})
-        Me.ItemInfoToolStripMenuItem.Name = "ItemInfoToolStripMenuItem"
         resources.ApplyResources(Me.ItemInfoToolStripMenuItem, "ItemInfoToolStripMenuItem")
+        Me.ItemInfoToolStripMenuItem.Name = "ItemInfoToolStripMenuItem"
         '
         'CreateNewStockItemToolStripMenuItem
         '
-        Me.CreateNewStockItemToolStripMenuItem.Name = "CreateNewStockItemToolStripMenuItem"
         resources.ApplyResources(Me.CreateNewStockItemToolStripMenuItem, "CreateNewStockItemToolStripMenuItem")
+        Me.CreateNewStockItemToolStripMenuItem.Name = "CreateNewStockItemToolStripMenuItem"
         '
         'StockGroupsToolStripMenuItem
         '
-        Me.StockGroupsToolStripMenuItem.Name = "StockGroupsToolStripMenuItem"
         resources.ApplyResources(Me.StockGroupsToolStripMenuItem, "StockGroupsToolStripMenuItem")
+        Me.StockGroupsToolStripMenuItem.Name = "StockGroupsToolStripMenuItem"
         '
         'BatchWiseStockDetailsToolStripMenuItem
         '
-        Me.BatchWiseStockDetailsToolStripMenuItem.Name = "BatchWiseStockDetailsToolStripMenuItem"
         resources.ApplyResources(Me.BatchWiseStockDetailsToolStripMenuItem, "BatchWiseStockDetailsToolStripMenuItem")
+        Me.BatchWiseStockDetailsToolStripMenuItem.Name = "BatchWiseStockDetailsToolStripMenuItem"
         '
         'UnitsOfMeasurementsToolStripMenuItem
         '
-        Me.UnitsOfMeasurementsToolStripMenuItem.Name = "UnitsOfMeasurementsToolStripMenuItem"
         resources.ApplyResources(Me.UnitsOfMeasurementsToolStripMenuItem, "UnitsOfMeasurementsToolStripMenuItem")
+        Me.UnitsOfMeasurementsToolStripMenuItem.Name = "UnitsOfMeasurementsToolStripMenuItem"
         '
         'StockCatogoriesToolStripMenuItem
         '
-        Me.StockCatogoriesToolStripMenuItem.Name = "StockCatogoriesToolStripMenuItem"
         resources.ApplyResources(Me.StockCatogoriesToolStripMenuItem, "StockCatogoriesToolStripMenuItem")
+        Me.StockCatogoriesToolStripMenuItem.Name = "StockCatogoriesToolStripMenuItem"
         '
         'StockLocationsToolStripMenuItem
         '
-        Me.StockLocationsToolStripMenuItem.Name = "StockLocationsToolStripMenuItem"
         resources.ApplyResources(Me.StockLocationsToolStripMenuItem, "StockLocationsToolStripMenuItem")
+        Me.StockLocationsToolStripMenuItem.Name = "StockLocationsToolStripMenuItem"
         '
         'PriceListToolStripMenuItem
         '
-        Me.PriceListToolStripMenuItem.Name = "PriceListToolStripMenuItem"
         resources.ApplyResources(Me.PriceListToolStripMenuItem, "PriceListToolStripMenuItem")
+        Me.PriceListToolStripMenuItem.Name = "PriceListToolStripMenuItem"
         '
         'SerialNumbersToolStripMenuItem
         '
         Me.SerialNumbersToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SerialNumbersToolStripMenuItem1})
-        Me.SerialNumbersToolStripMenuItem.Name = "SerialNumbersToolStripMenuItem"
         resources.ApplyResources(Me.SerialNumbersToolStripMenuItem, "SerialNumbersToolStripMenuItem")
+        Me.SerialNumbersToolStripMenuItem.Name = "SerialNumbersToolStripMenuItem"
         '
         'SerialNumbersToolStripMenuItem1
         '
@@ -1394,8 +1399,8 @@ Partial Class MainForm
         '
         'CustomBarcodeSettingsToolStripMenuItem
         '
-        Me.CustomBarcodeSettingsToolStripMenuItem.Name = "CustomBarcodeSettingsToolStripMenuItem"
         resources.ApplyResources(Me.CustomBarcodeSettingsToolStripMenuItem, "CustomBarcodeSettingsToolStripMenuItem")
+        Me.CustomBarcodeSettingsToolStripMenuItem.Name = "CustomBarcodeSettingsToolStripMenuItem"
         '
         'ToolStripMenuItem5
         '
@@ -1404,8 +1409,8 @@ Partial Class MainForm
         '
         'AlternativeBarcodeToolStripMenuItem
         '
-        Me.AlternativeBarcodeToolStripMenuItem.Name = "AlternativeBarcodeToolStripMenuItem"
         resources.ApplyResources(Me.AlternativeBarcodeToolStripMenuItem, "AlternativeBarcodeToolStripMenuItem")
+        Me.AlternativeBarcodeToolStripMenuItem.Name = "AlternativeBarcodeToolStripMenuItem"
         '
         'ToolStripMenuItem53
         '
@@ -1414,13 +1419,13 @@ Partial Class MainForm
         '
         'PrintBarcodeToolStripMenuItem
         '
-        Me.PrintBarcodeToolStripMenuItem.Name = "PrintBarcodeToolStripMenuItem"
         resources.ApplyResources(Me.PrintBarcodeToolStripMenuItem, "PrintBarcodeToolStripMenuItem")
+        Me.PrintBarcodeToolStripMenuItem.Name = "PrintBarcodeToolStripMenuItem"
         '
         'PrintBarcodeToolStripMenuItem1
         '
-        Me.PrintBarcodeToolStripMenuItem1.Name = "PrintBarcodeToolStripMenuItem1"
         resources.ApplyResources(Me.PrintBarcodeToolStripMenuItem1, "PrintBarcodeToolStripMenuItem1")
+        Me.PrintBarcodeToolStripMenuItem1.Name = "PrintBarcodeToolStripMenuItem1"
         '
         'ToolStripMenuItem54
         '
@@ -1430,28 +1435,28 @@ Partial Class MainForm
         'TransactionsToolStripMenuItem3
         '
         Me.TransactionsToolStripMenuItem3.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SalesDeliveryNoteToolStripMenuItem, Me.PurchaseGoodsReceiptNoteToolStripMenuItem, Me.StockJournalVoucherToolStripMenuItem, Me.StockTransferToolStripMenuItem, Me.ToolStripMenuItem33, Me.PhysicalStockToolStripMenuItem})
-        Me.TransactionsToolStripMenuItem3.Name = "TransactionsToolStripMenuItem3"
         resources.ApplyResources(Me.TransactionsToolStripMenuItem3, "TransactionsToolStripMenuItem3")
+        Me.TransactionsToolStripMenuItem3.Name = "TransactionsToolStripMenuItem3"
         '
         'SalesDeliveryNoteToolStripMenuItem
         '
-        Me.SalesDeliveryNoteToolStripMenuItem.Name = "SalesDeliveryNoteToolStripMenuItem"
         resources.ApplyResources(Me.SalesDeliveryNoteToolStripMenuItem, "SalesDeliveryNoteToolStripMenuItem")
+        Me.SalesDeliveryNoteToolStripMenuItem.Name = "SalesDeliveryNoteToolStripMenuItem"
         '
         'PurchaseGoodsReceiptNoteToolStripMenuItem
         '
-        Me.PurchaseGoodsReceiptNoteToolStripMenuItem.Name = "PurchaseGoodsReceiptNoteToolStripMenuItem"
         resources.ApplyResources(Me.PurchaseGoodsReceiptNoteToolStripMenuItem, "PurchaseGoodsReceiptNoteToolStripMenuItem")
+        Me.PurchaseGoodsReceiptNoteToolStripMenuItem.Name = "PurchaseGoodsReceiptNoteToolStripMenuItem"
         '
         'StockJournalVoucherToolStripMenuItem
         '
-        Me.StockJournalVoucherToolStripMenuItem.Name = "StockJournalVoucherToolStripMenuItem"
         resources.ApplyResources(Me.StockJournalVoucherToolStripMenuItem, "StockJournalVoucherToolStripMenuItem")
+        Me.StockJournalVoucherToolStripMenuItem.Name = "StockJournalVoucherToolStripMenuItem"
         '
         'StockTransferToolStripMenuItem
         '
-        Me.StockTransferToolStripMenuItem.Name = "StockTransferToolStripMenuItem"
         resources.ApplyResources(Me.StockTransferToolStripMenuItem, "StockTransferToolStripMenuItem")
+        Me.StockTransferToolStripMenuItem.Name = "StockTransferToolStripMenuItem"
         '
         'ToolStripMenuItem33
         '
@@ -1460,8 +1465,8 @@ Partial Class MainForm
         '
         'PhysicalStockToolStripMenuItem
         '
-        Me.PhysicalStockToolStripMenuItem.Name = "PhysicalStockToolStripMenuItem"
         resources.ApplyResources(Me.PhysicalStockToolStripMenuItem, "PhysicalStockToolStripMenuItem")
+        Me.PhysicalStockToolStripMenuItem.Name = "PhysicalStockToolStripMenuItem"
         '
         'SearchStockItemsToolStripMenuItem
         '
@@ -1485,18 +1490,18 @@ Partial Class MainForm
         '
         'DiscountManagementToolStripMenuItem
         '
-        Me.DiscountManagementToolStripMenuItem.Name = "DiscountManagementToolStripMenuItem"
         resources.ApplyResources(Me.DiscountManagementToolStripMenuItem, "DiscountManagementToolStripMenuItem")
+        Me.DiscountManagementToolStripMenuItem.Name = "DiscountManagementToolStripMenuItem"
         '
         'CouponManagementToolStripMenuItem
         '
-        Me.CouponManagementToolStripMenuItem.Name = "CouponManagementToolStripMenuItem"
         resources.ApplyResources(Me.CouponManagementToolStripMenuItem, "CouponManagementToolStripMenuItem")
+        Me.CouponManagementToolStripMenuItem.Name = "CouponManagementToolStripMenuItem"
         '
         'PendingDeliveryNotesToolStripMenuItem
         '
-        Me.PendingDeliveryNotesToolStripMenuItem.Name = "PendingDeliveryNotesToolStripMenuItem"
         resources.ApplyResources(Me.PendingDeliveryNotesToolStripMenuItem, "PendingDeliveryNotesToolStripMenuItem")
+        Me.PendingDeliveryNotesToolStripMenuItem.Name = "PendingDeliveryNotesToolStripMenuItem"
         '
         'MenuAdminPayroll
         '
@@ -1506,8 +1511,8 @@ Partial Class MainForm
         '
         'PayrollAccountsToolStripMenuItem
         '
-        Me.PayrollAccountsToolStripMenuItem.Name = "PayrollAccountsToolStripMenuItem"
         resources.ApplyResources(Me.PayrollAccountsToolStripMenuItem, "PayrollAccountsToolStripMenuItem")
+        Me.PayrollAccountsToolStripMenuItem.Name = "PayrollAccountsToolStripMenuItem"
         '
         'EmployeeInfoToolStripMenuItem
         '
@@ -1517,13 +1522,13 @@ Partial Class MainForm
         '
         'EmployeesToolStripMenuItem
         '
-        Me.EmployeesToolStripMenuItem.Name = "EmployeesToolStripMenuItem"
         resources.ApplyResources(Me.EmployeesToolStripMenuItem, "EmployeesToolStripMenuItem")
+        Me.EmployeesToolStripMenuItem.Name = "EmployeesToolStripMenuItem"
         '
         'EmployeesIDMonitorToolStripMenuItem
         '
-        Me.EmployeesIDMonitorToolStripMenuItem.Name = "EmployeesIDMonitorToolStripMenuItem"
         resources.ApplyResources(Me.EmployeesIDMonitorToolStripMenuItem, "EmployeesIDMonitorToolStripMenuItem")
+        Me.EmployeesIDMonitorToolStripMenuItem.Name = "EmployeesIDMonitorToolStripMenuItem"
         '
         'ToolStripMenuItem18
         '
@@ -1532,28 +1537,28 @@ Partial Class MainForm
         '
         'DepartmentsToolStripMenuItem
         '
-        Me.DepartmentsToolStripMenuItem.Name = "DepartmentsToolStripMenuItem"
         resources.ApplyResources(Me.DepartmentsToolStripMenuItem, "DepartmentsToolStripMenuItem")
+        Me.DepartmentsToolStripMenuItem.Name = "DepartmentsToolStripMenuItem"
         '
         'EmployeeIncrementsToolStripMenuItem
         '
-        Me.EmployeeIncrementsToolStripMenuItem.Name = "EmployeeIncrementsToolStripMenuItem"
         resources.ApplyResources(Me.EmployeeIncrementsToolStripMenuItem, "EmployeeIncrementsToolStripMenuItem")
+        Me.EmployeeIncrementsToolStripMenuItem.Name = "EmployeeIncrementsToolStripMenuItem"
         '
         'EmployeeLeavesToolStripMenuItem
         '
-        Me.EmployeeLeavesToolStripMenuItem.Name = "EmployeeLeavesToolStripMenuItem"
         resources.ApplyResources(Me.EmployeeLeavesToolStripMenuItem, "EmployeeLeavesToolStripMenuItem")
+        Me.EmployeeLeavesToolStripMenuItem.Name = "EmployeeLeavesToolStripMenuItem"
         '
         'EmployeeSalaryHistoryToolStripMenuItem
         '
-        Me.EmployeeSalaryHistoryToolStripMenuItem.Name = "EmployeeSalaryHistoryToolStripMenuItem"
         resources.ApplyResources(Me.EmployeeSalaryHistoryToolStripMenuItem, "EmployeeSalaryHistoryToolStripMenuItem")
+        Me.EmployeeSalaryHistoryToolStripMenuItem.Name = "EmployeeSalaryHistoryToolStripMenuItem"
         '
         'GratuityReportToolStripMenuItem
         '
-        Me.GratuityReportToolStripMenuItem.Name = "GratuityReportToolStripMenuItem"
         resources.ApplyResources(Me.GratuityReportToolStripMenuItem, "GratuityReportToolStripMenuItem")
+        Me.GratuityReportToolStripMenuItem.Name = "GratuityReportToolStripMenuItem"
         '
         'ToolStripMenuItem44
         '
@@ -1562,34 +1567,34 @@ Partial Class MainForm
         '
         'DocumentIssueToolStripMenuItem
         '
-        Me.DocumentIssueToolStripMenuItem.Name = "DocumentIssueToolStripMenuItem"
         resources.ApplyResources(Me.DocumentIssueToolStripMenuItem, "DocumentIssueToolStripMenuItem")
+        Me.DocumentIssueToolStripMenuItem.Name = "DocumentIssueToolStripMenuItem"
         '
         'RenewalHistroyToolStripMenuItem
         '
-        Me.RenewalHistroyToolStripMenuItem.Name = "RenewalHistroyToolStripMenuItem"
         resources.ApplyResources(Me.RenewalHistroyToolStripMenuItem, "RenewalHistroyToolStripMenuItem")
+        Me.RenewalHistroyToolStripMenuItem.Name = "RenewalHistroyToolStripMenuItem"
         '
         'AttendanceToolStripMenuItem
         '
         Me.AttendanceToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EntryToolStripMenuItem, Me.AttendenceEntryDoubleShiftToolStripMenuItem, Me.AttendenceSheetToolStripMenuItem, Me.ToolStripMenuItem20, Me.BarcodeAttendenceRegisterToolStripMenuItem1, Me.BarcodeSettingsToolStripMenuItem})
-        Me.AttendanceToolStripMenuItem.Name = "AttendanceToolStripMenuItem"
         resources.ApplyResources(Me.AttendanceToolStripMenuItem, "AttendanceToolStripMenuItem")
+        Me.AttendanceToolStripMenuItem.Name = "AttendanceToolStripMenuItem"
         '
         'EntryToolStripMenuItem
         '
-        Me.EntryToolStripMenuItem.Name = "EntryToolStripMenuItem"
         resources.ApplyResources(Me.EntryToolStripMenuItem, "EntryToolStripMenuItem")
+        Me.EntryToolStripMenuItem.Name = "EntryToolStripMenuItem"
         '
         'AttendenceEntryDoubleShiftToolStripMenuItem
         '
-        Me.AttendenceEntryDoubleShiftToolStripMenuItem.Name = "AttendenceEntryDoubleShiftToolStripMenuItem"
         resources.ApplyResources(Me.AttendenceEntryDoubleShiftToolStripMenuItem, "AttendenceEntryDoubleShiftToolStripMenuItem")
+        Me.AttendenceEntryDoubleShiftToolStripMenuItem.Name = "AttendenceEntryDoubleShiftToolStripMenuItem"
         '
         'AttendenceSheetToolStripMenuItem
         '
-        Me.AttendenceSheetToolStripMenuItem.Name = "AttendenceSheetToolStripMenuItem"
         resources.ApplyResources(Me.AttendenceSheetToolStripMenuItem, "AttendenceSheetToolStripMenuItem")
+        Me.AttendenceSheetToolStripMenuItem.Name = "AttendenceSheetToolStripMenuItem"
         '
         'ToolStripMenuItem20
         '
@@ -1598,55 +1603,55 @@ Partial Class MainForm
         '
         'BarcodeAttendenceRegisterToolStripMenuItem1
         '
-        Me.BarcodeAttendenceRegisterToolStripMenuItem1.Name = "BarcodeAttendenceRegisterToolStripMenuItem1"
         resources.ApplyResources(Me.BarcodeAttendenceRegisterToolStripMenuItem1, "BarcodeAttendenceRegisterToolStripMenuItem1")
+        Me.BarcodeAttendenceRegisterToolStripMenuItem1.Name = "BarcodeAttendenceRegisterToolStripMenuItem1"
         '
         'BarcodeSettingsToolStripMenuItem
         '
-        Me.BarcodeSettingsToolStripMenuItem.Name = "BarcodeSettingsToolStripMenuItem"
         resources.ApplyResources(Me.BarcodeSettingsToolStripMenuItem, "BarcodeSettingsToolStripMenuItem")
+        Me.BarcodeSettingsToolStripMenuItem.Name = "BarcodeSettingsToolStripMenuItem"
         '
         'DutiesToolStripMenuItem
         '
         Me.DutiesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DutiesManagementToolStripMenuItem, Me.DutiesSettingsToolStripMenuItem})
-        Me.DutiesToolStripMenuItem.Name = "DutiesToolStripMenuItem"
         resources.ApplyResources(Me.DutiesToolStripMenuItem, "DutiesToolStripMenuItem")
+        Me.DutiesToolStripMenuItem.Name = "DutiesToolStripMenuItem"
         '
         'DutiesManagementToolStripMenuItem
         '
-        Me.DutiesManagementToolStripMenuItem.Name = "DutiesManagementToolStripMenuItem"
         resources.ApplyResources(Me.DutiesManagementToolStripMenuItem, "DutiesManagementToolStripMenuItem")
+        Me.DutiesManagementToolStripMenuItem.Name = "DutiesManagementToolStripMenuItem"
         '
         'DutiesSettingsToolStripMenuItem
         '
-        Me.DutiesSettingsToolStripMenuItem.Name = "DutiesSettingsToolStripMenuItem"
         resources.ApplyResources(Me.DutiesSettingsToolStripMenuItem, "DutiesSettingsToolStripMenuItem")
+        Me.DutiesSettingsToolStripMenuItem.Name = "DutiesSettingsToolStripMenuItem"
         '
         'TransactionsToolStripMenuItem4
         '
         Me.TransactionsToolStripMenuItem4.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PayRollVoucherToolStripMenuItem, Me.PaySlipsToolStripMenuItem})
-        Me.TransactionsToolStripMenuItem4.Name = "TransactionsToolStripMenuItem4"
         resources.ApplyResources(Me.TransactionsToolStripMenuItem4, "TransactionsToolStripMenuItem4")
+        Me.TransactionsToolStripMenuItem4.Name = "TransactionsToolStripMenuItem4"
         '
         'PayRollVoucherToolStripMenuItem
         '
-        Me.PayRollVoucherToolStripMenuItem.Name = "PayRollVoucherToolStripMenuItem"
         resources.ApplyResources(Me.PayRollVoucherToolStripMenuItem, "PayRollVoucherToolStripMenuItem")
+        Me.PayRollVoucherToolStripMenuItem.Name = "PayRollVoucherToolStripMenuItem"
         '
         'PaySlipsToolStripMenuItem
         '
-        Me.PaySlipsToolStripMenuItem.Name = "PaySlipsToolStripMenuItem"
         resources.ApplyResources(Me.PaySlipsToolStripMenuItem, "PaySlipsToolStripMenuItem")
+        Me.PaySlipsToolStripMenuItem.Name = "PaySlipsToolStripMenuItem"
         '
         'WPSToolStripMenuItem
         '
-        Me.WPSToolStripMenuItem.Name = "WPSToolStripMenuItem"
         resources.ApplyResources(Me.WPSToolStripMenuItem, "WPSToolStripMenuItem")
+        Me.WPSToolStripMenuItem.Name = "WPSToolStripMenuItem"
         '
         'PayCalculatorToolStripMenuItem
         '
-        Me.PayCalculatorToolStripMenuItem.Name = "PayCalculatorToolStripMenuItem"
         resources.ApplyResources(Me.PayCalculatorToolStripMenuItem, "PayCalculatorToolStripMenuItem")
+        Me.PayCalculatorToolStripMenuItem.Name = "PayCalculatorToolStripMenuItem"
         '
         'ToolStripMenuItem21
         '
@@ -1758,13 +1763,13 @@ Partial Class MainForm
         '
         'ClientMasterToolStripMenuItem
         '
-        Me.ClientMasterToolStripMenuItem.Name = "ClientMasterToolStripMenuItem"
         resources.ApplyResources(Me.ClientMasterToolStripMenuItem, "ClientMasterToolStripMenuItem")
+        Me.ClientMasterToolStripMenuItem.Name = "ClientMasterToolStripMenuItem"
         '
         'SiteMasterToolStripMenuItem
         '
-        Me.SiteMasterToolStripMenuItem.Name = "SiteMasterToolStripMenuItem"
         resources.ApplyResources(Me.SiteMasterToolStripMenuItem, "SiteMasterToolStripMenuItem")
+        Me.SiteMasterToolStripMenuItem.Name = "SiteMasterToolStripMenuItem"
         '
         'EmployeeSiteScheduleToolStripMenuItem
         '
@@ -1794,8 +1799,8 @@ Partial Class MainForm
         '
         'CountersToolStripMenuItem
         '
-        Me.CountersToolStripMenuItem.Name = "CountersToolStripMenuItem"
         resources.ApplyResources(Me.CountersToolStripMenuItem, "CountersToolStripMenuItem")
+        Me.CountersToolStripMenuItem.Name = "CountersToolStripMenuItem"
         '
         'UsersLogInfoToolStripMenuItem
         '
@@ -1830,18 +1835,18 @@ Partial Class MainForm
         'CompanyDocsToolStripMenuItem1
         '
         Me.CompanyDocsToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MaintainDocumentsToolStripMenuItem, Me.DocumentMonitorToolStripMenuItem1})
-        Me.CompanyDocsToolStripMenuItem1.Name = "CompanyDocsToolStripMenuItem1"
         resources.ApplyResources(Me.CompanyDocsToolStripMenuItem1, "CompanyDocsToolStripMenuItem1")
+        Me.CompanyDocsToolStripMenuItem1.Name = "CompanyDocsToolStripMenuItem1"
         '
         'MaintainDocumentsToolStripMenuItem
         '
-        Me.MaintainDocumentsToolStripMenuItem.Name = "MaintainDocumentsToolStripMenuItem"
         resources.ApplyResources(Me.MaintainDocumentsToolStripMenuItem, "MaintainDocumentsToolStripMenuItem")
+        Me.MaintainDocumentsToolStripMenuItem.Name = "MaintainDocumentsToolStripMenuItem"
         '
         'DocumentMonitorToolStripMenuItem1
         '
-        Me.DocumentMonitorToolStripMenuItem1.Name = "DocumentMonitorToolStripMenuItem1"
         resources.ApplyResources(Me.DocumentMonitorToolStripMenuItem1, "DocumentMonitorToolStripMenuItem1")
+        Me.DocumentMonitorToolStripMenuItem1.Name = "DocumentMonitorToolStripMenuItem1"
         '
         'ToolStripMenuItem26
         '
@@ -1851,24 +1856,24 @@ Partial Class MainForm
         'VehicleDocsToolStripMenuItem1
         '
         Me.VehicleDocsToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MaintainVehiclesToolStripMenuItem, Me.VehicleIDMonitorToolStripMenuItem1})
-        Me.VehicleDocsToolStripMenuItem1.Name = "VehicleDocsToolStripMenuItem1"
         resources.ApplyResources(Me.VehicleDocsToolStripMenuItem1, "VehicleDocsToolStripMenuItem1")
+        Me.VehicleDocsToolStripMenuItem1.Name = "VehicleDocsToolStripMenuItem1"
         '
         'MaintainVehiclesToolStripMenuItem
         '
-        Me.MaintainVehiclesToolStripMenuItem.Name = "MaintainVehiclesToolStripMenuItem"
         resources.ApplyResources(Me.MaintainVehiclesToolStripMenuItem, "MaintainVehiclesToolStripMenuItem")
+        Me.MaintainVehiclesToolStripMenuItem.Name = "MaintainVehiclesToolStripMenuItem"
         '
         'VehicleIDMonitorToolStripMenuItem1
         '
-        Me.VehicleIDMonitorToolStripMenuItem1.Name = "VehicleIDMonitorToolStripMenuItem1"
         resources.ApplyResources(Me.VehicleIDMonitorToolStripMenuItem1, "VehicleIDMonitorToolStripMenuItem1")
+        Me.VehicleIDMonitorToolStripMenuItem1.Name = "VehicleIDMonitorToolStripMenuItem1"
         '
         'MenuReport
         '
         Me.MenuReport.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ACReportsToolStripMenuItem, Me.InvReportsToolStripMenuItem, Me.ToolStripMenuItem16, Me.SalesRegisterToolStripMenuItem1, Me.SalesRegisterInvoiceWiseToolStripMenuItem, Me.PurchaseRegisterToolStripMenuItem1, Me.CustomerReportsToolStripMenuItem1, Me.SuppliersReportsToolStripMenuItem1, Me.LedgerDayWiseBalanceToolStripMenuItem, Me.ToolStripMenuItem34, Me.SalesTransactionReportsToolStripMenuItem, Me.PurchaseTransactionReportsToolStripMenuItem, Me.ToolStripMenuItem3, Me.SalesStatusReportToolStripMenuItem, Me.SalesCollectionReportToolStripMenuItem, Me.ToolStripMenuItem36, Me.DailyProfitReportToolStripMenuItem, Me.ProfitSummaryToolStripMenuItem, Me.InvoiceWiseProfitReportToolStripMenuItem, Me.ToolStripMenuItem57, Me.DaywiseSalesReportToolStripMenuItem})
-        Me.MenuReport.Name = "MenuReport"
         resources.ApplyResources(Me.MenuReport, "MenuReport")
+        Me.MenuReport.Name = "MenuReport"
         '
         'ACReportsToolStripMenuItem
         '
@@ -1878,43 +1883,43 @@ Partial Class MainForm
         '
         'LedgerAccountsToolStripMenuItem
         '
-        Me.LedgerAccountsToolStripMenuItem.Name = "LedgerAccountsToolStripMenuItem"
         resources.ApplyResources(Me.LedgerAccountsToolStripMenuItem, "LedgerAccountsToolStripMenuItem")
+        Me.LedgerAccountsToolStripMenuItem.Name = "LedgerAccountsToolStripMenuItem"
         '
         'LedgerAccountsToolStripMenuItem1
         '
-        Me.LedgerAccountsToolStripMenuItem1.Name = "LedgerAccountsToolStripMenuItem1"
         resources.ApplyResources(Me.LedgerAccountsToolStripMenuItem1, "LedgerAccountsToolStripMenuItem1")
+        Me.LedgerAccountsToolStripMenuItem1.Name = "LedgerAccountsToolStripMenuItem1"
         '
         'DayBreakLedgerReportToolStripMenuItem
         '
-        Me.DayBreakLedgerReportToolStripMenuItem.Name = "DayBreakLedgerReportToolStripMenuItem"
         resources.ApplyResources(Me.DayBreakLedgerReportToolStripMenuItem, "DayBreakLedgerReportToolStripMenuItem")
+        Me.DayBreakLedgerReportToolStripMenuItem.Name = "DayBreakLedgerReportToolStripMenuItem"
         '
         'LedgerMonthlyReportToolStripMenuItem
         '
-        Me.LedgerMonthlyReportToolStripMenuItem.Name = "LedgerMonthlyReportToolStripMenuItem"
         resources.ApplyResources(Me.LedgerMonthlyReportToolStripMenuItem, "LedgerMonthlyReportToolStripMenuItem")
+        Me.LedgerMonthlyReportToolStripMenuItem.Name = "LedgerMonthlyReportToolStripMenuItem"
         '
         'CashBookToolStripMenuItem1
         '
-        Me.CashBookToolStripMenuItem1.Name = "CashBookToolStripMenuItem1"
         resources.ApplyResources(Me.CashBookToolStripMenuItem1, "CashBookToolStripMenuItem1")
+        Me.CashBookToolStripMenuItem1.Name = "CashBookToolStripMenuItem1"
         '
         'ChequeInfoToolStripMenuItem
         '
-        Me.ChequeInfoToolStripMenuItem.Name = "ChequeInfoToolStripMenuItem"
         resources.ApplyResources(Me.ChequeInfoToolStripMenuItem, "ChequeInfoToolStripMenuItem")
+        Me.ChequeInfoToolStripMenuItem.Name = "ChequeInfoToolStripMenuItem"
         '
         'BankBooksToolStripMenuItem
         '
-        Me.BankBooksToolStripMenuItem.Name = "BankBooksToolStripMenuItem"
         resources.ApplyResources(Me.BankBooksToolStripMenuItem, "BankBooksToolStripMenuItem")
+        Me.BankBooksToolStripMenuItem.Name = "BankBooksToolStripMenuItem"
         '
         'DayBookToolStripMenuItem
         '
-        Me.DayBookToolStripMenuItem.Name = "DayBookToolStripMenuItem"
         resources.ApplyResources(Me.DayBookToolStripMenuItem, "DayBookToolStripMenuItem")
+        Me.DayBookToolStripMenuItem.Name = "DayBookToolStripMenuItem"
         '
         'ToolStripMenuItem19
         '
@@ -1923,13 +1928,13 @@ Partial Class MainForm
         '
         'CashBookToolStripMenuItem
         '
-        Me.CashBookToolStripMenuItem.Name = "CashBookToolStripMenuItem"
         resources.ApplyResources(Me.CashBookToolStripMenuItem, "CashBookToolStripMenuItem")
+        Me.CashBookToolStripMenuItem.Name = "CashBookToolStripMenuItem"
         '
         'DayBookCrystalReportToolStripMenuItem
         '
-        Me.DayBookCrystalReportToolStripMenuItem.Name = "DayBookCrystalReportToolStripMenuItem"
         resources.ApplyResources(Me.DayBookCrystalReportToolStripMenuItem, "DayBookCrystalReportToolStripMenuItem")
+        Me.DayBookCrystalReportToolStripMenuItem.Name = "DayBookCrystalReportToolStripMenuItem"
         '
         'InvReportsToolStripMenuItem
         '
@@ -1939,13 +1944,13 @@ Partial Class MainForm
         '
         'CurrentStockToolStripMenuItem
         '
-        Me.CurrentStockToolStripMenuItem.Name = "CurrentStockToolStripMenuItem"
         resources.ApplyResources(Me.CurrentStockToolStripMenuItem, "CurrentStockToolStripMenuItem")
+        Me.CurrentStockToolStripMenuItem.Name = "CurrentStockToolStripMenuItem"
         '
         'LowStockItemsToolStripMenuItem
         '
-        Me.LowStockItemsToolStripMenuItem.Name = "LowStockItemsToolStripMenuItem"
         resources.ApplyResources(Me.LowStockItemsToolStripMenuItem, "LowStockItemsToolStripMenuItem")
+        Me.LowStockItemsToolStripMenuItem.Name = "LowStockItemsToolStripMenuItem"
         '
         'ToolStripMenuItem17
         '
@@ -1954,19 +1959,19 @@ Partial Class MainForm
         '
         'StockSummeryToolStripMenuItem1
         '
-        Me.StockSummeryToolStripMenuItem1.Name = "StockSummeryToolStripMenuItem1"
         resources.ApplyResources(Me.StockSummeryToolStripMenuItem1, "StockSummeryToolStripMenuItem1")
+        Me.StockSummeryToolStripMenuItem1.Name = "StockSummeryToolStripMenuItem1"
         '
         'StockItemReportToolStripMenuItem
         '
-        Me.StockItemReportToolStripMenuItem.Name = "StockItemReportToolStripMenuItem"
         resources.ApplyResources(Me.StockItemReportToolStripMenuItem, "StockItemReportToolStripMenuItem")
+        Me.StockItemReportToolStripMenuItem.Name = "StockItemReportToolStripMenuItem"
         '
         'MovementAnalysisToolStripMenuItem
         '
         Me.MovementAnalysisToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ByStockGroupToolStripMenuItem, Me.ByStockItemToolStripMenuItem})
-        Me.MovementAnalysisToolStripMenuItem.Name = "MovementAnalysisToolStripMenuItem"
         resources.ApplyResources(Me.MovementAnalysisToolStripMenuItem, "MovementAnalysisToolStripMenuItem")
+        Me.MovementAnalysisToolStripMenuItem.Name = "MovementAnalysisToolStripMenuItem"
         '
         'ByStockGroupToolStripMenuItem
         '
@@ -1980,13 +1985,13 @@ Partial Class MainForm
         '
         'ToolStripMenuItem43
         '
-        Me.ToolStripMenuItem43.Name = "ToolStripMenuItem43"
         resources.ApplyResources(Me.ToolStripMenuItem43, "ToolStripMenuItem43")
+        Me.ToolStripMenuItem43.Name = "ToolStripMenuItem43"
         '
         'ItemwiseQuantityReportToolStripMenuItem
         '
-        Me.ItemwiseQuantityReportToolStripMenuItem.Name = "ItemwiseQuantityReportToolStripMenuItem"
         resources.ApplyResources(Me.ItemwiseQuantityReportToolStripMenuItem, "ItemwiseQuantityReportToolStripMenuItem")
+        Me.ItemwiseQuantityReportToolStripMenuItem.Name = "ItemwiseQuantityReportToolStripMenuItem"
         '
         'ToolStripMenuItem14
         '
@@ -2005,8 +2010,8 @@ Partial Class MainForm
         '
         'ExpiryStockItemsToolStripMenuItem
         '
-        Me.ExpiryStockItemsToolStripMenuItem.Name = "ExpiryStockItemsToolStripMenuItem"
         resources.ApplyResources(Me.ExpiryStockItemsToolStripMenuItem, "ExpiryStockItemsToolStripMenuItem")
+        Me.ExpiryStockItemsToolStripMenuItem.Name = "ExpiryStockItemsToolStripMenuItem"
         '
         'ToolStripMenuItem40
         '
@@ -2015,13 +2020,13 @@ Partial Class MainForm
         '
         'PrintMulitiplePurchaseInvoicesToolStripMenuItem
         '
-        Me.PrintMulitiplePurchaseInvoicesToolStripMenuItem.Name = "PrintMulitiplePurchaseInvoicesToolStripMenuItem"
         resources.ApplyResources(Me.PrintMulitiplePurchaseInvoicesToolStripMenuItem, "PrintMulitiplePurchaseInvoicesToolStripMenuItem")
+        Me.PrintMulitiplePurchaseInvoicesToolStripMenuItem.Name = "PrintMulitiplePurchaseInvoicesToolStripMenuItem"
         '
         'PrintMulitipleInvoicesToolStripMenuItem
         '
-        Me.PrintMulitipleInvoicesToolStripMenuItem.Name = "PrintMulitipleInvoicesToolStripMenuItem"
         resources.ApplyResources(Me.PrintMulitipleInvoicesToolStripMenuItem, "PrintMulitipleInvoicesToolStripMenuItem")
+        Me.PrintMulitipleInvoicesToolStripMenuItem.Name = "PrintMulitipleInvoicesToolStripMenuItem"
         '
         'ToolStripMenuItem16
         '
@@ -2030,18 +2035,18 @@ Partial Class MainForm
         '
         'SalesRegisterToolStripMenuItem1
         '
-        Me.SalesRegisterToolStripMenuItem1.Name = "SalesRegisterToolStripMenuItem1"
         resources.ApplyResources(Me.SalesRegisterToolStripMenuItem1, "SalesRegisterToolStripMenuItem1")
+        Me.SalesRegisterToolStripMenuItem1.Name = "SalesRegisterToolStripMenuItem1"
         '
         'SalesRegisterInvoiceWiseToolStripMenuItem
         '
-        Me.SalesRegisterInvoiceWiseToolStripMenuItem.Name = "SalesRegisterInvoiceWiseToolStripMenuItem"
         resources.ApplyResources(Me.SalesRegisterInvoiceWiseToolStripMenuItem, "SalesRegisterInvoiceWiseToolStripMenuItem")
+        Me.SalesRegisterInvoiceWiseToolStripMenuItem.Name = "SalesRegisterInvoiceWiseToolStripMenuItem"
         '
         'PurchaseRegisterToolStripMenuItem1
         '
-        Me.PurchaseRegisterToolStripMenuItem1.Name = "PurchaseRegisterToolStripMenuItem1"
         resources.ApplyResources(Me.PurchaseRegisterToolStripMenuItem1, "PurchaseRegisterToolStripMenuItem1")
+        Me.PurchaseRegisterToolStripMenuItem1.Name = "PurchaseRegisterToolStripMenuItem1"
         '
         'CustomerReportsToolStripMenuItem1
         '
@@ -2051,23 +2056,23 @@ Partial Class MainForm
         '
         'CustomerBalanceReportToolStripMenuItem
         '
-        Me.CustomerBalanceReportToolStripMenuItem.Name = "CustomerBalanceReportToolStripMenuItem"
         resources.ApplyResources(Me.CustomerBalanceReportToolStripMenuItem, "CustomerBalanceReportToolStripMenuItem")
+        Me.CustomerBalanceReportToolStripMenuItem.Name = "CustomerBalanceReportToolStripMenuItem"
         '
         'CustomersMonthlyReportToolStripMenuItem
         '
-        Me.CustomersMonthlyReportToolStripMenuItem.Name = "CustomersMonthlyReportToolStripMenuItem"
         resources.ApplyResources(Me.CustomersMonthlyReportToolStripMenuItem, "CustomersMonthlyReportToolStripMenuItem")
+        Me.CustomersMonthlyReportToolStripMenuItem.Name = "CustomersMonthlyReportToolStripMenuItem"
         '
         'OverDueReceivablesToolStripMenuItem
         '
-        Me.OverDueReceivablesToolStripMenuItem.Name = "OverDueReceivablesToolStripMenuItem"
         resources.ApplyResources(Me.OverDueReceivablesToolStripMenuItem, "OverDueReceivablesToolStripMenuItem")
+        Me.OverDueReceivablesToolStripMenuItem.Name = "OverDueReceivablesToolStripMenuItem"
         '
         'ItemwiseMovementReportToolStripMenuItem
         '
-        Me.ItemwiseMovementReportToolStripMenuItem.Name = "ItemwiseMovementReportToolStripMenuItem"
         resources.ApplyResources(Me.ItemwiseMovementReportToolStripMenuItem, "ItemwiseMovementReportToolStripMenuItem")
+        Me.ItemwiseMovementReportToolStripMenuItem.Name = "ItemwiseMovementReportToolStripMenuItem"
         '
         'SuppliersReportsToolStripMenuItem1
         '
@@ -2077,28 +2082,28 @@ Partial Class MainForm
         '
         'SuppliersBalancesReportToolStripMenuItem2
         '
-        Me.SuppliersBalancesReportToolStripMenuItem2.Name = "SuppliersBalancesReportToolStripMenuItem2"
         resources.ApplyResources(Me.SuppliersBalancesReportToolStripMenuItem2, "SuppliersBalancesReportToolStripMenuItem2")
+        Me.SuppliersBalancesReportToolStripMenuItem2.Name = "SuppliersBalancesReportToolStripMenuItem2"
         '
         'SuppliersMonthlyReportToolStripMenuItem
         '
-        Me.SuppliersMonthlyReportToolStripMenuItem.Name = "SuppliersMonthlyReportToolStripMenuItem"
         resources.ApplyResources(Me.SuppliersMonthlyReportToolStripMenuItem, "SuppliersMonthlyReportToolStripMenuItem")
+        Me.SuppliersMonthlyReportToolStripMenuItem.Name = "SuppliersMonthlyReportToolStripMenuItem"
         '
         'OverDuePayablesToolStripMenuItem1
         '
-        Me.OverDuePayablesToolStripMenuItem1.Name = "OverDuePayablesToolStripMenuItem1"
         resources.ApplyResources(Me.OverDuePayablesToolStripMenuItem1, "OverDuePayablesToolStripMenuItem1")
+        Me.OverDuePayablesToolStripMenuItem1.Name = "OverDuePayablesToolStripMenuItem1"
         '
         'ToolStripMenuItem42
         '
-        Me.ToolStripMenuItem42.Name = "ToolStripMenuItem42"
         resources.ApplyResources(Me.ToolStripMenuItem42, "ToolStripMenuItem42")
+        Me.ToolStripMenuItem42.Name = "ToolStripMenuItem42"
         '
         'LedgerDayWiseBalanceToolStripMenuItem
         '
-        Me.LedgerDayWiseBalanceToolStripMenuItem.Name = "LedgerDayWiseBalanceToolStripMenuItem"
         resources.ApplyResources(Me.LedgerDayWiseBalanceToolStripMenuItem, "LedgerDayWiseBalanceToolStripMenuItem")
+        Me.LedgerDayWiseBalanceToolStripMenuItem.Name = "LedgerDayWiseBalanceToolStripMenuItem"
         '
         'ToolStripMenuItem34
         '
@@ -2113,23 +2118,23 @@ Partial Class MainForm
         '
         'SalesDeliveriesToolStripMenuItem1
         '
-        Me.SalesDeliveriesToolStripMenuItem1.Name = "SalesDeliveriesToolStripMenuItem1"
         resources.ApplyResources(Me.SalesDeliveriesToolStripMenuItem1, "SalesDeliveriesToolStripMenuItem1")
+        Me.SalesDeliveriesToolStripMenuItem1.Name = "SalesDeliveriesToolStripMenuItem1"
         '
         'SalesInvoicesToolStripMenuItem1
         '
-        Me.SalesInvoicesToolStripMenuItem1.Name = "SalesInvoicesToolStripMenuItem1"
         resources.ApplyResources(Me.SalesInvoicesToolStripMenuItem1, "SalesInvoicesToolStripMenuItem1")
+        Me.SalesInvoicesToolStripMenuItem1.Name = "SalesInvoicesToolStripMenuItem1"
         '
         'POSToolStripMenuItem2
         '
-        Me.POSToolStripMenuItem2.Name = "POSToolStripMenuItem2"
         resources.ApplyResources(Me.POSToolStripMenuItem2, "POSToolStripMenuItem2")
+        Me.POSToolStripMenuItem2.Name = "POSToolStripMenuItem2"
         '
         'SalesReturnInvoicesToolStripMenuItem1
         '
-        Me.SalesReturnInvoicesToolStripMenuItem1.Name = "SalesReturnInvoicesToolStripMenuItem1"
         resources.ApplyResources(Me.SalesReturnInvoicesToolStripMenuItem1, "SalesReturnInvoicesToolStripMenuItem1")
+        Me.SalesReturnInvoicesToolStripMenuItem1.Name = "SalesReturnInvoicesToolStripMenuItem1"
         '
         'ToolStripMenuItem35
         '
@@ -2138,8 +2143,8 @@ Partial Class MainForm
         '
         'OutgoingStockToolStripMenuItem1
         '
-        Me.OutgoingStockToolStripMenuItem1.Name = "OutgoingStockToolStripMenuItem1"
         resources.ApplyResources(Me.OutgoingStockToolStripMenuItem1, "OutgoingStockToolStripMenuItem1")
+        Me.OutgoingStockToolStripMenuItem1.Name = "OutgoingStockToolStripMenuItem1"
         '
         'PurchaseTransactionReportsToolStripMenuItem
         '
@@ -2149,23 +2154,23 @@ Partial Class MainForm
         '
         'GoodsReceiptNotesToolStripMenuItem
         '
-        Me.GoodsReceiptNotesToolStripMenuItem.Name = "GoodsReceiptNotesToolStripMenuItem"
         resources.ApplyResources(Me.GoodsReceiptNotesToolStripMenuItem, "GoodsReceiptNotesToolStripMenuItem")
+        Me.GoodsReceiptNotesToolStripMenuItem.Name = "GoodsReceiptNotesToolStripMenuItem"
         '
         'PurchaseInvoicesToolStripMenuItem1
         '
-        Me.PurchaseInvoicesToolStripMenuItem1.Name = "PurchaseInvoicesToolStripMenuItem1"
         resources.ApplyResources(Me.PurchaseInvoicesToolStripMenuItem1, "PurchaseInvoicesToolStripMenuItem1")
+        Me.PurchaseInvoicesToolStripMenuItem1.Name = "PurchaseInvoicesToolStripMenuItem1"
         '
         'PurchaseReturnsInvoicesToolStripMenuItem
         '
-        Me.PurchaseReturnsInvoicesToolStripMenuItem.Name = "PurchaseReturnsInvoicesToolStripMenuItem"
         resources.ApplyResources(Me.PurchaseReturnsInvoicesToolStripMenuItem, "PurchaseReturnsInvoicesToolStripMenuItem")
+        Me.PurchaseReturnsInvoicesToolStripMenuItem.Name = "PurchaseReturnsInvoicesToolStripMenuItem"
         '
         'IncomingStockToolStripMenuItem
         '
-        Me.IncomingStockToolStripMenuItem.Name = "IncomingStockToolStripMenuItem"
         resources.ApplyResources(Me.IncomingStockToolStripMenuItem, "IncomingStockToolStripMenuItem")
+        Me.IncomingStockToolStripMenuItem.Name = "IncomingStockToolStripMenuItem"
         '
         'ToolStripMenuItem3
         '
@@ -2174,8 +2179,8 @@ Partial Class MainForm
         '
         'SalesStatusReportToolStripMenuItem
         '
-        Me.SalesStatusReportToolStripMenuItem.Name = "SalesStatusReportToolStripMenuItem"
         resources.ApplyResources(Me.SalesStatusReportToolStripMenuItem, "SalesStatusReportToolStripMenuItem")
+        Me.SalesStatusReportToolStripMenuItem.Name = "SalesStatusReportToolStripMenuItem"
         '
         'SalesCollectionReportToolStripMenuItem
         '
@@ -2341,6 +2346,77 @@ Partial Class MainForm
         resources.ApplyResources(Me.BarcodeSettingsToolStripMenuItem1, "BarcodeSettingsToolStripMenuItem1")
         Me.BarcodeSettingsToolStripMenuItem1.Name = "BarcodeSettingsToolStripMenuItem1"
         '
+        'ToolStripMenuItem71
+        '
+        resources.ApplyResources(Me.ToolStripMenuItem71, "ToolStripMenuItem71")
+        Me.ToolStripMenuItem71.Name = "ToolStripMenuItem71"
+        '
+        'ToolStripMenuItem70
+        '
+        resources.ApplyResources(Me.ToolStripMenuItem70, "ToolStripMenuItem70")
+        Me.ToolStripMenuItem70.Name = "ToolStripMenuItem70"
+        '
+        'ToolStripMenuItem62
+        '
+        Me.ToolStripMenuItem62.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem63, Me.ToolStripMenuItem64, Me.ToolStripMenuItem65, Me.ToolStripMenuItem66, Me.ToolStripMenuItem67, Me.ToolStripMenuItem68, Me.ToolStripMenuItem69})
+        resources.ApplyResources(Me.ToolStripMenuItem62, "ToolStripMenuItem62")
+        Me.ToolStripMenuItem62.Name = "ToolStripMenuItem62"
+        '
+        'ToolStripMenuItem63
+        '
+        Me.ToolStripMenuItem63.Name = "ToolStripMenuItem63"
+        resources.ApplyResources(Me.ToolStripMenuItem63, "ToolStripMenuItem63")
+        '
+        'ToolStripMenuItem64
+        '
+        Me.ToolStripMenuItem64.Name = "ToolStripMenuItem64"
+        resources.ApplyResources(Me.ToolStripMenuItem64, "ToolStripMenuItem64")
+        '
+        'ToolStripMenuItem65
+        '
+        Me.ToolStripMenuItem65.Name = "ToolStripMenuItem65"
+        resources.ApplyResources(Me.ToolStripMenuItem65, "ToolStripMenuItem65")
+        '
+        'ToolStripMenuItem66
+        '
+        Me.ToolStripMenuItem66.Name = "ToolStripMenuItem66"
+        resources.ApplyResources(Me.ToolStripMenuItem66, "ToolStripMenuItem66")
+        '
+        'ToolStripMenuItem67
+        '
+        Me.ToolStripMenuItem67.Name = "ToolStripMenuItem67"
+        resources.ApplyResources(Me.ToolStripMenuItem67, "ToolStripMenuItem67")
+        '
+        'ToolStripMenuItem68
+        '
+        Me.ToolStripMenuItem68.Name = "ToolStripMenuItem68"
+        resources.ApplyResources(Me.ToolStripMenuItem68, "ToolStripMenuItem68")
+        '
+        'ToolStripMenuItem69
+        '
+        Me.ToolStripMenuItem69.Name = "ToolStripMenuItem69"
+        resources.ApplyResources(Me.ToolStripMenuItem69, "ToolStripMenuItem69")
+        '
+        'ToolStripMenuItem61
+        '
+        resources.ApplyResources(Me.ToolStripMenuItem61, "ToolStripMenuItem61")
+        Me.ToolStripMenuItem61.Name = "ToolStripMenuItem61"
+        '
+        'ToolStripMenuItem60
+        '
+        resources.ApplyResources(Me.ToolStripMenuItem60, "ToolStripMenuItem60")
+        Me.ToolStripMenuItem60.Name = "ToolStripMenuItem60"
+        '
+        'ToolStripMenuItem59
+        '
+        resources.ApplyResources(Me.ToolStripMenuItem59, "ToolStripMenuItem59")
+        Me.ToolStripMenuItem59.Name = "ToolStripMenuItem59"
+        '
+        'ToolStripMenuItem58
+        '
+        resources.ApplyResources(Me.ToolStripMenuItem58, "ToolStripMenuItem58")
+        Me.ToolStripMenuItem58.Name = "ToolStripMenuItem58"
+        '
         'SMSSettingsToolStripMenuItem
         '
         resources.ApplyResources(Me.SMSSettingsToolStripMenuItem, "SMSSettingsToolStripMenuItem")
@@ -2438,93 +2514,47 @@ Partial Class MainForm
         '
         Me.CompaniesDatabaseLists.AllowUserToAddRows = False
         Me.CompaniesDatabaseLists.AllowUserToDeleteRows = False
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CompaniesDatabaseLists.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CompaniesDatabaseLists.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.CompaniesDatabaseLists.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.CompaniesDatabaseLists.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.CompaniesDatabaseLists.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.CompaniesDatabaseLists.DefaultCellStyle = DataGridViewCellStyle2
         Me.CompaniesDatabaseLists.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         resources.ApplyResources(Me.CompaniesDatabaseLists, "CompaniesDatabaseLists")
         Me.CompaniesDatabaseLists.Name = "CompaniesDatabaseLists"
         '
-        'ToolStripMenuItem58
+        'ToolStripMenuItem72
         '
-        resources.ApplyResources(Me.ToolStripMenuItem58, "ToolStripMenuItem58")
-        Me.ToolStripMenuItem58.Name = "ToolStripMenuItem58"
+        resources.ApplyResources(Me.ToolStripMenuItem72, "ToolStripMenuItem72")
+        Me.ToolStripMenuItem72.Name = "ToolStripMenuItem72"
         '
-        'ToolStripMenuItem59
+        'ToolStripMenuItem73
         '
-        resources.ApplyResources(Me.ToolStripMenuItem59, "ToolStripMenuItem59")
-        Me.ToolStripMenuItem59.Name = "ToolStripMenuItem59"
+        resources.ApplyResources(Me.ToolStripMenuItem73, "ToolStripMenuItem73")
+        Me.ToolStripMenuItem73.Name = "ToolStripMenuItem73"
         '
-        'ToolStripMenuItem60
+        'ToolStripMenuItem74
         '
-        resources.ApplyResources(Me.ToolStripMenuItem60, "ToolStripMenuItem60")
-        Me.ToolStripMenuItem60.Name = "ToolStripMenuItem60"
+        resources.ApplyResources(Me.ToolStripMenuItem74, "ToolStripMenuItem74")
+        Me.ToolStripMenuItem74.Name = "ToolStripMenuItem74"
         '
-        'ToolStripMenuItem61
+        'ToolStripMenuItem75
         '
-        resources.ApplyResources(Me.ToolStripMenuItem61, "ToolStripMenuItem61")
-        Me.ToolStripMenuItem61.Name = "ToolStripMenuItem61"
+        resources.ApplyResources(Me.ToolStripMenuItem75, "ToolStripMenuItem75")
+        Me.ToolStripMenuItem75.Name = "ToolStripMenuItem75"
         '
-        'ToolStripMenuItem62
+        'ToolStripMenuItem76
         '
-        Me.ToolStripMenuItem62.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem63, Me.ToolStripMenuItem64, Me.ToolStripMenuItem65, Me.ToolStripMenuItem66, Me.ToolStripMenuItem67, Me.ToolStripMenuItem68, Me.ToolStripMenuItem69})
-        resources.ApplyResources(Me.ToolStripMenuItem62, "ToolStripMenuItem62")
-        Me.ToolStripMenuItem62.Name = "ToolStripMenuItem62"
-        '
-        'ToolStripMenuItem63
-        '
-        Me.ToolStripMenuItem63.Name = "ToolStripMenuItem63"
-        resources.ApplyResources(Me.ToolStripMenuItem63, "ToolStripMenuItem63")
-        '
-        'ToolStripMenuItem64
-        '
-        Me.ToolStripMenuItem64.Name = "ToolStripMenuItem64"
-        resources.ApplyResources(Me.ToolStripMenuItem64, "ToolStripMenuItem64")
-        '
-        'ToolStripMenuItem65
-        '
-        Me.ToolStripMenuItem65.Name = "ToolStripMenuItem65"
-        resources.ApplyResources(Me.ToolStripMenuItem65, "ToolStripMenuItem65")
-        '
-        'ToolStripMenuItem66
-        '
-        Me.ToolStripMenuItem66.Name = "ToolStripMenuItem66"
-        resources.ApplyResources(Me.ToolStripMenuItem66, "ToolStripMenuItem66")
-        '
-        'ToolStripMenuItem67
-        '
-        Me.ToolStripMenuItem67.Name = "ToolStripMenuItem67"
-        resources.ApplyResources(Me.ToolStripMenuItem67, "ToolStripMenuItem67")
-        '
-        'ToolStripMenuItem68
-        '
-        Me.ToolStripMenuItem68.Name = "ToolStripMenuItem68"
-        resources.ApplyResources(Me.ToolStripMenuItem68, "ToolStripMenuItem68")
-        '
-        'ToolStripMenuItem69
-        '
-        Me.ToolStripMenuItem69.Name = "ToolStripMenuItem69"
-        resources.ApplyResources(Me.ToolStripMenuItem69, "ToolStripMenuItem69")
-        '
-        'ToolStripMenuItem70
-        '
-        resources.ApplyResources(Me.ToolStripMenuItem70, "ToolStripMenuItem70")
-        Me.ToolStripMenuItem70.Name = "ToolStripMenuItem70"
-        '
-        'ToolStripMenuItem71
-        '
-        resources.ApplyResources(Me.ToolStripMenuItem71, "ToolStripMenuItem71")
-        Me.ToolStripMenuItem71.Name = "ToolStripMenuItem71"
+        resources.ApplyResources(Me.ToolStripMenuItem76, "ToolStripMenuItem76")
+        Me.ToolStripMenuItem76.Name = "ToolStripMenuItem76"
         '
         'MainForm
         '
@@ -2965,5 +2995,10 @@ Partial Class MainForm
     Friend WithEvents ToolStripMenuItem60 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem59 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem58 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem73 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem72 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem76 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem75 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem74 As System.Windows.Forms.ToolStripMenuItem
 
 End Class

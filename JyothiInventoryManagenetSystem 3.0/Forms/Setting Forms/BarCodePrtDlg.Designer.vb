@@ -172,6 +172,7 @@ Partial Class BarCodePrtDlg
         Me.Controls.Add(Me.TxtPrinterName)
         Me.Controls.Add(Me.UserLabel3)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "BarCodePrtDlg"

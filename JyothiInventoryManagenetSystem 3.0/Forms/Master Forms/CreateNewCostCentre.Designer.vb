@@ -223,6 +223,7 @@ Partial Class CreateNewCostCentre
         Me.ClientSize = New System.Drawing.Size(498, 251)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "CreateNewCostCentre"

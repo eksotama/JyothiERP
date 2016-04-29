@@ -22,6 +22,7 @@ Partial Class EditCalander
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EditCalander))
         Me.TxtServiceList = New System.Windows.Forms.DataGridView()
         Me.tsno = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.tbarcode = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -498,6 +499,7 @@ Partial Class EditCalander
         Me.Controls.Add(Me.Label5)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "EditCalander"

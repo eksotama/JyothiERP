@@ -449,6 +449,7 @@ Partial Class EmpLeaveManagement
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(881, 506)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "EmpLeaveManagement"
         Me.Text = "Employee Leave Management"
         CType(Me.TxtList, System.ComponentModel.ISupportInitialize).EndInit()

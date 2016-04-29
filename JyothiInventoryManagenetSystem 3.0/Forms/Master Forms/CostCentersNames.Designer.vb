@@ -394,6 +394,7 @@ Partial Class CostCentersNames
         Me.CancelButton = Me.ImsButton1
         Me.ClientSize = New System.Drawing.Size(886, 494)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "CostCentersNames"
         Me.Text = "Cost Center Names"
         Me.Panel2.ResumeLayout(False)

@@ -127,7 +127,7 @@ Partial Class AssetmanagmentFrm
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(660, 25)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(58, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(202, 24)
         Me.MenuStrip1.TabIndex = 3
         Me.MenuStrip1.Text = "MenuStrip1"
         Me.MenuStrip1.Visible = False
@@ -431,6 +431,7 @@ Partial Class AssetmanagmentFrm
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1055, 457)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "AssetmanagmentFrm"
         Me.Text = "Asset Management"
         Me.Panel1.ResumeLayout(False)

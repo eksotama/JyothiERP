@@ -465,6 +465,7 @@ Partial Class ChooseInvoiceNumber
         Me.ClientSize = New System.Drawing.Size(919, 475)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "ChooseInvoiceNumber"

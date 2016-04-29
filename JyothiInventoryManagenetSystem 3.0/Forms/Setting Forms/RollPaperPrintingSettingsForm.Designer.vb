@@ -4100,6 +4100,7 @@ Partial Class RollPaperPrintingSettingsForm
         Me.ClientSize = New System.Drawing.Size(1284, 635)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "RollPaperPrintingSettingsForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "RollPaperPrintingSettings"

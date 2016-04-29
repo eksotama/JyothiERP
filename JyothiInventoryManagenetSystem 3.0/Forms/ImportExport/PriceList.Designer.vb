@@ -281,6 +281,7 @@ Partial Class PriceList
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(978, 531)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "PriceList"
         Me.Text = "Price List"
         Me.TableLayoutPanel1.ResumeLayout(False)

@@ -273,6 +273,7 @@ Partial Class ActiveLoginUsersInfo
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(871, 464)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ActiveLoginUsersInfo"
         Me.Text = "Current Login Users List"
         Me.TableLayoutPanel1.ResumeLayout(False)

@@ -153,6 +153,7 @@ Partial Class ReadSerialNumbers
         Me.ClientSize = New System.Drawing.Size(336, 511)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "ReadSerialNumbers"

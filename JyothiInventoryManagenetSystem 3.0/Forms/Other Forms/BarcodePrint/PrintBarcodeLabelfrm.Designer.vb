@@ -2354,6 +2354,7 @@ Partial Class PrintBarcodeLabelfrm
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1008, 612)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "PrintBarcodeLabelfrm"
         Me.Text = " BARCODE PRINTING"
         Me.panel222.ResumeLayout(False)

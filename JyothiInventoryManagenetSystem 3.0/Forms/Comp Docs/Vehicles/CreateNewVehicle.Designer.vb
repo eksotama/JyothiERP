@@ -1998,6 +1998,7 @@ Partial Class CreateNewVehicle
         Me.ClientSize = New System.Drawing.Size(793, 535)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "CreateNewVehicle"

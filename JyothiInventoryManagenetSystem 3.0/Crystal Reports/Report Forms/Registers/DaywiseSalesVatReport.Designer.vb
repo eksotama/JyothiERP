@@ -621,6 +621,7 @@ Partial Class DaywiseSalesVatReport
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(895, 444)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "DaywiseSalesVatReport"
         Me.Text = "DaywiseSalesVatReport"
         Me.Panel3.ResumeLayout(False)

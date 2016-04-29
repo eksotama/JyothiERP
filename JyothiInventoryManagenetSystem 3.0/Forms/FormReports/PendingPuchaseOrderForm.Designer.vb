@@ -550,6 +550,7 @@ Partial Class PendingPuchaseOrderForm
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(879, 522)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "PendingPuchaseOrderForm"
         Me.Text = "Pending Puchase Orders"
         Me.MenuStrip1.ResumeLayout(False)

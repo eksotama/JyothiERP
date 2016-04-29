@@ -571,6 +571,7 @@ Partial Class BarcodeFieldSettings
         Me.Controls.Add(Me.ImsButton5)
         Me.Controls.Add(Me.ImsButton6)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "BarcodeFieldSettings"

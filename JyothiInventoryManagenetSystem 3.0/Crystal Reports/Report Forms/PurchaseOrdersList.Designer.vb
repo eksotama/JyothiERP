@@ -411,6 +411,7 @@ Partial Class PurchaseOrdersList
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(962, 491)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "PurchaseOrdersList"
         Me.Text = "Purchase Orders List"
         Me.Panel1.ResumeLayout(False)

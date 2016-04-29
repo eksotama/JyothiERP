@@ -533,6 +533,7 @@ Partial Class Customers
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1061, 439)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Customers"
         Me.Text = "Customers"
         Me.TableLayoutPanel1.ResumeLayout(False)

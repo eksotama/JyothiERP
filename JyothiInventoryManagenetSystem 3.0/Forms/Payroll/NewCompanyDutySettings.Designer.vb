@@ -216,6 +216,7 @@ Partial Class NewCompanyDutySettings
         Me.Controls.Add(Me.ImSlabel2)
         Me.Controls.Add(Me.ImSlabel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "NewCompanyDutySettings"

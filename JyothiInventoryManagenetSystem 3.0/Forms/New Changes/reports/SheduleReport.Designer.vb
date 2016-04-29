@@ -443,6 +443,7 @@ Partial Class SheduleReport
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(892, 508)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "SheduleReport"
         Me.Text = "SheduleReport"
         Me.TableLayoutPanel2.ResumeLayout(False)

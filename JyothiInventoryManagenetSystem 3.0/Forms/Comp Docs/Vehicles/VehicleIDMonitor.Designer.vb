@@ -321,6 +321,7 @@ Partial Class VehicleIDMonitor
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(882, 452)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "VehicleIDMonitor"
         Me.Text = "Vehicle Expiry ID Monitor"
         Me.MenuStrip1.ResumeLayout(False)

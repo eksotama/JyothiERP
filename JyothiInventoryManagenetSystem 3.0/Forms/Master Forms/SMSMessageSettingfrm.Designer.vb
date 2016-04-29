@@ -218,6 +218,7 @@ Partial Class SmsMessageSettingForm
         Me.Controls.Add(Me.BtnClose)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TextBox3)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "SmsMessageSettingForm"
         Me.Text = "SMS Message Setting"
         Me.TabControl1.ResumeLayout(False)

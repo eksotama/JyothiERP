@@ -591,7 +591,7 @@ Public Class MainForm
         Me.Cursor = Cursors.Arrow
     End Sub
 
-    Private Sub ContraToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ContraToolStripMenuItem.Click
+    Private Sub ContraToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ContraToolStripMenuItem.Click, ToolStripMenuItem72.Click
         If DefLedgers.CashAccount.Length < 2 Then
             MsgBox("The Cash Account Ledger not Exists. without Cash Account Ledger , voucher can't be created...")
             DefaultLedgerSettingsForm.ShowDialog()
@@ -705,7 +705,7 @@ Public Class MainForm
         Me.Cursor = Cursors.Arrow
     End Sub
 
-    Private Sub PaymentsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PaymentsToolStripMenuItem.Click
+    Private Sub PaymentsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PaymentsToolStripMenuItem.Click, ToolStripMenuItem73.Click
         If DefLedgers.CashAccount.Length < 2 Then
             MsgBox("The Cash Account Ledger not Exists. without Cash Account Ledger , voucher can't be created...")
             DefaultLedgerSettingsForm.ShowDialog()
@@ -3717,7 +3717,7 @@ Public Class MainForm
         Return Retvalue
     End Function
 
-    Private Sub BalanceSheetToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BalanceSheetToolStripMenuItem1.Click
+    Private Sub BalanceSheetToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BalanceSheetToolStripMenuItem1.Click, ToolStripMenuItem74.Click
         Me.Cursor = Cursors.WaitCursor
         AdvBalanceSheet.SuspendLayout()
         AdvBalanceSheet.MdiParent = Me
@@ -3863,11 +3863,11 @@ Public Class MainForm
 
 
 
-    Private Sub ProfitLossAcToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProfitLossAcToolStripMenuItem1.Click
+    Private Sub ProfitLossAcToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProfitLossAcToolStripMenuItem1.Click, ToolStripMenuItem75.Click
 
     End Sub
 
-    Private Sub LedgerAccountReportsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LedgerAccountReportsToolStripMenuItem.Click
+    Private Sub LedgerAccountReportsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LedgerAccountReportsToolStripMenuItem.Click, ToolStripMenuItem76.Click
 
     End Sub
 

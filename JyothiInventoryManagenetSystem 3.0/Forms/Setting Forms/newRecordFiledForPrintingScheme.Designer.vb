@@ -156,6 +156,7 @@ Partial Class newRecordFiledForPrintingScheme
         Me.Controls.Add(Me.TxtRecFiledNames)
         Me.Controls.Add(Me.UserLabel3)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "newRecordFiledForPrintingScheme"

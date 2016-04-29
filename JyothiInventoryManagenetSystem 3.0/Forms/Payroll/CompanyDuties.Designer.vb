@@ -22,9 +22,9 @@ Partial Class CompanyDuties
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CompanyDuties))
         Me.ReloadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CloseToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
@@ -131,27 +131,27 @@ Partial Class CompanyDuties
         Me.TxtList.AllowUserToAddRows = False
         Me.TxtList.AllowUserToDeleteRows = False
         Me.TxtList.AllowUserToResizeRows = False
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.TxtList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.TxtList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.TxtList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.TxtList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.TxtList.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.TxtList.DefaultCellStyle = DataGridViewCellStyle3
         Me.TxtList.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TxtList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.TxtList.Location = New System.Drawing.Point(3, 65)
@@ -173,7 +173,7 @@ Partial Class CompanyDuties
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 37.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 43.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.ImsButton1, 1, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.BtnNew, 5, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.BtnEdit, 4, 0)
@@ -201,7 +201,7 @@ Partial Class CompanyDuties
         Me.ImsButton1.LostFocusFontColor = System.Drawing.Color.Blue
         Me.ImsButton1.Name = "ImsButton1"
         Me.ImsButton1.SetToolTip = ""
-        Me.ImsButton1.Size = New System.Drawing.Size(137, 49)
+        Me.ImsButton1.Size = New System.Drawing.Size(136, 49)
         Me.ImsButton1.TabIndex = 0
         Me.ImsButton1.Text = "CLOSE"
         Me.ImsButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -217,11 +217,11 @@ Partial Class CompanyDuties
         Me.BtnNew.ForeColor = System.Drawing.Color.Navy
         Me.BtnNew.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.BtnNew.Image = CType(resources.GetObject("BtnNew.Image"), System.Drawing.Image)
-        Me.BtnNew.Location = New System.Drawing.Point(607, 3)
+        Me.BtnNew.Location = New System.Drawing.Point(603, 3)
         Me.BtnNew.LostFocusFontColor = System.Drawing.Color.Blue
         Me.BtnNew.Name = "BtnNew"
         Me.BtnNew.SetToolTip = ""
-        Me.BtnNew.Size = New System.Drawing.Size(137, 49)
+        Me.BtnNew.Size = New System.Drawing.Size(136, 49)
         Me.BtnNew.TabIndex = 0
         Me.BtnNew.Text = "New Single Shift"
         Me.BtnNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -237,11 +237,11 @@ Partial Class CompanyDuties
         Me.BtnEdit.ForeColor = System.Drawing.Color.Navy
         Me.BtnEdit.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.BtnEdit.Image = CType(resources.GetObject("BtnEdit.Image"), System.Drawing.Image)
-        Me.BtnEdit.Location = New System.Drawing.Point(464, 3)
+        Me.BtnEdit.Location = New System.Drawing.Point(461, 3)
         Me.BtnEdit.LostFocusFontColor = System.Drawing.Color.Blue
         Me.BtnEdit.Name = "BtnEdit"
         Me.BtnEdit.SetToolTip = ""
-        Me.BtnEdit.Size = New System.Drawing.Size(137, 49)
+        Me.BtnEdit.Size = New System.Drawing.Size(136, 49)
         Me.BtnEdit.TabIndex = 0
         Me.BtnEdit.Text = "EDIT"
         Me.BtnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -257,11 +257,11 @@ Partial Class CompanyDuties
         Me.BtnDelete.ForeColor = System.Drawing.Color.Navy
         Me.BtnDelete.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.BtnDelete.Image = CType(resources.GetObject("BtnDelete.Image"), System.Drawing.Image)
-        Me.BtnDelete.Location = New System.Drawing.Point(321, 3)
+        Me.BtnDelete.Location = New System.Drawing.Point(319, 3)
         Me.BtnDelete.LostFocusFontColor = System.Drawing.Color.Blue
         Me.BtnDelete.Name = "BtnDelete"
         Me.BtnDelete.SetToolTip = ""
-        Me.BtnDelete.Size = New System.Drawing.Size(137, 49)
+        Me.BtnDelete.Size = New System.Drawing.Size(136, 49)
         Me.BtnDelete.TabIndex = 0
         Me.BtnDelete.Text = "DELETE"
         Me.BtnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -277,11 +277,11 @@ Partial Class CompanyDuties
         Me.BtnReport.ForeColor = System.Drawing.Color.Navy
         Me.BtnReport.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.BtnReport.Image = CType(resources.GetObject("BtnReport.Image"), System.Drawing.Image)
-        Me.BtnReport.Location = New System.Drawing.Point(178, 3)
+        Me.BtnReport.Location = New System.Drawing.Point(177, 3)
         Me.BtnReport.LostFocusFontColor = System.Drawing.Color.Blue
         Me.BtnReport.Name = "BtnReport"
         Me.BtnReport.SetToolTip = ""
-        Me.BtnReport.Size = New System.Drawing.Size(137, 49)
+        Me.BtnReport.Size = New System.Drawing.Size(136, 49)
         Me.BtnReport.TabIndex = 0
         Me.BtnReport.Text = "PRINT"
         Me.BtnReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -297,11 +297,11 @@ Partial Class CompanyDuties
         Me.btnDblnewshift.ForeColor = System.Drawing.Color.Navy
         Me.btnDblnewshift.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.btnDblnewshift.Image = CType(resources.GetObject("btnDblnewshift.Image"), System.Drawing.Image)
-        Me.btnDblnewshift.Location = New System.Drawing.Point(750, 3)
+        Me.btnDblnewshift.Location = New System.Drawing.Point(745, 3)
         Me.btnDblnewshift.LostFocusFontColor = System.Drawing.Color.Blue
         Me.btnDblnewshift.Name = "btnDblnewshift"
         Me.btnDblnewshift.SetToolTip = ""
-        Me.btnDblnewshift.Size = New System.Drawing.Size(137, 49)
+        Me.btnDblnewshift.Size = New System.Drawing.Size(136, 49)
         Me.btnDblnewshift.TabIndex = 0
         Me.btnDblnewshift.Text = "New Double Shit"
         Me.btnDblnewshift.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -367,6 +367,7 @@ Partial Class CompanyDuties
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(939, 466)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "CompanyDuties"
         Me.Text = "Type of Duties"
         CType(Me.TxtList, System.ComponentModel.ISupportInitialize).EndInit()

@@ -395,6 +395,7 @@ Partial Class CostCenterCategories
         Me.CancelButton = Me.BtnClose
         Me.ClientSize = New System.Drawing.Size(888, 472)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "CostCenterCategories"
         Me.Text = "Cost Centers Categories"
         Me.MenuStrip1.ResumeLayout(False)

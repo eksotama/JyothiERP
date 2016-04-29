@@ -227,6 +227,7 @@ Partial Class YearEnd
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(606, 237)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "YearEnd"
         Me.Text = "Year End"
         Me.TableLayoutPanel1.ResumeLayout(False)

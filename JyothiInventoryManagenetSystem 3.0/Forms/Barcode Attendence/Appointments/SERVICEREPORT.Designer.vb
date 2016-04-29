@@ -403,6 +403,7 @@ Partial Class SERVICEREPORT
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(923, 454)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "SERVICEREPORT"
         Me.Text = "SERVICEREPORT"
         Me.TableLayoutPanel1.ResumeLayout(False)

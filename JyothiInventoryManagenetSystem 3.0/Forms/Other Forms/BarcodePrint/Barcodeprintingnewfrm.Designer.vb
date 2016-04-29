@@ -991,6 +991,7 @@ Partial Class Barcodeprintingnewfrm
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1075, 562)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Barcodeprintingnewfrm"
         Me.Text = "Barcode Printing"
         CType(Me.TxtList, System.ComponentModel.ISupportInitialize).EndInit()

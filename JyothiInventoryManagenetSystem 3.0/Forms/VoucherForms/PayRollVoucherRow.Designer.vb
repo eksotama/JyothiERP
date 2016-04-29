@@ -162,6 +162,7 @@ Partial Class PayRollVoucherRow
         Me.TxtNarration.AllowToolTip = True
         Me.TxtNarration.CharcterCase = JyothiPharmaERPSystem3.IMSTextBox.ChangCaseValues.None
         Me.TxtNarration.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TxtNarration.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.TxtNarration.GFocusBackColor = System.Drawing.Color.Yellow
         Me.TxtNarration.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.TxtNarration.GotFocusFontSize = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)

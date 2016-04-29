@@ -514,6 +514,7 @@ Partial Class ledgerdaywisebalancereport
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(950, 445)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ledgerdaywisebalancereport"
         Me.Text = "Customers Day Wise Balance"
         Me.TableLayoutPanel1.ResumeLayout(False)

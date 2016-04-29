@@ -22,8 +22,8 @@ Partial Class EmployeeAttendenceSheet
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EmployeeAttendenceSheet))
         Me.PrintToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
@@ -36,6 +36,7 @@ Partial Class EmployeeAttendenceSheet
         Me.ImSlabel1 = New JyothiPharmaERPSystem3.IMSlabel()
         Me.TxtList = New JyothiPharmaERPSystem3.IMSList()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.ImsButton7 = New JyothiPharmaERPSystem3.IMSButton()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -45,13 +46,12 @@ Partial Class EmployeeAttendenceSheet
         Me.ReloadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GrantToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.BtnLeaves = New JyothiPharmaERPSystem3.IMSButton()
-        Me.ImsButton3 = New JyothiPharmaERPSystem3.IMSButton()
-        Me.ImsButton2 = New JyothiPharmaERPSystem3.IMSButton()
-        Me.ImsButton1 = New JyothiPharmaERPSystem3.IMSButton()
-        Me.ImsButton4 = New JyothiPharmaERPSystem3.IMSButton()
-        Me.ImsButton5 = New JyothiPharmaERPSystem3.IMSButton()
         Me.ImsButton6 = New JyothiPharmaERPSystem3.IMSButton()
-        Me.ImsButton7 = New JyothiPharmaERPSystem3.IMSButton()
+        Me.ImsButton3 = New JyothiPharmaERPSystem3.IMSButton()
+        Me.ImsButton5 = New JyothiPharmaERPSystem3.IMSButton()
+        Me.ImsButton2 = New JyothiPharmaERPSystem3.IMSButton()
+        Me.ImsButton4 = New JyothiPharmaERPSystem3.IMSButton()
+        Me.ImsButton1 = New JyothiPharmaERPSystem3.IMSButton()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.TxtList, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -187,18 +187,18 @@ Partial Class EmployeeAttendenceSheet
         Me.TxtList.AllowUserToAddRows = False
         Me.TxtList.AllowUserToDeleteRows = False
         Me.TxtList.AllowUserToResizeRows = False
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.TxtList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.TxtList.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.TxtList.DefaultCellStyle = DataGridViewCellStyle2
         Me.TxtList.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TxtList.Location = New System.Drawing.Point(3, 60)
         Me.TxtList.Name = "TxtList"
@@ -224,6 +224,26 @@ Partial Class EmployeeAttendenceSheet
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(928, 45)
         Me.Panel2.TabIndex = 3
+        '
+        'ImsButton7
+        '
+        Me.ImsButton7.AllowToolTip = True
+        Me.ImsButton7.BackColor = System.Drawing.Color.White
+        Me.ImsButton7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ImsButton7.ForeColor = System.Drawing.Color.Navy
+        Me.ImsButton7.GotFocusFontColor = System.Drawing.Color.Maroon
+        Me.ImsButton7.Image = CType(resources.GetObject("ImsButton7.Image"), System.Drawing.Image)
+        Me.ImsButton7.Location = New System.Drawing.Point(742, 3)
+        Me.ImsButton7.LostFocusFontColor = System.Drawing.Color.Blue
+        Me.ImsButton7.Margin = New System.Windows.Forms.Padding(0)
+        Me.ImsButton7.Name = "ImsButton7"
+        Me.ImsButton7.SetToolTip = ""
+        Me.ImsButton7.Size = New System.Drawing.Size(155, 42)
+        Me.ImsButton7.TabIndex = 2
+        Me.ImsButton7.Text = "GRANT LEAVES"
+        Me.ImsButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.ImsButton7.UseFunctionKeys = False
+        Me.ImsButton7.UseVisualStyleBackColor = False
         '
         'MenuStrip1
         '
@@ -306,6 +326,25 @@ Partial Class EmployeeAttendenceSheet
         Me.BtnLeaves.UseFunctionKeys = False
         Me.BtnLeaves.UseVisualStyleBackColor = True
         '
+        'ImsButton6
+        '
+        Me.ImsButton6.AllowToolTip = True
+        Me.ImsButton6.BackColor = System.Drawing.Color.White
+        Me.ImsButton6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ImsButton6.GotFocusFontColor = System.Drawing.Color.Maroon
+        Me.ImsButton6.Image = CType(resources.GetObject("ImsButton6.Image"), System.Drawing.Image)
+        Me.ImsButton6.Location = New System.Drawing.Point(549, 3)
+        Me.ImsButton6.LostFocusFontColor = System.Drawing.Color.Blue
+        Me.ImsButton6.Name = "ImsButton6"
+        Me.ImsButton6.SetToolTip = ""
+        Me.ImsButton6.Size = New System.Drawing.Size(155, 42)
+        Me.ImsButton6.TabIndex = 0
+        Me.ImsButton6.Text = "Refresh"
+        Me.ImsButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.ImsButton6.UseFunctionKeys = False
+        Me.ImsButton6.UseVisualStyleBackColor = False
+        Me.ImsButton6.Visible = False
+        '
         'ImsButton3
         '
         Me.ImsButton3.AllowToolTip = True
@@ -323,59 +362,6 @@ Partial Class EmployeeAttendenceSheet
         Me.ImsButton3.UseFunctionKeys = False
         Me.ImsButton3.UseVisualStyleBackColor = True
         Me.ImsButton3.Visible = False
-        '
-        'ImsButton2
-        '
-        Me.ImsButton2.AllowToolTip = True
-        Me.ImsButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ImsButton2.GotFocusFontColor = System.Drawing.Color.Maroon
-        Me.ImsButton2.Image = CType(resources.GetObject("ImsButton2.Image"), System.Drawing.Image)
-        Me.ImsButton2.Location = New System.Drawing.Point(346, 3)
-        Me.ImsButton2.LostFocusFontColor = System.Drawing.Color.Blue
-        Me.ImsButton2.Name = "ImsButton2"
-        Me.ImsButton2.SetToolTip = ""
-        Me.ImsButton2.Size = New System.Drawing.Size(155, 42)
-        Me.ImsButton2.TabIndex = 0
-        Me.ImsButton2.Text = "Print"
-        Me.ImsButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.ImsButton2.UseFunctionKeys = False
-        Me.ImsButton2.UseVisualStyleBackColor = True
-        Me.ImsButton2.Visible = False
-        '
-        'ImsButton1
-        '
-        Me.ImsButton1.AllowToolTip = True
-        Me.ImsButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ImsButton1.GotFocusFontColor = System.Drawing.Color.Maroon
-        Me.ImsButton1.Image = CType(resources.GetObject("ImsButton1.Image"), System.Drawing.Image)
-        Me.ImsButton1.Location = New System.Drawing.Point(116, 3)
-        Me.ImsButton1.LostFocusFontColor = System.Drawing.Color.Blue
-        Me.ImsButton1.Name = "ImsButton1"
-        Me.ImsButton1.SetToolTip = ""
-        Me.ImsButton1.Size = New System.Drawing.Size(155, 42)
-        Me.ImsButton1.TabIndex = 0
-        Me.ImsButton1.Text = "Close"
-        Me.ImsButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.ImsButton1.UseFunctionKeys = False
-        Me.ImsButton1.UseVisualStyleBackColor = True
-        '
-        'ImsButton4
-        '
-        Me.ImsButton4.AllowToolTip = True
-        Me.ImsButton4.BackColor = System.Drawing.Color.White
-        Me.ImsButton4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ImsButton4.GotFocusFontColor = System.Drawing.Color.Maroon
-        Me.ImsButton4.Image = CType(resources.GetObject("ImsButton4.Image"), System.Drawing.Image)
-        Me.ImsButton4.Location = New System.Drawing.Point(116, 3)
-        Me.ImsButton4.LostFocusFontColor = System.Drawing.Color.Blue
-        Me.ImsButton4.Name = "ImsButton4"
-        Me.ImsButton4.SetToolTip = ""
-        Me.ImsButton4.Size = New System.Drawing.Size(155, 42)
-        Me.ImsButton4.TabIndex = 0
-        Me.ImsButton4.Text = "Close"
-        Me.ImsButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.ImsButton4.UseFunctionKeys = False
-        Me.ImsButton4.UseVisualStyleBackColor = False
         '
         'ImsButton5
         '
@@ -396,44 +382,58 @@ Partial Class EmployeeAttendenceSheet
         Me.ImsButton5.UseVisualStyleBackColor = False
         Me.ImsButton5.Visible = False
         '
-        'ImsButton6
+        'ImsButton2
         '
-        Me.ImsButton6.AllowToolTip = True
-        Me.ImsButton6.BackColor = System.Drawing.Color.White
-        Me.ImsButton6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ImsButton6.GotFocusFontColor = System.Drawing.Color.Maroon
-        Me.ImsButton6.Image = CType(resources.GetObject("ImsButton6.Image"), System.Drawing.Image)
-        Me.ImsButton6.Location = New System.Drawing.Point(549, 3)
-        Me.ImsButton6.LostFocusFontColor = System.Drawing.Color.Blue
-        Me.ImsButton6.Name = "ImsButton6"
-        Me.ImsButton6.SetToolTip = ""
-        Me.ImsButton6.Size = New System.Drawing.Size(155, 42)
-        Me.ImsButton6.TabIndex = 0
-        Me.ImsButton6.Text = "Refresh"
-        Me.ImsButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.ImsButton6.UseFunctionKeys = False
-        Me.ImsButton6.UseVisualStyleBackColor = False
-        Me.ImsButton6.Visible = False
+        Me.ImsButton2.AllowToolTip = True
+        Me.ImsButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ImsButton2.GotFocusFontColor = System.Drawing.Color.Maroon
+        Me.ImsButton2.Image = CType(resources.GetObject("ImsButton2.Image"), System.Drawing.Image)
+        Me.ImsButton2.Location = New System.Drawing.Point(346, 3)
+        Me.ImsButton2.LostFocusFontColor = System.Drawing.Color.Blue
+        Me.ImsButton2.Name = "ImsButton2"
+        Me.ImsButton2.SetToolTip = ""
+        Me.ImsButton2.Size = New System.Drawing.Size(155, 42)
+        Me.ImsButton2.TabIndex = 0
+        Me.ImsButton2.Text = "Print"
+        Me.ImsButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.ImsButton2.UseFunctionKeys = False
+        Me.ImsButton2.UseVisualStyleBackColor = True
+        Me.ImsButton2.Visible = False
         '
-        'ImsButton7
+        'ImsButton4
         '
-        Me.ImsButton7.AllowToolTip = True
-        Me.ImsButton7.BackColor = System.Drawing.Color.White
-        Me.ImsButton7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ImsButton7.ForeColor = System.Drawing.Color.Navy
-        Me.ImsButton7.GotFocusFontColor = System.Drawing.Color.Maroon
-        Me.ImsButton7.Image = CType(resources.GetObject("ImsButton7.Image"), System.Drawing.Image)
-        Me.ImsButton7.Location = New System.Drawing.Point(742, 3)
-        Me.ImsButton7.LostFocusFontColor = System.Drawing.Color.Blue
-        Me.ImsButton7.Margin = New System.Windows.Forms.Padding(0)
-        Me.ImsButton7.Name = "ImsButton7"
-        Me.ImsButton7.SetToolTip = ""
-        Me.ImsButton7.Size = New System.Drawing.Size(155, 42)
-        Me.ImsButton7.TabIndex = 2
-        Me.ImsButton7.Text = "GRANT LEAVES"
-        Me.ImsButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.ImsButton7.UseFunctionKeys = False
-        Me.ImsButton7.UseVisualStyleBackColor = False
+        Me.ImsButton4.AllowToolTip = True
+        Me.ImsButton4.BackColor = System.Drawing.Color.White
+        Me.ImsButton4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ImsButton4.GotFocusFontColor = System.Drawing.Color.Maroon
+        Me.ImsButton4.Image = CType(resources.GetObject("ImsButton4.Image"), System.Drawing.Image)
+        Me.ImsButton4.Location = New System.Drawing.Point(116, 3)
+        Me.ImsButton4.LostFocusFontColor = System.Drawing.Color.Blue
+        Me.ImsButton4.Name = "ImsButton4"
+        Me.ImsButton4.SetToolTip = ""
+        Me.ImsButton4.Size = New System.Drawing.Size(155, 42)
+        Me.ImsButton4.TabIndex = 0
+        Me.ImsButton4.Text = "Close"
+        Me.ImsButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.ImsButton4.UseFunctionKeys = False
+        Me.ImsButton4.UseVisualStyleBackColor = False
+        '
+        'ImsButton1
+        '
+        Me.ImsButton1.AllowToolTip = True
+        Me.ImsButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ImsButton1.GotFocusFontColor = System.Drawing.Color.Maroon
+        Me.ImsButton1.Image = CType(resources.GetObject("ImsButton1.Image"), System.Drawing.Image)
+        Me.ImsButton1.Location = New System.Drawing.Point(116, 3)
+        Me.ImsButton1.LostFocusFontColor = System.Drawing.Color.Blue
+        Me.ImsButton1.Name = "ImsButton1"
+        Me.ImsButton1.SetToolTip = ""
+        Me.ImsButton1.Size = New System.Drawing.Size(155, 42)
+        Me.ImsButton1.TabIndex = 0
+        Me.ImsButton1.Text = "Close"
+        Me.ImsButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.ImsButton1.UseFunctionKeys = False
+        Me.ImsButton1.UseVisualStyleBackColor = True
         '
         'EmployeeAttendenceSheet
         '
@@ -442,6 +442,7 @@ Partial Class EmployeeAttendenceSheet
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(928, 394)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "EmployeeAttendenceSheet"
         Me.Text = "EMPLOYEE ATTENDENCE SHEET"
         Me.TableLayoutPanel1.ResumeLayout(False)

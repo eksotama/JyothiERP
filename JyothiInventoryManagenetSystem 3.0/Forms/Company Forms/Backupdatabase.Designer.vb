@@ -261,6 +261,7 @@ Partial Class backupdatabase
         Me.ClientSize = New System.Drawing.Size(652, 306)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.ImsHeadingLabel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "backupdatabase"

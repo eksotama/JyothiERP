@@ -197,6 +197,7 @@ Partial Class ExportPrintSettings
         Me.Controls.Add(Me.UserLabel2)
         Me.Controls.Add(Me.TableLayoutPanel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "ExportPrintSettings"

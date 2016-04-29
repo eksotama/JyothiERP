@@ -23,13 +23,13 @@ Partial Class EmpAttendenceDoubleShiftEntry
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EmpAttendenceDoubleShiftEntry))
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.ImsButton3 = New JyothiPharmaERPSystem3.IMSButton()
         Me.ImsButton2 = New JyothiPharmaERPSystem3.IMSButton()
@@ -353,20 +353,20 @@ Partial Class EmpAttendenceDoubleShiftEntry
         Me.TxtList.AllowUserToAddRows = False
         Me.TxtList.AllowUserToDeleteRows = False
         Me.TxtList.AllowUserToResizeRows = False
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.TxtList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.TxtList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.TxtList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.tempName, Me.tdepname, Me.tEntryTime, Me.tLeaveTime, Me.teEntryTime, Me.teLeaveTime, Me.tot, Me.tlate, Me.TworkingHr, Me.tStatus, Me.tshiftintime, Me.tshiftouttime, Me.Ttobeworkingmins, Me.teshiftintime, Me.teshiftouttime, Me.tearlyin, Me.tearlyout, Me.tIsEarlyasOT, Me.tlateoutasOT, Me.tnarration})
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.TxtList.DefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.TxtList.DefaultCellStyle = DataGridViewCellStyle7
         Me.TxtList.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TxtList.Location = New System.Drawing.Point(3, 61)
         Me.TxtList.Name = "TxtList"
@@ -392,9 +392,9 @@ Partial Class EmpAttendenceDoubleShiftEntry
         '
         'tEntryTime
         '
-        DataGridViewCellStyle9.Format = "t"
-        DataGridViewCellStyle9.NullValue = "00:00"
-        Me.tEntryTime.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle2.Format = "t"
+        DataGridViewCellStyle2.NullValue = "00:00"
+        Me.tEntryTime.DefaultCellStyle = DataGridViewCellStyle2
         Me.tEntryTime.HeaderText = "1st Shift Entry Time"
         Me.tEntryTime.Name = "tEntryTime"
         Me.tEntryTime.ReadOnly = True
@@ -402,9 +402,9 @@ Partial Class EmpAttendenceDoubleShiftEntry
         '
         'tLeaveTime
         '
-        DataGridViewCellStyle10.Format = "t"
-        DataGridViewCellStyle10.NullValue = "00:00"
-        Me.tLeaveTime.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle3.Format = "t"
+        DataGridViewCellStyle3.NullValue = "00:00"
+        Me.tLeaveTime.DefaultCellStyle = DataGridViewCellStyle3
         Me.tLeaveTime.HeaderText = "1st Shift LeaveTime"
         Me.tLeaveTime.Name = "tLeaveTime"
         Me.tLeaveTime.ReadOnly = True
@@ -412,9 +412,9 @@ Partial Class EmpAttendenceDoubleShiftEntry
         '
         'teEntryTime
         '
-        DataGridViewCellStyle11.Format = "t"
-        DataGridViewCellStyle11.NullValue = "0:00"
-        Me.teEntryTime.DefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle4.Format = "t"
+        DataGridViewCellStyle4.NullValue = "0:00"
+        Me.teEntryTime.DefaultCellStyle = DataGridViewCellStyle4
         Me.teEntryTime.HeaderText = "2nd Shift Entry Time"
         Me.teEntryTime.Name = "teEntryTime"
         Me.teEntryTime.ReadOnly = True
@@ -422,9 +422,9 @@ Partial Class EmpAttendenceDoubleShiftEntry
         '
         'teLeaveTime
         '
-        DataGridViewCellStyle12.Format = "t"
-        DataGridViewCellStyle12.NullValue = "0:00"
-        Me.teLeaveTime.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle5.Format = "t"
+        DataGridViewCellStyle5.NullValue = "0:00"
+        Me.teLeaveTime.DefaultCellStyle = DataGridViewCellStyle5
         Me.teLeaveTime.HeaderText = "2nd Shift Leave Time"
         Me.teLeaveTime.Name = "teLeaveTime"
         Me.teLeaveTime.ReadOnly = True
@@ -476,8 +476,8 @@ Partial Class EmpAttendenceDoubleShiftEntry
         '
         'Ttobeworkingmins
         '
-        DataGridViewCellStyle13.NullValue = "0"
-        Me.Ttobeworkingmins.DefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle6.NullValue = "0"
+        Me.Ttobeworkingmins.DefaultCellStyle = DataGridViewCellStyle6
         Me.Ttobeworkingmins.HeaderText = "totalmins"
         Me.Ttobeworkingmins.Name = "Ttobeworkingmins"
         Me.Ttobeworkingmins.Visible = False
@@ -538,6 +538,7 @@ Partial Class EmpAttendenceDoubleShiftEntry
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1062, 496)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "EmpAttendenceDoubleShiftEntry"
         Me.Text = "Double Shift Attendence Entry"
         Me.Panel2.ResumeLayout(False)

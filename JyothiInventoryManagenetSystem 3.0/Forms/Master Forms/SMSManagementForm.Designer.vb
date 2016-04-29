@@ -361,6 +361,7 @@ Partial Class SMSManagementForm
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(844, 469)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "SMSManagementForm"
         Me.Text = "SMSManagementForm"
         CType(Me.TxtList, System.ComponentModel.ISupportInitialize).EndInit()

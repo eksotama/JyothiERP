@@ -581,6 +581,7 @@ Partial Class VATPurchaseRegister
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1019, 443)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "VATPurchaseRegister"
         Me.Text = "VATPurchaseRegister"
         Me.TableLayoutPanel1.ResumeLayout(False)

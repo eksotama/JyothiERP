@@ -426,6 +426,7 @@ Partial Class VATLedgers
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(920, 525)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "VATLedgers"
         Me.Text = "VATLedgers"
         Me.Panel1.ResumeLayout(False)

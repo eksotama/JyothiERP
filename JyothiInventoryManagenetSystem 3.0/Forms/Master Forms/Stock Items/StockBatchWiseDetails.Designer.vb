@@ -52,9 +52,9 @@ Partial Class StockBatchWiseDetails
         Me.TxtList = New JyothiPharmaERPSystem3.IMSList()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.ImsButton1 = New JyothiPharmaERPSystem3.IMSButton()
+        Me.BtnEdit = New JyothiPharmaERPSystem3.IMSButton()
         Me.BtnDelete = New JyothiPharmaERPSystem3.IMSButton()
         Me.ImsButton4 = New JyothiPharmaERPSystem3.IMSButton()
-        Me.BtnEdit = New JyothiPharmaERPSystem3.IMSButton()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -428,6 +428,26 @@ Partial Class StockBatchWiseDetails
         Me.ImsButton1.UseFunctionKeys = False
         Me.ImsButton1.UseVisualStyleBackColor = False
         '
+        'BtnEdit
+        '
+        Me.BtnEdit.AllowToolTip = True
+        Me.BtnEdit.BackColor = System.Drawing.Color.White
+        Me.BtnEdit.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BtnEdit.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEdit.ForeColor = System.Drawing.Color.Navy
+        Me.BtnEdit.GotFocusFontColor = System.Drawing.Color.Maroon
+        Me.BtnEdit.Image = CType(resources.GetObject("BtnEdit.Image"), System.Drawing.Image)
+        Me.BtnEdit.Location = New System.Drawing.Point(756, 3)
+        Me.BtnEdit.LostFocusFontColor = System.Drawing.Color.Blue
+        Me.BtnEdit.Name = "BtnEdit"
+        Me.BtnEdit.SetToolTip = ""
+        Me.BtnEdit.Size = New System.Drawing.Size(248, 50)
+        Me.BtnEdit.TabIndex = 1
+        Me.BtnEdit.Text = "EDIT"
+        Me.BtnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.BtnEdit.UseFunctionKeys = False
+        Me.BtnEdit.UseVisualStyleBackColor = False
+        '
         'BtnDelete
         '
         Me.BtnDelete.AllowToolTip = True
@@ -468,26 +488,6 @@ Partial Class StockBatchWiseDetails
         Me.ImsButton4.UseFunctionKeys = False
         Me.ImsButton4.UseVisualStyleBackColor = False
         '
-        'BtnEdit
-        '
-        Me.BtnEdit.AllowToolTip = True
-        Me.BtnEdit.BackColor = System.Drawing.Color.White
-        Me.BtnEdit.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BtnEdit.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEdit.ForeColor = System.Drawing.Color.Navy
-        Me.BtnEdit.GotFocusFontColor = System.Drawing.Color.Maroon
-        Me.BtnEdit.Image = CType(resources.GetObject("BtnEdit.Image"), System.Drawing.Image)
-        Me.BtnEdit.Location = New System.Drawing.Point(756, 3)
-        Me.BtnEdit.LostFocusFontColor = System.Drawing.Color.Blue
-        Me.BtnEdit.Name = "BtnEdit"
-        Me.BtnEdit.SetToolTip = ""
-        Me.BtnEdit.Size = New System.Drawing.Size(248, 50)
-        Me.BtnEdit.TabIndex = 1
-        Me.BtnEdit.Text = "EDIT"
-        Me.BtnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.BtnEdit.UseFunctionKeys = False
-        Me.BtnEdit.UseVisualStyleBackColor = False
-        '
         'StockBatchWiseDetails
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -495,6 +495,7 @@ Partial Class StockBatchWiseDetails
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1013, 462)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "StockBatchWiseDetails"
         Me.Text = "Batch Nos and Expiry"
         Me.Panel1.ResumeLayout(False)

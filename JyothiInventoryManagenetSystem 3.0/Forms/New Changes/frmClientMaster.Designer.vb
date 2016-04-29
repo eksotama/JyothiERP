@@ -217,7 +217,7 @@ Partial Class frmClientMaster
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 59.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.ImsButton1, 1, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.BtnDelete, 3, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.ImsButton4, 2, 0)
@@ -245,7 +245,7 @@ Partial Class frmClientMaster
         Me.ImsButton1.LostFocusFontColor = System.Drawing.Color.Blue
         Me.ImsButton1.Name = "ImsButton1"
         Me.ImsButton1.SetToolTip = ""
-        Me.ImsButton1.Size = New System.Drawing.Size(131, 49)
+        Me.ImsButton1.Size = New System.Drawing.Size(130, 49)
         Me.ImsButton1.TabIndex = 0
         Me.ImsButton1.Text = "CLOSE"
         Me.ImsButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -261,11 +261,11 @@ Partial Class frmClientMaster
         Me.BtnDelete.ForeColor = System.Drawing.Color.Navy
         Me.BtnDelete.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.BtnDelete.Image = CType(resources.GetObject("BtnDelete.Image"), System.Drawing.Image)
-        Me.BtnDelete.Location = New System.Drawing.Point(307, 3)
+        Me.BtnDelete.Location = New System.Drawing.Point(305, 3)
         Me.BtnDelete.LostFocusFontColor = System.Drawing.Color.Blue
         Me.BtnDelete.Name = "BtnDelete"
         Me.BtnDelete.SetToolTip = ""
-        Me.BtnDelete.Size = New System.Drawing.Size(131, 49)
+        Me.BtnDelete.Size = New System.Drawing.Size(130, 49)
         Me.BtnDelete.TabIndex = 0
         Me.BtnDelete.Text = "DELETE"
         Me.BtnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -281,11 +281,11 @@ Partial Class frmClientMaster
         Me.ImsButton4.ForeColor = System.Drawing.Color.Navy
         Me.ImsButton4.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.ImsButton4.Image = CType(resources.GetObject("ImsButton4.Image"), System.Drawing.Image)
-        Me.ImsButton4.Location = New System.Drawing.Point(170, 3)
+        Me.ImsButton4.Location = New System.Drawing.Point(169, 3)
         Me.ImsButton4.LostFocusFontColor = System.Drawing.Color.Blue
         Me.ImsButton4.Name = "ImsButton4"
         Me.ImsButton4.SetToolTip = ""
-        Me.ImsButton4.Size = New System.Drawing.Size(131, 49)
+        Me.ImsButton4.Size = New System.Drawing.Size(130, 49)
         Me.ImsButton4.TabIndex = 0
         Me.ImsButton4.Text = "PRINT"
         Me.ImsButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -301,11 +301,11 @@ Partial Class frmClientMaster
         Me.BtnNew.ForeColor = System.Drawing.Color.Navy
         Me.BtnNew.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.BtnNew.Image = CType(resources.GetObject("BtnNew.Image"), System.Drawing.Image)
-        Me.BtnNew.Location = New System.Drawing.Point(718, 3)
+        Me.BtnNew.Location = New System.Drawing.Point(713, 3)
         Me.BtnNew.LostFocusFontColor = System.Drawing.Color.Blue
         Me.BtnNew.Name = "BtnNew"
         Me.BtnNew.SetToolTip = ""
-        Me.BtnNew.Size = New System.Drawing.Size(131, 49)
+        Me.BtnNew.Size = New System.Drawing.Size(130, 49)
         Me.BtnNew.TabIndex = 0
         Me.BtnNew.Text = "NEW"
         Me.BtnNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -321,11 +321,11 @@ Partial Class frmClientMaster
         Me.BtnEdit.ForeColor = System.Drawing.Color.Navy
         Me.BtnEdit.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.BtnEdit.Image = CType(resources.GetObject("BtnEdit.Image"), System.Drawing.Image)
-        Me.BtnEdit.Location = New System.Drawing.Point(581, 3)
+        Me.BtnEdit.Location = New System.Drawing.Point(577, 3)
         Me.BtnEdit.LostFocusFontColor = System.Drawing.Color.Blue
         Me.BtnEdit.Name = "BtnEdit"
         Me.BtnEdit.SetToolTip = ""
-        Me.BtnEdit.Size = New System.Drawing.Size(131, 49)
+        Me.BtnEdit.Size = New System.Drawing.Size(130, 49)
         Me.BtnEdit.TabIndex = 0
         Me.BtnEdit.Text = "EDIT"
         Me.BtnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -341,11 +341,11 @@ Partial Class frmClientMaster
         Me.BtnAssignSites.ForeColor = System.Drawing.Color.Navy
         Me.BtnAssignSites.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.BtnAssignSites.Image = Global.JyothiPharmaERPSystem3.My.Resources.Resources.copy24
-        Me.BtnAssignSites.Location = New System.Drawing.Point(444, 3)
+        Me.BtnAssignSites.Location = New System.Drawing.Point(441, 3)
         Me.BtnAssignSites.LostFocusFontColor = System.Drawing.Color.Blue
         Me.BtnAssignSites.Name = "BtnAssignSites"
         Me.BtnAssignSites.SetToolTip = ""
-        Me.BtnAssignSites.Size = New System.Drawing.Size(131, 49)
+        Me.BtnAssignSites.Size = New System.Drawing.Size(130, 49)
         Me.BtnAssignSites.TabIndex = 0
         Me.BtnAssignSites.Text = "ASSIGN SITES"
         Me.BtnAssignSites.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -369,6 +369,7 @@ Partial Class frmClientMaster
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(917, 445)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmClientMaster"
         Me.Text = "frmClientMaster"
         Me.MenuStrip1.ResumeLayout(False)

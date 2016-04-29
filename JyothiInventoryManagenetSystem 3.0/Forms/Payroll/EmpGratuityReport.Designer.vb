@@ -329,6 +329,7 @@ Partial Class EmpGratuityReport
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(907, 475)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "EmpGratuityReport"
         Me.Text = "Employee Gratuity Report"
         Me.TableLayoutPanel1.ResumeLayout(False)

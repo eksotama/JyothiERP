@@ -23,6 +23,7 @@ Partial Class PurchaseInvoiceAllFromControl
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PurchaseInvoiceAllFromControl))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -40,10 +41,10 @@ Partial Class PurchaseInvoiceAllFromControl
         Me.ToolStripMenuItem10 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem11 = New System.Windows.Forms.ToolStripMenuItem()
         Me.NewFormToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HideunhideToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BtnNewInvoice = New JyothiPharmaERPSystem3.IMSButton()
         Me.TxtCurrentBill = New JyothiPharmaERPSystem3.IMSlabel()
         Me.ImSlabel1 = New JyothiPharmaERPSystem3.IMSlabel()
-        Me.HideunhideToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -110,7 +111,7 @@ Partial Class PurchaseInvoiceAllFromControl
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OptionsToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(405, 4)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(161, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(202, 24)
         Me.MenuStrip1.TabIndex = 3
         Me.MenuStrip1.Text = "MenuStrip1"
         Me.MenuStrip1.Visible = False
@@ -200,6 +201,13 @@ Partial Class PurchaseInvoiceAllFromControl
         Me.NewFormToolStripMenuItem.Size = New System.Drawing.Size(184, 22)
         Me.NewFormToolStripMenuItem.Text = "NewForm"
         '
+        'HideunhideToolStripMenuItem
+        '
+        Me.HideunhideToolStripMenuItem.Name = "HideunhideToolStripMenuItem"
+        Me.HideunhideToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.H), System.Windows.Forms.Keys)
+        Me.HideunhideToolStripMenuItem.Size = New System.Drawing.Size(184, 22)
+        Me.HideunhideToolStripMenuItem.Text = "Hide/unhide"
+        '
         'BtnNewInvoice
         '
         Me.BtnNewInvoice.AllowToolTip = True
@@ -237,13 +245,6 @@ Partial Class PurchaseInvoiceAllFromControl
         Me.ImSlabel1.TabIndex = 0
         Me.ImSlabel1.Text = "Current Bill No"
         '
-        'HideunhideToolStripMenuItem
-        '
-        Me.HideunhideToolStripMenuItem.Name = "HideunhideToolStripMenuItem"
-        Me.HideunhideToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.H), System.Windows.Forms.Keys)
-        Me.HideunhideToolStripMenuItem.Size = New System.Drawing.Size(184, 22)
-        Me.HideunhideToolStripMenuItem.Text = "Hide/unhide"
-        '
         'PurchaseInvoiceAllFromControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -251,6 +252,7 @@ Partial Class PurchaseInvoiceAllFromControl
         Me.ClientSize = New System.Drawing.Size(1285, 482)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "PurchaseInvoiceAllFromControl"
         Me.Text = "PurchaseInvoiceAllFromControl"
         Me.TableLayoutPanel1.ResumeLayout(False)

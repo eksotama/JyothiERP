@@ -3973,6 +3973,7 @@ Partial Class VoucherPrintingSettings
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1088, 562)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "VoucherPrintingSettings"
         Me.Text = "Voucher Printing Settings"
         CType(Me.TxtRFleft, System.ComponentModel.ISupportInitialize).EndInit()

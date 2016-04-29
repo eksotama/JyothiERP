@@ -417,6 +417,7 @@ Partial Class StockGroups
         Me.CancelButton = Me.BtnClose
         Me.ClientSize = New System.Drawing.Size(959, 440)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "StockGroups"
         Me.Text = "Stock Groups"
         Me.TableLayoutPanel1.ResumeLayout(False)

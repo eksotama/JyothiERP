@@ -228,6 +228,7 @@ Partial Class dailyservicereportfrm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(919, 439)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "dailyservicereportfrm"
         Me.Text = "DAILY SERVICE REPORT"
         Me.Panel1.ResumeLayout(False)
@@ -255,5 +256,5 @@ Partial Class dailyservicereportfrm
     Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents TxtHeading As JyothiPharmaERPSystem3.IMSHeadingLabel
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
+    Private WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
 End Class

@@ -241,6 +241,7 @@ Partial Class AppointmentsDashBoard
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(931, 530)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "AppointmentsDashBoard"
         Me.Text = "Appointments DashBoard"
         Me.TableLayoutPanel1.ResumeLayout(False)

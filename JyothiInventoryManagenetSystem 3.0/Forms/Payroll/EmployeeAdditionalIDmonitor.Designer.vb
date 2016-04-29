@@ -390,6 +390,7 @@ Partial Class EmployeeAdditionalIDmonitor
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(855, 504)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "EmployeeAdditionalIDmonitor"
         Me.Text = "Employee ID Details Monitor"
         Me.TableLayoutPanel1.ResumeLayout(False)

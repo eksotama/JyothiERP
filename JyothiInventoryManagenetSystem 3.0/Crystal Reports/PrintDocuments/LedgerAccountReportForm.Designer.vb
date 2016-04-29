@@ -428,6 +428,7 @@ Partial Class LedgerAccountReportForm
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(900, 519)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "LedgerAccountReportForm"
         Me.Text = "Ledger Account Reports"

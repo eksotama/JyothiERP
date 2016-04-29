@@ -490,6 +490,7 @@ Partial Class barcodeattendence
         Me.ClientSize = New System.Drawing.Size(1008, 536)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "barcodeattendence"

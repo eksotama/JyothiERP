@@ -22,6 +22,7 @@ Partial Class Costcenterallocation
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Costcenterallocation))
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TxtHeading = New JyothiPharmaERPSystem3.IMSHeadingLabel()
         Me.BtnOk = New JyothiPharmaERPSystem3.IMSButton()
@@ -164,6 +165,7 @@ Partial Class Costcenterallocation
         Me.ClientSize = New System.Drawing.Size(542, 572)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Costcenterallocation"

@@ -304,6 +304,7 @@ Partial Class RestoreDatabase
         Me.ClientSize = New System.Drawing.Size(630, 352)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.ImsHeadingLabel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "RestoreDatabase"

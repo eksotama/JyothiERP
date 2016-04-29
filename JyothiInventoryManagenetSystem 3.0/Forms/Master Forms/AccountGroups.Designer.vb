@@ -165,7 +165,7 @@ Partial Class AccountGroups
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 59.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.btnclose, 1, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.BtnNew, 6, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.BtnEdit, 5, 0)
@@ -194,7 +194,7 @@ Partial Class AccountGroups
         Me.btnclose.LostFocusFontColor = System.Drawing.Color.Blue
         Me.btnclose.Name = "btnclose"
         Me.btnclose.SetToolTip = ""
-        Me.btnclose.Size = New System.Drawing.Size(135, 50)
+        Me.btnclose.Size = New System.Drawing.Size(134, 50)
         Me.btnclose.TabIndex = 0
         Me.btnclose.Text = "CLOSE"
         Me.btnclose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -210,11 +210,11 @@ Partial Class AccountGroups
         Me.BtnNew.ForeColor = System.Drawing.Color.Navy
         Me.BtnNew.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.BtnNew.Image = CType(resources.GetObject("BtnNew.Image"), System.Drawing.Image)
-        Me.BtnNew.Location = New System.Drawing.Point(728, 3)
+        Me.BtnNew.Location = New System.Drawing.Point(723, 3)
         Me.BtnNew.LostFocusFontColor = System.Drawing.Color.Blue
         Me.BtnNew.Name = "BtnNew"
         Me.BtnNew.SetToolTip = ""
-        Me.BtnNew.Size = New System.Drawing.Size(135, 50)
+        Me.BtnNew.Size = New System.Drawing.Size(134, 50)
         Me.BtnNew.TabIndex = 0
         Me.BtnNew.Text = "NEW"
         Me.BtnNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -230,11 +230,11 @@ Partial Class AccountGroups
         Me.BtnEdit.ForeColor = System.Drawing.Color.Navy
         Me.BtnEdit.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.BtnEdit.Image = CType(resources.GetObject("BtnEdit.Image"), System.Drawing.Image)
-        Me.BtnEdit.Location = New System.Drawing.Point(587, 3)
+        Me.BtnEdit.Location = New System.Drawing.Point(583, 3)
         Me.BtnEdit.LostFocusFontColor = System.Drawing.Color.Blue
         Me.BtnEdit.Name = "BtnEdit"
         Me.BtnEdit.SetToolTip = ""
-        Me.BtnEdit.Size = New System.Drawing.Size(135, 50)
+        Me.BtnEdit.Size = New System.Drawing.Size(134, 50)
         Me.BtnEdit.TabIndex = 0
         Me.BtnEdit.Text = "EDIT"
         Me.BtnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -250,11 +250,11 @@ Partial Class AccountGroups
         Me.BtnDelete.ForeColor = System.Drawing.Color.Navy
         Me.BtnDelete.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.BtnDelete.Image = CType(resources.GetObject("BtnDelete.Image"), System.Drawing.Image)
-        Me.BtnDelete.Location = New System.Drawing.Point(446, 3)
+        Me.BtnDelete.Location = New System.Drawing.Point(443, 3)
         Me.BtnDelete.LostFocusFontColor = System.Drawing.Color.Blue
         Me.BtnDelete.Name = "BtnDelete"
         Me.BtnDelete.SetToolTip = ""
-        Me.BtnDelete.Size = New System.Drawing.Size(135, 50)
+        Me.BtnDelete.Size = New System.Drawing.Size(134, 50)
         Me.BtnDelete.TabIndex = 0
         Me.BtnDelete.Text = "DELETE"
         Me.BtnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -270,11 +270,11 @@ Partial Class AccountGroups
         Me.ImsButton2.ForeColor = System.Drawing.Color.Navy
         Me.ImsButton2.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.ImsButton2.Image = CType(resources.GetObject("ImsButton2.Image"), System.Drawing.Image)
-        Me.ImsButton2.Location = New System.Drawing.Point(164, 3)
+        Me.ImsButton2.Location = New System.Drawing.Point(163, 3)
         Me.ImsButton2.LostFocusFontColor = System.Drawing.Color.Blue
         Me.ImsButton2.Name = "ImsButton2"
         Me.ImsButton2.SetToolTip = ""
-        Me.ImsButton2.Size = New System.Drawing.Size(135, 50)
+        Me.ImsButton2.Size = New System.Drawing.Size(134, 50)
         Me.ImsButton2.TabIndex = 0
         Me.ImsButton2.Text = "REPORTS"
         Me.ImsButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -290,11 +290,11 @@ Partial Class AccountGroups
         Me.ImsButton4.ForeColor = System.Drawing.Color.Navy
         Me.ImsButton4.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.ImsButton4.Image = CType(resources.GetObject("ImsButton4.Image"), System.Drawing.Image)
-        Me.ImsButton4.Location = New System.Drawing.Point(305, 3)
+        Me.ImsButton4.Location = New System.Drawing.Point(303, 3)
         Me.ImsButton4.LostFocusFontColor = System.Drawing.Color.Blue
         Me.ImsButton4.Name = "ImsButton4"
         Me.ImsButton4.SetToolTip = ""
-        Me.ImsButton4.Size = New System.Drawing.Size(135, 50)
+        Me.ImsButton4.Size = New System.Drawing.Size(134, 50)
         Me.ImsButton4.TabIndex = 0
         Me.ImsButton4.Text = "PRINT"
         Me.ImsButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -466,6 +466,7 @@ Partial Class AccountGroups
         Me.CancelButton = Me.btnclose
         Me.ClientSize = New System.Drawing.Size(937, 563)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "AccountGroups"
         Me.Text = "Account Groups"
         Me.TableLayoutPanel1.ResumeLayout(False)

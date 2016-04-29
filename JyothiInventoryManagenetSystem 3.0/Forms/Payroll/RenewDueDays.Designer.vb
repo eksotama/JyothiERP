@@ -233,6 +233,7 @@ Partial Class RenewDueDays
         Me.ClientSize = New System.Drawing.Size(402, 226)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "RenewDueDays"

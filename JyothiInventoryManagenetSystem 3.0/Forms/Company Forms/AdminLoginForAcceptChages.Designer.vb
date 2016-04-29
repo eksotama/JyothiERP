@@ -22,6 +22,7 @@ Partial Class AdminLoginForAcceptChages
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AdminLoginForAcceptChages))
         Me.Cancel = New System.Windows.Forms.Button()
         Me.OK = New System.Windows.Forms.Button()
         Me.PasswordTextBox = New System.Windows.Forms.TextBox()
@@ -97,7 +98,7 @@ Partial Class AdminLoginForAcceptChages
         '
         'Panel1
         '
-        Me.Panel1.BackgroundImage = Global.JyothiPharmaERPSystem3.My.Resources.Resources.keys128
+        Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.Location = New System.Drawing.Point(5, 30)
         Me.Panel1.Name = "Panel1"
@@ -119,6 +120,7 @@ Partial Class AdminLoginForAcceptChages
         Me.Controls.Add(Me.PasswordLabel)
         Me.Controls.Add(Me.UsernameLabel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "AdminLoginForAcceptChages"

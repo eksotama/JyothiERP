@@ -22,6 +22,8 @@ Partial Class SingleEntryVoucherRow
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TxtDrCr = New JyothiPharmaERPSystem3.IMSComboBox()
         Me.TxtLedgerName = New JyothiPharmaERPSystem3.IMSComboBox()
@@ -75,6 +77,7 @@ Partial Class SingleEntryVoucherRow
         Me.TxtDrCr.FormattingEnabled = True
         Me.TxtDrCr.GFocusBackColor = System.Drawing.Color.Yellow
         Me.TxtDrCr.GotFocusFontColor = System.Drawing.Color.Maroon
+        Me.TxtDrCr.IsAdvanceSearchWindow = False
         Me.TxtDrCr.IsAllowDigits = True
         Me.TxtDrCr.IsAllowSpace = True
         Me.TxtDrCr.IsAllowSplChars = True
@@ -105,6 +108,7 @@ Partial Class SingleEntryVoucherRow
         Me.TxtLedgerName.FormattingEnabled = True
         Me.TxtLedgerName.GFocusBackColor = System.Drawing.Color.Yellow
         Me.TxtLedgerName.GotFocusFontColor = System.Drawing.Color.Maroon
+        Me.TxtLedgerName.IsAdvanceSearchWindow = False
         Me.TxtLedgerName.IsAllowDigits = True
         Me.TxtLedgerName.IsAllowSpace = True
         Me.TxtLedgerName.IsAllowSplChars = True
@@ -204,8 +208,19 @@ Partial Class SingleEntryVoucherRow
         '
         Me.CostList.AllowUserToAddRows = False
         Me.CostList.AllowUserToDeleteRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CostList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.CostList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.CostList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.tcostname, Me.tCostno, Me.tsno, Me.tamount, Me.tmore, Me.tCostCat})
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.CostList.DefaultCellStyle = DataGridViewCellStyle2
         Me.CostList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.CostList.Location = New System.Drawing.Point(3, 28)
         Me.CostList.Name = "CostList"

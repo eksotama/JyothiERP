@@ -95,7 +95,7 @@ Partial Class AuditForm
         Me.BtnConfirm.ForeColor = System.Drawing.Color.Navy
         Me.BtnConfirm.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.BtnConfirm.Image = Global.JyothiPharmaERPSystem3.My.Resources.Resources._1361188505_file_edit
-        Me.BtnConfirm.Location = New System.Drawing.Point(314, 3)
+        Me.BtnConfirm.Location = New System.Drawing.Point(312, 3)
         Me.BtnConfirm.LostFocusFontColor = System.Drawing.Color.Blue
         Me.BtnConfirm.Name = "BtnConfirm"
         Me.BtnConfirm.SetToolTip = ""
@@ -137,11 +137,11 @@ Partial Class AuditForm
         Me.btnCLose.ForeColor = System.Drawing.Color.Navy
         Me.btnCLose.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.btnCLose.Image = CType(resources.GetObject("btnCLose.Image"), System.Drawing.Image)
-        Me.btnCLose.Location = New System.Drawing.Point(153, 3)
+        Me.btnCLose.Location = New System.Drawing.Point(152, 3)
         Me.btnCLose.LostFocusFontColor = System.Drawing.Color.Blue
         Me.btnCLose.Name = "btnCLose"
         Me.btnCLose.SetToolTip = ""
-        Me.btnCLose.Size = New System.Drawing.Size(155, 50)
+        Me.btnCLose.Size = New System.Drawing.Size(154, 50)
         Me.btnCLose.TabIndex = 0
         Me.btnCLose.Text = "CLOSE"
         Me.btnCLose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -207,7 +207,7 @@ Partial Class AuditForm
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.23937!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.09396!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 41.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 43.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.btnCLose, 2, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.BtnConfirm, 3, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.BtnUnConfirm, 4, 0)
@@ -230,7 +230,7 @@ Partial Class AuditForm
         Me.BtnUnConfirm.ForeColor = System.Drawing.Color.Navy
         Me.BtnUnConfirm.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.BtnUnConfirm.Image = Global.JyothiPharmaERPSystem3.My.Resources.Resources._1361188505_file_edit
-        Me.BtnUnConfirm.Location = New System.Drawing.Point(459, 3)
+        Me.BtnUnConfirm.Location = New System.Drawing.Point(457, 3)
         Me.BtnUnConfirm.LostFocusFontColor = System.Drawing.Color.Blue
         Me.BtnUnConfirm.Name = "BtnUnConfirm"
         Me.BtnUnConfirm.SetToolTip = ""
@@ -250,11 +250,11 @@ Partial Class AuditForm
         Me.btnAuto.ForeColor = System.Drawing.Color.Navy
         Me.btnAuto.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.btnAuto.Image = Global.JyothiPharmaERPSystem3.My.Resources.Resources._1361188505_file_edit
-        Me.btnAuto.Location = New System.Drawing.Point(604, 3)
+        Me.btnAuto.Location = New System.Drawing.Point(602, 3)
         Me.btnAuto.LostFocusFontColor = System.Drawing.Color.Blue
         Me.btnAuto.Name = "btnAuto"
         Me.btnAuto.SetToolTip = ""
-        Me.btnAuto.Size = New System.Drawing.Size(162, 50)
+        Me.btnAuto.Size = New System.Drawing.Size(161, 50)
         Me.btnAuto.TabIndex = 0
         Me.btnAuto.Text = "AUTO CONFIRM"
         Me.btnAuto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -416,6 +416,7 @@ Partial Class AuditForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(941, 506)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "AuditForm"
         Me.Text = "Audit Form"
         CType(Me.TxtList, System.ComponentModel.ISupportInitialize).EndInit()

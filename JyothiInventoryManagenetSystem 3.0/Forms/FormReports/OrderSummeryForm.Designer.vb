@@ -548,6 +548,7 @@ Partial Class OrderSummeryForm
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(876, 526)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "OrderSummeryForm"
         Me.Text = "Sales Order Summary"
         Me.Panel2.ResumeLayout(False)

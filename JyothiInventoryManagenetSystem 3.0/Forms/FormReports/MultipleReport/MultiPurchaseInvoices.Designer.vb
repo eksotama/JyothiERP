@@ -464,6 +464,7 @@ Partial Class multiPurchaseInvoices
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(803, 436)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "multiPurchaseInvoices"
         Me.Text = "MULTI PURCHASE INVOICE REPORTS"
         Me.TableLayoutPanel1.ResumeLayout(False)

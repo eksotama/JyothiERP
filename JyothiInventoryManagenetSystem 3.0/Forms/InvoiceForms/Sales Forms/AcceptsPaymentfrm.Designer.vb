@@ -26,6 +26,7 @@ Partial Class AcceptsPaymentfrm
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AcceptsPaymentfrm))
         Me.BtnCancel = New JyothiPharmaERPSystem3.IMSButton()
         Me.BtnOk = New JyothiPharmaERPSystem3.IMSButton()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
@@ -47,6 +48,11 @@ Partial Class AcceptsPaymentfrm
         Me.ImSlabel13 = New JyothiPharmaERPSystem3.IMSlabel()
         Me.B1 = New System.Windows.Forms.Label()
         Me.TxtList = New JyothiPharmaERPSystem3.IMSList()
+        Me.stsno = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.stType = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.stAmount = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.stchequno = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.stchequedate = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
@@ -82,11 +88,6 @@ Partial Class AcceptsPaymentfrm
         Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReceivedToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AmountToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.stsno = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.stType = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.stAmount = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.stchequno = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.stchequedate = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.TxtList, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -464,6 +465,45 @@ Partial Class AcceptsPaymentfrm
         Me.TxtList.RowTemplate.Height = 25
         Me.TxtList.Size = New System.Drawing.Size(376, 249)
         Me.TxtList.TabIndex = 4
+        '
+        'stsno
+        '
+        Me.stsno.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.stsno.HeaderText = "Sno"
+        Me.stsno.Name = "stsno"
+        Me.stsno.ReadOnly = True
+        Me.stsno.Width = 50
+        '
+        'stType
+        '
+        Me.stType.HeaderText = "Type"
+        Me.stType.Name = "stType"
+        Me.stType.ReadOnly = True
+        '
+        'stAmount
+        '
+        Me.stAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight
+        DataGridViewCellStyle2.Format = "N2"
+        DataGridViewCellStyle2.NullValue = Nothing
+        Me.stAmount.DefaultCellStyle = DataGridViewCellStyle2
+        Me.stAmount.HeaderText = "Amount"
+        Me.stAmount.Name = "stAmount"
+        Me.stAmount.Width = 120
+        '
+        'stchequno
+        '
+        Me.stchequno.HeaderText = "CheckNO"
+        Me.stchequno.Name = "stchequno"
+        Me.stchequno.ReadOnly = True
+        Me.stchequno.Visible = False
+        '
+        'stchequedate
+        '
+        Me.stchequedate.HeaderText = "ChequeDate"
+        Me.stchequedate.Name = "stchequedate"
+        Me.stchequedate.ReadOnly = True
+        Me.stchequedate.Visible = False
         '
         'Panel5
         '
@@ -989,7 +1029,7 @@ Partial Class AcceptsPaymentfrm
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(415, 421)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(58, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(202, 24)
         Me.MenuStrip1.TabIndex = 9
         Me.MenuStrip1.Text = "MenuStrip1"
         Me.MenuStrip1.Visible = False
@@ -1016,45 +1056,6 @@ Partial Class AcceptsPaymentfrm
         Me.AmountToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.AmountToolStripMenuItem.Text = "Amount"
         '
-        'stsno
-        '
-        Me.stsno.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.stsno.HeaderText = "Sno"
-        Me.stsno.Name = "stsno"
-        Me.stsno.ReadOnly = True
-        Me.stsno.Width = 50
-        '
-        'stType
-        '
-        Me.stType.HeaderText = "Type"
-        Me.stType.Name = "stType"
-        Me.stType.ReadOnly = True
-        '
-        'stAmount
-        '
-        Me.stAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight
-        DataGridViewCellStyle2.Format = "N2"
-        DataGridViewCellStyle2.NullValue = Nothing
-        Me.stAmount.DefaultCellStyle = DataGridViewCellStyle2
-        Me.stAmount.HeaderText = "Amount"
-        Me.stAmount.Name = "stAmount"
-        Me.stAmount.Width = 120
-        '
-        'stchequno
-        '
-        Me.stchequno.HeaderText = "CheckNO"
-        Me.stchequno.Name = "stchequno"
-        Me.stchequno.ReadOnly = True
-        Me.stchequno.Visible = False
-        '
-        'stchequedate
-        '
-        Me.stchequedate.HeaderText = "ChequeDate"
-        Me.stchequedate.Name = "stchequedate"
-        Me.stchequedate.ReadOnly = True
-        Me.stchequedate.Visible = False
-        '
         'AcceptsPaymentfrm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1062,6 +1063,7 @@ Partial Class AcceptsPaymentfrm
         Me.ClientSize = New System.Drawing.Size(958, 572)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
         Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False

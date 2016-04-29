@@ -22,9 +22,9 @@ Partial Class UserLogInfo
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UserLogInfo))
         Me.ReloadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CloseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -135,27 +135,27 @@ Partial Class UserLogInfo
         Me.TxtList.AllowUserToAddRows = False
         Me.TxtList.AllowUserToDeleteRows = False
         Me.TxtList.AllowUserToResizeRows = False
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.TxtList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.TxtList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.TxtList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.TxtList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.TxtList.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.TxtList.DefaultCellStyle = DataGridViewCellStyle3
         Me.TxtList.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TxtList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.TxtList.Location = New System.Drawing.Point(3, 83)
@@ -177,7 +177,7 @@ Partial Class UserLogInfo
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.60564!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.859157!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.60564!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.ImsButton1, 1, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.ImsButton2, 5, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.BtnDelete, 7, 0)
@@ -203,7 +203,7 @@ Partial Class UserLogInfo
         Me.ImsButton1.LostFocusFontColor = System.Drawing.Color.Blue
         Me.ImsButton1.Name = "ImsButton1"
         Me.ImsButton1.SetToolTip = ""
-        Me.ImsButton1.Size = New System.Drawing.Size(141, 50)
+        Me.ImsButton1.Size = New System.Drawing.Size(140, 50)
         Me.ImsButton1.TabIndex = 0
         Me.ImsButton1.Text = "CLOSE"
         Me.ImsButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -219,11 +219,11 @@ Partial Class UserLogInfo
         Me.ImsButton2.ForeColor = System.Drawing.Color.Navy
         Me.ImsButton2.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.ImsButton2.Image = CType(resources.GetObject("ImsButton2.Image"), System.Drawing.Image)
-        Me.ImsButton2.Location = New System.Drawing.Point(481, 3)
+        Me.ImsButton2.Location = New System.Drawing.Point(479, 3)
         Me.ImsButton2.LostFocusFontColor = System.Drawing.Color.Blue
         Me.ImsButton2.Name = "ImsButton2"
         Me.ImsButton2.SetToolTip = ""
-        Me.ImsButton2.Size = New System.Drawing.Size(141, 50)
+        Me.ImsButton2.Size = New System.Drawing.Size(140, 50)
         Me.ImsButton2.TabIndex = 0
         Me.ImsButton2.Text = "DELETE SELECTED"
         Me.ImsButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -239,11 +239,11 @@ Partial Class UserLogInfo
         Me.BtnDelete.ForeColor = System.Drawing.Color.Navy
         Me.BtnDelete.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.BtnDelete.Image = CType(resources.GetObject("BtnDelete.Image"), System.Drawing.Image)
-        Me.BtnDelete.Location = New System.Drawing.Point(710, 3)
+        Me.BtnDelete.Location = New System.Drawing.Point(707, 3)
         Me.BtnDelete.LostFocusFontColor = System.Drawing.Color.Blue
         Me.BtnDelete.Name = "BtnDelete"
         Me.BtnDelete.SetToolTip = ""
-        Me.BtnDelete.Size = New System.Drawing.Size(141, 50)
+        Me.BtnDelete.Size = New System.Drawing.Size(140, 50)
         Me.BtnDelete.TabIndex = 0
         Me.BtnDelete.Text = "DELETE LIST"
         Me.BtnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -259,11 +259,11 @@ Partial Class UserLogInfo
         Me.ImsButton4.ForeColor = System.Drawing.Color.Navy
         Me.ImsButton4.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.ImsButton4.Image = CType(resources.GetObject("ImsButton4.Image"), System.Drawing.Image)
-        Me.ImsButton4.Location = New System.Drawing.Point(252, 3)
+        Me.ImsButton4.Location = New System.Drawing.Point(251, 3)
         Me.ImsButton4.LostFocusFontColor = System.Drawing.Color.Blue
         Me.ImsButton4.Name = "ImsButton4"
         Me.ImsButton4.SetToolTip = ""
-        Me.ImsButton4.Size = New System.Drawing.Size(141, 50)
+        Me.ImsButton4.Size = New System.Drawing.Size(140, 50)
         Me.ImsButton4.TabIndex = 0
         Me.ImsButton4.Text = "PRINT"
         Me.ImsButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -411,6 +411,7 @@ Partial Class UserLogInfo
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(912, 471)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "UserLogInfo"
         Me.Text = "User Log File"
         CType(Me.TxtList, System.ComponentModel.ISupportInitialize).EndInit()

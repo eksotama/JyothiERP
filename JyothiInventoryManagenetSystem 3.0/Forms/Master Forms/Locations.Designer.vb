@@ -301,6 +301,7 @@ Partial Class Locations
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1003, 452)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip2
         Me.Name = "Locations"
         Me.Text = "Locations"

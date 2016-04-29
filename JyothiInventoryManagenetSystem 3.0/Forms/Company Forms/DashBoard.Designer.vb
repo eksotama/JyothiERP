@@ -830,6 +830,7 @@ Partial Class DashBoard
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(860, 505)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "DashBoard"
         Me.Text = "DashBoard"
         Me.TableLayoutPanel1.ResumeLayout(False)

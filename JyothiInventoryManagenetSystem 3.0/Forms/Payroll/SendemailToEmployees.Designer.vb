@@ -194,6 +194,7 @@ Partial Class SendemailToEmployees
         Me.Controls.Add(Me.ImSlabel1)
         Me.Controls.Add(Me.ImSlabel5)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "SendemailToEmployees"

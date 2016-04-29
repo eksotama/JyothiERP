@@ -23,6 +23,7 @@ Partial Class CreateAssetNotes
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CreateAssetNotes))
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TxtAssetName = New JyothiPharmaERPSystem3.IMSlabel()
@@ -88,6 +89,7 @@ Partial Class CreateAssetNotes
         '
         Me.TxtNotes.AllowToolTip = True
         Me.TxtNotes.CharcterCase = JyothiPharmaERPSystem3.IMSTextBox.ChangCaseValues.Title
+        Me.TxtNotes.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.TxtNotes.GFocusBackColor = System.Drawing.Color.Yellow
         Me.TxtNotes.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.TxtNotes.GotFocusFontSize = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
@@ -109,6 +111,7 @@ Partial Class CreateAssetNotes
         '
         'TxtDate
         '
+        Me.TxtDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.TxtDate.Location = New System.Drawing.Point(103, 60)
         Me.TxtDate.Name = "TxtDate"
         Me.TxtDate.Size = New System.Drawing.Size(265, 20)
@@ -265,6 +268,7 @@ Partial Class CreateAssetNotes
         Me.ClientSize = New System.Drawing.Size(508, 376)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "CreateAssetNotes"

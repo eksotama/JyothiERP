@@ -22,6 +22,7 @@ Partial Class SalesInvoiceAllFormControl
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SalesInvoiceAllFormControl))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -253,6 +254,7 @@ Partial Class SalesInvoiceAllFormControl
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "SalesInvoiceAllFormControl"
         Me.Text = "SalesInvoiceAllFormControl"
         Me.TableLayoutPanel1.ResumeLayout(False)

@@ -23,10 +23,10 @@ Partial Class ReadOpBatchNoExpiry
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ReadOpBatchNoExpiry))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
@@ -105,7 +105,7 @@ Partial Class ReadOpBatchNoExpiry
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.36149!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 81.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 86.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 89.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.TxtMRP, 4, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.TxtBatchNo, 1, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.TxtExpiry, 2, 1)
@@ -146,7 +146,7 @@ Partial Class ReadOpBatchNoExpiry
         Me.TxtMRP.GotFocusFontSize = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.TxtMRP.HelpText = Nothing
         Me.TxtMRP.LFocusBackColor = System.Drawing.Color.White
-        Me.TxtMRP.Location = New System.Drawing.Point(453, 16)
+        Me.TxtMRP.Location = New System.Drawing.Point(452, 16)
         Me.TxtMRP.LostFocusFontColor = System.Drawing.Color.Blue
         Me.TxtMRP.LostFocusFontSize = New System.Drawing.Font("Microsoft Sans Serif", 11.2!)
         Me.TxtMRP.Max = CType(100000000000, Long)
@@ -204,7 +204,7 @@ Partial Class ReadOpBatchNoExpiry
         Me.TxtQty.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TxtQty.Location = New System.Drawing.Point(343, 16)
         Me.TxtQty.Name = "TxtQty"
-        Me.TxtQty.Size = New System.Drawing.Size(104, 21)
+        Me.TxtQty.Size = New System.Drawing.Size(103, 21)
         Me.TxtQty.TabIndex = 3
         Me.TxtQty.VisibleLabels = True
         '
@@ -257,7 +257,7 @@ Partial Class ReadOpBatchNoExpiry
         Me.TxtRate.GotFocusFontSize = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.TxtRate.HelpText = Nothing
         Me.TxtRate.LFocusBackColor = System.Drawing.Color.White
-        Me.TxtRate.Location = New System.Drawing.Point(541, 16)
+        Me.TxtRate.Location = New System.Drawing.Point(540, 16)
         Me.TxtRate.LostFocusFontColor = System.Drawing.Color.Blue
         Me.TxtRate.LostFocusFontSize = New System.Drawing.Font("Microsoft Sans Serif", 11.2!)
         Me.TxtRate.Max = CType(100000000000, Long)
@@ -318,7 +318,7 @@ Partial Class ReadOpBatchNoExpiry
         '
         Me.ImSlabel5.AutoSize = True
         Me.ImSlabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ImSlabel5.Location = New System.Drawing.Point(453, 0)
+        Me.ImSlabel5.Location = New System.Drawing.Point(452, 0)
         Me.ImSlabel5.Name = "ImSlabel5"
         Me.ImSlabel5.Size = New System.Drawing.Size(34, 13)
         Me.ImSlabel5.TabIndex = 7
@@ -328,7 +328,7 @@ Partial Class ReadOpBatchNoExpiry
         '
         Me.ImSlabel6.AutoSize = True
         Me.ImSlabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ImSlabel6.Location = New System.Drawing.Point(541, 0)
+        Me.ImSlabel6.Location = New System.Drawing.Point(540, 0)
         Me.ImSlabel6.Name = "ImSlabel6"
         Me.ImSlabel6.Size = New System.Drawing.Size(34, 13)
         Me.ImSlabel6.TabIndex = 7
@@ -340,7 +340,7 @@ Partial Class ReadOpBatchNoExpiry
         Me.ImsButton1.BackColor = System.Drawing.Color.White
         Me.ImsButton1.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.ImsButton1.Image = CType(resources.GetObject("ImsButton1.Image"), System.Drawing.Image)
-        Me.ImsButton1.Location = New System.Drawing.Point(622, 3)
+        Me.ImsButton1.Location = New System.Drawing.Point(621, 3)
         Me.ImsButton1.LostFocusFontColor = System.Drawing.Color.Blue
         Me.ImsButton1.Name = "ImsButton1"
         Me.TableLayoutPanel2.SetRowSpan(Me.ImsButton1, 2)
@@ -354,20 +354,20 @@ Partial Class ReadOpBatchNoExpiry
         'TxtList
         '
         Me.TxtList.AllowUserToAddRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
         Me.TxtList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.TxtList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.TxtList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.tlocation, Me.tbatchno, Me.texpiry, Me.Tqtytext, Me.tmrp, Me.trate, Me.tvalue, Me.ttotalqty, Me.toldbatchno, Me.tmainunitqty, Me.tsubunitqty})
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.TxtList.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.TxtList.DefaultCellStyle = DataGridViewCellStyle8
         Me.TxtList.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TxtList.Location = New System.Drawing.Point(3, 84)
         Me.TxtList.Name = "TxtList"
@@ -387,9 +387,9 @@ Partial Class ReadOpBatchNoExpiry
         '
         'texpiry
         '
-        DataGridViewCellStyle2.Format = "d"
-        DataGridViewCellStyle2.NullValue = Nothing
-        Me.texpiry.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle6.Format = "d"
+        DataGridViewCellStyle6.NullValue = Nothing
+        Me.texpiry.DefaultCellStyle = DataGridViewCellStyle6
         Me.texpiry.HeaderText = "Expiry"
         Me.texpiry.Name = "texpiry"
         Me.texpiry.ReadOnly = True
@@ -421,8 +421,8 @@ Partial Class ReadOpBatchNoExpiry
         'tvalue
         '
         Me.tvalue.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.tvalue.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.tvalue.DefaultCellStyle = DataGridViewCellStyle7
         Me.tvalue.HeaderText = "Value"
         Me.tvalue.Name = "tvalue"
         Me.tvalue.ReadOnly = True
@@ -537,6 +537,7 @@ Partial Class ReadOpBatchNoExpiry
         Me.ClientSize = New System.Drawing.Size(708, 379)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "ReadOpBatchNoExpiry"

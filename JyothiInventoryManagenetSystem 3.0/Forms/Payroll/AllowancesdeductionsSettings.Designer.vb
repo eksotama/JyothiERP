@@ -22,11 +22,11 @@ Partial Class AllowancesdeductionsSettings
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AllowancesdeductionsSettings))
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TxtList = New JyothiPharmaERPSystem3.IMSList()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
@@ -45,14 +45,14 @@ Partial Class AllowancesdeductionsSettings
         Me.BtnDelete = New JyothiPharmaERPSystem3.IMSButton()
         Me.BtnAdd = New JyothiPharmaERPSystem3.IMSButton()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.ImsButton5 = New JyothiPharmaERPSystem3.IMSButton()
         Me.BtnEdit = New JyothiPharmaERPSystem3.IMSButton()
         Me.ImsButton2 = New JyothiPharmaERPSystem3.IMSButton()
+        Me.ImsButton4 = New JyothiPharmaERPSystem3.IMSButton()
         Me.ImsButton3 = New JyothiPharmaERPSystem3.IMSButton()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TxtHeading = New JyothiPharmaERPSystem3.IMSHeadingLabel()
         Me.ImSlabel3 = New JyothiPharmaERPSystem3.IMSlabel()
-        Me.ImsButton4 = New JyothiPharmaERPSystem3.IMSButton()
-        Me.ImsButton5 = New JyothiPharmaERPSystem3.IMSButton()
         CType(Me.TxtList, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -70,20 +70,20 @@ Partial Class AllowancesdeductionsSettings
         Me.TxtList.AllowUserToOrderColumns = True
         Me.TxtList.AllowUserToResizeColumns = False
         Me.TxtList.AllowUserToResizeRows = False
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.TxtList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.TxtList.BackgroundColor = System.Drawing.Color.White
         Me.TxtList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.TxtList.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.TxtList.DefaultCellStyle = DataGridViewCellStyle2
         Me.TxtList.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TxtList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.TxtList.GridColor = System.Drawing.Color.Gray
@@ -229,20 +229,20 @@ Partial Class AllowancesdeductionsSettings
         Me.TxtList1.AllowUserToOrderColumns = True
         Me.TxtList1.AllowUserToResizeColumns = False
         Me.TxtList1.AllowUserToResizeRows = False
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtList1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtList1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
         Me.TxtList1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.TxtList1.BackgroundColor = System.Drawing.Color.White
         Me.TxtList1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.TxtList1.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.TxtList1.DefaultCellStyle = DataGridViewCellStyle4
         Me.TxtList1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TxtList1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.TxtList1.GridColor = System.Drawing.Color.Gray
@@ -360,6 +360,24 @@ Partial Class AllowancesdeductionsSettings
         Me.Panel2.Size = New System.Drawing.Size(101, 331)
         Me.Panel2.TabIndex = 6
         '
+        'ImsButton5
+        '
+        Me.ImsButton5.AllowToolTip = True
+        Me.ImsButton5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ImsButton5.GotFocusFontColor = System.Drawing.Color.Maroon
+        Me.ImsButton5.Image = CType(resources.GetObject("ImsButton5.Image"), System.Drawing.Image)
+        Me.ImsButton5.Location = New System.Drawing.Point(-615, 126)
+        Me.ImsButton5.LostFocusFontColor = System.Drawing.Color.Blue
+        Me.ImsButton5.Margin = New System.Windows.Forms.Padding(0)
+        Me.ImsButton5.Name = "ImsButton5"
+        Me.ImsButton5.SetToolTip = ""
+        Me.ImsButton5.Size = New System.Drawing.Size(101, 48)
+        Me.ImsButton5.TabIndex = 0
+        Me.ImsButton5.Text = "EDIT"
+        Me.ImsButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.ImsButton5.UseFunctionKeys = False
+        Me.ImsButton5.UseVisualStyleBackColor = True
+        '
         'BtnEdit
         '
         Me.BtnEdit.AllowToolTip = True
@@ -397,6 +415,24 @@ Partial Class AllowancesdeductionsSettings
         Me.ImsButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.ImsButton2.UseFunctionKeys = False
         Me.ImsButton2.UseVisualStyleBackColor = False
+        '
+        'ImsButton4
+        '
+        Me.ImsButton4.AllowToolTip = True
+        Me.ImsButton4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ImsButton4.GotFocusFontColor = System.Drawing.Color.Maroon
+        Me.ImsButton4.Image = CType(resources.GetObject("ImsButton4.Image"), System.Drawing.Image)
+        Me.ImsButton4.Location = New System.Drawing.Point(-616, 47)
+        Me.ImsButton4.LostFocusFontColor = System.Drawing.Color.Blue
+        Me.ImsButton4.Margin = New System.Windows.Forms.Padding(0)
+        Me.ImsButton4.Name = "ImsButton4"
+        Me.ImsButton4.SetToolTip = ""
+        Me.ImsButton4.Size = New System.Drawing.Size(101, 48)
+        Me.ImsButton4.TabIndex = 0
+        Me.ImsButton4.Text = "NEW"
+        Me.ImsButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.ImsButton4.UseFunctionKeys = False
+        Me.ImsButton4.UseVisualStyleBackColor = True
         '
         'ImsButton3
         '
@@ -464,42 +500,6 @@ Partial Class AllowancesdeductionsSettings
     "sign the Expense Ledger, ""Over Time"" for Over Time Duty, ""ABSENTS"" for Absense A" & _
     "mount as Deductions"
         '
-        'ImsButton4
-        '
-        Me.ImsButton4.AllowToolTip = True
-        Me.ImsButton4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ImsButton4.GotFocusFontColor = System.Drawing.Color.Maroon
-        Me.ImsButton4.Image = CType(resources.GetObject("ImsButton4.Image"), System.Drawing.Image)
-        Me.ImsButton4.Location = New System.Drawing.Point(-616, 47)
-        Me.ImsButton4.LostFocusFontColor = System.Drawing.Color.Blue
-        Me.ImsButton4.Margin = New System.Windows.Forms.Padding(0)
-        Me.ImsButton4.Name = "ImsButton4"
-        Me.ImsButton4.SetToolTip = ""
-        Me.ImsButton4.Size = New System.Drawing.Size(101, 48)
-        Me.ImsButton4.TabIndex = 0
-        Me.ImsButton4.Text = "NEW"
-        Me.ImsButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.ImsButton4.UseFunctionKeys = False
-        Me.ImsButton4.UseVisualStyleBackColor = True
-        '
-        'ImsButton5
-        '
-        Me.ImsButton5.AllowToolTip = True
-        Me.ImsButton5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ImsButton5.GotFocusFontColor = System.Drawing.Color.Maroon
-        Me.ImsButton5.Image = CType(resources.GetObject("ImsButton5.Image"), System.Drawing.Image)
-        Me.ImsButton5.Location = New System.Drawing.Point(-615, 126)
-        Me.ImsButton5.LostFocusFontColor = System.Drawing.Color.Blue
-        Me.ImsButton5.Margin = New System.Windows.Forms.Padding(0)
-        Me.ImsButton5.Name = "ImsButton5"
-        Me.ImsButton5.SetToolTip = ""
-        Me.ImsButton5.Size = New System.Drawing.Size(101, 48)
-        Me.ImsButton5.TabIndex = 0
-        Me.ImsButton5.Text = "EDIT"
-        Me.ImsButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.ImsButton5.UseFunctionKeys = False
-        Me.ImsButton5.UseVisualStyleBackColor = True
-        '
         'AllowancesdeductionsSettings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -507,6 +507,7 @@ Partial Class AllowancesdeductionsSettings
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1007, 470)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "AllowancesdeductionsSettings"
         Me.Text = "PaySettings"
         CType(Me.TxtList, System.ComponentModel.ISupportInitialize).EndInit()

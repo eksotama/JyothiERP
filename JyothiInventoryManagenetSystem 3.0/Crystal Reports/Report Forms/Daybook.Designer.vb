@@ -408,7 +408,7 @@ Partial Class Daybook
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(14, 475)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(202, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(58, 24)
         Me.MenuStrip1.TabIndex = 45
         Me.MenuStrip1.Text = "MenuStrip1"
         Me.MenuStrip1.Visible = False
@@ -480,6 +480,7 @@ Partial Class Daybook
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(863, 585)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Daybook"
         Me.Text = "Daybook"

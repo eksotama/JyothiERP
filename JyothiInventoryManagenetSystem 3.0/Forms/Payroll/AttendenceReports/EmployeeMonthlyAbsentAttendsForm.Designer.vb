@@ -380,6 +380,7 @@ Partial Class EmployeeMonthlyAbsentAttendsForm
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(948, 380)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "EmployeeMonthlyAbsentAttendsForm"
         Me.Text = "Employee Monthly Absent Attends"
         Me.Panel1.ResumeLayout(False)

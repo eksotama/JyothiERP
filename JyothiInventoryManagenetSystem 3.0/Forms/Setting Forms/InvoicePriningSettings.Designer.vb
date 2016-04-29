@@ -4370,6 +4370,7 @@ Partial Class InvoicePriningSettings
         Me.ClientSize = New System.Drawing.Size(1018, 639)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "InvoicePriningSettings"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Invoice Prining Settings"

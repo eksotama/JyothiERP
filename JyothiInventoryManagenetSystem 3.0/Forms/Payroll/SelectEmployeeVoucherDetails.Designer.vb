@@ -318,6 +318,7 @@ Partial Class SelectEmployeeVoucherDetails
         Me.ClientSize = New System.Drawing.Size(697, 484)
         Me.Controls.Add(Me.TableLayoutPanel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "SelectEmployeeVoucherDetails"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "LEDGER ALLOCATION FOR THE EMPLOYEE PAY SLIP"

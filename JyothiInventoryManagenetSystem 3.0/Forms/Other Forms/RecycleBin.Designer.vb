@@ -389,6 +389,7 @@ Partial Class RecycleBin
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1022, 527)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "RecycleBin"
         Me.Text = "Recycle Bin"
         Me.Panel1.ResumeLayout(False)

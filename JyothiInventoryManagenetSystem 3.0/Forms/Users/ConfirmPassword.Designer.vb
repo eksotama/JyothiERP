@@ -24,8 +24,8 @@ Partial Class ConfirmPassword
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ConfirmPassword))
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.OK_Button = New System.Windows.Forms.Button()
         Me.Cancel_Button = New System.Windows.Forms.Button()
+        Me.OK_Button = New System.Windows.Forms.Button()
         Me.ImSlabel1 = New JyothiPharmaERPSystem3.IMSlabel()
         Me.PasswordTextBox = New System.Windows.Forms.TextBox()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -46,19 +46,6 @@ Partial Class ConfirmPassword
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(291, 45)
         Me.TableLayoutPanel1.TabIndex = 0
         '
-        'OK_Button
-        '
-        Me.OK_Button.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.OK_Button.BackColor = System.Drawing.Color.White
-        Me.OK_Button.Image = CType(resources.GetObject("OK_Button.Image"), System.Drawing.Image)
-        Me.OK_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.OK_Button.Location = New System.Drawing.Point(159, 3)
-        Me.OK_Button.Name = "OK_Button"
-        Me.OK_Button.Size = New System.Drawing.Size(118, 39)
-        Me.OK_Button.TabIndex = 0
-        Me.OK_Button.Text = "OK"
-        Me.OK_Button.UseVisualStyleBackColor = False
-        '
         'Cancel_Button
         '
         Me.Cancel_Button.Anchor = System.Windows.Forms.AnchorStyles.None
@@ -72,6 +59,19 @@ Partial Class ConfirmPassword
         Me.Cancel_Button.TabIndex = 1
         Me.Cancel_Button.Text = "Cancel"
         Me.Cancel_Button.UseVisualStyleBackColor = False
+        '
+        'OK_Button
+        '
+        Me.OK_Button.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.OK_Button.BackColor = System.Drawing.Color.White
+        Me.OK_Button.Image = CType(resources.GetObject("OK_Button.Image"), System.Drawing.Image)
+        Me.OK_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.OK_Button.Location = New System.Drawing.Point(159, 3)
+        Me.OK_Button.Name = "OK_Button"
+        Me.OK_Button.Size = New System.Drawing.Size(118, 39)
+        Me.OK_Button.TabIndex = 0
+        Me.OK_Button.Text = "OK"
+        Me.OK_Button.UseVisualStyleBackColor = False
         '
         'ImSlabel1
         '
@@ -103,6 +103,7 @@ Partial Class ConfirmPassword
         Me.Controls.Add(Me.ImSlabel1)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "ConfirmPassword"

@@ -243,6 +243,7 @@ Partial Class DiscountInvoiceWise
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "DiscountInvoiceWise"

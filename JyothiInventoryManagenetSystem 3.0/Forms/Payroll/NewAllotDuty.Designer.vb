@@ -556,6 +556,7 @@ Partial Class NewAllotDuty
         Me.Controls.Add(Me.BtnCancel)
         Me.Controls.Add(Me.ImsHeadingLabel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "NewAllotDuty"

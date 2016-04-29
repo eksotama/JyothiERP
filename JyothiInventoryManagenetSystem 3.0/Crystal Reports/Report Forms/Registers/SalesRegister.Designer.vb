@@ -631,6 +631,7 @@ Partial Class SalesRegister
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1104, 532)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "SalesRegister"
         Me.Text = "Sales Register"
         Me.TableLayoutPanel1.ResumeLayout(False)

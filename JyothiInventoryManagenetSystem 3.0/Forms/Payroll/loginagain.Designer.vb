@@ -105,7 +105,7 @@ Partial Class loginagain
         'LogoPictureBox
         '
         Me.LogoPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.LogoPictureBox.Image = Global.JyothiPharmaERPSystem3.My.Resources.Resources.keys128
+        Me.LogoPictureBox.Image = CType(resources.GetObject("LogoPictureBox.Image"), System.Drawing.Image)
         Me.LogoPictureBox.Location = New System.Drawing.Point(13, 33)
         Me.LogoPictureBox.Name = "LogoPictureBox"
         Me.LogoPictureBox.Size = New System.Drawing.Size(140, 143)

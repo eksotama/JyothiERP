@@ -95,6 +95,7 @@ Partial Class StockImportErrorLogFile
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(819, 501)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "StockImportErrorLogFile"
         Me.Text = "Stock Item Import Error Log File"
         Me.TableLayoutPanel1.ResumeLayout(False)

@@ -22,6 +22,7 @@ Partial Class DutySettings
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DutySettings))
         Me.TxtType = New JyothiPharmaERPSystem3.IMSComboBox()
         Me.BtnSave = New JyothiPharmaERPSystem3.IMSButton()
         Me.BtnCancel = New JyothiPharmaERPSystem3.IMSButton()
@@ -58,6 +59,7 @@ Partial Class DutySettings
         Me.TxtType.FormattingEnabled = True
         Me.TxtType.GFocusBackColor = System.Drawing.Color.Yellow
         Me.TxtType.GotFocusFontColor = System.Drawing.Color.Maroon
+        Me.TxtType.IsAdvanceSearchWindow = False
         Me.TxtType.IsAllowDigits = True
         Me.TxtType.IsAllowSpace = True
         Me.TxtType.IsAllowSplChars = True
@@ -67,6 +69,7 @@ Partial Class DutySettings
         Me.TxtType.Location = New System.Drawing.Point(183, 36)
         Me.TxtType.LostFocusFontColor = System.Drawing.Color.Blue
         Me.TxtType.Name = "TxtType"
+        Me.TxtType.SetToolTip = Nothing
         Me.TxtType.Size = New System.Drawing.Size(267, 21)
         Me.TxtType.Sorted = True
         Me.TxtType.SpecialCharList = "&-/@"
@@ -77,7 +80,7 @@ Partial Class DutySettings
         '
         Me.BtnSave.AllowToolTip = True
         Me.BtnSave.GotFocusFontColor = System.Drawing.Color.Maroon
-        Me.BtnSave.Image = Global.JyothiPharmaERPSystem3.My.Resources.Resources.Save__1_
+        Me.BtnSave.Image = CType(resources.GetObject("BtnSave.Image"), System.Drawing.Image)
         Me.BtnSave.Location = New System.Drawing.Point(398, 273)
         Me.BtnSave.LostFocusFontColor = System.Drawing.Color.Blue
         Me.BtnSave.Name = "BtnSave"
@@ -94,7 +97,7 @@ Partial Class DutySettings
         Me.BtnCancel.AllowToolTip = True
         Me.BtnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.BtnCancel.GotFocusFontColor = System.Drawing.Color.Maroon
-        Me.BtnCancel.Image = Global.JyothiPharmaERPSystem3.My.Resources.Resources.close32
+        Me.BtnCancel.Image = CType(resources.GetObject("BtnCancel.Image"), System.Drawing.Image)
         Me.BtnCancel.Location = New System.Drawing.Point(42, 273)
         Me.BtnCancel.LostFocusFontColor = System.Drawing.Color.Blue
         Me.BtnCancel.Name = "BtnCancel"
@@ -363,6 +366,7 @@ Partial Class DutySettings
         Me.Controls.Add(Me.ImSlabel5)
         Me.Controls.Add(Me.ImSlabel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "DutySettings"

@@ -503,6 +503,7 @@ Partial Class Printbarcode48Lfrm
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1216, 684)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Printbarcode48Lfrm"
         Me.Text = " BARCODE PRINTING"
         Me.TableLayoutPanel1.ResumeLayout(False)

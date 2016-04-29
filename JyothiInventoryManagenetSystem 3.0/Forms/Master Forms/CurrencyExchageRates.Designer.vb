@@ -395,6 +395,7 @@ Partial Class CurrencyExchageRates
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(813, 477)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "CurrencyExchageRates"
         Me.Text = "Currency Exchage Rates"
         Me.TableLayoutPanel1.ResumeLayout(False)

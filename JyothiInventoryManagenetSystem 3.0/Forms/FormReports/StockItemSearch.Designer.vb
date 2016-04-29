@@ -442,6 +442,7 @@ Partial Class StockItemSearch
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1084, 530)
         Me.Controls.Add(Me.FlowLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "StockItemSearch"
         Me.Text = "Search Stock Item"
         Me.TableLayoutPanel1.ResumeLayout(False)

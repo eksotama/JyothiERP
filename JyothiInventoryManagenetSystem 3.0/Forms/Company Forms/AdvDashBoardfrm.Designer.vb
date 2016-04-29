@@ -1019,6 +1019,7 @@ Partial Class AdvDashBoardfrm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(954, 464)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "AdvDashBoardfrm"
         Me.Text = "Dash Board"
         Me.TabControl1.ResumeLayout(False)

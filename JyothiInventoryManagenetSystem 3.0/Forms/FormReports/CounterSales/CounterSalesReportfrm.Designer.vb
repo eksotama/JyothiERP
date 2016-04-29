@@ -533,6 +533,7 @@ Partial Class CounterSalesReportfrm
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(949, 470)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "CounterSalesReportfrm"
         Me.Text = "Counter Sales Report"
         Me.TableLayoutPanel1.ResumeLayout(False)

@@ -498,6 +498,7 @@ Partial Class DocumentIssuesfrm
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(912, 425)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "DocumentIssuesfrm"
         Me.Text = "Document Issues"
         Me.Panel1.ResumeLayout(False)

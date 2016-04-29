@@ -383,6 +383,7 @@ Partial Class frmEmployeeSiteschedule
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(904, 409)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmEmployeeSiteschedule"
         Me.Text = "Employee Site schedule"
         Me.TableLayoutPanel2.ResumeLayout(False)

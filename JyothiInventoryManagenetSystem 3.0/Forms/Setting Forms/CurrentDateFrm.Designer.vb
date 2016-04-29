@@ -120,6 +120,7 @@ Partial Class CurrentDateFrm
         Me.Controls.Add(Me.UserLabel4)
         Me.Controls.Add(Me.UserLabel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "CurrentDateFrm"

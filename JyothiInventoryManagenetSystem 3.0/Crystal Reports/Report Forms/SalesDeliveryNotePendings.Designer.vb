@@ -493,6 +493,7 @@ Partial Class SalesDeliveryNotePendings
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(860, 450)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "SalesDeliveryNotePendings"
         Me.Text = "SalesDeliveryNotePendings"
         Me.MenuStrip1.ResumeLayout(False)

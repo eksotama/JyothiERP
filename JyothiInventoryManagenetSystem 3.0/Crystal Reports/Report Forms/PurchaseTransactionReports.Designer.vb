@@ -367,6 +367,7 @@ Partial Class PurchaseTransactionReports
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(894, 507)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "PurchaseTransactionReports"
         Me.Text = "Purchase Enquiry Transaction Reports"
         Me.Panel1.ResumeLayout(False)

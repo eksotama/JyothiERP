@@ -1179,7 +1179,7 @@ Partial Class StockAdjustmentFrm
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 0.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 0.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 101.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label11, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.TxtBarCode, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.BtnEditCancel, 11, 0)
@@ -1258,12 +1258,12 @@ Partial Class StockAdjustmentFrm
         Me.BtnEditCancel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BtnEditCancel.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.BtnEditCancel.Image = CType(resources.GetObject("BtnEditCancel.Image"), System.Drawing.Image)
-        Me.BtnEditCancel.Location = New System.Drawing.Point(834, 3)
+        Me.BtnEditCancel.Location = New System.Drawing.Point(832, 3)
         Me.BtnEditCancel.LostFocusFontColor = System.Drawing.Color.Blue
         Me.BtnEditCancel.Name = "BtnEditCancel"
         Me.TableLayoutPanel2.SetRowSpan(Me.BtnEditCancel, 3)
         Me.BtnEditCancel.SetToolTip = ""
-        Me.BtnEditCancel.Size = New System.Drawing.Size(95, 56)
+        Me.BtnEditCancel.Size = New System.Drawing.Size(97, 56)
         Me.BtnEditCancel.TabIndex = 6
         Me.BtnEditCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.BtnEditCancel.UseFunctionKeys = False
@@ -1277,7 +1277,7 @@ Partial Class StockAdjustmentFrm
         Me.BtmAdd.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BtmAdd.GotFocusFontColor = System.Drawing.Color.Maroon
         Me.BtmAdd.Image = CType(resources.GetObject("BtmAdd.Image"), System.Drawing.Image)
-        Me.BtmAdd.Location = New System.Drawing.Point(752, 3)
+        Me.BtmAdd.Location = New System.Drawing.Point(750, 3)
         Me.BtmAdd.LostFocusFontColor = System.Drawing.Color.Blue
         Me.BtmAdd.Name = "BtmAdd"
         Me.TableLayoutPanel2.SetRowSpan(Me.BtmAdd, 3)
@@ -1293,7 +1293,7 @@ Partial Class StockAdjustmentFrm
         Me.Label18.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(752, 5)
+        Me.Label18.Location = New System.Drawing.Point(750, 5)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(1, 13)
         Me.Label18.TabIndex = 0
@@ -1304,7 +1304,7 @@ Partial Class StockAdjustmentFrm
         Me.Label17.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(752, 5)
+        Me.Label17.Location = New System.Drawing.Point(750, 5)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(1, 13)
         Me.Label17.TabIndex = 0
@@ -1315,7 +1315,7 @@ Partial Class StockAdjustmentFrm
         Me.Label16.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(752, 5)
+        Me.Label16.Location = New System.Drawing.Point(750, 5)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(1, 13)
         Me.Label16.TabIndex = 0
@@ -1327,7 +1327,7 @@ Partial Class StockAdjustmentFrm
         Me.Label15.AutoSize = True
         Me.Label15.Enabled = False
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(752, 5)
+        Me.Label15.Location = New System.Drawing.Point(750, 5)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(1, 13)
         Me.Label15.TabIndex = 4
@@ -1353,7 +1353,7 @@ Partial Class StockAdjustmentFrm
         Me.TxtStockValue.GotFocusFontSize = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.TxtStockValue.HelpText = Nothing
         Me.TxtStockValue.LFocusBackColor = System.Drawing.Color.White
-        Me.TxtStockValue.Location = New System.Drawing.Point(752, 21)
+        Me.TxtStockValue.Location = New System.Drawing.Point(750, 21)
         Me.TxtStockValue.LostFocusFontColor = System.Drawing.Color.Blue
         Me.TxtStockValue.LostFocusFontSize = New System.Drawing.Font("Microsoft Sans Serif", 11.2!)
         Me.TxtStockValue.Max = CType(100000000000000, Long)
@@ -1391,7 +1391,7 @@ Partial Class StockAdjustmentFrm
         Me.TxtStockDisc.GotFocusFontSize = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.TxtStockDisc.HelpText = Nothing
         Me.TxtStockDisc.LFocusBackColor = System.Drawing.Color.White
-        Me.TxtStockDisc.Location = New System.Drawing.Point(752, 21)
+        Me.TxtStockDisc.Location = New System.Drawing.Point(750, 21)
         Me.TxtStockDisc.LostFocusFontColor = System.Drawing.Color.Blue
         Me.TxtStockDisc.LostFocusFontSize = New System.Drawing.Font("Microsoft Sans Serif", 11.2!)
         Me.TxtStockDisc.Max = CType(100000000000000, Long)
@@ -1428,7 +1428,7 @@ Partial Class StockAdjustmentFrm
         Me.TxtRatePer.IsAllowSplChars = True
         Me.TxtRatePer.IsAllowToolTip = True
         Me.TxtRatePer.LFocusBackColor = System.Drawing.Color.White
-        Me.TxtRatePer.Location = New System.Drawing.Point(752, 21)
+        Me.TxtRatePer.Location = New System.Drawing.Point(750, 21)
         Me.TxtRatePer.LostFocusFontColor = System.Drawing.Color.Blue
         Me.TxtRatePer.Name = "TxtRatePer"
         Me.TxtRatePer.SetToolTip = Nothing
@@ -1457,7 +1457,7 @@ Partial Class StockAdjustmentFrm
         Me.TxtStockRate.GotFocusFontSize = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtStockRate.HelpText = Nothing
         Me.TxtStockRate.LFocusBackColor = System.Drawing.Color.White
-        Me.TxtStockRate.Location = New System.Drawing.Point(752, 21)
+        Me.TxtStockRate.Location = New System.Drawing.Point(750, 21)
         Me.TxtStockRate.LostFocusFontColor = System.Drawing.Color.Blue
         Me.TxtStockRate.LostFocusFontSize = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtStockRate.Max = CType(100000000000000, Long)
@@ -1533,7 +1533,7 @@ Partial Class StockAdjustmentFrm
         Me.TxtStockName.Name = "TxtStockName"
         Me.TxtStockName.ReadOnly = True
         Me.TxtStockName.SetToolTip = Nothing
-        Me.TxtStockName.Size = New System.Drawing.Size(180, 20)
+        Me.TxtStockName.Size = New System.Drawing.Size(179, 20)
         Me.TxtStockName.SpecialCharList = "&-/@"
         Me.TxtStockName.TabIndex = 1
         Me.TxtStockName.UseFunctionKeys = False
@@ -1553,14 +1553,14 @@ Partial Class StockAdjustmentFrm
         Me.TxtStockSize.IsAllowSpace = True
         Me.TxtStockSize.IsAllowSplChars = True
         Me.TxtStockSize.LFocusBackColor = System.Drawing.Color.White
-        Me.TxtStockSize.Location = New System.Drawing.Point(294, 38)
+        Me.TxtStockSize.Location = New System.Drawing.Point(293, 38)
         Me.TxtStockSize.LostFocusFontColor = System.Drawing.Color.Blue
         Me.TxtStockSize.LostFocusFontSize = New System.Drawing.Font("Microsoft Sans Serif", 11.2!)
         Me.TxtStockSize.MaxLength = 75
         Me.TxtStockSize.Name = "TxtStockSize"
         Me.TxtStockSize.ReadOnly = True
         Me.TxtStockSize.SetToolTip = Nothing
-        Me.TxtStockSize.Size = New System.Drawing.Size(86, 20)
+        Me.TxtStockSize.Size = New System.Drawing.Size(85, 20)
         Me.TxtStockSize.SpecialCharList = "&-/@"
         Me.TxtStockSize.TabIndex = 2
         Me.TxtStockSize.UseFunctionKeys = False
@@ -1583,7 +1583,7 @@ Partial Class StockAdjustmentFrm
         Me.TxtBatchNo.IsAllowSplChars = True
         Me.TxtBatchNo.IsAllowToolTip = True
         Me.TxtBatchNo.LFocusBackColor = System.Drawing.Color.White
-        Me.TxtBatchNo.Location = New System.Drawing.Point(386, 38)
+        Me.TxtBatchNo.Location = New System.Drawing.Point(384, 38)
         Me.TxtBatchNo.LostFocusFontColor = System.Drawing.Color.Blue
         Me.TxtBatchNo.Name = "TxtBatchNo"
         Me.TxtBatchNo.SetToolTip = Nothing
@@ -1597,7 +1597,7 @@ Partial Class StockAdjustmentFrm
         '
         Me.TxtStockQty.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TxtStockQty.LabelColor = System.Drawing.SystemColors.ControlText
-        Me.TxtStockQty.Location = New System.Drawing.Point(489, 21)
+        Me.TxtStockQty.Location = New System.Drawing.Point(487, 21)
         Me.TxtStockQty.Name = "TxtStockQty"
         Me.TableLayoutPanel2.SetRowSpan(Me.TxtStockQty, 2)
         Me.TxtStockQty.Size = New System.Drawing.Size(257, 38)
@@ -1608,7 +1608,7 @@ Partial Class StockAdjustmentFrm
         Me.Label24.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(386, 22)
+        Me.Label24.Location = New System.Drawing.Point(384, 22)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(56, 13)
         Me.Label24.TabIndex = 1
@@ -1619,7 +1619,7 @@ Partial Class StockAdjustmentFrm
         Me.Label13.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(294, 22)
+        Me.Label13.Location = New System.Drawing.Point(293, 22)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(31, 13)
         Me.Label13.TabIndex = 1
@@ -1641,7 +1641,7 @@ Partial Class StockAdjustmentFrm
         Me.Label12.AutoSize = True
         Me.Label12.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(489, 0)
+        Me.Label12.Location = New System.Drawing.Point(487, 0)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(257, 18)
         Me.Label12.TabIndex = 1
@@ -1776,6 +1776,7 @@ Partial Class StockAdjustmentFrm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(932, 490)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "StockAdjustmentFrm"
         Me.Text = "StockAdjustmentFrm"
         Me.TableLayoutPanel4.ResumeLayout(False)

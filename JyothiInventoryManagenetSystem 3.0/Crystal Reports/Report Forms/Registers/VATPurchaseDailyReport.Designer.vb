@@ -542,6 +542,7 @@ Partial Class VATPurchaseDailyReport
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(960, 425)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "VATPurchaseDailyReport"
         Me.Text = "VATPurchaseDailyReport"
         Me.MenuStrip1.ResumeLayout(False)

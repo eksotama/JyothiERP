@@ -463,6 +463,7 @@ Partial Class CompanyDocs
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(908, 507)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "CompanyDocs"
         Me.Text = "Company Docs"
         Me.TableLayoutPanel1.ResumeLayout(False)

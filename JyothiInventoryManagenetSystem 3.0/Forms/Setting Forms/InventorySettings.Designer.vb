@@ -1000,6 +1000,7 @@ Partial Class InventorySettings
         Me.Controls.Add(Me.ImSlabel3)
         Me.Controls.Add(Me.ImSlabel2)
         Me.Controls.Add(Me.ImSlabel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "InventorySettings"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Advance Settings"

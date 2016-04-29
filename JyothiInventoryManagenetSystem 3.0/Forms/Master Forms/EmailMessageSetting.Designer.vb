@@ -253,6 +253,7 @@ Partial Class EmailMessageSetting
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.TextBox3)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "EmailMessageSetting"
