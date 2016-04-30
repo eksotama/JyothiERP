@@ -63,8 +63,3 @@ D:\prerna\April16\JyothiERP\JyothiERP System code-13-1-2016\JyothiERPBarcode\Erp
 D:\prerna\April16\JyothiERP\JyothiERP System code-13-1-2016\JyothiERPBarcode\ErpBarcode\bin\Debug\JyothiERPBarcode.pdb
 D:\prerna\April16\JyothiERP\JyothiERP System code-13-1-2016\JyothiERPBarcode\ErpBarcode\obj\Debug\JyothiERPBarcode.dll
 D:\prerna\April16\JyothiERP\JyothiERP System code-13-1-2016\JyothiERPBarcode\ErpBarcode\obj\Debug\JyothiERPBarcode.pdb
-D:\Projects\JyothiERP System code-13-1-2016\JyothiERPBarcode\ErpBarcode\bin\Debug\JyothiERPBarcode.dll
-D:\Projects\JyothiERP System code-13-1-2016\JyothiERPBarcode\ErpBarcode\bin\Debug\JyothiERPBarcode.pdb
-D:\Projects\JyothiERP System code-13-1-2016\JyothiERPBarcode\ErpBarcode\obj\Debug\JyothiERPBarcode.csprojResolveAssemblyReference.cache
-D:\Projects\JyothiERP System code-13-1-2016\JyothiERPBarcode\ErpBarcode\obj\Debug\JyothiERPBarcode.dll
-D:\Projects\JyothiERP System code-13-1-2016\JyothiERPBarcode\ErpBarcode\obj\Debug\JyothiERPBarcode.pdb

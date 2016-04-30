@@ -10,7 +10,7 @@
     <OutputType>WinExe</OutputType>
     <StartupObject>JyothiPharmaERPSystem3.My.MyApplication</StartupObject>
     <RootNamespace>JyothiPharmaERPSystem3</RootNamespace>
-    <AssemblyName>JyothiInventoryERP</AssemblyName>
+    <AssemblyName>YafaERP</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -41,7 +41,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>JyothiInventoryERP.xml</DocumentationFile>
+    <DocumentationFile>YafaERP.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
@@ -51,7 +51,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>JyothiInventoryERP.xml</DocumentationFile>
+    <DocumentationFile>YafaERP.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -82,10 +82,10 @@
     <ManifestKeyFile>Jyothi ERP 4.0_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>true</GenerateManifests>
+    <GenerateManifests>false</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -6721,7 +6721,6 @@
     <None Include="Invoice G Report\InvoiceReportDataSet.xss">
       <DependentUpon>InvoiceReportDataSet.xsd</DependentUpon>
     </None>
-    <None Include="Jyothi ERP 4.0_TemporaryKey.pfx" />
     <None Include="MESWERPDBDD100DataSet.xsc">
       <DependentUpon>MESWERPDBDD100DataSet.xsd</DependentUpon>
     </None>
